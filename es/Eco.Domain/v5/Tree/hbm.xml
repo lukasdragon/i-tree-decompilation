@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Eco.Domain" namespace="Eco.Domain.v5" auto-import="false">
+  <class name="Tree" table="Trees">
+    <composite-id name="CompositeId" class="TreeId" access="field.camelcase-m-underscore">
+      <key-property name="Location" column="LocationName" access="field.camelcase-m-underscore"/>
+      <key-property name="Series" column="Series" access="field.camelcase-m-underscore"/>
+      <key-property name="Year" column="`Year`" access="field.camelcase-m-underscore"/>
+      <key-property name="Plot" column="PlotID" access="field.camelcase-m-underscore"/>
+      <key-property name="SubPlot" column="SubPlotID" access="field.camelcase-m-underscore"/>
+      <key-property name="Tree" column="TreeID" access="field.camelcase-m-underscore"/>
+    </composite-id>
+    <set name="Stems" table="TreeDiameters" lazy="true" access="nosetter.camelcase-m-underscore" inverse="true" batch-size="10">
+      <key unique="true">
+        <column name="LocationName" not-null="true"/>
+        <column name="Series" not-null="true"/>
+        <column name="`Year`" not-null="true"/>
+        <column name="PlotID" not-null="true"/>
+        <column name="SubPlotID" not-null="true"/>
+        <column name="TreeID" not-null="true"/>
+      </key>
+      <one-to-many class="Stem"/>
+    </set>
+    <set name="BuildingInteractions" table="TreeBuildingInteractions" lazy="true" access="nosetter.camelcase-m-underscore" inverse="true" batch-size="5">
+      <key unique="true">
+        <column name="LocationName" not-null="true"/>
+        <column name="Series" not-null="true"/>
+        <column name="`Year`" not-null="true"/>
+        <column name="PlotID" not-null="true"/>
+        <column name="SubPlotID" not-null="true"/>
+        <column name="TreeID" not-null="true"/>
+      </key>
+      <one-to-many class="BuildingInteraction"/>
+    </set>
+    <many-to-one name="SubPlot" access="field.camelcase-m-underscore" update="false" insert="false">
+      <column name="LocationName" />
+      <column name="Series" />
+      <column name="Year" />
+      <column name="PlotID" />
+      <column name="SubPlotID" />
+    </many-to-one>
+    <property name="FieldLandUse" column="FieldLandUse"/>
+    <property name="DirectionFromCenter" column="DirectionFromCenter"/>
+    <property name="DistanceFromCenter" column="DistanceFromCenter"/>
+    <property name="Status" column="TreeStatus"/>
+    <property name="Species" column="Species"/>
+    <property name="CrownBaseHeight" column="HeightToCrownBase"/>
+    <property name="CrownTopHeight" column="TreeHeightLiveTop"/>
+    <property name="TreeHeight" column="TreeHeightTotal"/>
+    <property name="CrownWidthNS" column="CrownWidth1"/>
+    <property name="CrownWidthEW" column="CrownWidth2"/>
+    <property name="CrownLightExposure" column="CrownLightExposure"/>
+    <property name="CrownPosition" column="CrownPosition" />
+    <property name="PercentCrownMissing" column="PercentCrownMissing"/>
+    <property name="CrownTransparency" column="Transparency" />
+    <property name="CrownDensity" column="CrownDensity" />
+    <property name="CrownDieback" column="CrownDieback"/>
+    <property name="PercentImpervious" column="PercentImperviousBelow"/>
+    <property name="PercentShrub" column="PercentShrubBelow"/>
+    <property name="Site" column="TreeSite"/>
+    <property name="Comments" column="Comments"/>
+    <property name="PestTSDieback" column="PestTSDieback"/>
+    <property name="PestTSEpiSprout" column="PestTSEpiSprout"/>
+    <property name="PestTSWiltFoli" column="PestTSWiltFoli"/>
+    <property name="PestTSEnvStress" column="PestTSEnvStress"/>
+    <property name="PestTSHumStress" column="PestTSHumStress"/>
+    <property name="PestTSNotes" column="PestTSNotes"/>
+    <property name="PestFTChewFoli" column="PestFTChewFoli"/>
+    <property name="PestFTDiscFoli" column="PestFTDiscFoli"/>
+    <property name="PestFTAbnFoli" column="PestFTAbnFoli"/>
+    <property name="PestFTInsectSigns" column="PestFTInsectSigns"/>
+    <property name="PestFTFoliAffect" column="PestFTFoliAffect"/>
+    <property name="PestFTNotes" column="PestFTNotes"/>
+    <property name="PestBBInsectSigns" column="PestBBInsectSigns"/>
+    <property name="PestBBInsectPres" column="PestBBInsectPres"/>
+    <property name="PestBBDiseaseSigns" column="PestBBDiseaseSigns"/>
+    <property name="PestBBProbLoc" column="PestBBProbLoc"/>
+    <property name="PestBBAbnGrowth" column="PestBBAbnGrowth"/>
+    <property name="PestBBNotes" column="PestBBNotes"/>
+    <property name="PestPest" column="PestPest"/>
+    <property name="PestTS" column="PestTS"/>
+    <property name="PestFT" column="PestFT"/>
+    <property name="PestBB" column="PestBB"/>
+  </class>
+</hibernate-mapping>

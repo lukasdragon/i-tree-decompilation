@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Eco.Domain" namespace="Eco.Domain.v5" auto-import="false">
+  <class name="ElementPrice" table="CustomizedElementPrice">
+    <composite-id name="CompositeId" class="ElementPriceId" access="field.camelcase-m-underscore">
+      <key-property name="Location" column="LocationName" access="field.camelcase-m-underscore"/>
+      <key-property name="Series" column="Series" access="field.camelcase-m-underscore"/>
+      <key-property name="Year" column="`Year`" access="field.camelcase-m-underscore"/>
+      <key-property name="Element" column="Element" access="field.camelcase-m-underscore"/>
+    </composite-id>
+    <discriminator column="Element" not-null="true" force="true" length="20" insert="false"/>
+    <property name="Price" column="Price"/>
+    <many-to-one name="Project" access="field.camelcase-m-underscore" update="false" insert="false">
+      <column name="LocationName" />
+      <column name="Series" />
+      <column name="Year" />
+    </many-to-one>
+    <subclass name="Carbon" discriminator-value="Carbon"/>
+    <subclass name="CO" discriminator-value="CO"/>
+    <subclass name="Electricity" discriminator-value="KWH"/>
+    <subclass name="NO2" discriminator-value="NO2"/>
+    <subclass name="O3" discriminator-value="O3"/>
+    <subclass name="PM10" discriminator-value="PM10"/>
+    <subclass name="PM25" discriminator-value="PM25"/>
+    <subclass name="SO2" discriminator-value="SO2"/>
+    <subclass name="Gas" discriminator-value="THERM"/>
+    <subclass name="H2O" discriminator-value="InterceptedWater"/>
+    <subclass name="ExchangeRate" discriminator-value="ExchangeRate"/>
+  </class>
+</hibernate-mapping>

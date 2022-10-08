@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="Eco.Domain.v6" assembly="Eco.Domain" auto-import="false">
+	<sql-query name="GetUnits">
+        <return-scalar column="UnitsId" type="Int32"/>
+        <return-scalar column="UnitsDescription" type="string"/>
+        <![CDATA[
+             SELECT 
+                UnitsId,
+                UnitsDescription
+             FROM UnitsTable
+		]]>
+	</sql-query>
+    <sql-query name="GetEstUnits">
+        <return-scalar column="EstimationUnitsId" type="Int32"/>
+        <return-scalar column="PrimaryUnitsId" type="Int32"/>
+        <return-scalar column="SecondaryUnitsId" type="Int32"/>
+        <return-scalar column="TertiaryUnitsId" type="Int32"/>
+        <![CDATA[
+             SELECT 
+                EstimationUnitsId,
+                PrimaryUnitsId,
+                SecondaryUnitsId,
+                TertiaryUnitsId
+             FROM EstimationUnitsTable
+		]]>
+    </sql-query>
+    <sql-query name="GetEstimateTable">
+        <return-scalar column="StatisticalTableId" type="Int32"/>
+        <return-scalar column="TableTitle" type="string"/>
+        <return-scalar column="TableData" type="Int16"/>
+        <![CDATA[
+             SELECT 
+                StatisticalTableId,
+                TableTitle,
+                TableData
+             FROM TableOfStatisticalEstimates
+		]]>
+    </sql-query>
+    <sql-query name="GetEstimateTableWithPartitions">
+      <return-scalar column="TableData" type="Int16"/>
+      <return-scalar column="TableTitle" type="string"/>
+      <return-scalar column="ClassifierId" type="Int32"/>
+      <![CDATA[
+               SELECT TableOfStatisticalEstimates.TableData, TableOfStatisticalEstimates.TableTitle, PartitionDefinitionsTable.ClassifierId
+                  FROM TableOfStatisticalEstimates INNER JOIN PartitionDefinitionsTable ON TableOfStatisticalEstimates.StatisticalTableId = PartitionDefinitionsTable.StatisticalTableId
+                  ORDER BY TableOfStatisticalEstimates.TableData, TableOfStatisticalEstimates.StatisticalTableId, PartitionDefinitionsTable.PartitionOrder
+		  ]]>
+    </sql-query>
+    <sql-query name="GetClassifiers">
+        <return-scalar column="ClassifierId" type="Int32"/>
+        <![CDATA[
+             SELECT
+                ClassifierId
+             FROM PartitionDefinitionsTable 
+             WHERE 
+                StatisticalTableId = :statTableId 
+             ORDER BY PartitionOrder
+		]]>
+    </sql-query>
+    <sql-query name="GetClassifierNames">
+        <return-scalar column="ClassifierId" type="Int32"/>
+        <return-scalar column="ClassAbbreviation" type="string"/>
+        <![CDATA[
+             SELECT
+                ClassifierId,
+                ClassAbbreviation
+             FROM Classifiers
+		]]>
+    </sql-query>
+    <sql-query name="GetClassValues">
+        <return-scalar column="ClassifierId" type="Int32"/>
+        <return-scalar column="ClassValueOrder" type="Int16"/>
+        <return-scalar column="ClassValueName" type="string"/>
+        <return-scalar column="ClassValueName1" type="string"/>
+        <![CDATA[
+            SELECT 
+                ClassifierId,
+                ClassValueOrder,
+                ClassValueName,
+                ClassValueName1
+            FROM ClassValueTable 
+            WHERE 
+                YearGuid = :yearGuid
+		]]>
+    </sql-query>
+    <sql-query name="GetRainMeters">
+        <return-scalar column="RainMeters" type="double"/>
+        <![CDATA[
+            SELECT sum(Rain) as RainMeters
+            FROM HourlyHydroResults 
+            WHERE 
+                YearGuid = :yearGuid
+                AND Category = 'T'
+		]]>
+    </sql-query>
+    <sql-query name="GetPollutantValuePerFlux">
+        <return-scalar column="ValuePerFlux" type="double"/>
+        <![CDATA[
+            SELECT IIf(flux<>0,[value]/[flux],0) AS ValuePerFlux
+            FROM Pollutants 
+            WHERE 
+                YearGuid = :y 
+                AND Pollutant = :poll
+		    LIMIT 1
+		]]>
+    </sql-query>
+    <sql-query name="GetPollutants">
+        <return-scalar column="POLLUTANT" type="string"/>
+        <![CDATA[
+            SELECT
+                DISTINCT POLLUTANT 
+            FROM 
+                POLLUTANTS 
+            WHERE 
+                YearGuid = :y
+		]]>
+    </sql-query>
+	<sql-query name="GetSpeciesValues">
+		<return-scalar column="ClassValueOrder" type="Int16"/>
+		<return-scalar column="ClassValueName" type="string"/>
+		<return-scalar column="ClassValueName1" type="string"/>
+		<return-scalar column="SppCode" type="string"/>
+		<![CDATA[
+		    SELECT
+			    ClassValueOrder,
+				ClassValueName,
+				ClassValueName1,
+				SppCode
+			FROM ClassValueTable
+			WHERE
+			    YearGuid = :yearGuid
+				AND ClassifierId = :classifier
+		]]>
+	</sql-query>
+</hibernate-mapping>

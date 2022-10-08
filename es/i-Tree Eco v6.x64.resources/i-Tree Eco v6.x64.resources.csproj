@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Program Files (x86)\i-Tree\EcoV6\es\i-Tree Eco v6.x64.resources.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1A441D13-0A89-4AE3-B3B5-967803A48E7E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>i-Tree Eco v6.x64.resources</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>6.0.29.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\AboutForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\AnnualCostsForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\BenefitPricesForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\ChartViewerForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\ChartViewerFormForVOC\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\ConditionsForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\ConvertProjectForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\DBHsForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\DefinePlotsFileForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\DefinePlotsManuallyForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\DefinePlotsViaGoogleMapsForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\DeleteStrataForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\DiebacksForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\EulaForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\ExistingPlotsForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\ForecastBasicForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\ForecastMortalityForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\ForecastPestForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\ForecastRenameForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\ForecastReplantingForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\ForecastSummaryForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\ForecastWeatherForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\GroundCoversForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\HelpForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\ImportDataForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\InventoryTreesForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\LandUsesForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\LoggedErrorForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\LookupBaseForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\MainRibbonForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\MobileResetPasswordForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\MobileRetrieveDataForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\MobileSubmitInventoryForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\MobileSubmitSampleForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\NewProjectType\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\OpenSampleProject\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\PaperForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\PlotContentForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\PlotGroundCoversForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\PlotLandUsesForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\PlotReferenceObjectsForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\PlotsContentForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\PlotsForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\PlotShrubsForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\PlotTreesForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\ProcessingForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\ProjectOverviewForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\ProjectUpdateForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\ReferencesForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\ReportProgress\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\ReportViewerForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\ResolveConflictForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\Resources\ApplicationHelp\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\Resources\ForecastRes\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\Resources\TabPageSplashTextRes\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\Resources\UserGuideRes\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\SampleTreesForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\ShowAvailableReports\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\ShrubsForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\SimpleChartViewerForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\SpeciesCodesForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\SpeciesListForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\WhatsNewForm\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Properties\Resources\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Reports\WeatherChart\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Resources\Strings\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\SAS\frmDataValidationSignal\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\SAS\frmRetrieveFromSAS\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\SAS\frmSendToSAS\es.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\SAS\SASResources\es.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

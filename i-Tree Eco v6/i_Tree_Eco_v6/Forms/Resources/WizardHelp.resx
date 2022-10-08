@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="wpSaveReinventoryInSameDatabase" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Tahoma;}{\f1\fnil\fcharset0 Calibri;}}
+{\*\generator Riched20 6.3.9600}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs18\lang9 What To Do:\b0\par
+Indicate whether or not you would like to save your new project data in the same database as the one where the original project is saved by selecting "Yes" or "No".\par
+\b Why It's Important:\par
+\b0 Now that you have selected the database and project information to identify the data that you are remeasuring, you must decide where to save your new project data. i-Tree Eco allows you to save your remeasurement data in the same database as the existing data.\par
+If you would like to save your new project data in a new database, be sure to select "No." \par
+\f1\fs22\par
+}
+&#x0;</value>
+  </data>
+  <data name="wpSpecifyExistingDatabase" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Tahoma;}}
+{\*\generator Riched20 6.3.9600}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs18\lang9 What To Do:\par
+\b0 Choose the existing database that you would like to save your new project in by browsing to the folder where it is saved and selecting it. After selected, the existing database name will appear in the box.\b\par
+Why It's Important:\par
+\b0 You have decided to save your new project data in an existing database. The input that you provide here will inform i-Tree Eco that you would like all of your new project data to be saved in the selected database.\par
+}
+&#x0;</value>
+  </data>
+  <data name="wpProjectName" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Tahoma;}}
+{\*\generator Riched20 6.3.9600}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs18\lang9 What To Do:\par
+\b0 Enter a name for your project in the box provided.\b\par
+Why It's Important:\par
+\b0 The project name is an important setting in i-Tree Eco because it gives your project a unique identity. This is also the name that will be used in your results. \par
+For example, the project name will appear in the title of the tables and graphs produced by i-Tree Eco, as well as when referring to your study area in the written report.\par
+}
+&#x0;</value>
+  </data>
+  <data name="wpSetFullInventory" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Tahoma;}}
+{\*\generator Riched20 6.3.9600}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs18\lang9 What To Do:\b0\par
+Indicate whether or not you will be collecting data for all of the trees in your study area by selecting "Yes" or "No".\par
+\b Why It's Important:\par
+\b0 There are several different types of inventories that you can do for an i-Tree Eco project.\par
+If you plan to collect data for all of the trees in your study area, you will be doing a complete inventory. If this is the case, be sure to select "Yes" here.\par
+Another method of data collection is to establish plots within your study area. You would then collect data for all of the trees within your plots. This type of data collection means that you are collecting data for a sample of the trees in your study area and is called a plot-based inventory.\par
+}
+&#x0;</value>
+  </data>
+  <data name="wpShowUnitsFromExistingProject" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Tahoma;}}
+{\*\generator Riched20 6.3.9600}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs18\lang9 What To Do:\b0\par
+The units that you used in your original analysis are filled in by default. Make note of the units that you previously collected data in and select the "Next" button.\par
+\b Why It's Important:\par
+\b0 Units are an important project setting. This informs i-Tree Eco how your data will be collected so it can be properly entered and stored.\par
+One of the details to remember about a reinventory project is that many of the project settings have already been established, including the units used during data collection. The units that you selected in your original project must be used again when you collect your data for the reinventory project.\par
+\par
+}
+&#x0;</value>
+  </data>
+  <data name="wpCollectAdditionalDataVariables" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Tahoma;}}
+{\*\generator Riched20 6.3.9600}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs18\lang9 What To Do:\b0\par
+Indicate whether or not you would like to collect data for additional, custom fields by selecting "Yes" or "No".\par
+\b Why It's Important:\par
+\b0 i-Tree Eco gives you the option to collect additional, custom data for your project. This allows you to define additional fields that you are interested in and customize your project further.\par
+For example, you may decide that you would like to identify if the trees that you collect data for are invasive species or not. Adding custom data variables would allow you to include this in your analysis.\par
+}
+&#x0;</value>
+  </data>
+  <data name="wpOptionalDataVariables" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Tahoma;}}
+{\*\generator Riched20 6.3.9600}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs18\lang9 What To Do:\b0\par
+Choose the optional data variables that you will collect in the field by selecting the checkbox next to each variable.\par
+\b Why It's Important:\par
+\b0 There are many optional data variables that you can collect that make your i-Tree Eco analysis more robust. Some of the variables are tree specific data, while others relate to the site where you are collecting your data.\par
+Some data variables can be estimated by i-Tree Eco, but the more data you collect in the field the better your results will be. Keep in mind that choosing not to collect certain variables, such as IPED, means that some analyses will not be included in your final results. Additionally, some optional variables are more time intensive to collect than others.\par
+}
+&#x0;</value>
+  </data>
+  <data name="wpSpecifyNewDatabase" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Tahoma;}}
+{\*\generator Riched20 6.3.9600}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs18\lang9 What To Do:\par
+\b0 Create a new database to save your project in by browsing to the folder where you would like to save your database and giving the database a name. The new database name will appear in the box.\b\par
+Why It's Important:\par
+\b0 You have decided to save your new project data in a new database. The input that you provide here will inform i-Tree Eco to create a new database where all of your new project data will be saved.\par
+}
+&#x0;</value>
+  </data>
+  <data name="wpSaveToCurrentDatabase" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Tahoma;}}
+{\*\generator Riched20 6.3.9600}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs18\lang9 What To Do:\par
+\b0 Indicate whether or not you would like to save your new project data in the same database as your open project by selecting "Yes" or "No".\b\par
+Why It's Important:\par
+\b0 You have decided to save your new project in an existing database. You currently have a project open. You can choose to save your new project in the same database as your open project.\par
+If you would like to save your project in a different database, be sure to select "No." Also, make sure that you save your open project to ensure that no work is lost.\par
+}
+&#x0;</value>
+  </data>
+  <data name="wpSelectExistingLocationForReinventory" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Tahoma;}}
+{\*\generator Riched20 6.3.9600}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs18\lang9 What To Do:\b0\par
+Use the drop-down lists to identify the location, series name, and series year of the project that you are remeasuring.\b\par
+Why It's Important:\par
+\b0 You have decided that you will be completing a reinventory project. This means that you will be remeasuring data that you have collected in the past. \par
+The inputs that you provide here inform i-Tree Eco which project you will be doing a remeasurement of so the data can be loaded. Your existing project data can also be made available to you so you can reference it when you collect your new remeasurement data.\par
+}
+&#x0;</value>
+  </data>
+  <data name="wpSelectCurrentProjectForReinventory" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Tahoma;}}
+{\*\generator Riched20 6.3.9600}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs18\lang9 What To Do:\par
+\b0 Indicate whether or not you are doing a remeasurement of the project that you have open by selecting "Yes" or "No".\b\par
+Why It's Important:\par
+\b0 You have decided that you will be completing a reinventory project. This means that you will be remeasuring data that you have collected in the past. For this reason, you must inform i-Tree Eco where your previous project is saved.\par
+You currently have a project open. If the project that is open does not contain the data that you are remeasuring, be sure to select "No."\par
+}
+&#x0;</value>
+  </data>
+  <data name="wpSelectUnits" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Tahoma;}}
+{\*\generator Riched20 6.3.9600}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs18\lang9 What To Do:\b0\par
+Indicate whether you will be collecting your data in English units or metric units by clicking the radio button.\par
+\b Why It's Important:\par
+\b0 Units are an important project setting. This informs i-Tree Eco how your data will be collected so it can be properly entered and stored.\par
+}
+&#x0;</value>
+  </data>
+  <data name="wpSetLinearCollection" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Tahoma;}}
+{\*\generator Riched20 6.3.9600}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs18\lang9 What To Do:\b0\par
+Indicate whether or not you will be collecting data along a linear path by selecting "Yes" or "No".\par
+\b Why It's Important:\par
+\b0 You have indicated that you will be doing a plot-based inventory. A plot-based inventory is a method of data collection where you establish plots within your study area. You would then collect data for all of the trees within your plots. This type of data collection means that you are collecting data for a sample of the trees in your study area.\par
+When you establish plots for your project, you have the option to do a linear sample. A linear sample allows you to collect data along a linear path, such as a street, street segment, or utility right-of-way. For example, you might decide that you want to analyze only the trees that line the streets in your neighborhood. In this case, a linear sample is appropriate.\par
+}
+&#x0;</value>
+  </data>
+  <data name="wpRequiredDataVariables" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Tahoma;}{\f1\fnil\fcharset0 Calibri;}}
+{\*\generator Riched20 6.3.9600}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs18\lang9 Reminder:\par
+\b0 There are two required data variables that you must collect in the field: species type and diameter at breast height (DBH).\par
+In order to complete an i-Tree Eco project, you need to have this informqation for each of the trees that you collect data for.\f1\fs22\par
+}
+&#x0;</value>
+  </data>
+  <data name="wpDefiningAdditionalVariables" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Tahoma;}}
+{\*\generator Riched20 6.3.9600}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs18\lang9 What To Do:\b0\par
+To define your additional variables, provide a field name in the space provided. Click on the "Define Variable" button next to each of the new variables you add. You will be prompted to identify the different codes that you will be using when you collect your data.\par
+\b Why It's Important:\b0\par
+You have indicated that you would like to add additional data collection variables. This allows you to create a more customized i-Tree Eco analysis.\par
+You may enter up to three additional variables that you will collect data for.\par
+Note that the data fields can not be open-ended but must be divisible into 10 or fewer categories. For example, a field called "General remarks" cannot be created, but a field called "Invasive" with categories "Yes" and "No" could be.\par
+}
+&#x0;</value>
+  </data>
+  <data name="wpSelectYearReinventory" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Tahoma;}}
+{\*\generator Riched20 6.3.9600}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs18\lang9 i-Tree Eco uses weather and pollution data to help estimate the ecosystem services, such as pollution removal, provided by the urban forest in your study area. Weather and pollution data are available for 2005 to 2010. Use the drop-down menu next to each variable to choose the weather and pollution dataset that you would like to use in your analysis.\par
+}
+&#x0;</value>
+  </data>
+  <data name="wpSpecifyNewDatabaseToSaveReinventory" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Tahoma;}}
+{\*\generator Riched20 6.3.9600}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs18\lang9 What To Do:\b0\par
+Create a new database to save your project in by browsing to the folder where you would like to save your database and giving the database a name. The new database name will appear in the box.\par
+\b Why It's Important:\par
+\b0 You have decided to save your reinventory project in a new database. The input that you provide here will inform i-Tree Eco to create a new database where all of your reinventory data will be saved.\par
+\par
+}
+&#x0;</value>
+  </data>
+  <data name="wpSelectExistingDatabase" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Tahoma;}}
+{\*\generator Riched20 6.3.9600}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs18\lang9 What To Do:\par
+\b0 Indicate whether or not you would like to save your new project data in the same database as a previous project by selecting "Yes" or "No".\par
+\b Why It's Important:\par
+\b0 Data for your new project is saved within a database. i-Tree Eco allows you to save your data in either a new database or an existing database (that is, a database where a previous project has been saved).\par
+For example, you may live in a city that has 3 prominent parks. You would like to collect data to analyze each of these parks in a separate project.\par
+One of the reasons that you might want to store the data for these 3 parks together is that they are all located within the same city. However, you will still be able to analyze them separately.\par
+}
+&#x0;</value>
+  </data>
+  <data name="wpSelectWeatherStationReinventory" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Tahoma;}}
+{\*\generator Riched20 6.3.9600}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs18\lang9 What To Do:\b0\par
+The weather station you used in your original analysis is filled in by default when available.\par
+To select a different weather station, click on the "Show Map" button. In the window that appears, select the weather station that you would like to use in your analysis.\par
+\b Why It's Important:\par
+\b0 i-Tree Eco uses weather data to help estimate the ecosystem services, such as pollution removal, provided by the urban forest in your study area.\par
+One of the details to remember about a reinventory project is that many of the project settings have already been established, such as the location, series name, and type of data collection. When your series was originally created, you selected a weather station to use when the existing data was analyzed. You may choose to use this weather station again, but it is not required.\par
+\par
+}
+&#x0;</value>
+  </data>
+  <data name="wpSelectYear" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Tahoma;}}
+{\*\generator Riched20 6.3.9600}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs18\lang9 What To Do:\b0\par
+Enter a series year for your project in the box provided. Then, use the drop-down lists to select the year that you would like to use weather and pollution data for.\par
+\b Why It's Important:\par
+\b0 The year is an important setting in i-Tree Eco because it gives your project a unique identity and informs which datasets to use.\par
+The series year is used in conjunction with the project name and series name to help distinguish this project from other i-Tree Eco projects you may have. It is recommended that you enter the year of your data collection for this variable.\par
+i-Tree Eco uses weather and pollution data to help estimate the ecosystem services, such as pollution removal, provided by the urban forest in your study area. Weather and pollution data are available for 2005 to 2010.\par
+}
+&#x0;</value>
+  </data>
+  <data name="wpSelectExistingDatabaseForReinventory" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Tahoma;}{\f1\fnil\fcharset0 Calibri;}}
+{\*\generator Riched20 6.3.9600}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs18\lang9 What To Do:\b0\par
+Choose the existing database where your project for remeasurement is saved by browsing to the folder where it is saved and selecting it. After selected, the existing database name will appear in the box.\par
+\b Why It's Important:\par
+\b0 You have decided that you will be completing a reinventory project. This means that you will be remeasuring data that you have collected in the past. For this reason, you must inform i-Tree Eco where your previous project is saved.\par
+\f1\fs22\par
+}
+&#x0;</value>
+  </data>
+  <data name="wpIntro" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Tahoma;}}
+{\*\generator Riched20 6.3.9600}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs18\lang9 The New Project Wizard acts as a project setup assistant. You will be asked a series of questions that will make it easier for you to design your new i-Tree Eco project.\par
+If you are already familiar with i-Tree Eco and would like to start a new project without using the wizard, please be sure to select "No." Check the box at the bottom of the window and the wizard will not appear in the future.\par
+To access the wizard from the i-Tree Eco window go to the New Project Wizard tool located in the Help tab of the ribbon.\par
+Additional help for users migrating from i-Tree Streets to i-Tree Eco is available at the following link:\par
+Video tutorials available here:\par
+}
+&#x0;</value>
+  </data>
+  <data name="wpSeriesName" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Tahoma;}}
+{\*\generator Riched20 6.3.9600}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs18\lang9 What To Do:\b0\par
+Enter a series name for your project in the box provided.\par
+\b Why It's Important:\par
+\b0 The series name is an important setting in i-Tree Eco because it gives your project a unique identity.\par
+For the majority of new projects, a new series is created. However, in the future you can choose to add data to an existing series. This type of project is a reinventory and is done only if you plan to remeasure data that you collected previously. In this instance, your series name is used to reference your past data collection and identify where your new data will be added. \par
+}
+&#x0;</value>
+  </data>
+  <data name="wpSelectNewWeatherStation" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Tahoma;}}
+{\*\generator Riched20 6.3.9600}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs18\lang9 What To Do:\b0\par
+Select your weather station by clicking on the "Show Map" button. In the window that appears, select the weather station that you would like to use in your analysis.\par
+\b Why It's Important:\par
+\b0 i-Tree Eco uses weather data to help estimate the ecosystem services, such as pollution removal, provided by the urban forest in your study area.\par
+Please note that depending on the weather year you choose, certain weather stations may not be available. If there is a weather station that you know you would like to choose and it does not appear on the map, you may need to change the weather year.\par
+\par
+}
+&#x0;</value>
+  </data>
+  <data name="wpSpecifyNewLocation" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Tahoma;}}
+{\*\generator Riched20 6.3.9600}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs18\lang9 What To Do:\b0\par
+Select the location where the majority of your study area is located using the drop-down lists.\par
+\b Why It's Important:\par
+\b0 Location is an important project setting in i-Tree Eco for many reasons. It is used to provide localized benefit estimates. That is, many of the ecosystem service analyses rely on national, state, or county-level data.\par
+Please note that i-Tree Eco allows you to enter a county as your location. You are not required to choose a place. However, if you are doing a project that is not at the county scale, a more refined location may provide better estimates.\par
+}
+&#x0;</value>
+  </data>
+  <data name="wpConfirmingSettings" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Tahoma;}}
+{\*\generator Riched20 6.3.9600}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs18\lang9 What To Do:\b0\par
+The project configuration and data collection settings that you have chosen are displayed on the right. Scroll through the list of settings and review them. Changes can be made by clicking on the "Edit" button next to each setting.\par
+\b Why It's Important:\par
+\b0 Now is the time to review all of the decisions that you have made throughout the New Project Wizard. Carefully look at the settings and confirm that your i-Tree Eco project meets your needs.\par
+Once you have created your project, you will not have another opportunity to do this.\par
+}
+&#x0;</value>
+  </data>
+  <data name="wpRemeasure" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Tahoma;}}
+{\*\generator Riched20 6.3.9600}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs18\lang9 What To Do:\b0\par
+Indicate whether or not you are taking remeasurements of data that has been collected in the past by selecting "Yes" or "No".\par
+\b Why It's Important:\b0\par
+
+\pard\lang1033 There are different types of new projects that you can complete in i-Tree Eco, including a reinventory. A reinventory project is a project where you plan to remeasure trees that you previously collected data for.\par
+\par
+For example, you may have collected data for all of the trees within a park in 2004. In 2014, you decided that you would like to go back to the same park and collect data for the trees again.\par
+\par
+One of the reasons that you might want to complete a reinventory project would be to analyze how the urban forest in your study area is changing over time.\lang9\par
+}
+&#x0;</value>
+  </data>
+  <data name="wpSpecifyReinventorySeriesYear" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Tahoma;}}
+{\*\generator Riched20 6.3.9600}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs16\lang9 What To Do:\b0\par
+Enter a series year for your project in the box provided.\par
+\b Why It's Important:\par
+\b0 A reinventory project means that you are adding data to an existing series by remeasuring data that you collected in the past. One of the ways that you differentiate your new data from the old data in the series is by defining your series year.\par
+The series year for your new data must be different from the series year that you used in the past.\par
+For example, if you choose to collect data for all of the trees in a park in 2000 then remeasure that park in 2014 these data will be saved within the same series. By giving each set of data a different series year, such as 2000 and 2014, you will be able to look at the datasets separately and compare them to each other.\par
+\par
+}
+&#x0;</value>
+  </data>
+</root>

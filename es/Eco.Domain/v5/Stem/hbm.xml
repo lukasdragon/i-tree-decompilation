@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Eco.Domain" namespace="Eco.Domain.v5" auto-import="false">
+  <class name="Stem" table="TreeDiameters">
+    <composite-id name="CompositeId" class="StemId" access="field.camelcase-m-underscore">
+      <key-property name="Location" column="LocationName" access="field.camelcase-m-underscore"/>
+      <key-property name="Series" column="Series" access="field.camelcase-m-underscore"/>
+      <key-property name="Year" column="`Year`" access="field.camelcase-m-underscore"/>
+      <key-property name="Plot" column="PlotID" access="field.camelcase-m-underscore"/>
+      <key-property name="SubPlot" column="SubPlotID" access="field.camelcase-m-underscore"/>
+      <key-property name="Tree" column="TreeID" access="field.camelcase-m-underscore"/>
+      <key-property name="Stem" column="StemID" access="field.camelcase-m-underscore"/>
+    </composite-id>
+
+    <property name="Diameter" column="Diameter"/>
+    <property name="DiameterHeight" column="DiameterHeight"/>
+    <property name="Measured" column="WasMeasured"/>
+    <many-to-one name="Tree" access="field.camelcase-m-underscore" update="false" insert="false">
+      <column name="LocationName" />
+      <column name="Series" />
+      <column name="Year" />
+      <column name="PlotID" />
+      <column name="SubPlotID" />
+      <column name="TreeID" />
+    </many-to-one>
+  </class>
+</hibernate-mapping>

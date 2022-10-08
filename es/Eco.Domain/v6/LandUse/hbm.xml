@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Eco.Domain" namespace="Eco.Domain.v6" auto-import="false">
+  <class name="LandUse" table="EcoLandUses" dynamic-update="true">
+    <cache usage="read-write"/>
+    <id name="Guid" column="LandUseKey">
+      <generator class="guid"/>
+    </id>
+    <natural-id mutable="true">
+      <many-to-one name="Year" column="YearKey" not-null="true"/>
+      <property name="Id" column="LandUseCode" not-null="true" length="1"/>
+    </natural-id>
+    <version name="Revision" column="Revision" unsaved-value="0"/>
+    <set name="PlotLandUses" table="EcoPlotLandUses" lazy="true" inverse="true" cascade="merge,save-update,evict">
+      <key unique="true">
+        <column name="LandUseKey" not-null="true"/>
+      </key>
+      <one-to-many class="PlotLandUse"/>
+    </set>
+    <property name="Description" column="LandUseDescription" length="50"/>
+    <property name="LandUseId" column="LandUseId"/>
+  </class>
+</hibernate-mapping>

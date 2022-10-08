@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Program Files (x86)\i-Tree\EcoV6\Streets.Domain.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0721674E-3D28-4216-A616-396C84D6D87E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Streets.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <ApplicationVersion>1.1.5560.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Streets.Domain</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="StreetsDomain_ProcessedByFody.cs" />
+    <Compile Include="Benefit.cs" />
+    <Compile Include="CityData.cs" />
+    <Compile Include="ElementPrice.cs" />
+    <Compile Include="HashFactor.cs" />
+    <Compile Include="InventoryItem.cs" />
+    <Compile Include="IPED.cs" />
+    <Compile Include="LookupId.cs" />
+    <Compile Include="Lookup.cs" />
+    <Compile Include="FieldLandUse.cs" />
+    <Compile Include="LocSite.cs" />
+    <Compile Include="MaintRec.cs" />
+    <Compile Include="MaintTask.cs" />
+    <Compile Include="OtherOne.cs" />
+    <Compile Include="OtherTwo.cs" />
+    <Compile Include="OtherThree.cs" />
+    <Compile Include="DBH.cs" />
+    <Compile Include="Condition.cs" />
+    <Compile Include="Sidewalk.cs" />
+    <Compile Include="SiteType.cs" />
+    <Compile Include="WireConflict.cs" />
+    <Compile Include="ManagementCost.cs" />
+    <Compile Include="Project.cs" />
+    <Compile Include="SpListItem.cs" />
+    <Compile Include="Street.cs" />
+    <Compile Include="Zone.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Benefit\hbm.xml" />
+    <EmbeddedResource Include="CityData\hbm.xml" />
+    <EmbeddedResource Include="InventoryItem\hbm.xml" />
+    <EmbeddedResource Include="Lookup\hbm.xml" />
+    <EmbeddedResource Include="ManagementCost\hbm.xml" />
+    <EmbeddedResource Include="Project\hbm.xml" />
+    <EmbeddedResource Include="SpListItem\hbm.xml" />
+    <EmbeddedResource Include="Street\hbm.xml" />
+    <EmbeddedResource Include="Zone\hbm.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

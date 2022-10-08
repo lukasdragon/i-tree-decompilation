@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="FE" xml:space="preserve">
+    <value>Ferrell, G. T. 1986. Fir Engraver. Forest Insect &amp; Disease Leaflet 13. Washington, DC: U. S. Department of Agriculture, Forest Service. 8 p.</value>
+  </data>
+  <data name="FR" xml:space="preserve">
+    <value>Phelps, W.R.; Czabator, F.L. 1978. Fusiform Rust of Southern Pines. Forest Insect &amp; Disease Leaflet 26. Washington, DC: U. S. Department of Agriculture, Forest Service. 7 p.</value>
+  </data>
+  <data name="AL" xml:space="preserve">
+    <value>Kruse, J.; Ambourn, A.; Zogas, K. 2007. Aspen Leaf Miner. Forest Health Protection leaflet. R10-PR-14. Juneau, AK: U. S. Department of Agriculture, Forest Service, Alaska Region.</value>
+  </data>
+  <data name="DA" xml:space="preserve">
+    <value>Mielke, M. E.; Daughtrey, M. L. How to Identify and Control Dogwood Anthracnose. NA-GR-18. Broomall, PA: U. S. Department of Agriculture, Forest Service, Northeastern Area and Private Forestry.</value>
+  </data>
+  <data name="GM" xml:space="preserve">
+    <value>Northeastern Area State and Private Forestry. 2005. Gypsy moth digest. Newtown Square, PA: U.S. Department of Agriculture, Forest Service, Northeastern Area State and Private Forestry.</value>
+  </data>
+  <data name="BC" xml:space="preserve">
+    <value>Ostry, M.E.; Mielke, M.E.; Anderson, R.L. 1996. How to Identify Butternut Canker and Manage Butternut Trees. U. S. Department of Agriculture, Forest Service, North Central Forest Experiment Station. </value>
+  </data>
+  <data name="CB" xml:space="preserve">
+    <value>Diller, J. D. 1965. Chestnut Blight. Forest Pest Leaflet 94. Washington, DC: U. S. Department of Agriculture, Forest Service. 7 p.</value>
+  </data>
+  <data name="OW" xml:space="preserve">
+    <value>Rexrode, C. O.; Brown, H. D. 1983. Oak Wilt. Forest Insect &amp; Disease Leaflet 29. Washington, DC: U.S. Department of Agriculture, Forest Service. 6 p.</value>
+  </data>
+  <data name="WM" xml:space="preserve">
+    <value>Childs, R. 2011. Winter Moth Identification and Management. Amherst, MA: University of Massachusetts Amherst, Landscape, Nursery &amp; Urban Forestry Program.</value>
+  </data>
+  <data name="SW" xml:space="preserve">
+    <value>Haugen, D. A.; Hoebeke, R. E. 2005. Sirex woodwasp - Sirex noctilio F. (Hymenoptera: Siricidae). Pest Alert. NA-PR-07-05. Newtown Square, PA: Department of Agriculture, Forest Service, Northern Area State and Private Forestry.</value>
+  </data>
+  <data name="SB" xml:space="preserve">
+    <value>Holsten, E.H.; Thier, R.W.; Munson, A.S.; Gibson, K.E. 1999. The Spruce Beetle. Forest Insect &amp; Disease Leaflet 127. Washington, DC: U.S. Department of Agriculture, Forest Service. 12 p.</value>
+  </data>
+  <data name="EAB" xml:space="preserve">
+    <value>Michigan State University. 2010. Emerald ash borer. East Lansing, MI: Michigan State University [and others].</value>
+  </data>
+  <data name="ALB" xml:space="preserve">
+    <value>Animal and Plant Health Inspection Service. 2010. Plant Health – Asian longhorned beetle. Washington, DC: U.S. Department of Agriculture, Animal and Plant Health Inspection Service.</value>
+  </data>
+  <data name="DED" xml:space="preserve">
+    <value>Northeastern Area State and Private Forestry. 1998.  How to identify and manage  Dutch Elm Disease.  NA-PR-07-98.  Newtown Square, PA: U.S. Department of Agriculture, Forest Service, Northeastern Area State and Private Forestry.  </value>
+  </data>
+  <data name="DFB" xml:space="preserve">
+    <value>Schmitz, R. F.; Gibson, K. E. 1996. Douglas-fir Beetle. Forest Insect &amp; Disease Leaflet 5. R1-96-87. Washington,DC: U. S. Department of Agriculture, Forest Service. 8 p.</value>
+  </data>
+  <data name="BBD" xml:space="preserve">
+    <value>Houston, D. R.; O'Brien, J. T. 1983. Beech Bark Disease. Forest Insect &amp; Disease Leaflet 75. Washington, DC: U. S. Department of Agriculture, Forest Service. 8 p. </value>
+  </data>
+  <data name="BSA" xml:space="preserve">
+    <value>Ragenovich, I.R.; Mitchell, R.G. 2006. Balsam woolly adelgid. Forest Insect &amp; Disease Leaflet 118. Washington, DC: U.S. Department of Agriculture, Forest Service. 12 p. </value>
+  </data>
+  <data name="MPB" xml:space="preserve">
+    <value>Gibson, K.; Kegley, S.; Bentz, B. 2009. Mountain Pine Beetle. Forest Insect &amp; Disease Leaflet 2. Washington, DC: U. S. Department of Agriculture, Forest Service. 12 p.</value>
+  </data>
+  <data name="NSE" xml:space="preserve">
+    <value>Burnside, R.E.; Holsten, E. H.; Fettig, C.J.; Kruse, J. J.; Schultz, M.E.; Hayes, C.J.; Graves, A.D.; Seybold, S.J. 2011. Northern Spruce Engraver. Forest Insect &amp; Disease Leaflet 180. Washington, DC: U. S. Department of Agriculture, Forest Service. 12 p. </value>
+  </data>
+  <data name="LAT" xml:space="preserve">
+    <value>Ciesla, W. M.; Kruse, J. J. 2009. Large Aspen Tortrix. Forest Insect &amp; Disease Leaflet 139. Washington, DC: U. S. Department of Agriculture, Forest Service. 8 p.</value>
+  </data>
+  <data name="LWD" xml:space="preserve">
+    <value>U.S. Forest Service. 2011. Laurel Wilt. Atlanta, GA: U. S. Department of Agriculture, Forest Service, Forest Health Protection, Southern Region.  </value>
+  </data>
+  <data name="JPB" xml:space="preserve">
+    <value>Smith, S. L.; Borys, R. R.; Shea, P. J. 2009. Jeffrey Pine Beetle. Forest Insect &amp; Disease Leaflet 11. Washington, DC: U. S. Department of Agriculture, Forest Service. 8 p.  </value>
+  </data>
+  <data name="HWA" xml:space="preserve">
+    <value>U.S. Forest Service. 2005. Hemlock Woolly Adelgid. Pest Alert. NA-PR-09-05. Newtown Square, PA: U. S. Department of Agriculture, Forest Service, Northern Area State and Private Forestry.  </value>
+  </data>
+  <data name="TCD" xml:space="preserve">
+    <value>Cranshaw, W.; Tisserat, N. 2009. Walnut twig beetle and the thousand cankers disease of black walnut. Pest Alert. Ft. Collins, CO: Colorado State University.
+
+Seybold, S.; Haugen, D.; Graves, A. 2010. Thousand Cankers Disease. Pest Alert. NA-PR-02-10. Newtown Square, PA: U.S. Department of Agriculture, Forest Service, Northeastern Area State and Private Forestry.</value>
+  </data>
+  <data name="WSB" xml:space="preserve">
+    <value>Fellin, D. G.; Dewey, J. E. 1986. Western Spruce Budworm. Forest Insect &amp; Disease Leaflet 53. Washington, DC: U.S. Department of Agriculture, Forest Service. 10 p.</value>
+  </data>
+  <data name="WPB" xml:space="preserve">
+    <value>DeMars, C. J., Jr.; Roettgering, B. H. 1982. Western Pine Beetle. Forest Insect &amp; Disease Leaflet 1. Washington, DC: U.S. Department of Agriculture, Forest Service. 8 p.</value>
+  </data>
+  <data name="PSB" xml:space="preserve">
+    <value>Ciesla, W. M. 2001. Tomicus piniperda. North American Forest Commission. Exotic Forest Pest Information System for North America (EXFOR).</value>
+  </data>
+  <data name="SPB" xml:space="preserve">
+    <value>Clarke, S. R.; Nowak, J.T. 2009. Southern Pine Beetle. Forest Insect &amp; Disease Leaflet 49. Washington, DC: U.S. Department of Agriculture, Forest Service. 8 p.</value>
+  </data>
+  <data name="SBW" xml:space="preserve">
+    <value>Kucera, D. R.; Orr, P. W. 1981. Spruce Budworm in the Eastern United States. Forest Pest Leaflet 160. Washington, DC: U.S. Department of Agriculture, Forest Service. 8 p.</value>
+  </data>
+  <data name="SOD" xml:space="preserve">
+    <value>Kliejunas, J. 2005. Phytophthora ramorum. North American Forest Commission. Exotic Forest Pest Information System for North America (EXFOR).</value>
+  </data>
+  <data name="POCRD" xml:space="preserve">
+    <value>Liebhold, A. 2010 draft. Personal communication on the geographic distribution of forest pest species.</value>
+  </data>
+  <data name="DBSR" xml:space="preserve">
+    <value>Hessburg, P. F.; Goheen, D. J.; Bega, R.V. 1995. Black Stain Root Disease of Conifers. Forest Insect &amp; Disease Leaflet 145. Washington, DC: U.S. Department of Agriculture, Forest Service.</value>
+  </data>
+  <data name="GSOB" xml:space="preserve">
+    <value>Society of American Foresters. 2011. Gold Spotted Oak Borer Hitches Ride in Firewood, Kills California Oaks. Forestry Source 16(10): 20.</value>
+  </data>
+  <data name="WPBR" xml:space="preserve">
+    <value>Nicholls, T. H.; Anderson, R. L. 1977. How to Identify White Pine Blister Rust and Remove Cankers. St. Paul, MN: U.S. Department of Agriculture, Forest Service, Northeastern Area State and Private Forestry </value>
+  </data>
+  <data name="PSHB" xml:space="preserve">
+    <value>University of California. 2014. Polphagous Shot Hole Borer. Sacramento, CA: University of California, Division of Agriculture and Natural Resources.</value>
+  </data>
+  <data name="PBSR" xml:space="preserve">
+    <value>Hessburg, P. F.; Goheen, D. J.; Bega, R.V. 1995. Black Stain Root Disease of Conifers. Forest Insect &amp; Disease Leaflet 145. Washington, DC: U.S. Department of Agriculture, Forest Service.</value>
+  </data>
+</root>

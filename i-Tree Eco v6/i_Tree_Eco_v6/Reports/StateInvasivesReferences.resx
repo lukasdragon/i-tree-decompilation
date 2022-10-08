@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Michigan_InText" xml:space="preserve">
+    <value>Michigan Natural Features Inventory 2014</value>
+  </data>
+  <data name="North_Dakota_InText" xml:space="preserve">
+    <value>North Dakota Department of Agriculture</value>
+  </data>
+  <data name="Ohio_InText" xml:space="preserve">
+    <value>Ohio Division of Natural Areas and Preserves 2000</value>
+  </data>
+  <data name="Nevada_References" xml:space="preserve">
+    <value>Stoddard, S.W.; Johnson, W.S.; Wilson, R.E. Invasive Plants in Nevada: An Identification Handbook. Reno, NV: University of Nevada, Cooperative Extension. &lt;http://www.unce.unr.edu/publications/files/ag/other/sp9603.pdf&gt;</value>
+  </data>
+  <data name="Pennsylvania_References" xml:space="preserve">
+    <value>Department of Conservation and Natural Resources. DCNR Invasive Plants. Harrisburg, PA: Department of Conservation and Natural Resources, Bureau of Forestry. &lt;http://www.dcnr.state.pa.us/cs/groups/public/documents/document/dcnr_20026634.pdf&gt; </value>
+  </data>
+  <data name="Michigan_References" xml:space="preserve">
+    <value>Michigan Natural Features Inventory. 2014. Michigan Invasive Plant Species Accounts. Lansing, MI: Michigan State University Extension, Michigan Natural Features Inventory. &lt;http://mnfi.anr.msu.edu/invasive-species/factsheets.cfm&gt; </value>
+  </data>
+  <data name="Maine_References" xml:space="preserve">
+    <value>Maine Legislature. 2000. An Act to Prevent the Spread of Invasive Aquatic Plants. Augusta, ME: Maine State Legislature, Office of the Revisor of Statutes. &lt;http://www.mainelegislature.org/ros/LOM/LOM119th/5Pub701-750/5Pub701-750-21.htm&gt;
+
+Maine Department of Agriculture, Conservation, and Forestry . 2013. Maine Invasive Plant Fact Sheets. Augusta, ME: Department of Agriculture, Conservation, and Forestry, Maine Natural Areas Program. &lt;http://www.maine.gov/dacf/mnap/features/invasive_plants/invsheets.htm&gt;</value>
+  </data>
+  <data name="Alabama_InText" xml:space="preserve">
+    <value>Alabama Invasive Plant Council 2007</value>
+  </data>
+  <data name="Rhode_Island_InText" xml:space="preserve">
+    <value>Rhode Island Invasive Species Council and Rhode Island Natural History Survey 2001</value>
+  </data>
+  <data name="Florida_References" xml:space="preserve">
+    <value>Florida Exotic Pest Plant Council. 2007. Florida EPPC’s 2007 Invasive Plant Species List. Athens, GA: Center for Invasive Species and Ecosystem Health, Southeast Exotic Pest Plant Council.  &lt;http://www.fleppc.org/list/07list.htm&gt; </value>
+  </data>
+  <data name="Arkansas_References" xml:space="preserve">
+    <value>Jardine, J.; Witsell, T. Working List of Non-native Invasive Plant Species of Concern to Natural Areas in Arkansas. Arkansas Native Plant Society. &lt;http://www.deltic.com/hunting/ANPS%20INVASIVES%20LIST.pdf&gt;</value>
+  </data>
+  <data name="Utah_References" xml:space="preserve">
+    <value>Arizona Wildland Invasive Plant Working Group. 2005. Invasive Non-Native Plants That Threaten Wildlands in Arizona. Phoenix, AZ: Southwest Vegetation Management Association. &lt; http://www.swvma.org/InvasiveNon-NativePlantsThatThreatenWildlandsInArizona.pdf &gt;
+
+Colorado Weed Management Association. 2012. Colorado’s Noxious Weed List. Paonia, CO: Colorado Weed Management Association. &lt;http://www.cwma.org/noxweeds.html#list&gt;
+
+Stoddard, S.W.; Johnson, W.S.; Wilson, R.E. Invasive Plants in Nevada: An Identification Handbook. Reno, NV: University of Nevada, Cooperative Extension. &lt;http://www.unce.unr.edu/publications/files/ag/other/sp9603.pdf&gt;</value>
+  </data>
+  <data name="Delaware_References" xml:space="preserve">
+    <value>McAvoy, W.A. 2001. Invasive Plant Species in Delaware. DE: Department of Natural Resources and Environmental Control. &lt;http://www.dnrec.state.de.us/fw/invasive.htm&gt;</value>
+  </data>
+  <data name="Connecticut_InText" xml:space="preserve">
+    <value>Connecticut Invasive Plant Working Group 2013</value>
+  </data>
+  <data name="Hawaii_References" xml:space="preserve">
+    <value>Hawaii State Alien Species Coordinator. 2012. Hawaii's Most Invasive Horticultural Plants. Honolulu, HI: Department of Land and Natural Resources, Division of Forestry and Wildlife. &lt;http://www.gchonolulu.org/FlowerShow2012/HORTICULTURAL%20PLANTS%20Invasive.PDF&gt;</value>
+  </data>
+  <data name="Maine_InText" xml:space="preserve">
+    <value>Maine Legislature 2000; Maine Department of Agriculture, Conservation, and Forestry 2013</value>
+  </data>
+  <data name="New_Hampshire_InText" xml:space="preserve">
+    <value>New Hampshire Department of Agriculture 2012, 2014; Cygan 2011</value>
+  </data>
+  <data name="Nebraska_InText" xml:space="preserve">
+    <value>Nebraska Invasive Species Advisory Council</value>
+  </data>
+  <data name="South_Carolina_InText" xml:space="preserve">
+    <value>South Carolina Exotic Pest Plant Council 2008</value>
+  </data>
+  <data name="Nebraska_References" xml:space="preserve">
+    <value>Nebraska Invasive Species Advisory Council. Invasive Plants of Nebraska. &lt;http://snr.unl.edu/invasives/pdfs/Invasive%20Plant%20Lists/NE%20Invasive%20Plants%20List%20Full%20Document%204-14-11.pdf&gt;</value>
+  </data>
+  <data name="Massachusetts_InText" xml:space="preserve">
+    <value>Massachusetts Invasive Plant Advisory Group 2005</value>
+  </data>
+  <data name="North_Carolina_References" xml:space="preserve">
+    <value>Smith, C. 2008. Invasive Exotic Plants of North Carolina. NC: Department of Transportation. &lt;http://www.se-eppc.org/northcarolina/NCDOT_Invasive_Exotic_Plants.pdf&gt;
+
+North Carolina Native Plant Society. 2010. Invasive Exotic Species List. Greensboro, NC: North Carolina Native Planty Society.&lt;http://www.ncwildflower.org/invasives/list.htm&gt;</value>
+  </data>
+  <data name="New_Mexico_InText" xml:space="preserve">
+    <value>Arizona Wildland Invasive Plant Working Group 2005; Colorado Weed Management Association 2012; Watershed Protection Development Review</value>
+  </data>
+  <data name="Iowa_References" xml:space="preserve">
+    <value>Forest Invasive Plants Resource Center. 2006. Iowa. U.S. Department of Agriculture, Forest Service, Northeastern Area State and Private Forestry. &lt;http://na.fs.fed.us/spfo/invasiveplants/states/ia.asp&gt;
+
+Iowa Department of Natural Resources. Invasive Plant Species. Des Moines, IA: Department of Natural Resources, Forestry Bureau. &lt;http://www.iowadnr.gov/Environment/Forestry/ForestHealth/InvasivePlants.aspx html&gt;</value>
+  </data>
+  <data name="Idaho_References" xml:space="preserve">
+    <value>Oregon Invasive Species Council. 2014. 100 Worst List. OR: Oregon Invasive Species Council. &lt;http://www.oregoninvasivespeciescouncil.org/media/100_worst.pdf&gt;
+
+Stoddard, S.W.; Johnson, W.S.; Wilson, R.E. Invasive Plants in Nevada: An Identification Handbook. Reno, NV: University of Nevada, Cooperative Extension. &lt;http://www.unce.unr.edu/publications/files/ag/other/sp9603.pdf&gt; </value>
+  </data>
+  <data name="Vermont_References" xml:space="preserve">
+    <value>Vermont Invasive Exotic Plant Committee. 2005. Invasive Species Watch List for Vermont. &lt;http://www.vtfishandwildlife.com/library/reports_and_documents/vermonts_wildlife_action_plan/_/_report/7_appendix/k_invasive_exotic_and_pest_species.pdf&gt;
+
+The Nature Conservancy. 2011. Table 1.2. List of invasive terrestrial plants known to be in Vermont or on our borders. In: Cusack, C.; Plumb, S.; Prince, D. 2011. Developing Invasive Plant Outreach and Management Projects. Montpelier, VT: The Nature Conservancy. &lt;http://www.nature.org/ourinitiatives/regions/northamerica/unitedstates/vermont/chapter-1-23-for-web.pdf&gt;</value>
+  </data>
+  <data name="Arizona_InText" xml:space="preserve">
+    <value>Arizona Wildland Invasive Plant Working Group 2005</value>
+  </data>
+  <data name="Ohio_References" xml:space="preserve">
+    <value>Ohio Division of Natural Areas and Preserves. 2000. Ohio's Invasive Plant Species. Columbus, OH: Department of Natural Resources, Division of Natural Areas and Preserves. &lt;http://ohiodnr.gov/portals/0/pdfs/invasives/ohio-invasive-plants-r0400.pdf&gt;</value>
+  </data>
+  <data name="New_Jersey_References" xml:space="preserve">
+    <value>The Native Plant Society of New Jersey. 2004. Appendix to Policy Directive 2004-02 Invasive Nonindigenous Plant Species. NJ: The Native Plant Society of New Jersey. &lt;http://www.npsnj.org/references/invasive_plant_list.pdf&gt;
+
+Ling, H. 2003. Invasive Plant Species. NJ: The Native Plant Society of New Jersey. &lt;http://www.npsnj.org/articles/invasive_plant_species.html&gt;</value>
+  </data>
+  <data name="Arkansas_InText" xml:space="preserve">
+    <value>Jardine and Witsell</value>
+  </data>
+  <data name="West_Virginia_References" xml:space="preserve">
+    <value>Grafton, E. 2003. Dirty Dozen. WV: West Virginia Division of Natural Resources, Wildlife Resources. &lt;http://www.wvdnr.gov/Wildlife/DirtyDozen.shtm&gt;</value>
+  </data>
+  <data name="Oklahoma_InText" xml:space="preserve">
+    <value>Oklahoma Native Plant Society et al</value>
+  </data>
+  <data name="Georgia_References" xml:space="preserve">
+    <value>Georgia Exotic Pest Plant Council. 2006. List of Non-native Invasive Plants in Georgia. Athens, GA: Center for Invasive Species and Ecosystem Health, Southeast Exotic Pest Plant Council. &lt;http://www.gaeppc.org/list.cfm&gt; </value>
+  </data>
+  <data name="Idaho_InText" xml:space="preserve">
+    <value>Oregon Invasive Species Council 2014; Stoddard et al</value>
+  </data>
+  <data name="Indiana_InText" xml:space="preserve">
+    <value>Indiana Cooperative Agricultural Pest Survey 2007</value>
+  </data>
+  <data name="Georgia_InText" xml:space="preserve">
+    <value>Georgia Exotic Pest Plant Council 2006</value>
+  </data>
+  <data name="Utah_InText" xml:space="preserve">
+    <value>Arizona Wildland Invasive Plant Working Group 2005; Colorado Weed Management Association; Stoddard et al</value>
+  </data>
+  <data name="Mississippi_InText" xml:space="preserve">
+    <value>Winters et al; Mississippi Exotic Pest Plant Council 2014</value>
+  </data>
+  <data name="Washington_InText" xml:space="preserve">
+    <value>Oregon Invasive Species Council 2014</value>
+  </data>
+  <data name="Missouri_InText" xml:space="preserve">
+    <value>Missouri Botanical Garden 2002</value>
+  </data>
+  <data name="New_York_References" xml:space="preserve">
+    <value>New York State Department of Environmental Conservation. Interim Invasive Species Plant List. &lt;http://www.dec.ny.gov/animals/65408.html&gt;</value>
+  </data>
+  <data name="Missouri_References" xml:space="preserve">
+    <value>Missouri Botanical Garden. 2002. Missouri Exotic Pest Plants.  St. Louis, MO: Missouri Botanical Garden. &lt;http://www.mobot.org/mobot/research/mepp/alphalist.shtml&gt;</value>
+  </data>
+  <data name="Delaware_InText" xml:space="preserve">
+    <value>McAvoy 2001</value>
+  </data>
+  <data name="Virginia_InText" xml:space="preserve">
+    <value>Virginia Native Plant Society and Department of Conservation and Recreation 2009</value>
+  </data>
+  <data name="Arizona_References" xml:space="preserve">
+    <value>Arizona Wildland Invasive Plant Working Group. 2005. Invasive Non-Native Plants That Threaten Wildlands in Arizona. Phoenix, AZ: Southwest Vegetation Management Association. &lt;http://www.swvma.org/InvasiveNon-NativePlantsThatThreatenWildlandsInArizona.pdf&gt; </value>
+  </data>
+  <data name="Alabama_References" xml:space="preserve">
+    <value>Alabama Invasive Plant Council. 2007. 2007 Plant List. Athens, GA: Center for Invasive Species and Ecosystem Health, Southeast Exotic Pest Plant Council. &lt;http://www.se-eppc.org/alabama/2007plantlist.pdf&gt;</value>
+  </data>
+  <data name="Wisconsin_References" xml:space="preserve">
+    <value>Department of Natural Resources. 2012a. Invasive Species. Terrestrial Invasives - Plants. Madison, WI: Wisconsin Department of Natural Resources. &lt;http://dnr.wi.gov/invasives/species.asp?filterBy=Terrestrial&amp;filterVal=Y&amp;catVal=Plants&gt;
+
+Department of Natural Resources. 2012b. Invasive Species. Aquatic Invasives - Plants. Madison, WI: Wisconsin Department of Natural Resources. &lt;http://dnr.wi.gov/invasives/species.asp?filterBy=Aquatic&amp;filterVal=Y&amp;catVal=Plants&gt;</value>
+  </data>
+  <data name="Louisiana_InText" xml:space="preserve">
+    <value>Jardine and Witsell; Watershed Protection Development Review; Winters et al; Mississippi Exotic Pest Plant Council 2014</value>
+  </data>
+  <data name="Oregon_InText" xml:space="preserve">
+    <value>Oregon Invasive Species Council 2014</value>
+  </data>
+  <data name="Kentucky_References" xml:space="preserve">
+    <value>Kentucky Exotic Pest Plant Council. 2013. Kentucky Exotic Pest Plant Council. Athens, GA: Center for Invasive Species and Ecosystem Health, Southeast Exotic Pest Plant. &lt;http://www.se-eppc.org/ky/list.htm&gt;</value>
+  </data>
+  <data name="Oklahoma_References" xml:space="preserve">
+    <value>Oklahoma Native Plant Society; Oklahoma Biological Survey; OSU Natural Resource Ecology and Management. Oklahoma Non-native Invasive Plant Species. Norman, OK: Oklahoma Invasive Plant Council. &lt;http://www.ok-invasive-plant-council.org/images/OKinvasivespp.pdf&gt;</value>
+  </data>
+  <data name="South_Carolina_References" xml:space="preserve">
+    <value>South Carolina Exotic Pest Plant Council. 2008. Invasives Species List 2008. Athens, GA: Center for Invasive Species and Ecosystem Health, Invasive.org. &lt;http://www.invasive.org/species/list.cfm?id=27&gt; </value>
+  </data>
+  <data name="California_References" xml:space="preserve">
+    <value>California Invasive Species Advisory Committee. 2010. The California Invasive Species List. CA: Invasive Species Council of California. &lt;http://www.iscc.ca.gov/docs/CaliforniaInvasiveSpeciesList.pdf&gt;</value>
+  </data>
+  <data name="New_Jersey_InText" xml:space="preserve">
+    <value>The Native Plant Society of New Jersey 2004; Ling 2003</value>
+  </data>
+  <data name="Tennessee_References" xml:space="preserve">
+    <value>Tennessee Exotic Pest Plant Council. 2009. TN-EPPC Invasive Exotic Pest Plants in Tennessee. Fairview, TN: Tennessee Exotic Pest Plant Council. &lt;http://www.tneppc.org/invasive_plants&gt; </value>
+  </data>
+  <data name="Vermont_InText" xml:space="preserve">
+    <value>Vermont Invasive Exotic Plant Committee 2005; The Nature Conservancy 2011</value>
+  </data>
+  <data name="Virginia_References" xml:space="preserve">
+    <value>Virginia Native Plant Society; Department of Conservation and Recreation. 2009. Invasive Alien Plant Species of Virginia. Richmond, VA: Department of Conservation and Recreation, Division of Natural Heritage. &lt;http://www.dcr.virginia.gov/natural_heritage/documents/invlist.pdf&gt;</value>
+  </data>
+  <data name="Kansas_References" xml:space="preserve">
+    <value>Kansas Native Plant Society. 2006. Invasive Plant Fact Sheet. R.L. McGregor Herbarium. University of Kansas. &lt;http://www.kansasnativeplantsociety.org/invasive_plants.htm&gt;</value>
+  </data>
+  <data name="Kansas_InText" xml:space="preserve">
+    <value>Kansas Native Plant Society 2006</value>
+  </data>
+  <data name="North_Carolina_InText" xml:space="preserve">
+    <value>Smith 2008; North Carolina Native Plant Society 2010</value>
+  </data>
+  <data name="Hawaii_InText" xml:space="preserve">
+    <value>Hawaii State Alien Species Coordinator 2012</value>
+  </data>
+  <data name="California_InText" xml:space="preserve">
+    <value>California Invasive Species Advisory Committee 2010</value>
+  </data>
+  <data name="Alaska_InText" xml:space="preserve">
+    <value>Alaska National Heritage Program 2014</value>
+  </data>
+  <data name="Montana_References" xml:space="preserve">
+    <value>North Dakota Department of Agriculture. Catalogue of Species. &lt;http://www.agdepartment.com/noxiousweeds/searchweeds.asp&gt;</value>
+  </data>
+  <data name="Illinois_InText" xml:space="preserve">
+    <value>Center for Invasive Species and Ecosystem Health 2009</value>
+  </data>
+  <data name="Montana_InText" xml:space="preserve">
+    <value>North Dakota Department of Agriculture</value>
+  </data>
+  <data name="Tennessee_InText" xml:space="preserve">
+    <value>Tennessee Exotic Pest Plant Council 2009</value>
+  </data>
+  <data name="Wyoming_References" xml:space="preserve">
+    <value>Colorado Weed Management Association. 2012. Colorado’s Noxious Weed List. Paonia, CO: Colorado Weed Management Association. &lt;http://www.cwma.org/noxweeds.html#list&gt;
+
+Nebraska Invasive Species Advisory Council. Invasive Plants of Nebraska. &lt;http://snr.unl.edu/invasives/pdfs/Invasive%20Plant%20Lists/NE%20Invasive%20Plants%20List%20Full%20Document%204-14-11.pdf&gt;</value>
+  </data>
+  <data name="South_Dakota_References" xml:space="preserve">
+    <value>Minnesota Department of Natural Resources. 2014a. Invasive Terrestrial Plants. MN: Minnesota Department of Natural Resources. &lt;http://www.dnr.state.mn.us/invasives/terrestrialplants/index.html&gt;
+
+Minnesota Department of Natural Resources. 2014b. Invasive Aquatic Plants. MN: Minnesota Department of Natural Resources. &lt;http://www.dnr.state.mn.us/invasives/aquaticplants/index.html&gt;
+
+Nebraska Invasive Species Advisory Council. Invasive Plants of Nebraska. &lt;http://snr.unl.edu/invasives/pdfs/Invasive%20Plant%20Lists/NE%20Invasive%20Plants%20List%20Full%20Document%204-14-11.pdf&gt;
+
+North Dakota Department of Agriculture. Catalogue of Species. &lt;http://www.agdepartment.com/noxiousweeds/searchweeds.asp&gt;</value>
+  </data>
+  <data name="Mississippi_References" xml:space="preserve">
+    <value>Winters, F.; Byrd, J. D.; Bryson, C.T. Mississippi's 10 Worst Invasive Weeds. University, MS: Mississippi State University Extension Services. &lt; http://www.se-eppc.org/pubs/m1194.pdf &gt;
+
+Mississippi Exotic Pest Plant Council. 2014. Noteworthy Exotic Plant Species of Mississippi. Athens, GA: Center for Invasive Species and Ecosystem Health, Southeast Exotic Pest Plant.&lt; http://www.se-eppc.org/mississippi/MS_EPPCList_Ranking_Guidelines.pdf&gt;</value>
+  </data>
+  <data name="North_Dakota_References" xml:space="preserve">
+    <value>North Dakota Department of Agriculture. Catalogue of Species. &lt;http://www.agdepartment.com/noxiousweeds/searchweeds.asp&gt;</value>
+  </data>
+  <data name="Rhode_Island_References" xml:space="preserve">
+    <value>Rhode Island Invasive Species Council; Rhode Island Natural History Survey. 2001. Invasives: List. RI: Rhode Island Natural History Survey. 
+&lt;http://rinhs.org/wp-content/uploads/2011/10/RIISC_2001list_wlogos.pdf&gt;</value>
+  </data>
+  <data name="Wisconsin_InText" xml:space="preserve">
+    <value>Wisconsin Department of Natural Resources 2012a; 2012b</value>
+  </data>
+  <data name="Minnesota_References" xml:space="preserve">
+    <value>Minnesota Department of Natural Resources. 2014a. Invasive Terrestrial Plants. MN: Minnesota Department of Natural Resources. &lt;http://www.dnr.state.mn.us/invasives/terrestrialplants/index.html&gt;
+
+Minnesota Department of Natural Resources. 2014b. Invasive Aquatic Plants. MN: Minnesota Department of Natural Resources. &lt;http://www.dnr.state.mn.us/invasives/aquaticplants/index.html&gt;</value>
+  </data>
+  <data name="Florida_InText" xml:space="preserve">
+    <value>Florida Exotic Pest Plant Council 2007</value>
+  </data>
+  <data name="Iowa_InText" xml:space="preserve">
+    <value>Forest Invasive Plants Resource Center 2006; Iowa Department of Natural Resources</value>
+  </data>
+  <data name="Louisiana_References" xml:space="preserve">
+    <value>Jardine, J.; Witsell, T. Working List of Non-native Invasive Plant Species of Concern to Natural Areas in Arkansas. Arkansas Native Plant Society. &lt;http://www.deltic.com/hunting/ANPS%20INVASIVES%20LIST.pdf&gt;
+
+Mississippi Exotic Pest Plant Council. 2014. Noteworthy Exotic Plant Species of Mississippi. Athens, GA: Center for Invasive Species and Ecosystem Health, Southeast Exotic Pest Plant.&lt; http://www.se-eppc.org/mississippi/MS_EPPCList_Ranking_Guidelines.pdf&gt;
+
+Watershed Protection Development Review. Central Texas Invasive Plants. Austin, TX: City of Austin, Watershed Protection Development Review. &lt;http://www.ci.austin.tx.us/growgreen/downloads/invasiveplants.pdf&gt;
+
+Winters, F.; Byrd, J. D.; Bryson, C.T. Mississippi's 10 Worst Invasive Weeds. University, MS: Mississippi State University Extension Services. &lt; http://www.se-eppc.org/pubs/m1194.pdf &gt;</value>
+  </data>
+  <data name="South_Dakota_InText" xml:space="preserve">
+    <value>Minnesota Department of Natural Resources 2014a; 2014b; Nebraska Invasive Species Advisory Council; North Dakota Department of Agriculture</value>
+  </data>
+  <data name="West_Virginia_InText" xml:space="preserve">
+    <value>Grafton 2003</value>
+  </data>
+  <data name="Washington_References" xml:space="preserve">
+    <value>Oregon Invasive Species Council. 2014. 100 Worst List. OR: Oregon Invasive Species Council. &lt;http://www.oregoninvasivespeciescouncil.org/media/100_worst.pdf&gt; </value>
+  </data>
+  <data name="New_Mexico_References" xml:space="preserve">
+    <value>Arizona Wildland Invasive Plant Working Group. 2005. Invasive Non-Native Plants That Threaten Wildlands in Arizona. Phoenix, AZ: Southwest Vegetation Management Association. &lt; http://www.swvma.org/InvasiveNon-NativePlantsThatThreatenWildlandsInArizona.pdf &gt;
+
+Colorado Weed Management Association. 2012. Colorado’s Noxious Weed List. Paonia, CO: Colorado Weed Management Association. &lt;http://www.cwma.org/noxweeds.html#list&gt;
+
+Watershed Protection Development Review. Central Texas Invasive Plants. Austin, TX: City of Austin, Watershed Protection Development Review. &lt;http://www.ci.austin.tx.us/growgreen/downloads/invasiveplants.pdf&gt;</value>
+  </data>
+  <data name="Maryland_InText" xml:space="preserve">
+    <value>Maryland Invasive Species Council 2014a; 2014b</value>
+  </data>
+  <data name="Minnesota_InText" xml:space="preserve">
+    <value>Minnesota Department of Natural Resources 2014a; 2014b</value>
+  </data>
+  <data name="Massachusetts_References" xml:space="preserve">
+    <value>Massachusetts Invasive Plant Advisory Group. 2005. The Evaluation of Non-Native Plant Species for Invasiveness in Massachusetts. MA: Massachusetts Invasive Plant Advisory Group. &lt;http://www.massnrc.org/mipag/docs/MIPAG_FINDINGS_FINAL_042005.pdf&gt;</value>
+  </data>
+  <data name="Oregon_References" xml:space="preserve">
+    <value>Oregon Invasive Species Council. 2014. 100 Worst List. OR: Oregon Invasive Species Council. &lt;http://www.oregoninvasivespeciescouncil.org/media/100_worst.pdf&gt; </value>
+  </data>
+  <data name="Colorado_InText" xml:space="preserve">
+    <value>Colorado Weed Management Association 2012</value>
+  </data>
+  <data name="Texas_InText" xml:space="preserve">
+    <value>Watershed Protection Development Review</value>
+  </data>
+  <data name="Colorado_References" xml:space="preserve">
+    <value>Colorado Weed Management Association. 2012. Colorado’s Noxious Weed List. Paonia, CO: Colorado Weed Management Association. &lt;http://www.cwma.org/noxweeds.html#list&gt;</value>
+  </data>
+  <data name="Nevada_InText" xml:space="preserve">
+    <value>Stoddard et al</value>
+  </data>
+  <data name="Illinois_References" xml:space="preserve">
+    <value>Center for Invasive Species and Ecosystem Health. 2009. Illinois Invasive Plant List. Athens, GA: Center for Invasive Species and Ecosystem Health, Invasive.org. &lt;http://www.invasive.org/species/list.cfm?id=152&gt;</value>
+  </data>
+  <data name="Wyoming_InText" xml:space="preserve">
+    <value>Colorado Weed Management Association 2012; Nebraska Invasive Species Advisory Council</value>
+  </data>
+  <data name="Kentucky_InText" xml:space="preserve">
+    <value>Kentucky Exotic Pest Plant Council 2013</value>
+  </data>
+  <data name="Alaska_References" xml:space="preserve">
+    <value>Alaska National Heritage Program. 2014. Non-Native Plant Species List. Anchorage, AK: University of Alaska Anchorage. &lt;http://aknhp.uaa.alaska.edu/botany/akepic/non-native-plant-species-list/#content&gt; </value>
+  </data>
+  <data name="Texas_References" xml:space="preserve">
+    <value>Watershed Protection Development Review. Central Texas Invasive Plants. Austin, TX: City of Austin, Watershed Protection Development Review. &lt;http://www.ci.austin.tx.us/growgreen/downloads/invasiveplants.pdf&gt; </value>
+  </data>
+  <data name="Maryland_References" xml:space="preserve">
+    <value>Maryland Invasive Species Council. 2014a. Invasive Species of Concern in Maryland: Terrestrial Plants. MD: Maryland Invasive Species Council. &lt;http://www.mdinvasivesp.org/list_terrestrial_plants.html&gt;
+
+Maryland Invasive Species Council. 2014b. Invasive Species of Concern in Maryland: Aquatic Plants. MD: Maryland Invasive Species Council. &lt;http://www.mdinvasivesp.org/list_aquatic_plants.html&gt;</value>
+  </data>
+  <data name="Indiana_References" xml:space="preserve">
+    <value>Indiana Cooperative Agricultural Pest Survey. 2007. Indiana's "Most Unwanted" Invasive Plant Pest List - FY 2007. IN: Purdue University, Purdue Extension Entomology. &lt;http://www.extension.entm.purdue.edu/CAPS/downloads/IndianaInvasivePlantPestList.pdf&gt;</value>
+  </data>
+  <data name="Pennsylvania_InText" xml:space="preserve">
+    <value>Department of Conservation and Natural Resources</value>
+  </data>
+  <data name="Connecticut_References" xml:space="preserve">
+    <value>Connecticut Invasive Plant Working Group. 2013. Invasive Plant List. CT: University of Connecticut. &lt;http://cipwg.uconn.edu/invasive_plant_list/&gt;</value>
+  </data>
+  <data name="New_York_InText" xml:space="preserve">
+    <value>New York State Department of Environmental Conservation</value>
+  </data>
+  <data name="New_Hampshire_References" xml:space="preserve">
+    <value>New Hampshire Department of Agriculture. 2012. Prohibited Invasive Plant Species Rule. Concord, NH: Department of Agriculture, Division of Plant Industry. &lt; http://www.agriculture.nh.gov/publications-forms/documents/prohibited-invasive-species.pdf&gt;
+
+New Hampshire Department of Agriculture. 2014. List of Restricted Species. Concord, NH: Department of Agriculture, Division of Plant Industry. &lt;http://www.agriculture.nh.gov/publications-forms/documents/restricted-invasive-species.pdf&gt;
+
+Cygan, D. 2011. New Hampshire Guide to Invasive Upland Plant Species. Concord, NH: Department of Agriculture, Division of Plant Industry.  &lt;http://www.agriculture.nh.gov/publications-forms/documents/upland-invasive-species.pdf&gt;</value>
+  </data>
+</root>

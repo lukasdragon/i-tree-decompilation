@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Eco.Domain" namespace="Eco.Domain.v5">
+  <class name="SubPlot" table="SubPlots">
+    <composite-id name="CompositeId" class="SubPlotId" access="field.camelcase-m-underscore">
+      <key-property name="Location" column="LocationName" access="field.camelcase-m-underscore"/>
+      <key-property name="Series" column="Series" access="field.camelcase-m-underscore"/>
+      <key-property name="Year" column="`Year`" access="field.camelcase-m-underscore"/>
+      <key-property name="Plot" column="PlotID" access="field.camelcase-m-underscore"/>
+      <key-property name="SubPlot" column="SubPlotID" access="field.camelcase-m-underscore"/>
+    </composite-id>
+    <set name="Trees" table="Trees" lazy="true" access="nosetter.camelcase-m-underscore" inverse="true" batch-size="20">
+      <key unique="true">
+        <column name="LocationName" not-null="true" length="50"/>
+        <column name="Series" not-null="true" length="255"/>
+        <column name="`Year`" not-null="true"/>
+        <column name="PlotID" not-null="true"/>
+        <column name="SubPlotID" not-null="true"/>
+      </key>
+      <one-to-many class="Tree"/>
+    </set>
+    <set name="Shrubs" table="Shrubs" lazy="true" access="nosetter.camelcase-m-underscore" inverse="true" batch-size="20">
+      <key unique="true">
+        <column name="LocationName" not-null="true"/>
+        <column name="Series" not-null="true"/>
+        <column name="`Year`" not-null="true"/>
+        <column name="PlotID" not-null="true"/>
+        <column name="SubPlotID" not-null="true"/>
+      </key>
+      <one-to-many class="Shrub"/>
+    </set>
+    <set name="FieldLandUses" table="FieldLandUses" lazy="true" access="nosetter.camelcase-m-underscore" inverse="true" batch-size="10">
+      <key unique="true">
+        <column name="LocationName" not-null="true"/>
+        <column name="Series" not-null="true"/>
+        <column name="`Year`" not-null="true"/>
+        <column name="PlotID" not-null="true"/>
+        <column name="SubPlotID" not-null="true"/>
+      </key>
+      <one-to-many class="FieldLandUse"/>
+    </set>
+    <set name="ReferenceObjects" table="ReferenceObjects" lazy="true" access="nosetter.camelcase-m-underscore" inverse="true" batch-size="5">
+      <key unique="true">
+        <column name="LocationName" not-null="true"/>
+        <column name="Series" not-null="true"/>
+        <column name="`Year`" not-null="true"/>
+        <column name="PlotID" not-null="true"/>
+        <column name="SubPlotID" not-null="true"/>
+      </key>
+      <one-to-many class="ReferenceObject"/>
+    </set>
+    <set name="Covers" table="GroundCovers" lazy="true" access="nosetter.camelcase-m-underscore" inverse="true" batch-size="10">
+      <key unique="true">
+        <column name="LocationName" not-null="true"/>
+        <column name="Series" not-null="true"/>
+        <column name="`Year`" not-null="true"/>
+        <column name="PlotID" not-null="true"/>
+        <column name="SubPlotID" not-null="true"/>
+      </key>
+      <one-to-many class="SubPlotCover"/>
+    </set>
+    <property name="Size" column="SubplotSize"/>
+    <property name="OffsetPoint" column="OffsetPoint"/>
+    <property name="Stake" column="Stake"/>
+    <property name="PercentTreeCover" column="PercentTreeCover"/>
+    <property name="PercentShrubCover" column="PercentShrubCover"/>
+    <property name="PercentPlantable" column="PercentPlantable"/>
+    <property name="PercentMeasured" column="PercentMeasured"/>
+    <property name="Comments" column="Comments"/>
+    <property name="Photo" column="Photo"/>
+    <many-to-one name="Plot" access="field.camelcase-m-underscore" update="false" insert="false">
+      <column name="LocationName" />
+      <column name="Series" />
+      <column name="Year" />
+      <column name="PlotID" />
+    </many-to-one>
+  </class>
+</hibernate-mapping>

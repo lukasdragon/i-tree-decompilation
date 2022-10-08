@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Program Files (x86)\i-Tree\EcoV6\Eco Util.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F62F6C25-FD51-4A1D-9312-35123E5EA0E3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Eco Util</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <ApplicationVersion>1.1.6757.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Eco.Util</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ADODB">
+      <HintPath>lib\ADODB.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.C1Zip.4">
+      <HintPath>lib\C1.C1Zip.4.dll</HintPath>
+    </Reference>
+    <Reference Include="DaveyTree.Controls">
+      <HintPath>lib\DaveyTree.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="DaveyTree.Core">
+      <HintPath>lib\DaveyTree.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DaveyTree.NHibernate">
+      <HintPath>lib\DaveyTree.NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="DaveyTree.Threading">
+      <HintPath>lib\DaveyTree.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="Eco.Domain">
+      <HintPath>lib\Eco.Domain.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.ADOX">
+      <HintPath>lib\Interop.ADOX.dll</HintPath>
+    </Reference>
+    <Reference Include="LocationSpecies.Domain">
+      <HintPath>lib\LocationSpecies.Domain.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>lib\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Retry">
+      <HintPath>lib\Spring.Retry.dll</HintPath>
+    </Reference>
+    <Reference Include="Streets.Domain">
+      <HintPath>lib\Streets.Domain.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>lib\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ValueTuple">
+      <HintPath>lib\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TreeEnergy">
+      <HintPath>lib\TreeEnergy.dll</HintPath>
+    </Reference>
+    <Reference Include="adblib">
+      <HintPath>lib\adblib.dll</HintPath>
+    </Reference>
+    <Reference Include="mdblib">
+      <HintPath>lib\mdblib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Eco Util_ProcessedByFody.cs" />
+    <Compile Include="AttributeNotFoundException.cs" />
+    <Compile Include="AttributePropertyComparer`2.cs" />
+    <Compile Include="ChildComparer.cs" />
+    <Compile Include="ChildComparer`2.cs" />
+    <Compile Include="ClassifierPartitionTableComparer.cs" />
+    <Compile Include="DataAnalyzer.cs" />
+    <Compile Include="IDataBindingList.cs" />
+    <Compile Include="DataBindingList`1.cs" />
+    <Compile Include="DataGridViewManager.cs" />
+    <Compile Include="DataSource.cs" />
+    <Compile Include="FileFormat.cs" />
+    <Compile Include="SourceType.cs" />
+    <Compile Include="Classifiers.cs" />
+    <Compile Include="EnergyType.cs" />
+    <Compile Include="EnergyUse.cs" />
+    <Compile Include="EstimateDataTypes.cs" />
+    <Compile Include="EstimateTypeEnum.cs" />
+    <Compile Include="EquationTypes.cs" />
+    <Compile Include="Units.cs" />
+    <Compile Include="EstimateUtil.cs" />
+    <Compile Include="ReverseComparer`1.cs" />
+    <Compile Include="FieldFormat.cs" />
+    <Compile Include="FieldFormat`1.cs" />
+    <Compile Include="FieldMap.cs" />
+    <Compile Include="FieldMapList.cs" />
+    <Compile Include="FieldSpec.cs" />
+    <Compile Include="FieldSpec`1.cs" />
+    <Compile Include="FieldConstraint.cs" />
+    <Compile Include="FileSignature.cs" />
+    <Compile Include="IEBrowser.cs" />
+    <Compile Include="ImportedDataList.cs" />
+    <Compile Include="ImportSource.cs" />
+    <Compile Include="ImportSpec.cs" />
+    <Compile Include="ImportSpec`1.cs" />
+    <Compile Include="InputSession.cs" />
+    <Compile Include="NationFeatures.cs" />
+    <Compile Include="ObjectComparer.cs" />
+    <Compile Include="ProgressEventArgs.cs" />
+    <Compile Include="PropertyNotFoundException.cs" />
+    <Compile Include="PropertyComparer.cs" />
+    <Compile Include="PropertyComparer`1.cs" />
+    <Compile Include="RecordsetRow.cs" />
+    <Compile Include="RecordsetView.cs" />
+    <Compile Include="RejectedDataList.cs" />
+    <Compile Include="IExecutionHandler.cs" />
+    <Compile Include="RetryExecutionHandler.cs" />
+    <Compile Include="Resolution.cs" />
+    <Compile Include="Conflict.cs" />
+    <Compile Include="ConflictEventArgs.cs" />
+    <Compile Include="Strings.cs" />
+    <Compile Include="Submitter.cs" />
+    <Compile Include="Phone.cs" />
+    <Compile Include="TaskManager.cs" />
+    <Compile Include="WaitCursor.cs" />
+    <Compile Include="YearHelper.cs" />
+    <Compile Include="Views\FlatPlotView.cs" />
+    <Compile Include="Views\FlatTreeView.cs" />
+    <Compile Include="Views\PlotStrata.cs" />
+    <Compile Include="Views\SpeciesView.cs" />
+    <Compile Include="Tasks\ATask`1.cs" />
+    <Compile Include="Tasks\ATask.cs" />
+    <Compile Include="Tasks\ConvertV5Task.cs" />
+    <Compile Include="Tasks\CopyProjectTask.cs" />
+    <Compile Include="Tasks\CreateProjectTask.cs" />
+    <Compile Include="Tasks\ITask`1.cs" />
+    <Compile Include="Tasks\ITask.cs" />
+    <Compile Include="Tasks\ReinventoryTask.cs" />
+    <Compile Include="Services\LocationService.cs" />
+    <Compile Include="Services\PestService.cs" />
+    <Compile Include="Services\SpeciesService.cs" />
+    <Compile Include="Services\WeatherService.cs" />
+    <Compile Include="Resources\Strings.cs" />
+    <Compile Include="Queries\AccessQuerySupplier.cs" />
+    <Compile Include="Queries\SASAccessQuerySupplier.cs" />
+    <Compile Include="Queries\SASSQLiteQuerySupplier.cs" />
+    <Compile Include="Queries\SQLiteQuerySupplier.cs" />
+    <Compile Include="Queries\SQLite\EstimateUtilProvider.cs" />
+    <Compile Include="Queries\SQLite\SASUtilProvider.cs" />
+    <Compile Include="Queries\Interfaces\IEstimateUtilProvider.cs" />
+    <Compile Include="Queries\Interfaces\IQuerySupplier.cs" />
+    <Compile Include="Queries\Interfaces\SASIQuerySupplier.cs" />
+    <Compile Include="Queries\Interfaces\SASIUtilProvider.cs" />
+    <Compile Include="Queries\Access\EstimateUtilProvider.cs" />
+    <Compile Include="Queries\Access\SASUtilProvider.cs" />
+    <Compile Include="Properties\Settings.cs" />
+    <Compile Include="Processors\BuildingProcessor.cs" />
+    <Compile Include="Processors\PlotGroundCoverProcessor.cs" />
+    <Compile Include="Processors\PlotLandUseProcessor.cs" />
+    <Compile Include="Processors\PlotProcessor.cs" />
+    <Compile Include="Processors\Processor.cs" />
+    <Compile Include="Processors\ReferenceObjectProcessor.cs" />
+    <Compile Include="Processors\ShrubProcessor.cs" />
+    <Compile Include="Processors\SimpleUpdater.cs" />
+    <Compile Include="Processors\StemProcessor.cs" />
+    <Compile Include="Processors\TreeProcessor.cs" />
+    <Compile Include="Processors\UpdateStatus.cs" />
+    <Compile Include="Processors\Updater.cs" />
+    <Compile Include="Forecast\Forecast.cs" />
+    <Compile Include="Forecast\Stage.cs" />
+    <Compile Include="Forecast\ForecastEventArgs.cs" />
+    <Compile Include="Forecast\ForecastEventHandler.cs" />
+    <Compile Include="Forecast\ForecastFailedException.cs" />
+    <Compile Include="Forecast\ForecastSimulation.cs" />
+    <Compile Include="Forecast\ModelEquation.cs" />
+    <Compile Include="Forecast\PollutantCalculation.cs" />
+    <Compile Include="Forecast\PopulateResults.cs" />
+    <Compile Include="Forecast\TaxonModel.cs" />
+    <Compile Include="Convert\ConversionMap.cs" />
+    <Compile Include="Convert\SASProgressArg.cs" />
+    <Compile Include="Convert\DBHCrownSize.cs" />
+    <Compile Include="Convert\DefaultTreeData.cs" />
+    <Compile Include="Convert\PlotData.cs" />
+    <Compile Include="Convert\StreetsConversion.cs" />
+    <Compile Include="Convert\v6Config.cs" />
+    <Compile Include="Convert\YearData.cs" />
+    <Compile Include="Constraints\AConstraint.cs" />
+    <Compile Include="Constraints\AndConstraint.cs" />
+    <Compile Include="Constraints\EqConstraint.cs" />
+    <Compile Include="Constraints\GtConstraint.cs" />
+    <Compile Include="Constraints\GtEqConstraint.cs" />
+    <Compile Include="Constraints\LtConstraint.cs" />
+    <Compile Include="Constraints\LtEqConstraint.cs" />
+    <Compile Include="Constraints\OrConstraint.cs" />
+    <Compile Include="Cache\CacheDownloadForm.cs" />
+    <Compile Include="Cache\EcoCache.cs" />
+    <Compile Include="Attributes\LocalizedDescriptionAttribute.cs" />
+    <Compile Include="Eco Util\_003C_003EPropertyChangedEventArgs.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Cache\CacheDownloadForm.resx" />
+    <EmbeddedResource Include="Forecast\Forecast.resx" />
+    <EmbeddedResource Include="Queries\Access\EstimateUtil\hbm.xml" />
+    <EmbeddedResource Include="Queries\Access\Forecast\hbm.xml" />
+    <EmbeddedResource Include="Queries\Access\Reports\hbm.xml" />
+    <EmbeddedResource Include="Queries\Access\SAS\hbm.xml" />
+    <EmbeddedResource Include="Queries\Access\Species\hbm.xml" />
+    <EmbeddedResource Include="Queries\SQLite\EstimateUtil\hbm.xml" />
+    <EmbeddedResource Include="Queries\SQLite\Forecast\hbm.xml" />
+    <EmbeddedResource Include="Queries\SQLite\Reports\hbm.xml" />
+    <EmbeddedResource Include="Queries\SQLite\SAS\hbm.xml" />
+    <EmbeddedResource Include="Queries\SQLite\Species\hbm.xml" />
+    <EmbeddedResource Include="Resources\Strings.resx" />
+    <EmbeddedResource Include="Strings.resx" />
+    <EmbeddedResource Include="TemplateDB.sqlite3" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

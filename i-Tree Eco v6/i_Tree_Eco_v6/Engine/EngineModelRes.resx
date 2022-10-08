@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SppCodeNotExist" xml:space="preserve">
+    <value>does not exist in the LocationSpecies database</value>
+  </data>
+  <data name="NegativeOrZeroPlotSizeMsg" xml:space="preserve">
+    <value>One or more plots have a negative or zero size.
+Please correct them and run again.</value>
+  </data>
+  <data name="EngineProgressForm_CalculatingModelBTree" xml:space="preserve">
+    <value>Calculating UFORE B for trees ...</value>
+  </data>
+  <data name="EngineProgressForm_CalculatingModelITree" xml:space="preserve">
+    <value>Calculating UFORE water interception for tree ...</value>
+  </data>
+  <data name="EngineProgressForm_CalculatingModelDTree" xml:space="preserve">
+    <value>Calculating UFORE D for trees ...</value>
+  </data>
+  <data name="EngineProgressForm_btnCancel_CancelText" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="EngineProgressForm_CalculatingModelBShrub" xml:space="preserve">
+    <value>Calculating UFORE B for shrub ...</value>
+  </data>
+  <data name="LocationDetailsNotSet" xml:space="preserve">
+    <value>The project is lack of detailed location (such as state, county or city). Please go to Project Configuration --&gt; Project Definition --&gt;Location tab to set it properly.</value>
+  </data>
+  <data name="EngineProgressForm_CalculatingModelIShrub" xml:space="preserve">
+    <value>Calculating UFORE water interception for shrub ...</value>
+  </data>
+  <data name="EngineProgressForm_CalculatingModelDShrub" xml:space="preserve">
+    <value>Calculating UFORE D for shrub ...</value>
+  </data>
+  <data name="EngineProgressForm_LoadingSingleTreeResult" xml:space="preserve">
+    <value>Loading results for single trees ...</value>
+  </data>
+  <data name="PollutionYearMustBeWeatherYearMsg" xml:space="preserve">
+    <value>The pollutant year must be the same as weather data year. Please go to Project Configuration to reconfig it</value>
+  </data>
+  <data name="EngineProgressForm_btnCancel_DoneText" xml:space="preserve">
+    <value>Done</value>
+  </data>
+  <data name="EngineProgressForm_LoadingPollutionResults" xml:space="preserve">
+    <value>Loading pollution results ...</value>
+  </data>
+  <data name="EngineProgressForm_Start" xml:space="preserve">
+    <value>Starting ...</value>
+  </data>
+  <data name="EngineProgressForm_Title" xml:space="preserve">
+    <value>Processing Data</value>
+  </data>
+  <data name="PollutionYearMissingMsg" xml:space="preserve">
+    <value>The year for pollution data is not configured. 
+
+Please go to the Project Configuration to set the year for pollution data.</value>
+  </data>
+  <data name="EngineProgressForm_LoadingEstimatingResults" xml:space="preserve">
+    <value>Loading estimated results ...</value>
+  </data>
+  <data name="EngineProgressForm_CancellingWord" xml:space="preserve">
+    <value>Cancelling ...</value>
+  </data>
+  <data name="PollutionYearMustBeMsg" xml:space="preserve">
+    <value>Please go to Project Configuration to reconfig the pollution data year. The pollution data year must be </value>
+  </data>
+  <data name="ProcessingErrorDisplay" xml:space="preserve">
+    <value>There are some errors in the data processing. Please run the Model Notes report in the Report menu to see details.</value>
+  </data>
+  <data name="inCompletePlotsDeletionMsg" xml:space="preserve">
+    <value>plot(s) are not marked as "completed". These non-completed plots will not be sent to server for processing.</value>
+  </data>
+  <data name="SppCodeNotSppGenusClass" xml:space="preserve">
+    <value>is not a code for species, genus or class</value>
+  </data>
+  <data name="EngineProgressForm_LoadingDBIdata" xml:space="preserve">
+    <value>Inserting UFORE D, B and water interception results ...</value>
+  </data>
+  <data name="EngineProgressForm_CalculatingPollution" xml:space="preserve">
+    <value>Calculating pollution effects ...</value>
+  </data>
+  <data name="EngineTitle" xml:space="preserve">
+    <value>Run Model</value>
+  </data>
+  <data name="NonAppropriateInternationalCountryWarningMessage" xml:space="preserve">
+    <value>Currently, our model only supports projects within Australia, Canada, the United Kingdom and the United States of America.</value>
+  </data>
+  <data name="EngineProgressForm_ParameterCalculating_Text" xml:space="preserve">
+    <value>Parameter calculating ...</value>
+  </data>
+  <data name="EngineProgressForm_Estimating" xml:space="preserve">
+    <value>Statistical estimating ...</value>
+  </data>
+  <data name="NegtiveOrZeroStrataSizeMsg" xml:space="preserve">
+    <value>One or more strata have a negative or zero size.
+Please correct them and run again.</value>
+  </data>
+</root>

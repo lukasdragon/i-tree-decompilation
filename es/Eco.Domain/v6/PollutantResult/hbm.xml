@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Eco.Domain" namespace="Eco.Domain.v6" auto-import="false">
+  <class name="PollutantResult" table="EcoForecastPollutantResults">
+    <cache usage="read-write"/>
+    <id name="Guid" column="PollutantResultKey" generator="guid"/>
+    <natural-id mutable="true">
+      <many-to-one name="Forecast" column="ForecastKey" not-null="true"/>
+      <property name="ForecastedYear" column="ForecastedYear" not-null="true"/>
+      <property name="PollutantId" column="PollutantId" not-null="true"/>
+    </natural-id>
+
+    <property name="Amount" column="AmountRemoval" not-null="false"/>
+    <property name="Value" column="DollarValue" not-null="false"/>
+    
+  </class>
+</hibernate-mapping>

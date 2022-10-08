@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-configuration xmlns="urn:nhibernate-configuration-2.2">
+	<session-factory name="Pest">
+		<property name="connection.provider">NHibernate.Connection.DriverConnectionProvider</property>
+		<property name="dialect">SqlWeb.Dialect.SqlWebDialect, SqlWeb</property>
+		<property name="connection.driver_class">SqlWeb.Driver.SqlWebDataDriver, SqlWeb</property>
+		<property name="cache.provider_class">SQLiteCache.SQLiteCacheProvider, SQLiteCache</property>
+		<property name="cache.use_second_level_cache">true</property>
+		<property name="cache.default_expiration">10368000</property>
+		<property name="generate_statistics">true</property>
+		<property name="default_batch_fetch_size">200</property>
+		<property name="default_flush_mode">Manual</property>
+		<property name="cache.use_query_cache">true</property>
+		<!--<property name="show_sql">true</property>-->
+
+		<mapping assembly="IPED.Domain"/>
+
+		<class-cache class="IPED.Domain.Pest" include="all" usage="read-only"/>
+		<class-cache class="IPED.Domain.Lookup" include="all" usage="read-only"/>
+	</session-factory>
+</hibernate-configuration>

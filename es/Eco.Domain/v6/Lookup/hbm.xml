@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Eco.Domain" namespace="Eco.Domain.v6" auto-import="false">
+  <class name="Lookup" table="EcoLookups" abstract="true" dynamic-update="true">
+    <cache usage="read-write"/>
+    <id name="Guid" column="LookupKey">
+      <generator class="guid"/>
+    </id>
+    <discriminator column="`Field`" not-null="true" force="true" length="10"/>
+    <natural-id mutable="true">
+      <many-to-one name="Year" column="YearKey" not-null="true"/>
+      <property name="Id" column="Code" not-null="true"/>
+    </natural-id>
+    <version name="Revision" column="Revision" unsaved-value="0"/>
+    <property name="Description" column="Description" length="50"/>
+    <subclass name="LocSite" discriminator-value="LOCSITE">
+      <set name="Trees" table="EcoTrees" lazy="true" inverse="true">
+        <key unique="true">
+          <column name="LocSite" not-null="true"/>
+        </key>
+        <one-to-many class="Tree"/>
+      </set>
+    </subclass>
+    <subclass name="MaintRec" discriminator-value="MTNCREC">
+      <set name="Trees" table="EcoTrees" lazy="true" inverse="true">
+        <key unique="true">
+          <column name="MtncRec" not-null="true"/>
+        </key>
+        <one-to-many class="Tree"/>
+      </set>
+    </subclass>
+    <subclass name="MaintTask" discriminator-value="MTNCTASK">
+      <set name="Trees" table="EcoTrees" lazy="true" inverse="true">
+        <key unique="true">
+          <column name="MtncTask" not-null="true"/>
+        </key>
+        <one-to-many class="Tree"/>
+      </set>
+    </subclass>
+    <subclass name="OtherOne" discriminator-value="OTHER1">
+      <set name="Trees" table="EcoTrees" lazy="true" inverse="true">
+        <key unique="true">
+          <column name="OtherOne" not-null="true"/>
+        </key>
+        <one-to-many class="Tree"/>
+      </set>
+    </subclass>
+    <subclass name="OtherTwo" discriminator-value="OTHER2">
+      <set name="Trees" table="EcoTrees" lazy="true" inverse="true">
+        <key unique="true">
+          <column name="OtherTwo" not-null="true"/>
+        </key>
+        <one-to-many class="Tree"/>
+      </set>
+    </subclass>
+    <subclass name="OtherThree" discriminator-value="OTHER3">
+      <set name="Trees" table="EcoTrees" lazy="true" inverse="true">
+        <key unique="true">
+          <column name="OtherThree" not-null="true"/>
+        </key>
+        <one-to-many class="Tree"/>
+      </set>
+    </subclass>
+    <subclass name="Sidewalk" discriminator-value="SIDEWALK">
+      <set name="Trees" table="EcoTrees" lazy="true" inverse="true">
+        <key unique="true">
+          <column name="SwDamg" not-null="true"/>
+        </key>
+        <one-to-many class="Tree"/>
+      </set>
+    </subclass>
+    <subclass name="WireConflict" discriminator-value="WIRECNFLT">
+      <set name="Trees" table="EcoTrees" lazy="true" inverse="true">
+        <key unique="true">
+          <column name="WireConflict" not-null="true"/>
+        </key>
+        <one-to-many class="Tree"/>
+      </set>
+    </subclass>
+    <subclass name="SiteType" discriminator-value="SITETYPE">
+      <set name="Trees" table="EcoTrees" lazy="true" inverse="true">
+        <key unique="true">
+          <column name="SiteType" not-null="true"/>
+        </key>
+        <one-to-many class="Tree"/>
+      </set>
+    </subclass>
+  </class>
+</hibernate-mapping>

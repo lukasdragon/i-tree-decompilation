@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Eco.Domain" namespace="Eco.Domain.v6" auto-import="false">
+  <class name="YearlyCost" table="EcoYearlyCosts" abstract="true" dynamic-update="true">
+    <id name="Guid" column="YearlyCostKey">
+      <generator class="guid"/>
+    </id>
+    <natural-id mutable="true">
+      <many-to-one name="Year" column="YearKey" not-null="true"/>
+      <property name="Public" column="`Public`" not-null="true"/>
+    </natural-id>
+    <version name="Revision" column="Revision" unsaved-value="0"/>
+    <property name="Planting" column="Planting"/>
+    <property name="Pruning" column="Pruning"/>
+    <property name="TreeRemoval" column="TreeRemoval"/>
+    <property name="PestControl" column="PestControl"/>
+    <property name="Irrigation" column="Irrigation"/>
+    <property name="Repair" column="Repair"/>
+    <property name="CleanUp" column="CleanUp"/>
+    <property name="Legal" column="Legal"/>
+    <property name="Administrative" column="Admin"/>
+    <property name="Inspection" column="Inspection"/>
+    <property name="Other" column="Other"/>
+  </class>
+</hibernate-mapping>

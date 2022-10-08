@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Eco.Domain" namespace="Eco.Domain.v6" auto-import="false">
+  <class name="Project" table="EcoProjects" dynamic-update="true">
+    <cache usage="read-write"/>
+    <id name="Guid" column="ProjectKey">
+      <generator class="guid"/>
+    </id>
+    <natural-id mutable="true">
+      <property name="Name" column="ProjectName" length="50"/>
+    </natural-id>
+    <version name="Revision" column="Revision" unsaved-value="0"/>
+    <set name="Locations" table="EcoProjectLocations" lazy="true" inverse="true" cascade="merge,save-update,evict">
+      <key unique="true">
+        <column name="ProjectKey" not-null="true"/>
+      </key>
+      <one-to-many class="ProjectLocation"/>
+    </set>
+    <set name="Series" table="Series" lazy="true" inverse="true" cascade="merge,save-update,evict">
+      <key unique="true">
+        <column name="ProjectKey" not-null="true"/>
+      </key>
+      <one-to-many class="Series"/>
+    </set>
+    <property name="LocationId" column="LocationId" not-null="true"/>
+    <property name="NationCode" column="NationCode" not-null="true" length="3"/>
+    <property name="PrimaryPartitionCode" column="PrimaryPartitionCode" not-null="true" length="2"/>
+    <property name="SecondaryPartitionCode" column="SecondaryPartitionCode" not-null="true" length="3"/>
+    <property name="TertiaryPartitionCode" column="TertiaryPartitionCode" not-null="true" length="5"/>
+    <property name="UFOREVersion" column="UFOREShellVersion" length="15"/>
+    <property name="Comments" column="Comments" length="255"/>
+  </class>
+</hibernate-mapping>

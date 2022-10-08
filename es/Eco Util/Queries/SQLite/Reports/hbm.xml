@@ -1,0 +1,510 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="Eco.Domain.v6" assembly="Eco.Domain" auto-import="false">
+	<sql-query name="AirQualityHealthImpactsAndValues">
+        <return-scalar column="HealthFactor" type="string"/>
+        <return-scalar column="NO2Inc" type="double"/>
+        <return-scalar column="NO2Val" type="double"/>
+        <return-scalar column="O3Inc" type="double"/>
+        <return-scalar column="O3Val" type="double"/>
+        <return-scalar column="PM25Inc" type="double"/>
+        <return-scalar column="PM25Val" type="double"/>
+        <return-scalar column="SO2Inc" type="double"/>
+        <return-scalar column="SO2Val" type="double"/>
+		<![CDATA[
+            SELECT 
+                HealthFactor,    
+                IIF(NO2Incidence  <> -1, NO2Incidence,  null) AS NO2Inc, 
+                IIF(NO2Value      <> -1, NO2Value,      null) AS NO2Val,
+                IIF(O3Incidence   <> -1, O3Incidence,   null) AS O3Inc,
+                IIF(O3Value       <> -1, O3Value,       null) AS O3Val,
+                IIF(PM25Incidence <> -1, PM25Incidence, null) AS PM25Inc,
+                IIF(PM25Value     <> -1, PM25Value,     null) AS PM25Val,
+                IIF(SO2Incidence  <> -1, SO2Incidence,  null) AS SO2Inc,
+                IIF(SO2Value      <> -1, SO2Value,      null) AS SO2Val
+            FROM BenMapTable
+            WHERE
+                YearGuid = :y
+                AND TreeShrub = :TreeShrub
+            ORDER BY HealthFactor
+		]]>
+	</sql-query>
+    <sql-query name="IndividualTreeAvoidedRunoff">
+        <return-scalar column="PlotId" type="Int32"/>
+        <return-scalar column="TreeId" type="Int32"/>
+        <return-scalar column="SppScientificName" type="string"/>
+        <return-scalar column="SppCommonName" type="string"/>
+        <return-scalar column="LeafArea" type="double"/>
+        <return-scalar column="PotentialEvapotranspiration" type="double"/>
+        <return-scalar column="Evaporation" type="double"/>
+        <return-scalar column="Transpiration" type="double"/>
+        <return-scalar column="WaterInterception" type="double"/>
+        <return-scalar column="AvoidedRunoff" type="double"/>
+        <return-scalar column="xCoordinate" type="double"/>
+        <return-scalar column="yCoordinate" type="double"/>
+		<return-scalar column="Comments" type="string"/>
+        <return-scalar column="UserId" type="string"/>
+        <![CDATA[
+             SELECT 
+                ITE.PlotId AS PlotId, 
+                ITE.TreeId AS TreeId, 
+                ITE.SppScientificName AS SppScientificName, 
+                ITE.SppCommonName AS SppCommonName, 
+                ITE.LeafArea AS LeafArea, 
+                ITE.PotentialEvapotranspiration AS PotentialEvapotranspiration, 
+                ITE.Evaporation AS Evaporation, 
+                ITE.Transpiration AS Transpiration, 
+                ITE.WaterInterception AS WaterInterception, 
+                ITE.AvoidedRunoff AS AvoidedRunoff,
+                EcoTrees.xCoordinate AS xCoordinate,
+                EcoTrees.yCoordinate AS yCoordinate,  
+                EcoTrees.Comments AS Comments,  
+                EcoTrees.UserId AS UserId 
+            FROM
+                IndividualTreeEffects AS ITE INNER JOIN 
+                    (EcoPlots 
+                        INNER JOIN EcoTrees 
+                            ON EcoPlots.PlotKey = EcoTrees.PlotKey
+                    )
+                ON (ITE.TreeId = EcoTrees.TreeId) 
+                AND (ITE.PlotId = EcoPlots.PlotId) 
+            WHERE 
+                ITE.YearGuid = :y 
+            ORDER BY 
+                ITE.PlotId, 
+                ITE.TreeId 
+		]]>
+    </sql-query>    
+    <sql-query name="IndividualTreeBenefitsSummary">
+		<return-scalar column="Comments" type="string"/>
+        <return-scalar column="xCoordinate" type="double"/>
+        <return-scalar column="yCoordinate" type="double"/>
+        <return-scalar column="UserId" type="string"/>
+        <return-scalar column="PlotId" type="Int32"/>
+        <return-scalar column="TreeId" type="Int32"/>
+        <return-scalar column="SppScientificName" type="string"/>
+        <return-scalar column="SppCommonName" type="string"/>
+        <return-scalar column="DBH" type="double"/>
+        <return-scalar column="CarbonStorage" type="double"/>
+        <return-scalar column="GrossCarbonSeq" type="double"/>
+        <return-scalar column="TreeValue" type="double"/>
+        <return-scalar column="AvoidedRunoff" type="double"/>
+        <return-scalar column="CORemoved" type="double"/>
+        <return-scalar column="O3Removed" type="double"/>
+        <return-scalar column="NO2Removed" type="double"/>
+        <return-scalar column="SO2Removed" type="double"/>
+		<return-scalar column="PM10Removed" type="double"/>
+        <return-scalar column="PM25Removed" type="double"/>
+        <![CDATA[
+             SELECT 
+                    EcoTrees.Comments AS Comments,
+                    EcoTrees.xCoordinate AS xCoordinate,
+                    EcoTrees.yCoordinate AS yCoordinate,
+                    EcoTrees.UserId AS UserId,
+                    ITE.PlotId AS PlotId,
+                    ITE.TreeId AS TreeId,
+                    ITE.SppScientificName AS SppScientificName, 
+                    ITE.SppCommonName AS SppCommonName, 
+                    ITE.DBH AS DBH, 
+                    ITE.CarbonStorage AS CarbonStorage, 
+                    ITE.GrossCarbonSeq AS GrossCarbonSeq,
+                    ITE.TreeValue AS TreeValue, 
+                    ITE.AvoidedRunoff AS AvoidedRunoff, 
+                    ITPE.CORemoved AS CORemoved, 
+                    ITPE.O3Removed AS O3Removed, 
+                    ITPE.NO2Removed AS NO2Removed,
+                    ITPE.SO2Removed AS SO2Removed,
+                    ITPE.PM10Removed AS PM10Removed,
+                    ITPE.PM25Removed AS PM25Removed 
+                FROM 
+                    (IndividualTreeEffects AS ITE  
+                        INNER JOIN IndividualTreePollutionEffects AS ITPE 
+                           ON (ITE.TreeId = ITPE.TreeId) 
+                           AND (ITE.PlotId = ITPE.PlotId) 
+                           AND (ITE.YearGuid = ITPE.YearGuid)
+                    ) 
+                    INNER JOIN 
+                    (EcoPlots 
+                        INNER JOIN EcoTrees 
+                            ON EcoPlots.PlotKey = EcoTrees.PlotKey
+                    )
+                    ON (ITPE.TreeId = EcoTrees.TreeId) 
+                    AND (ITPE.PlotId = EcoPlots.PlotId) 
+                WHERE 
+                    ITE.YearGuid = :y 
+                ORDER BY 
+                    ITE.PlotID, 
+                    ITE.TreeID
+		]]>
+    </sql-query>
+    <sql-query name="IndividualTreeBioemissions">
+        <return-scalar column="PlotId" type="Int32"/>
+        <return-scalar column="TreeId" type="Int32"/>
+        <return-scalar column="SppScientificName" type="string"/>
+        <return-scalar column="SppCommonName" type="string"/>
+        <return-scalar column="ISOPRENE" type="double"/>
+        <return-scalar column="MONOTERP" type="double"/>
+        <return-scalar column="TotalVOC" type="double"/>
+        <return-scalar column="xCoordinate" type="double"/>
+        <return-scalar column="yCoordinate" type="double"/>
+        <return-scalar column="Comments" type="string"/>
+        <return-scalar column="UserId" type="string"/>
+        <![CDATA[
+            SELECT 
+                ITPF.PlotId AS PlotId, 
+                ITPF.TreeId AS TreeId, 
+                ITPF.SppScientificName AS SppScientificName, 
+                ITPF.SppCommonName AS SppCommonName,
+                ITPF.ISOPRENE AS ISOPRENE, 
+                ITPF.MONOTERP AS MONOTERP, 
+                (ITPF.ISOPRENE + ITPF.MONOTERP) AS TotalVOC ,
+                EcoTrees.xCoordinate AS xCoordinate,
+                EcoTrees.yCoordinate AS yCoordinate,
+                EcoTrees.Comments AS Comments,  
+                EcoTrees.UserId AS UserId 
+            FROM 
+                IndividualTreePollutionEffects AS ITPF INNER JOIN 
+                        (EcoPlots
+                            INNER JOIN EcoTrees
+                                ON EcoPlots.PlotKey = EcoTrees.PlotKey
+                        )
+                    ON(ITPF.TreeId = EcoTrees.TreeId)
+                    AND(ITPF.PlotId = EcoPlots.PlotId)
+            WHERE
+                YearGuid = :y 
+            ORDER BY 
+                ITPF.PlotID,
+                ITPF.TreeID
+		]]>
+    </sql-query>
+    <sql-query name="IndividualTreeCharacteristics">
+        <return-scalar column="PlotId" type="Int32"/>
+        <return-scalar column="TreeId" type="Int32"/>
+        <return-scalar column="SppScientificName" type="string"/>
+        <return-scalar column="SppCommonName" type="string"/>
+        <return-scalar column="DBH" type="double"/>
+        <return-scalar column="Height" type="double"/>
+        <return-scalar column="CrownHeight" type="double"/>
+        <return-scalar column="CrownWidth" type="double"/>
+        <return-scalar column="GroundArea" type="double"/>
+        <return-scalar column="TreeCondition" type="string"/>
+        <return-scalar column="LeafArea" type="double"/>
+        <return-scalar column="LeafBioMass" type="double"/>
+        <return-scalar column="LeafAreaIndex" type="double"/>
+        <return-scalar column="BasalArea" type="double"/>
+        <return-scalar column="StreetTree" type="string"/>
+        <return-scalar column="NativeToState" type="string"/>
+        <return-scalar column="CityManaged" type="string"/>
+        <return-scalar column="xCoordinate" type="double"/>
+        <return-scalar column="yCoordinate" type="double"/>
+        <return-scalar column="Comments" type="string"/>
+        <return-scalar column="UserId" type="string"/>
+        <![CDATA[
+            SELECT 
+                ITE.PlotId AS PlotId, 
+                ITE.TreeId AS TreeId, 
+                ITE.SppScientificName AS SppScientificName, 
+                ITE.SppCommonName AS SppCommonName,
+                ITE.DBH AS DBH,
+                ITE.Height AS Height,
+                
+                EcoTrees.TreeHeightLiveTop - EcoTrees.HeighttoCrownBase 
+                    AS CrownHeight,
+
+                IIF(
+                    EcoTrees.CrownWidth1 <> -1 AND EcoTrees.CrownWidth2 <> -1, 
+                    (EcoTrees.CrownWidth1 + EcoTrees.CrownWidth2) / 2,  
+                    0
+                ) AS CrownWidth, 
+                    
+                ITE.GroundArea AS GroundArea, 
+                ITE.TreeCondition AS TreeCondition, 
+                ITE.LeafArea AS LeafArea, 
+                ITE.LeafBioMass AS LeafBioMass, 
+                ITE.LeafAreaIndex AS LeafAreaIndex,
+                ITE.BasalArea AS BasalArea, 
+                ITE.StreetTree AS StreetTree,
+                ITE.NativeToState AS NativeToState,
+                EcoTrees.CityManaged AS CityManaged,
+                EcoTrees.xCoordinate AS xCoordinate,
+                EcoTrees.yCoordinate AS yCoordinate,  
+                EcoTrees.Comments AS Comments,  
+                EcoTrees.UserId AS UserId 
+            FROM 
+                IndividualTreeEffects AS ITE INNER JOIN 
+                        (EcoPlots
+                            INNER JOIN EcoTrees
+                                ON EcoPlots.PlotKey = EcoTrees.PlotKey
+                        )
+                    ON(ITE.TreeId = EcoTrees.TreeId)
+                    AND(ITE.PlotId = EcoPlots.PlotId)
+            WHERE 
+                YearGuid = :y 
+            ORDER BY 
+                ITE.PlotId, 
+                ITE.TreeId 
+		]]>
+    </sql-query>
+	<sql-query name="IndividualTreeLumberEstimates">
+		<return-scalar column="PlotId" type="Int32"/>
+		<return-scalar column="TreeId" type="Int32"/>
+		<return-scalar column="SppScientificName" type="string"/>
+		<return-scalar column="SppCommonName" type="string"/>
+		<return-scalar column="CarbonStorage" type="double"/>
+		<return-scalar column="DBH" type="double"/>
+		<return-scalar column="xCoordinate" type="double"/>
+		<return-scalar column="yCoordinate" type="double"/>
+		<return-scalar column="Comments" type="string"/>
+		<return-scalar column="UserId" type="string"/>
+		<![CDATA[
+		    SELECT 
+                ITE.PlotId AS PlotId,
+                ITE.TreeId AS TreeId,
+                ITE.SppScientificName AS SppScientificName, 
+                ITE.SppCommonName AS SppCommonName,
+                ITE.CarbonStorage AS CarbonStorage,
+                ITE.DBH AS DBH,     
+                t.xCoordinate AS xCoordinate,
+                t.yCoordinate AS yCoordinate,  
+                t.Comments AS Comments,  
+                t.UserId AS UserId  
+            FROM 
+                IndividualTreeEffects AS ITE
+				INNER JOIN (
+				    EcoPlots p
+					INNER JOIN EcoTrees t
+                    ON p.PlotKey = t.PlotKey
+                )
+				ON 
+                    ITE.TreeId = t.TreeId
+                    AND ITE.PlotId = p.PlotId
+            WHERE 
+                YearGuid = :y 
+            ORDER BY 
+                ITE.PlotID, 
+                ITE.TreeID
+		]]>
+	</sql-query>
+	<sql-query name="IndividualTreeOxygenProduction">
+        <return-scalar column="PlotId" type="Int32"/>
+        <return-scalar column="TreeId" type="Int32"/>
+        <return-scalar column="SppScientificName" type="string"/>
+        <return-scalar column="SppCommonName" type="string"/>
+        <return-scalar column="GrossCarbonSeq" type="double"/>
+        <return-scalar column="xCoordinate" type="double"/>
+        <return-scalar column="yCoordinate" type="double"/>
+        <return-scalar column="Comments" type="string"/>
+        <return-scalar column="UserId" type="string"/>
+        <![CDATA[
+            SELECT 
+                ITE.PlotId AS PlotId,
+                ITE.TreeId AS TreeId,
+                ITE.SppScientificName AS SppScientificName, 
+                ITE.SppCommonName AS SppCommonName,
+                ITE.GrossCarbonSeq * 32 / 12 AS GrossCarbonSeq,
+                EcoTrees.xCoordinate AS xCoordinate,
+                EcoTrees.yCoordinate AS yCoordinate,  
+                EcoTrees.Comments AS Comments,  
+                EcoTrees.UserId AS UserId  
+            FROM 
+                IndividualTreeEffects AS ITE INNER JOIN 
+                    (EcoPlots
+                        INNER JOIN EcoTrees
+                            ON EcoPlots.PlotKey = EcoTrees.PlotKey
+                    )
+                ON(ITE.TreeId = EcoTrees.TreeId)
+                AND(ITE.PlotId = EcoPlots.PlotId)
+            WHERE 
+                YearGuid = :y 
+            ORDER BY 
+                ITE.PlotID, 
+                ITE.TreeID 
+		]]>
+    </sql-query>
+    <sql-query name="IndividualTreePollutionEffects">
+        <return-scalar column="PlotId" type="Int32"/>
+        <return-scalar column="TreeId" type="Int32"/>
+        <return-scalar column="SppScientificName" type="string"/>
+        <return-scalar column="SppCommonName" type="string"/>
+        <return-scalar column="CORemoved" type="double"/>
+        <return-scalar column="O3Removed" type="double"/>
+        <return-scalar column="NO2Removed" type="double"/>
+        <return-scalar column="SO2Removed" type="double"/>
+		<return-scalar column="PM10Removed" type="double"/>
+        <return-scalar column="PM25Removed" type="double"/>
+        <return-scalar column="CORemovalValue" type="double"/>
+        <return-scalar column="O3RemovalValue" type="double"/>
+        <return-scalar column="NO2RemovalValue" type="double"/>
+        <return-scalar column="SO2RemovalValue" type="double"/>
+		<return-scalar column="PM10RemovalValue" type="double"/>
+        <return-scalar column="PM25RemovalValue" type="double"/>
+        <return-scalar column="xCoordinate" type="double"/>
+        <return-scalar column="yCoordinate" type="double"/>
+        <return-scalar column="Comments" type="string"/>
+        <return-scalar column="UserId" type="string"/>
+        <![CDATA[
+            SELECT
+                ITPE.PlotId AS PlotId,
+                ITPE.TreeId AS TreeId, 
+                ITPE.SppScientificName AS SppScientificName, 
+                ITPE.SppCommonName AS SppCommonName, 
+                ITPE.CORemoved AS CORemoved, 
+                ITPE.O3Removed AS O3Removed, 
+                ITPE.NO2Removed AS NO2Removed, 
+                ITPE.SO2Removed AS SO2Removed, 
+                ITPE.PM10Removed AS PM10Removed,
+                ITPE.PM25Removed AS PM25Removed, 
+                ITPE.CORemoved   * :CoDollars   / :tonToGrams AS CORemovalValue,
+                ITPE.O3Removed   * :O3Dollars   / :tonToGrams AS O3RemovalValue, 
+                ITPE.NO2Removed  * :NO2Dollars  / :tonToGrams AS NO2RemovalValue,
+                ITPE.SO2Removed  * :SO2Dollars  / :tonToGrams AS SO2RemovalValue,
+				ITPE.PM10Removed * :PM10Dollars / :tonToGrams AS PM10RemovalValue,
+                ITPE.PM25Removed * :PM25Dollars / :tonToGrams AS PM25RemovalValue,
+                EcoTrees.xCoordinate AS xCoordinate,
+                EcoTrees.yCoordinate AS yCoordinate,
+                EcoTrees.Comments AS Comments,
+                EcoTrees.UserId AS UserId
+            FROM 
+                IndividualTreePollutionEffects AS ITPE INNER JOIN 
+                        (EcoPlots
+                            INNER JOIN EcoTrees
+                                ON EcoPlots.PlotKey = EcoTrees.PlotKey
+                        )
+                    ON(ITPE.TreeId = EcoTrees.TreeId)
+                    AND(ITPE.PlotId = EcoPlots.PlotId) 
+            WHERE 
+                YearGuid = :y 
+            ORDER BY 
+                ITPE.PlotID, 
+                ITPE.TreeID
+		]]>
+    </sql-query>
+    <sql-query name="MeasuredTreeDetailsBySpecies">
+        <return-scalar column="SppCommonName" type="string"/>
+        <return-scalar column="SppScientificName" type="string"/>
+        <return-scalar column="CountOfSppScientificName" type="Int32"/>
+        <return-scalar column="SumOfGroundArea" type="double"/>
+        <return-scalar column="SumOfLeafArea" type="double"/>
+        <return-scalar column="SumOfLeafBioMass" type="double"/>
+        <return-scalar column="SumOfBasalArea" type="double"/>
+        <![CDATA[
+           SELECT 
+                ITE.SppCommonName AS SppCommonName, 
+                ITE.SppScientificName AS SppScientificName, 
+                Count(ITE.SppScientificName) AS CountOfSppScientificName, 
+                Sum(ITE.GroundArea) AS SumOfGroundArea, 
+                Sum(ITE.LeafArea) AS SumOfLeafArea, 
+                Sum(ITE.LeafBioMass) AS SumOfLeafBioMass,
+                Sum(ITE.BasalArea) As SumOfBasalArea 
+            FROM 
+                IndividualTreeEffects AS ITE
+            GROUP BY 
+                ITE.SppCommonName, 
+                ITE.SppScientificName 
+            HAVING 
+                YearGuid = :y 
+		]]>
+    </sql-query>
+    <sql-query name="MeasuredTreeDetailsByStrata">
+        <return-scalar column="Strata" type="string"/>
+        <return-scalar column="TreeCount" type="Int32"/>
+        <return-scalar column="CanopyM2" type="double"/>
+        <return-scalar column="LeafAreaM2" type="double"/>
+        <return-scalar column="LeafBiomassKg" type="double"/>
+        <return-scalar column="BasalAreaM2" type="double"/>
+        <![CDATA[
+           SELECT 
+                EcoStrata.Description AS Strata, 
+                Count(ITE.TreeId) AS TreeCount, 
+                Sum(ITE.GroundArea) AS CanopyM2, 
+                Sum(ITE.LeafArea) AS LeafAreaM2, 
+                Sum(ITE.LeafBioMass) AS LeafBiomassKg, 
+                Sum(ITE.BasalArea) AS BasalAreaM2
+            FROM 
+                IndividualTreeEffects AS ITE INNER JOIN (
+                    (EcoStrata INNER JOIN EcoPlots ON 
+                        EcoStrata.StrataKey = EcoPlots.StrataKey
+                    ) INNER JOIN 
+                            EcoTrees ON 
+                                EcoPlots.PlotKey = EcoTrees.PlotKey) ON 
+                        (ITE.TreeId = EcoTrees.TreeId) AND 
+                        (ITE.PlotId = EcoPlots.PlotId) AND 
+                        (ITE.YearGuid = EcoPlots.YearKey) 
+            WHERE 
+                ITE.YearGuid = :y 
+            GROUP BY 
+                EcoStrata.Description 
+		]]>
+    </sql-query>
+    <sql-query name="ModelProcessingNotes">
+        <return-scalar column="ParameterCalculatorNote" type="string"/>
+        <return-scalar column="EstimatorNote" type="string"/>
+        <![CDATA[
+           SELECT 
+                ParameterCalculatorNote, 
+                EstimatorNote 
+            FROM 
+                ModelNotes 
+            WHERE 
+                YearGuid = :y 
+		]]>
+    </sql-query>
+    <sql-query name="UVEffectsOfTreesByStrata">
+        <return-scalar column="Description" type="string"/>
+        <return-scalar column="MeanShadedUVProtectionFactor" type="double"/>
+        <return-scalar column="MeanShadedUVReduction" type="double"/>
+        <return-scalar column="MeanShadedUVRedutionPercent" type="double"/>
+        <return-scalar column="MeanOverallUVProtectionFactor" type="double"/>
+        <return-scalar column="MeanOverallUVReduction" type="double"/>
+        <return-scalar column="MeanOverallUVReductionPercent" type="double"/>
+        <![CDATA[
+           SELECT
+                EcoStrata.Description AS Description, 
+                UV.MeanShadedUVProtectionFactor AS MeanShadedUVProtectionFactor, 
+                UV.MeanShadedUVReduction AS MeanShadedUVReduction, 
+                UV.MeanShadedUVRedutionPercent AS MeanShadedUVRedutionPercent, 
+                UV.MeanOverallUVProtectionFactor AS MeanOverallUVProtectionFactor, 
+                UV.MeanOverallUVReduction AS MeanOverallUVReduction, 
+                UV.MeanOverallUVReductionPercent AS MeanOverallUVReductionPercent 
+            FROM 
+                UVIndexReductionByStrataYearly AS UV 
+                    LEFT JOIN 
+                EcoStrata 
+                    ON EcoStrata.StrataKey = UV.StrataKey 
+            WHERE UV.YearGuid = :y 
+            ORDER BY EcoStrata.Description                
+		]]>
+    </sql-query>
+    <sql-query name="GetPollutantsList">
+        <return-scalar column="Pollutant" type="string"/>
+        <![CDATA[
+            SELECT DISTINCT Pollutant 
+            FROM Pollutants 
+            WHERE 
+                YearGuid = :y
+                AND Pollutant NOT IN ('PM10')      
+            ORDER BY Pollutant
+		]]>
+    </sql-query>
+    <sql-query name="TotalStratum">
+        <return-scalar column="Total" type="double"/>
+        <![CDATA[
+            SELECT 
+                SUM(Size) AS Total
+            FROM 
+                EcoStrata 
+            WHERE 
+                YearKey = :y 
+		]]>
+    </sql-query>
+    <sql-query name="TotalGroundArea">
+        <return-scalar column="Total" type="double"/>
+        <![CDATA[
+            SELECT 
+                SUM(GroundArea) AS Total
+            FROM 
+                IndividualTreeEffects 
+            WHERE 
+                YearGuid = :y 
+		]]>
+    </sql-query>
+</hibernate-mapping>

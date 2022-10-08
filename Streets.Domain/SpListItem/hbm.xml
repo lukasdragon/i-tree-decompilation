@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Streets.Domain" namespace="Streets.Domain" auto-import="false">
+  <class name="SpListItem" table="STRATUM_SpList">
+    <composite-id>
+      <key-many-to-one name="Project" column="ProjectId"/>
+      <key-property name="Code" length="10" column="SpeciesCode"/>
+    </composite-id>
+    <property name="ScientificName" column="ScientificName" />
+    <property name="CommonName" column="CommonName" />
+    <property name="TreeType" column="`Tree Type`" />
+    <property name="SppValueAssignment" column="SppValueAssignment" />
+    <property name="Rating" column="`Species Rating (%)`" />
+    <property name="BasicPrice" column="`Basic Price ($/sq in)`" />
+    <property name="PalmTrunkCost" column="`Palm Trunk Cost($/ft)`" />
+    <property name="ReplacementCost" column="`Replacement Cost ($)`" />
+    <property name="TAr" column="`TAr (sq Inches)`" />
+  </class>
+</hibernate-mapping>
+
+
+
+
+
+<!--<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Streets.Domain" namespace="Streets.Domain" auto-import="false">
+  <class name="SpList" table="STRATUM_SpList" abstract="true" discriminator-value="-1">
+    <composite-id class="SpListId" name="Id" access="nosetter.camelcase-m-underscore">
+      <key-many-to-one name="Project" column="ProjectId"/>
+      <key-property name="Code" column="SpeciesCode"/>
+    </composite-id>
+    <discriminator column="SpeciesType" type="Int16" force="true" not-null="true"/>
+
+    <subclass name="PlantingSiteType" discriminator-value="0">
+      <property name="Description" column="ScientificName" length="100" />
+      <property name="Size" column="CommonName" length="100" />
+    </subclass>
+
+    <subclass name="Species" discriminator-value="1">
+      <property name="ScientificName" column="ScientificName" />
+      <property name="CommonName" column="CommonName" />
+      <property name="TreeType" column="`Tree Type`" />
+      <property name="SppValueAssignment" column="SppValueAssignment" />
+      <property name="Rating" column="`Species Rating (%)`" />
+      <property name="BasicPrice" column="`Basic Price ($/sq in)`" />
+      <property name="PalmTrunkCost" column="`Palm Trunk Cost($/ft)`" />
+      <property name="ReplacementCost" column="`Replacement Cost ($)`" />
+      <property name="TAr" column="`TAr (sq Inches)`" />
+    </subclass>
+  </class>
+</hibernate-mapping>-->

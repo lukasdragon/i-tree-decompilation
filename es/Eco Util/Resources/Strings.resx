@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SavingStems" xml:space="preserve">
+    <value>Saving stems...</value>
+  </data>
+  <data name="SavingPlots" xml:space="preserve">
+    <value>Saving plots...</value>
+  </data>
+  <data name="SavingTrees" xml:space="preserve">
+    <value>Saving trees...</value>
+  </data>
+  <data name="SavingYears" xml:space="preserve">
+    <value>Saving years...</value>
+  </data>
+  <data name="ConvertStreets" xml:space="preserve">
+    <value>ConvertingStreets...</value>
+  </data>
+  <data name="ConvertPlotGroundCovers" xml:space="preserve">
+    <value>Converting plot ground covers...</value>
+  </data>
+  <data name="SavingGroundCovers" xml:space="preserve">
+    <value>Saving ground covers...</value>
+  </data>
+  <data name="ConvertBuildings" xml:space="preserve">
+    <value>Converting building interactions...</value>
+  </data>
+  <data name="SavingReferenceObjects" xml:space="preserve">
+    <value>Saving reference objects...</value>
+  </data>
+  <data name="ConvertProjectSettings" xml:space="preserve">
+    <value>Converting project settings...</value>
+  </data>
+  <data name="ConvertConditions" xml:space="preserve">
+    <value>Converting conditions...</value>
+  </data>
+  <data name="ConvertCohortResults" xml:space="preserve">
+    <value>Converting forecast cohort results...</value>
+  </data>
+  <data name="ConvertForecasts" xml:space="preserve">
+    <value>Converting forecasts...</value>
+  </data>
+  <data name="ConvertProjects" xml:space="preserve">
+    <value>Converting projects...</value>
+  </data>
+  <data name="SavingBuildings" xml:space="preserve">
+    <value>Saving building interactions...</value>
+  </data>
+  <data name="ConvertYearLocationData" xml:space="preserve">
+    <value>Converting year location data...</value>
+  </data>
+  <data name="ConvertPlantingSites" xml:space="preserve">
+    <value>Converting planting sites...</value>
+  </data>
+  <data name="ConvertReferenceObjects" xml:space="preserve">
+    <value>Converting reference objects...</value>
+  </data>
+  <data name="ConvertGroundCovers" xml:space="preserve">
+    <value>Converting ground covers...</value>
+  </data>
+  <data name="ConvertReplantings" xml:space="preserve">
+    <value>Converting forecast replantings...</value>
+  </data>
+  <data name="SavingPlotGroundCovers" xml:space="preserve">
+    <value>Saving plot ground covers...</value>
+  </data>
+  <data name="ConvertForecastEvents" xml:space="preserve">
+    <value>Converting forecast events...</value>
+  </data>
+  <data name="ConvertPlots" xml:space="preserve">
+    <value>Converting plots...</value>
+  </data>
+  <data name="ConvertStems" xml:space="preserve">
+    <value>Converting stems...</value>
+  </data>
+  <data name="ConvertTrees" xml:space="preserve">
+    <value>Converting trees...</value>
+  </data>
+  <data name="ConvertYears" xml:space="preserve">
+    <value>Converting years...</value>
+  </data>
+  <data name="ConvertMortalities" xml:space="preserve">
+    <value>Converting forecast mortalities...</value>
+  </data>
+  <data name="ConvertLandUses" xml:space="preserve">
+    <value>Convertng landuses...</value>
+  </data>
+  <data name="SavingStrata" xml:space="preserve">
+    <value>Saving strata...</value>
+  </data>
+  <data name="SavingSeries" xml:space="preserve">
+    <value>Saving series...</value>
+  </data>
+  <data name="SavingShrubs" xml:space="preserve">
+    <value>Saving shrubs...</value>
+  </data>
+  <data name="ConvertYearlyCosts" xml:space="preserve">
+    <value>Converting yearly costs..</value>
+  </data>
+  <data name="SavingProjects" xml:space="preserve">
+    <value>Saving projects...</value>
+  </data>
+  <data name="ConvertMobileLogEntries" xml:space="preserve">
+    <value>Converting mobile submission history...</value>
+  </data>
+  <data name="ConvertPlotLandUses" xml:space="preserve">
+    <value>Converting plot land uses...</value>
+  </data>
+  <data name="SavingPlotLandUses" xml:space="preserve">
+    <value>Saving plot land uses...</value>
+  </data>
+  <data name="ConvertBenefitPrices" xml:space="preserve">
+    <value>Converting benefit prices..</value>
+  </data>
+  <data name="ConvertPlantingSiteTypes" xml:space="preserve">
+    <value>Converting planting site types...</value>
+  </data>
+  <data name="ConvertSeries" xml:space="preserve">
+    <value>Converting series...</value>
+  </data>
+  <data name="ConvertShrubs" xml:space="preserve">
+    <value>Converting shrubs...</value>
+  </data>
+  <data name="ConvertStrata" xml:space="preserve">
+    <value>Converting strata...</value>
+  </data>
+  <data name="ConvertCohorts" xml:space="preserve">
+    <value>Converting forecast cohorts...</value>
+  </data>
+  <data name="ConvertProjectLocations" xml:space="preserve">
+    <value>Converting project locations...</value>
+  </data>
+  <data name="ConvertDBHs" xml:space="preserve">
+    <value>Converting DBH ranges...</value>
+  </data>
+  <data name="ConvertHealthClasses" xml:space="preserve">
+    <value>Converting crown health report classes...</value>
+  </data>
+  <data name="ConvertDBHRptClasses" xml:space="preserve">
+    <value>Converting DBH report classes...</value>
+  </data>
+</root>

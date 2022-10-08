@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Eco.Domain" namespace="Eco.Domain.v5" auto-import="false">
+  <class name="Series" table="Series">
+    <composite-id name="CompositeId" access="field.camelcase-m-underscore" class="SeriesId">
+      <key-property name="Location" column="LocationName" access="field.camelcase-m-underscore"/>
+      <key-property name="Series" column="Series" access="field.camelcase-m-underscore"/>
+    </composite-id>
+    <set name="Projects" table="`Year`" lazy="true" access="nosetter.camelcase-m-underscore" inverse="true">
+      <key unique="true">
+        <column name="LocationName" not-null="true" length="50"/>
+        <column name="Series" not-null="true" length="255"/>
+      </key>
+      <one-to-many class="Project"/>
+    </set>
+    <property name="IsPermanent" column="IsPermanent"/>
+    <property name="SampleType" column="SampleType"/>
+    <property name="SampleMethod" column="SampleMethod"/>
+    <property name="DefaultSubplotSize" column="DefaultSubplotSize"/>
+    <property name="DefaultSubplotSizeUnit" column="DefaultSubplotSizeUnits"/>
+    <property name="NextAvailabPlotID" column="NextAvailablePlotID" />
+    <property name="GISProjection" column="GISProjection" />
+    <property name="GISUnit" column="GISUnits" />
+    <property name="Comments" column="Comments"/>
+    <many-to-one name="Location" access="field.camelcase-m-underscore" update="false" insert="false">
+      <column name="LocationName"/>
+    </many-to-one>
+  </class>
+</hibernate-mapping>

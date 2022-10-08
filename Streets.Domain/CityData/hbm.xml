@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Streets.Domain" namespace="Streets.Domain" auto-import="false">
+  <class name="CityData" table="STRATUM_CityData">
+    <id name="Id" column="ProjectId">
+      <generator class="foreign">
+        <param name="property">Project</param>
+      </generator>
+    </id>
+    <one-to-one name="Project" class="Project" constrained="true"/>
+    <property name="TotalBudget" column="TotalBudget" not-null="false" />
+    <property name="Population" column="Population" not-null="false" />
+    <property name="TotalLandArea" column="TotalLandArea" not-null="false" />
+    <property name="AvgStreetWidth" column="AvgStWidth" not-null="false" />
+    <property name="AvgSidewalkWidth" column="AvgSidewalkWidth" not-null="false" />
+    <property name="TotalLinearStreetMiles" column="TotalLinearMilesSt" not-null="false" />
+  </class>
+</hibernate-mapping>

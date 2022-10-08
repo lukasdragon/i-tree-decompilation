@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="dcDBH5Measured.HeaderText" xml:space="preserve">
+    <value>DAP 5: ¿Medido?</value>
+  </data>
+  <data name="dcMaintTask.HeaderText" xml:space="preserve">
+    <value>Tarea de mantenimiento</value>
+  </data>
+  <data name="dcDBH4.HeaderText" xml:space="preserve">
+    <value>DAP 4</value>
+  </data>
+  <data name="pnlEditHelp.LayoutSettings" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAChTeXN0ZW0uV2luZG93cy5Gb3Jtcy5UYWJsZUxheW91dFNldHRpbmdzAQAAABBTZXJpYWxpemVkU3RyaW5nAQIAAAAGAwAAAO4BPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTE2Ij8+PFRhYmxlTGF5b3V0U2V0dGluZ3M+PENvbnRyb2xzPjxDb250cm9sIE5hbWU9ImxibEVkaXRIZWxwIiBSb3c9IjAiIFJvd1NwYW49IjEiIENvbHVtbj0iMCIgQ29sdW1uU3Bhbj0iMSIgLz48L0NvbnRyb2xzPjxDb2x1bW5zIFN0eWxlcz0iUGVyY2VudCw1MCIgLz48Um93cyBTdHlsZXM9IlBlcmNlbnQsNTAiIC8+PC9UYWJsZUxheW91dFNldHRpbmdzPgs=</value>
+  </data>
+  <data name="dcIPEDTSNotes.HeaderText" xml:space="preserve">
+    <value>Estrés en árbol: Notas</value>
+  </data>
+  <data name="dcIPEDBBNotes.HeaderText" xml:space="preserve">
+    <value>Ramas/tronco: Notas</value>
+  </data>
+  <data name="dcStTree.HeaderText" xml:space="preserve">
+    <value>¿Árbol de la calle?</value>
+  </data>
+  <data name="dgTrees.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAD8DAAD2AQAACw==</value>
+  </data>
+  <data name="dcBldg1Distance.HeaderText" xml:space="preserve">
+    <value>Edificio 1: Distancia</value>
+  </data>
+  <data name="dcIPEDBBAbnGrowth.HeaderText" xml:space="preserve">
+    <value>Ramas/tronco: Crecimiento anormal</value>
+  </data>
+  <data name="dcTreeHeight.HeaderText" xml:space="preserve">
+    <value>Altura total</value>
+  </data>
+  <data name="dcIPEDFTChewFoli.HeaderText" xml:space="preserve">
+    <value>Follaje/ramitas: Follaje mordisqueado</value>
+  </data>
+  <data name="dgTrees.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAAAAAAAIAAAAAs=</value>
+  </data>
+  <data name="dcDBH2Measured.HeaderText" xml:space="preserve">
+    <value>DAP 2: ¿Medido?</value>
+  </data>
+  <data name="dcStatus.HeaderText" xml:space="preserve">
+    <value>Condición</value>
+  </data>
+  <data name="dcIPEDBBInsectSigns.HeaderText" xml:space="preserve">
+    <value>Ramas/tronco: Señales de insectos</value>
+  </data>
+  <data name="dcIPEDTSEnvStress.HeaderText" xml:space="preserve">
+    <value>Estrés en árbol: Estrés ambiental</value>
+  </data>
+  <data name="dcCrownWidthEW.HeaderText" xml:space="preserve">
+    <value>Copa: Ancho E/O</value>
+  </data>
+  <data name="dcBldg2Direction.HeaderText" xml:space="preserve">
+    <value>Edificio 2: Dirección</value>
+  </data>
+  <data name="&gt;&gt;dcBldg1Distance.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree, Version=1.0.6526.27359, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dcCrownWidthEW.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree, Version=1.0.6526.27359, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="dcIPEDFTNotes.HeaderText" xml:space="preserve">
+    <value>Follaje/ramitas: Notas</value>
+  </data>
+  <data name="dcFieldTwo.HeaderText" xml:space="preserve">
+    <value>Campo dos</value>
+  </data>
+  <data name="dcIPEDFTDiscFoli.HeaderText" xml:space="preserve">
+    <value>Follaje/ramitas: Follaje descolorido</value>
+  </data>
+  <data name="dcCrownBaseHeight.HeaderText" xml:space="preserve">
+    <value>Copa: Altura a la base</value>
+  </data>
+  <data name="dcDBH3.HeaderText" xml:space="preserve">
+    <value>DAP 3</value>
+  </data>
+  <data name="pnlEditHelp.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAAAAAAAAAAAAAs=</value>
+  </data>
+  <data name="dcCrownWidthNS.HeaderText" xml:space="preserve">
+    <value>Copa: Ancho N/S</value>
+  </data>
+  <data name="&gt;&gt;dcDBH1Height.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree, Version=1.0.6526.27359, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="dcBldg3Direction.HeaderText" xml:space="preserve">
+    <value>Edificio 3: Dirección</value>
+  </data>
+  <data name="dcIPEDFTAbnFoli.HeaderText" xml:space="preserve">
+    <value>Follaje/ramitas: Follaje anormal</value>
+  </data>
+  <data name="dcDBH6Height.HeaderText" xml:space="preserve">
+    <value>DAP 6: Altura</value>
+  </data>
+  <data name="dcDBH6Measured.HeaderText" xml:space="preserve">
+    <value>DAP 6: ¿Medido?</value>
+  </data>
+  <data name="&gt;&gt;dcLocNo.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree, Version=1.0.6526.27359, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dcDBH5Height.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree, Version=1.0.6526.27359, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dcCrownTopHeight.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree, Version=1.0.6526.27359, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="dcDBH4Measured.HeaderText" xml:space="preserve">
+    <value>DAP 4: ¿Medido?</value>
+  </data>
+  <data name="lblBreadcrumb.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAAAAAAAAAAAAAs=</value>
+  </data>
+  <data name="dcDBH5Height.HeaderText" xml:space="preserve">
+    <value>DAP 5: Altura</value>
+  </data>
+  <data name="dcCrownDieback.HeaderText" xml:space="preserve">
+    <value>Copa: % Muerte regresiva</value>
+  </data>
+  <data name="&gt;&gt;dcDBH3Height.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree, Version=1.0.6526.27359, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="dcBldg3Distance.HeaderText" xml:space="preserve">
+    <value>Edificio 3: Distancia</value>
+  </data>
+  <data name="dcLandUse.HeaderText" xml:space="preserve">
+    <value>Uso de la tierra</value>
+  </data>
+  <data name="dcDBH2.HeaderText" xml:space="preserve">
+    <value>DAP 2</value>
+  </data>
+  <data name="&gt;&gt;dcBldg3Direction.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree, Version=1.0.6526.27359, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="dcSiteType.HeaderText" xml:space="preserve">
+    <value>Tipo de sitio</value>
+  </data>
+  <data name="&gt;&gt;dcBldg3Distance.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree, Version=1.0.6526.27359, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="dcLatitude.HeaderText" xml:space="preserve">
+    <value>Latitud</value>
+  </data>
+  <data name="dcFieldOne.HeaderText" xml:space="preserve">
+    <value>Campo uno</value>
+  </data>
+  <data name="pnlEditHelp.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAD8DAAAgAAAACw==</value>
+  </data>
+  <data name="dcBldg1Direction.HeaderText" xml:space="preserve">
+    <value>Edificio 1: Dirección</value>
+  </data>
+  <data name="dcNoteTree.HeaderText" xml:space="preserve">
+    <value>Nota árbol</value>
+  </data>
+  <data name="dcPctImpervious.HeaderText" xml:space="preserve">
+    <value>% Impermeable</value>
+  </data>
+  <data name="dcCityManaged.HeaderText" xml:space="preserve">
+    <value>¿Público?</value>
+  </data>
+  <data name="dcDBH6.HeaderText" xml:space="preserve">
+    <value>DAP 6</value>
+  </data>
+  <data name="dcIPEDBBDiseaseSigns.HeaderText" xml:space="preserve">
+    <value>Ramas/tronco: Señales de enfermedad</value>
+  </data>
+  <data name="&gt;&gt;dcDistance.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree, Version=1.0.6526.27359, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="dcLocSite.HeaderText" xml:space="preserve">
+    <value>Sitio del lugar</value>
+  </data>
+  <data name="dcIPEDFTInsectSigns.HeaderText" xml:space="preserve">
+    <value>Follaje/ramitas: Señales de insectos</value>
+  </data>
+  <data name="dcBldg2Distance.HeaderText" xml:space="preserve">
+    <value>Edificio 2: Distancia</value>
+  </data>
+  <data name="&gt;&gt;dcCrownWidthNS.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree, Version=1.0.6526.27359, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="lblEditHelp.Text" xml:space="preserve">
+    <value>Las entradas requeridas DEBEN llenarse por completo y correctamente. Si no puedes avanzar, puedes borrar una fila o usar el botón de Deshacer.</value>
+  </data>
+  <data name="lblEditHelp.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAADkDAAAaAAAACw==</value>
+  </data>
+  <data name="&gt;&gt;dcId.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree, Version=1.0.6526.27359, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="dcIPEDFTFoliAffect.HeaderText" xml:space="preserve">
+    <value>Follaje/ramitas: Follaje afectado</value>
+  </data>
+  <data name="dcIPEDBBInsectPres.HeaderText" xml:space="preserve">
+    <value>Ramas/tronco: Presencia de insectos</value>
+  </data>
+  <data name="dcPctShrub.HeaderText" xml:space="preserve">
+    <value>% Matorrales</value>
+  </data>
+  <data name="dcIPEDTSEpiSprout.HeaderText" xml:space="preserve">
+    <value>Estrés en árbol: Retoños epicórmicos</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblBreadcrumb.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="dcSpecies.HeaderText" xml:space="preserve">
+    <value>Especie</value>
+  </data>
+  <data name="&gt;&gt;dcDBH4.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree, Version=1.0.6526.27359, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dcDBH4Height.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree, Version=1.0.6526.27359, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dcDBH6.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree, Version=1.0.6526.27359, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dcDBH5.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree, Version=1.0.6526.27359, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="dcCrownTopHeight.HeaderText" xml:space="preserve">
+    <value>Copa: Altura copa viva</value>
+  </data>
+  <data name="&gt;&gt;dcDBH2.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree, Version=1.0.6526.27359, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dcDBH1.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree, Version=1.0.6526.27359, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dcDBH3.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree, Version=1.0.6526.27359, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dcSurveyDate.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNullableDateTimeColumn, DaveyTree, Version=1.0.6526.27359, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dcSpecies.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewFilteredComboBoxColumn, DaveyTree, Version=1.0.6526.27359, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="dcFieldThree.HeaderText" xml:space="preserve">
+    <value>Campo tres</value>
+  </data>
+  <data name="dcLongitude.HeaderText" xml:space="preserve">
+    <value>Longitud</value>
+  </data>
+  <data name="dcSurveyDate.HeaderText" xml:space="preserve">
+    <value>Fecha de monitoreo</value>
+  </data>
+  <data name="dcDirection.HeaderText" xml:space="preserve">
+    <value>Dirección</value>
+  </data>
+  <data name="dcDBH4Height.HeaderText" xml:space="preserve">
+    <value>DAP 4: Altura</value>
+  </data>
+  <data name="&gt;&gt;dcBldg1Direction.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree, Version=1.0.6526.27359, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dcCrownBaseHeight.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree, Version=1.0.6526.27359, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="dcDBH1.HeaderText" xml:space="preserve">
+    <value>DAP 1</value>
+  </data>
+  <data name="dcStreet.HeaderText" xml:space="preserve">
+    <value>Calle</value>
+  </data>
+  <data name="dcIPEDTSHumStress.HeaderText" xml:space="preserve">
+    <value>Estrés en árbol: Estrés humano</value>
+  </data>
+  <data name="dcIPEDTSDieback.HeaderText" xml:space="preserve">
+    <value>Estrés en árbol: Muerte regresiva</value>
+  </data>
+  <data name="dcLocNo.HeaderText" xml:space="preserve">
+    <value>Lugar #</value>
+  </data>
+  <data name="dcCrownLightExposure.HeaderText" xml:space="preserve">
+    <value>Copa: Exposición de luz</value>
+  </data>
+  <data name="dcDBH1Measured.HeaderText" xml:space="preserve">
+    <value>DAP 1: ¿Medido?</value>
+  </data>
+  <data name="dcPlot.HeaderText" xml:space="preserve">
+    <value>Parcela</value>
+  </data>
+  <data name="dcDBH2Height.HeaderText" xml:space="preserve">
+    <value>DAP 2: Altura</value>
+  </data>
+  <data name="dcWireConflict.HeaderText" xml:space="preserve">
+    <value>Conflicto con servicios</value>
+  </data>
+  <data name="dcDistance.HeaderText" xml:space="preserve">
+    <value>Distancia</value>
+  </data>
+  <data name="&gt;&gt;dcBldg2Direction.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree, Version=1.0.6526.27359, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="dcDBH5.HeaderText" xml:space="preserve">
+    <value>DAP 5</value>
+  </data>
+  <data name="dcDBH3Measured.HeaderText" xml:space="preserve">
+    <value>DAP 3: ¿Medido?</value>
+  </data>
+  <data name="&gt;&gt;dcDBH2Height.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree, Version=1.0.6526.27359, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="dcDBH1Height.HeaderText" xml:space="preserve">
+    <value>DAP 1: Altura</value>
+  </data>
+  <data name="dcCrownCondition.HeaderText" xml:space="preserve">
+    <value>Copa: Condición</value>
+  </data>
+  <data name="dcIPEDBBProbLoc.HeaderText" xml:space="preserve">
+    <value>Ramas/tronco: Lugar problemático</value>
+  </data>
+  <data name="&gt;&gt;dcTreeHeight.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree, Version=1.0.6526.27359, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="dcMaintRec.HeaderText" xml:space="preserve">
+    <value>Mantenimiento recomendado</value>
+  </data>
+  <data name="&gt;&gt;dcDBH6Height.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree, Version=1.0.6526.27359, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dcBldg2Distance.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree, Version=1.0.6526.27359, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="dcIPEDTSWiltFoli.HeaderText" xml:space="preserve">
+    <value>Estrés en árbol: Follaje marchito</value>
+  </data>
+  <data name="dcDBH3Height.HeaderText" xml:space="preserve">
+    <value>DAP 3: Altura</value>
+  </data>
+  <data name="dcIPEDPest.HeaderText" xml:space="preserve">
+    <value>Plaga principal</value>
+  </data>
+  <data name="dcComments.HeaderText" xml:space="preserve">
+    <value>Comentarios</value>
+  </data>
+  <data name="dcAddress.HeaderText" xml:space="preserve">
+    <value>Domicilio</value>
+  </data>
+  <data name="&gt;&gt;dcDirection.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree, Version=1.0.6526.27359, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="dcCrownPercentMissing.HeaderText" xml:space="preserve">
+    <value>Copa: % Faltante</value>
+  </data>
+  <data name="dcSidewalk.HeaderText" xml:space="preserve">
+    <value>Conflicto con aceras</value>
+  </data>
+</root>

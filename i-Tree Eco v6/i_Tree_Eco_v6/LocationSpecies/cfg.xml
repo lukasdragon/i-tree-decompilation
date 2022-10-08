@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-configuration xmlns="urn:nhibernate-configuration-2.2">
+  <session-factory name="LocationSpecies">
+    <property name="connection.provider">NHibernate.Connection.DriverConnectionProvider</property>
+    <property name="dialect">SqlWeb.Dialect.SqlWebDialect, SqlWeb</property>
+    <property name="connection.driver_class">SqlWeb.Driver.SqlWebDataDriver, SqlWeb</property>
+    <property name="cache.provider_class">SQLiteCache.SQLiteCacheProvider, SQLiteCache</property>
+    <property name="cache.use_second_level_cache">true</property>
+    <property name="cache.default_expiration">10368000</property>
+    <property name="generate_statistics">true</property>
+    <property name="default_batch_fetch_size">200</property>
+    <property name="default_flush_mode">Manual</property>
+    <property name="cache.use_query_cache">true</property>
+    <property name="detect_fetch_loops">false</property>
+    <!--<property name="show_sql">true</property>-->
+
+    <mapping assembly="LocationSpecies.Domain"/>
+
+    <class-cache class="LocationSpecies.Domain.Albedo" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.AlbedoStation" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.BenMapResult" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.BuildingVintageFactor" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.ClimateFactor" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.ClimateRegion" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.ClimateRegionBuilding" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.CoverType" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.Currency" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.Decomposition" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.EdibleValues" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.Equation" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.FieldLandUse" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.GrowthPeriod" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.HealthEffect" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.HealthImpact" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.Language" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.LeafArea" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.LeafType" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.Location" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.LocationBenefit" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.LocationCarbon" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.LocationCost" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.LocationEnvironmentalEffect" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.LocationEnvironmentalValue" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.LocationLeafNutrientValue" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.LocationPestRisk" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.LocationPollutant" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.LocationPollutantRegression" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.LocationPpiAdjustment" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.LocationRelation" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.LocationUrban" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.MaintTask" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.MaintType" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.Pest" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.Pollutant" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.PollutantBaseCost" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.PollutantLeafType" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.PollutantStation" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.PollutantStationPollutant" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.RegistryEntry" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.RegressionBenefit" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.Risk" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.ShadingFactor" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.SidewalkDamage" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.Species" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.SpeciesCrownHeight" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.SpeciesCrownWidth" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.SpeciesFIA" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.SpeciesGroup" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.SpeciesGroupCrownWidth" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.SpeciesHabit" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.SpeciesHeight" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.SplinedBiomassEquation" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.SplinedBiomassEquationNew" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.StateLat" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.TreeBuildingCover" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.UTCTimeZone" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.WeatherDetail" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.WeatherStation" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.WeatherSubmission" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.Wildlife" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.WindbreakFactor" include="all" usage="read-only"/>
+    <class-cache class="LocationSpecies.Domain.WireConflict" include="all" usage="read-only"/>
+
+    <collection-cache collection="LocationSpecies.Domain.Albedo.Values" usage="read-only"/>
+    <collection-cache collection="LocationSpecies.Domain.AlbedoStation.Locations" usage="read-only"/>
+    <collection-cache collection="LocationSpecies.Domain.FieldLandUse.Decompositions" usage="read-only"/>
+    <collection-cache collection="LocationSpecies.Domain.GrowthPeriod.Locations" usage="read-only"/>
+    <collection-cache collection="LocationSpecies.Domain.LeafType.Species" usage="read-only"/>
+    <collection-cache collection="LocationSpecies.Domain.LeafType.Children" usage="read-only"/>
+    <collection-cache collection="LocationSpecies.Domain.Location.BenMapResults" usage="read-only"/>
+    <collection-cache collection="LocationSpecies.Domain.Location.Relations" usage="read-only"/>
+    <collection-cache collection="LocationSpecies.Domain.Location.Children" usage="read-only"/>
+    <collection-cache collection="LocationSpecies.Domain.Location.InvasiveSpecies" usage="read-only"/>
+    <collection-cache collection="LocationSpecies.Domain.Location.LeafNutrientValues" usage="read-only"/>
+    <collection-cache collection="LocationSpecies.Domain.Location.PestRisks" usage="read-only"/>
+    <collection-cache collection="LocationSpecies.Domain.Location.PollutantStationPollutants" usage="read-only"/>
+    <collection-cache collection="LocationSpecies.Domain.Location.Wildlife" usage="read-only"/>
+    <collection-cache collection="LocationSpecies.Domain.Pest.SusceptableSpecies" usage="read-only"/>
+    <collection-cache collection="LocationSpecies.Domain.PollutantStationPollutant.Locations" usage="read-only"/>
+    <collection-cache collection="LocationSpecies.Domain.Species.Children" usage="read-only"/>
+    <collection-cache collection="LocationSpecies.Domain.Species.Pests" usage="read-only"/>
+    <collection-cache collection="LocationSpecies.Domain.Species.InvasiveLocations" usage="read-only"/>
+    <collection-cache collection="LocationSpecies.Domain.Species.Synonyms" usage="read-only"/>
+    <collection-cache collection="LocationSpecies.Domain.Species.Names" usage="read-only"/>
+    <collection-cache collection="LocationSpecies.Domain.SpeciesGroup.Species" usage="read-only"/>
+    <collection-cache collection="LocationSpecies.Domain.StateLat.OzoneValues" usage="read-only"/>
+    <collection-cache collection="LocationSpecies.Domain.WeatherDetail.WeatherSubmissions" usage="read-only"/>
+    <collection-cache collection="LocationSpecies.Domain.WeatherStation.WeatherDetails" usage="read-only"/>
+    <collection-cache collection="LocationSpecies.Domain.Wildlife.Equations" usage="read-only"/>
+    <collection-cache collection="LocationSpecies.Domain.Wildlife.Locations" usage="read-only"/>
+  </session-factory>
+</hibernate-configuration>

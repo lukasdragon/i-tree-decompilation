@@ -1,0 +1,14 @@
+﻿<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Eco.Domain" namespace="Eco.Domain.v6" auto-import="false">
+  <class name="PlantingSiteType" table="EcoPlantingSiteTypes" dynamic-update="true">
+    <cache usage="read-write"/>
+    <id name="Guid" column="PlantingSiteTypeKey">
+      <generator class="guid"/>
+    </id>
+    <natural-id mutable="true">
+      <many-to-one name="Year" column="YearKey" not-null="true"/>
+      <property name="Description" column="Description" not-null="true" length="50"/>
+    </natural-id>
+    <version name="Revision" column="`Revision`" unsaved-value="0"/>
+    <property name="Size" column="`Size`"/>
+  </class>
+</hibernate-mapping>

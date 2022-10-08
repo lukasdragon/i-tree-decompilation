@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SampleType_MctiInventory" xml:space="preserve">
+    <value>Inventario MCTI</value>
+  </data>
+  <data name="Condition_PctDieback" xml:space="preserve">
+    <value>% Muerte regresiva</value>
+  </data>
+  <data name="Tree_SingularName" xml:space="preserve">
+    <value>Árbol</value>
+  </data>
+  <data name="Strata_SingularName" xml:space="preserve">
+    <value>Estrato</value>
+  </data>
+  <data name="SampleType_StratumStreetTree" xml:space="preserve">
+    <value>Árbol de la calle ESTRATO</value>
+  </data>
+  <data name="Year_SingularName" xml:space="preserve">
+    <value>Año</value>
+  </data>
+  <data name="SampleType_RegularStreetTree" xml:space="preserve">
+    <value>Árbol de la calle regular</value>
+  </data>
+  <data name="FieldThree_SingularName" xml:space="preserve">
+    <value>Campo tres</value>
+  </data>
+  <data name="Sidewalk_SingularName" xml:space="preserve">
+    <value>Conflicto con aceras</value>
+  </data>
+  <data name="TreeStatus_LandUseChangeRemoved" xml:space="preserve">
+    <value>Cambio en uso de la tierra eliminado</value>
+  </data>
+  <data name="Crown_TopHeight" xml:space="preserve">
+    <value>Altura superior</value>
+  </data>
+  <data name="SampleMethod_RandomizedGrid" xml:space="preserve">
+    <value>Cuadrícula al azar</value>
+  </data>
+  <data name="WireConflict_PluralName" xml:space="preserve">
+    <value>Conflictos con servicios</value>
+  </data>
+  <data name="YearUnit_English" xml:space="preserve">
+    <value>Inglés</value>
+  </data>
+  <data name="ReferenceObjectType_DrivewayEdge" xml:space="preserve">
+    <value>Orilla de la entrada</value>
+  </data>
+  <data name="Building_Direction" xml:space="preserve">
+    <value>Dirección</value>
+  </data>
+  <data name="TreeStatus_NoChange" xml:space="preserve">
+    <value>Sin cambios</value>
+  </data>
+  <data name="Plot_SingularName" xml:space="preserve">
+    <value>Parcela</value>
+  </data>
+  <data name="ReferenceObjectType_BuildingDoor" xml:space="preserve">
+    <value>Puerta del edificio</value>
+  </data>
+  <data name="ReferenceObjectType_BuildingWall" xml:space="preserve">
+    <value>Muro del edificio</value>
+  </data>
+  <data name="ReferenceObjectType_LightPost" xml:space="preserve">
+    <value>Poste de la luz</value>
+  </data>
+  <data name="Strata_PluralName" xml:space="preserve">
+    <value>Estrato</value>
+  </data>
+  <data name="Sidewalk_PluralName" xml:space="preserve">
+    <value>Conflictos con aceras</value>
+  </data>
+  <data name="Series_SingularName" xml:space="preserve">
+    <value>Series</value>
+  </data>
+  <data name="Dieback_PluralName" xml:space="preserve">
+    <value>Muertes regresivas</value>
+  </data>
+  <data name="MaintTask_SingularName" xml:space="preserve">
+    <value>Tarea de mantenimiento</value>
+  </data>
+  <data name="Tree_PluralName" xml:space="preserve">
+    <value>Árboles</value>
+  </data>
+  <data name="GroundCover_SingularName" xml:space="preserve">
+    <value>Cobertura del suelo</value>
+  </data>
+  <data name="TreeStatus_Ingrowth" xml:space="preserve">
+    <value>Regeneración natural</value>
+  </data>
+  <data name="Condition_Percent" xml:space="preserve">
+    <value>Condición %</value>
+  </data>
+  <data name="Dieback_SingularName" xml:space="preserve">
+    <value>Muerte regresiva</value>
+  </data>
+  <data name="Building_SingularName" xml:space="preserve">
+    <value>Edificio</value>
+  </data>
+  <data name="PctMidRange_PR0" xml:space="preserve">
+    <value>0%</value>
+  </data>
+  <data name="PctMidRange_PR3" xml:space="preserve">
+    <value>1% - 5%</value>
+  </data>
+  <data name="PctMidRange_PR8" xml:space="preserve">
+    <value>5% - 10%</value>
+  </data>
+  <data name="CrownLightExposure_OneSide" xml:space="preserve">
+    <value>1 Lado</value>
+  </data>
+  <data name="Condition_Description" xml:space="preserve">
+    <value>Descripción</value>
+  </data>
+  <data name="ReferenceObjectType_SewerOrDrainGrate" xml:space="preserve">
+    <value>Sumidero o rejilla de desagüe</value>
+  </data>
+  <data name="Strata_Size" xml:space="preserve">
+    <value>Área</value>
+  </data>
+  <data name="Tree_Distance" xml:space="preserve">
+    <value>Distancia</value>
+  </data>
+  <data name="CrownLightExposure_FiveSides" xml:space="preserve">
+    <value>5 Lados</value>
+  </data>
+  <data name="SampleMethod_None" xml:space="preserve">
+    <value>-- Ninguno --</value>
+  </data>
+  <data name="LandUse_Id" xml:space="preserve">
+    <value>Código</value>
+  </data>
+  <data name="Project_SingularName" xml:space="preserve">
+    <value>Proyecto</value>
+  </data>
+  <data name="Shrub_PluralName" xml:space="preserve">
+    <value>Matorrales</value>
+  </data>
+  <data name="SampleMethod_SimpleRandom" xml:space="preserve">
+    <value>Al azar sencillo</value>
+  </data>
+  <data name="ReferenceObjectType_StreetSign" xml:space="preserve">
+    <value>Señal de la calle</value>
+  </data>
+  <data name="LandUse_Description" xml:space="preserve">
+    <value>Descripción</value>
+  </data>
+  <data name="ConditionCategory_Excellent" xml:space="preserve">
+    <value>Excelente</value>
+  </data>
+  <data name="SampleMethod_FixedGrid" xml:space="preserve">
+    <value>Cuadrícula fija</value>
+  </data>
+  <data name="MaintTask_PluralName" xml:space="preserve">
+    <value>Tareas de mantenimiento</value>
+  </data>
+  <data name="ReferenceObjectType_Unknown" xml:space="preserve">
+    <value>-- Desconocido --</value>
+  </data>
+  <data name="Tree_Status" xml:space="preserve">
+    <value>Estatus</value>
+  </data>
+  <data name="Crown_SingularName" xml:space="preserve">
+    <value>Copa</value>
+  </data>
+  <data name="Stem_SingularName" xml:space="preserve">
+    <value>Tronco</value>
+  </data>
+  <data name="SampleMethod_StratifiedRandom" xml:space="preserve">
+    <value>Al azar estratificado</value>
+  </data>
+  <data name="ReferenceObjectType_SwingSet" xml:space="preserve">
+    <value>Columpios</value>
+  </data>
+  <data name="Crown_WidthNS" xml:space="preserve">
+    <value>Ancho N/S</value>
+  </data>
+  <data name="Crown_WidthEW" xml:space="preserve">
+    <value>Ancho E/O</value>
+  </data>
+  <data name="PlotGroundCover_SingularName" xml:space="preserve">
+    <value>Cobertura del suelo de la parcela</value>
+  </data>
+  <data name="TreeStatus_Unknown" xml:space="preserve">
+    <value>Desconocido</value>
+  </data>
+  <data name="PctTopRange_PCT85" xml:space="preserve">
+    <value>81% - 85%</value>
+  </data>
+  <data name="PctTopRange_PCT80" xml:space="preserve">
+    <value>76% - 80%</value>
+  </data>
+  <data name="PctTopRange_PCT60" xml:space="preserve">
+    <value>56% - 60%</value>
+  </data>
+  <data name="PctTopRange_PCT65" xml:space="preserve">
+    <value>61% - 65%</value>
+  </data>
+  <data name="PctTopRange_PCT95" xml:space="preserve">
+    <value>91% - 95%</value>
+  </data>
+  <data name="PctTopRange_PCT90" xml:space="preserve">
+    <value>86% - 90%</value>
+  </data>
+  <data name="PctTopRange_PCT99" xml:space="preserve">
+    <value>96% - 100%</value>
+  </data>
+  <data name="PctTopRange_PCT40" xml:space="preserve">
+    <value>36% - 40%</value>
+  </data>
+  <data name="PctTopRange_PCT45" xml:space="preserve">
+    <value>41% - 45%</value>
+  </data>
+  <data name="PctTopRange_PCT70" xml:space="preserve">
+    <value>66% - 70%</value>
+  </data>
+  <data name="PctTopRange_PCT75" xml:space="preserve">
+    <value>71% - 75%</value>
+  </data>
+  <data name="PctTopRange_PCT25" xml:space="preserve">
+    <value>21% - 25%</value>
+  </data>
+  <data name="PctTopRange_PCT20" xml:space="preserve">
+    <value>16% - 20%</value>
+  </data>
+  <data name="PctTopRange_PCT50" xml:space="preserve">
+    <value>46% - 50%</value>
+  </data>
+  <data name="PctTopRange_PCT55" xml:space="preserve">
+    <value>51% - 55%</value>
+  </data>
+  <data name="PctTopRange_PCT35" xml:space="preserve">
+    <value>31% - 35%</value>
+  </data>
+  <data name="PctTopRange_PCT30" xml:space="preserve">
+    <value>26% - 30%</value>
+  </data>
+  <data name="PctTopRange_PCT15" xml:space="preserve">
+    <value>11% - 15%</value>
+  </data>
+  <data name="PctTopRange_PCT10" xml:space="preserve">
+    <value>6% - 10%</value>
+  </data>
+  <data name="TreeStatus_UnknownRemoved" xml:space="preserve">
+    <value>Desconocido eliminado</value>
+  </data>
+  <data name="ReferenceObjectType_RoofPeak" xml:space="preserve">
+    <value>Pico del techo</value>
+  </data>
+  <data name="LocSite_SingularName" xml:space="preserve">
+    <value>Lugar del sitio</value>
+  </data>
+  <data name="CrownLightExposure_NoSides" xml:space="preserve">
+    <value>0 Lados</value>
+  </data>
+  <data name="PctMidRange_PR23" xml:space="preserve">
+    <value>20% - 25%</value>
+  </data>
+  <data name="PctMidRange_PR28" xml:space="preserve">
+    <value>25% - 30%</value>
+  </data>
+  <data name="PctMidRange_PR13" xml:space="preserve">
+    <value>10% - 15%</value>
+  </data>
+  <data name="PctMidRange_PR18" xml:space="preserve">
+    <value>15% - 20%</value>
+  </data>
+  <data name="PctMidRange_PR43" xml:space="preserve">
+    <value>40% - 45%</value>
+  </data>
+  <data name="PctMidRange_PR48" xml:space="preserve">
+    <value>45% - 50%</value>
+  </data>
+  <data name="PctMidRange_PR33" xml:space="preserve">
+    <value>30% - 35%</value>
+  </data>
+  <data name="PctMidRange_PR38" xml:space="preserve">
+    <value>35% - 40%</value>
+  </data>
+  <data name="PctMidRange_PR63" xml:space="preserve">
+    <value>60% - 65%</value>
+  </data>
+  <data name="PctMidRange_PR68" xml:space="preserve">
+    <value>65% - 70%</value>
+  </data>
+  <data name="PctMidRange_PR53" xml:space="preserve">
+    <value>50% - 55%</value>
+  </data>
+  <data name="PctMidRange_PR58" xml:space="preserve">
+    <value>55% - 60%</value>
+  </data>
+  <data name="PctMidRange_PR88" xml:space="preserve">
+    <value>85% - 90%</value>
+  </data>
+  <data name="PctMidRange_PR83" xml:space="preserve">
+    <value>80% - 85%</value>
+  </data>
+  <data name="PctMidRange_PR73" xml:space="preserve">
+    <value>70% - 75%</value>
+  </data>
+  <data name="PctMidRange_PR78" xml:space="preserve">
+    <value>75% - 80%</value>
+  </data>
+  <data name="PctMidRange_PR98" xml:space="preserve">
+    <value>95% - 99%</value>
+  </data>
+  <data name="PctMidRange_PR93" xml:space="preserve">
+    <value>90% - 95%</value>
+  </data>
+  <data name="LocSite_PluralName" xml:space="preserve">
+    <value>Sitios del lugar</value>
+  </data>
+  <data name="YearUnit_Metric" xml:space="preserve">
+    <value>Métrico</value>
+  </data>
+  <data name="LandUse_SingularName" xml:space="preserve">
+    <value>Uso de la tierra</value>
+  </data>
+  <data name="Entity_Id" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="CrownLightExposure_ThreeSides" xml:space="preserve">
+    <value>3 Lados</value>
+  </data>
+  <data name="TreeStatus_Planted" xml:space="preserve">
+    <value>Plantado</value>
+  </data>
+  <data name="Condition_SingularName" xml:space="preserve">
+    <value>Condición</value>
+  </data>
+  <data name="PctTopRange_PCTINV" xml:space="preserve">
+    <value>-- No especificado --</value>
+  </data>
+  <data name="ConditionCategory_Poor" xml:space="preserve">
+    <value>Mala</value>
+  </data>
+  <data name="ConditionCategory_Fair" xml:space="preserve">
+    <value>Aceptable</value>
+  </data>
+  <data name="ConditionCategory_Good" xml:space="preserve">
+    <value>Buena</value>
+  </data>
+  <data name="ConditionCategory_Dead" xml:space="preserve">
+    <value>Muerto</value>
+  </data>
+  <data name="FieldOne_SingularName" xml:space="preserve">
+    <value>Campo uno</value>
+  </data>
+  <data name="SampleType_ClusterStreetTree" xml:space="preserve">
+    <value>Árbol de la calle en grupo</value>
+  </data>
+  <data name="MaintRec_PluralName" xml:space="preserve">
+    <value>Mantenimiento recomendado</value>
+  </data>
+  <data name="SampleType_ClusterPlot" xml:space="preserve">
+    <value>Parcela de grupo</value>
+  </data>
+  <data name="Crown_BaseHeight" xml:space="preserve">
+    <value>Altura a la base</value>
+  </data>
+  <data name="TreeStatus_HealthyRemoved" xml:space="preserve">
+    <value>Saludable eliminado</value>
+  </data>
+  <data name="ReferenceObject_Distance" xml:space="preserve">
+    <value>Distancia</value>
+  </data>
+  <data name="GroundCover_PluralName" xml:space="preserve">
+    <value>Coberturas del suelo</value>
+  </data>
+  <data name="CrownLightExposure_TwoSides" xml:space="preserve">
+    <value>2 Lados</value>
+  </data>
+  <data name="ReferenceObjectType_Tree" xml:space="preserve">
+    <value>Árbol</value>
+  </data>
+  <data name="ReferenceObjectType_Curb" xml:space="preserve">
+    <value>Borde de la banqueta</value>
+  </data>
+  <data name="TreeStatus_InitialSample" xml:space="preserve">
+    <value>Muestra inicial</value>
+  </data>
+  <data name="Grass_SingularName" xml:space="preserve">
+    <value>Pastos/Hierbas</value>
+  </data>
+  <data name="Condition_Id" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="PctTopRange_PCT5" xml:space="preserve">
+    <value>1% - 5%</value>
+  </data>
+  <data name="PctTopRange_PCT0" xml:space="preserve">
+    <value>0%</value>
+  </data>
+  <data name="MaintRec_SingularName" xml:space="preserve">
+    <value>Mantenimiento recomendado</value>
+  </data>
+  <data name="ReferenceObjectType_FireHydrant" xml:space="preserve">
+    <value>Hidrante de incendios</value>
+  </data>
+  <data name="CrownLightExposure_NotEntered" xml:space="preserve">
+    <value>-- No especificado --</value>
+  </data>
+  <data name="Shrub_SingularName" xml:space="preserve">
+    <value>Matorral</value>
+  </data>
+  <data name="LandUse_LandUseId" xml:space="preserve">
+    <value>Categoría del uso de la tierra</value>
+  </data>
+  <data name="Plot_PluralName" xml:space="preserve">
+    <value>Parcelas</value>
+  </data>
+  <data name="Tree_Species" xml:space="preserve">
+    <value>Especie</value>
+  </data>
+  <data name="ConditionCategory_Critical" xml:space="preserve">
+    <value>Crítica</value>
+  </data>
+  <data name="Condition_PluralName" xml:space="preserve">
+    <value>Condiciones</value>
+  </data>
+  <data name="Building_Distance" xml:space="preserve">
+    <value>Distancia</value>
+  </data>
+  <data name="SampleType_RegularPlot" xml:space="preserve">
+    <value>Parcela regular</value>
+  </data>
+  <data name="WireConflict_SingularName" xml:space="preserve">
+    <value>Conflicto con servicios</value>
+  </data>
+  <data name="SampleType_UforeInventory" xml:space="preserve">
+    <value>Inventario Ufore</value>
+  </data>
+  <data name="PctMidRange_PR100" xml:space="preserve">
+    <value>100%</value>
+  </data>
+  <data name="PctMidRange_PRINV" xml:space="preserve">
+    <value>-- No especificado --</value>
+  </data>
+  <data name="ConditionCategory_Dying" xml:space="preserve">
+    <value>Muriendo</value>
+  </data>
+  <data name="ReferenceObject_SingularName" xml:space="preserve">
+    <value>Objeto de referencia</value>
+  </data>
+  <data name="ReferenceObjectType_UtilityBox" xml:space="preserve">
+    <value>Caja terminal</value>
+  </data>
+  <data name="Strata_Abbreviation" xml:space="preserve">
+    <value>Abreviatura</value>
+  </data>
+  <data name="CrownLightExposure_FourSides" xml:space="preserve">
+    <value>4 Lados</value>
+  </data>
+  <data name="LandUse_PluralName" xml:space="preserve">
+    <value>Usos de la tierra</value>
+  </data>
+  <data name="Lookup_Description" xml:space="preserve">
+    <value>Descripción</value>
+  </data>
+  <data name="SampleMethod_Linear" xml:space="preserve">
+    <value>Lineal</value>
+  </data>
+  <data name="SampleType_Inventory" xml:space="preserve">
+    <value>Inventario</value>
+  </data>
+  <data name="ReferenceObjectType_BuildingCorner" xml:space="preserve">
+    <value>Esquina del edificio</value>
+  </data>
+  <data name="Strata_Description" xml:space="preserve">
+    <value>Descripción</value>
+  </data>
+  <data name="FieldTwo_SingularName" xml:space="preserve">
+    <value>Campo dos</value>
+  </data>
+  <data name="ReferenceObjectType_Other" xml:space="preserve">
+    <value>Otro</value>
+  </data>
+  <data name="ReferenceObjectType_Fence" xml:space="preserve">
+    <value>Cerca</value>
+  </data>
+  <data name="SampleType_UforeStreetTree" xml:space="preserve">
+    <value>Árbol de la calle UFORE</value>
+  </data>
+  <data name="TreeStatus_HazardRemoved" xml:space="preserve">
+    <value>Riesgo / Salud eliminado</value>
+  </data>
+</root>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Eco.Domain" namespace="Eco.Domain.v5" auto-import="false">
+  <class name="CoverType" table="CoverTypes">
+    <composite-id name="CompositeId" class="CoverTypeId" access="field.camelcase-m-underscore">
+      <key-property name="Location" column="LocationName" access="field.camelcase-m-underscore"/>
+      <key-property name="Series" column="Series" access="field.camelcase-m-underscore"/>
+      <key-property name="Year" column="`Year`" access="field.camelcase-m-underscore"/>
+      <key-property name="Cover" column="CoverID" access="field.camelcase-m-underscore"/>
+    </composite-id>
+    <property name="Description" column="CoverDescription"/>
+    <many-to-one name="Project" access="field.camelcase-m-underscore" update="false" insert="false">
+      <column name="LocationName" />
+      <column name="Series" />
+      <column name="Year" />
+    </many-to-one>
+  </class>
+</hibernate-mapping>

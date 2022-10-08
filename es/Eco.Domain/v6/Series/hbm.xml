@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Eco.Domain" namespace="Eco.Domain.v6" auto-import="false">
+  <class name="Series" table="EcoSeries" dynamic-update="true">
+    <cache usage="read-write"/>
+    <id name="Guid" column="SeriesKey">
+      <generator class="guid"/>
+    </id>
+    <natural-id mutable="true">
+      <many-to-one name="Project" column="ProjectKey" not-null="true"/>
+      <property name="Id" column="Series" not-null="true" length="255"/>
+    </natural-id>
+    <version name="Revision" column="Revision" unsaved-value="0"/>
+    <set name="Years" table="EcoYears" lazy="true" inverse="true" cascade="merge,save-update,evict">
+      <key unique="true">
+        <column name="SeriesKey" not-null="true"/>
+      </key>
+      <one-to-many class="Year"/>
+    </set>
+    <property name="IsPermanent" column="IsPermanent"/>
+    <property name="SampleType" column="SampleType" type="Eco.Domain.Types.v6.SampleType, Eco.Domain"/>
+    <property name="SampleMethod" column="SampleMethod"/>
+    <property name="DefaultPlotSize" column="DefaultPlotSize"/>
+    <property name="DefaultPlotSizeUnit" column="DefaultPlotSizeUnits" type="Eco.Domain.Types.v6.PlotSize, Eco.Domain"/>
+    <property name="GISProjection" column="GISProjection" length="1073741823"/>
+    <property name="GISUnit" column="GISUnits" />
+    <property name="Comments" column="Comments" length="255"/>
+  </class>
+</hibernate-mapping>

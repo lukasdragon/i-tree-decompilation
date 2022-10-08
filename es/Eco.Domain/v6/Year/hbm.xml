@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Eco.Domain" namespace="Eco.Domain.v6" auto-import="false">
+  <class name="Year" table="EcoYears" dynamic-update="true">
+    <cache usage="read-write"/>
+    <id name="Guid" column="YearKey">
+      <generator class="guid"/>
+    </id>
+    <natural-id mutable="true">
+      <many-to-one name="Series" column="SeriesKey" not-null="true"/>
+      <property name="Id" column="`Year`" not-null="true"/>
+    </natural-id>
+    <version name="Revision" column="Revision" unsaved-value="0"/>
+    <set name="GroundCovers" table="EcoGroundCovers" lazy="true" inverse="true" batch-size="20" cascade="merge,save-update,evict" order-by="GroundCoverDescription">
+      <key unique="true">
+        <column name="YearKey" not-null="true"/>
+      </key>
+      <one-to-many class="GroundCover"/>
+    </set>
+    <set name="LandUses" table="EcoLandUses" lazy="true" inverse="true" cascade="merge,save-update,evict" order-by="LandUseDescription">
+      <key unique="true">
+        <column name="YearKey" not-null="true"/>
+      </key>
+      <one-to-many class="LandUse"/>
+    </set>
+    <set name="YearLocationData" table="EcoYearLocationData" lazy="true" inverse="true" cascade="merge,save-update,evict">
+      <key unique="true">
+        <column name="YearKey" not-null="true"/>
+      </key>
+      <one-to-many class="YearLocationData"/>
+    </set>
+    <set name="YearlyCosts" table="EcoYearlyCosts" lazy="true" inverse="true" cascade="merge,save-update,evict">
+      <key unique="true">
+        <column name="YearKey" not-null="true"/>
+      </key>
+      <one-to-many class="YearlyCost"/>
+    </set>
+    <set name="SiteTypes" table="EcoLookups" lazy="true" inverse="true" cascade="merge,save-update,evict" order-by="Description">
+      <key unique="true">
+        <column name="YearKey" not-null="true"/>
+      </key>
+      <one-to-many class="SiteType"/>
+    </set>
+    <set name="LocSites" table="EcoLookups" lazy="true" inverse="true" cascade="merge,save-update,evict" order-by="Description">
+      <key unique="true">
+        <column name="YearKey" not-null="true"/>
+      </key>
+      <one-to-many class="LocSite"/>
+    </set>
+    <set name="MaintRecs" table="EcoLookups" lazy="true" inverse="true" cascade="merge,save-update,evict" order-by="Description">
+      <key unique="true">
+        <column name="YearKey" not-null="true"/>
+      </key>
+      <one-to-many class="MaintRec"/>
+    </set>
+    <set name="MaintTasks" table="EcoLookups" lazy="true" inverse="true" cascade="merge,save-update,evict" order-by="Description">
+      <key unique="true">
+        <column name="YearKey" not-null="true"/>
+      </key>
+      <one-to-many class="MaintTask"/>
+    </set>
+    <set name="SidewalkDamages" table="EcoLookups" lazy="true" inverse="true" cascade="merge,save-update,evict" order-by="Description">
+      <key unique="true">
+        <column name="YearKey" not-null="true"/>
+      </key>
+      <one-to-many class="Sidewalk"/>
+    </set>
+    <set name="WireConflicts" table="EcoLookups" lazy="true" inverse="true" cascade="merge,save-update,evict" order-by="Description">
+      <key unique="true">
+        <column name="YearKey" not-null="true"/>
+      </key>
+      <one-to-many class="WireConflict"/>
+    </set>
+    <set name="OtherOnes" table="EcoLookups" lazy="true" inverse="true" cascade="merge,save-update,evict" order-by="Description">
+      <key unique="true">
+        <column name="YearKey" not-null="true"/>
+      </key>
+      <one-to-many class="OtherOne"/>
+    </set>
+    <set name="OtherTwos" table="EcoLookups" lazy="true" inverse="true" cascade="merge,save-update,evict" order-by="Description">
+      <key unique="true">
+        <column name="YearKey" not-null="true"/>
+      </key>
+      <one-to-many class="OtherTwo"/>
+    </set>
+    <set name="OtherThrees" table="EcoLookups" lazy="true" inverse="true" cascade="merge,save-update,evict" order-by="Description">
+      <key unique="true">
+        <column name="YearKey" not-null="true"/>
+      </key>
+      <one-to-many class="OtherThree"/>
+    </set>
+    <set name="PlantingSiteTypes" table="EcoPlantingSiteTypes" lazy="true" inverse="true" cascade="merge,save-update,evict">
+      <key unique="true">
+        <column name="YearKey" not-null="true"/>
+      </key>
+      <one-to-many class="PlantingSiteType"/>
+    </set>
+    <set name="DBHs" table="EcoDBH" lazy="true" inverse="true" cascade="merge,save-update,evict" order-by="DBHId">
+      <key unique="true">
+        <column name="YearKey" not-null="true"/>
+      </key>
+      <one-to-many class="DBH"/>
+    </set>
+    <set name="DBHRptClasses" table="EcoDBHRptClasses" lazy="true" inverse="true" cascade="merge,save-update,evict" order-by="RangeStart">
+      <key unique="true">
+        <column name="YearKey" not-null="true"/>
+      </key>
+      <one-to-many class="DBHRptClass"/>
+    </set>
+    <set name="HealthRptClasses" table="EcoHealthRptClasses" lazy="true" inverse="true" cascade="merge,save-update,evict" order-by="Extent">
+      <key unique="true">
+        <column name="YearKey" not-null="true"/>
+      </key>
+      <one-to-many class="HealthRptClass"/>
+    </set>
+    <set name="Conditions" table="EcoConditions" lazy="true" inverse="true" cascade="merge,save-update,evict" order-by="PctDieback">
+      <key unique="true">
+        <column name="YearKey" not-null="true"/>
+      </key>
+      <one-to-many class="Condition"/>
+    </set>
+    <set name="Strata" table="EcoStrata" lazy="true" inverse="true" cascade="merge,save-update,evict" order-by="Description">
+      <key unique="true">
+        <column name="YearKey" not-null="true"/>
+      </key>
+      <one-to-many class="Strata"/>
+    </set>
+    <set name="Plots" table="EcoPlots" lazy="true" batch-size="20" inverse="true" cascade="merge,save-update,evict" order-by="PlotId">
+      <key unique="true">
+        <column name="YearKey" not-null="true"/>
+      </key>
+      <one-to-many class="Plot"/>
+    </set>
+    <set name="Forecasts" table="EcoForecasts" lazy="true" inverse="true" cascade="merge,save-update,evict" order-by="Title">
+      <key unique="true">
+        <column name="YearKey" not-null="true"/>
+      </key>
+      <one-to-many class="Forecast"/>
+    </set>
+    <set name="Results" table="EcoYearResults" lazy="true" inverse="true" cascade="merge,save-update,evict">
+      <key unique="true">
+        <column name="YearKey" not-null="true"/>
+      </key>
+      <one-to-many class="YearResult"/>
+    </set>
+    <map cascade="all" name="Options" table="EcoYearOptions" mutable="true" lazy="false">
+      <key column="YearKey" not-null="true"/>
+      <index type="String">
+        <column name="`Option`" not-null="true" length="30"/>
+      </index>
+      <element type="Boolean">
+        <column name="Enabled" not-null="true"/>
+      </element>
+    </map>
+    <property name="Unit" column="Units" type="Eco.Domain.Types.v6.YearUnit, Eco.Domain"/>
+    <property name="Budget" column="Budget"/>
+    <property name="IsInitialMeasurement" column="IsInitialMeasure"/>
+    <property name="OtherOne" column="OtherOne" length="25"/>
+    <property name="OtherTwo" column="OtherTwo" length="25"/>
+    <property name="OtherThree" column="OtherThree" length="25"/>
+    <property name="MobileKey" column="MobileKey" length="100"/>
+    <property name="MobileEmail" column="MobileEmail" length="100"/>
+    <one-to-one name="Carbon" class="Carbon" property-ref="Year" cascade="merge,save-update,evict"/>
+    <one-to-one name="CO" class="CO" property-ref="Year" cascade="merge,save-update,evict"/>
+    <one-to-one name="Electricity" class="Electricity" property-ref="Year" cascade="merge,save-update,evict"/>
+    <one-to-one name="NO2" class="NO2" property-ref="Year" cascade="merge,save-update,evict"/>
+    <one-to-one name="O3" class="O3" property-ref="Year" cascade="merge,save-update,evict"/>
+    <one-to-one name="PM10" class="PM10" property-ref="Year" cascade="merge,save-update,evict"/>
+    <one-to-one name="PM25" class="PM25" property-ref="Year" cascade="merge,save-update,evict"/>
+    <one-to-one name="SO2" class="SO2" property-ref="Year" cascade="merge,save-update,evict"/>
+    <one-to-one name="Gas" class="Gas" property-ref="Year" cascade="merge,save-update,evict"/>
+    <one-to-one name="H2O" class="H2O" property-ref="Year" cascade="merge,save-update,evict"/>
+    <one-to-one name="ExchangeRate" class="ExchangeRate" property-ref="Year" cascade="merge,save-update,evict"/>
+    <one-to-one name="Home" class="Home" property-ref="Year" cascade="merge,save-update,evict"/>
+    <one-to-one name="VOC" class="VOC" property-ref="Year" cascade="merge,save-update,evict"/>
+    <one-to-one name="PopulationDensity" class="PopulationDensity" property-ref="Year" cascade="merge,save-update,evict"/>
+    <property name="Comments" column="Comments" length="255"/>
+    <property name="RevProcessed" column="RevProcessed" />
+    <property name="Changed" column="Changed" />
+    <property name="Culture" column="Culture" type="Eco.Domain.Types.v6.CultureType, Eco.Domain"/>
+    <property name="SpeciesVersion" column="SpeciesVersion" type="Eco.Domain.Types.v6.VersionType, Eco.Domain"/>
+    <property name="LocationVersion" column="LocationVersion" type="Eco.Domain.Types.v6.VersionType, Eco.Domain"/>
+  </class>
+</hibernate-mapping>

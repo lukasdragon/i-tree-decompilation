@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Eco.Domain" namespace="Eco.Domain.v6" auto-import="false">
+  <class name="MobileLogEntry" table="EcoMobileLog" dynamic-update="true">
+    <cache usage="read-write"/>
+    <id name="Guid" column="MobileLogKey">
+      <generator class="guid"/>
+    </id>
+    <version name="Revision" column="Revision" unsaved-value="0"/>
+    <many-to-one name="Year" column="YearKey" not-null="true"/>
+    <property name="MobileKey" column="MobileKey" not-null="true"/>
+    <property name="Description" column="Description"/>
+    <property name="DateTime" column="`DateTime`" />
+    <property name="Submitted" column="Submitted" />
+  </class>
+</hibernate-mapping>

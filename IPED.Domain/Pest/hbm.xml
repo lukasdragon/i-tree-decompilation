@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="IPED.Domain" namespace="IPED.Domain" auto-import="false">
+  <class name="Pest" table="Pests">
+    <id name="Id" column="Id" generator="assigned"/>
+    <property name="CommonName" column="CommonName" not-null="false"/>
+    <property name="ScientificName" column="ScientificName" not-null="false"/>
+  </class>
+</hibernate-mapping>

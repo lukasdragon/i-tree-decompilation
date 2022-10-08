@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Program Files (x86)\i-Tree\EcoV6\IPED.Domain.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{431F19CB-0175-463E-87EE-3449D9D9EFF1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>IPED.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <ApplicationVersion>1.1.6145.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>IPED.Domain</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IPEDDomain_ProcessedByFody.cs" />
+    <Compile Include="Lookup.cs" />
+    <Compile Include="BBAbnGrowth.cs" />
+    <Compile Include="BBDiseaseSigns.cs" />
+    <Compile Include="BBInsectPres.cs" />
+    <Compile Include="BBInsectSigns.cs" />
+    <Compile Include="BBProbLoc.cs" />
+    <Compile Include="FTAbnFoli.cs" />
+    <Compile Include="FTChewFoli.cs" />
+    <Compile Include="FTDiscFoli.cs" />
+    <Compile Include="FTFoliAffect.cs" />
+    <Compile Include="FTInsectSigns.cs" />
+    <Compile Include="TSDieback.cs" />
+    <Compile Include="TSEnvStress.cs" />
+    <Compile Include="TSEpiSprout.cs" />
+    <Compile Include="TSHumStress.cs" />
+    <Compile Include="TSWiltFoli.cs" />
+    <Compile Include="Lucid.cs" />
+    <Compile Include="Pest.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="Attributes\LocalizedDescriptionAttribute.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Lookup\hbm.xml" />
+    <EmbeddedResource Include="Lucid\hbm.xml" />
+    <EmbeddedResource Include="Pest\hbm.xml" />
+    <EmbeddedResource Include="Properties\Resources.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

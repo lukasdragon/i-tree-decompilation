@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Eco.Domain" namespace="Eco.Domain.v6" auto-import="false">
+  <class name="Plot" table="EcoPlots" dynamic-update="true">
+    <cache usage="read-write"/>
+    <id name="Guid" column="PlotKey">
+      <generator class="guid"/>
+    </id>
+    <natural-id mutable="true">
+      <many-to-one name="Year" column="YearKey" not-null="true"/>
+      <property name="Id" column="PlotId" not-null="true"/>
+    </natural-id>
+    <version name="Revision" column="Revision" unsaved-value="0"/>
+    <set name="PlotGroundCovers" table="EcoPlotGroundCovers" lazy="true" inverse="true" batch-size="10" cascade="merge,save-update,evict">
+      <key unique="true">
+        <column name="PlotKey" not-null="true"/>
+      </key>
+      <one-to-many class="PlotGroundCover"/>
+    </set>
+    <set name="PlotLandUses" table="EcoPlotLandUses" lazy="true" inverse="true" cascade="merge,save-update,evict">
+      <key unique="true">
+        <column name="PlotKey" not-null="true"/>
+      </key>
+      <one-to-many class="PlotLandUse"/>
+    </set>
+    <set name="Trees" table="EcoTrees" lazy="true" inverse="true" batch-size="100" cascade="merge,save-update,evict">
+      <key unique="true">
+        <column name="PlotKey" not-null="true"/>
+      </key>
+      <one-to-many class="Tree"/>
+    </set>
+    <set name="PlantingSites" table="EcoPlantingSites" lazy="true" inverse="true" batch-size="20" cascade="merge,save-update,evict">
+      <key unique="true">
+        <column name="PlotKey" not-null="true"/>
+      </key>
+      <one-to-many class="PlantingSite"/>
+    </set>
+    <set name="ReferenceObjects" table="EcoReferenceObjects" lazy="true" inverse="true" batch-size="20" cascade="merge,save-update,evict">
+      <key unique="true">
+        <column name="PlotKey" not-null="true"/>
+      </key>
+      <one-to-many class="ReferenceObject"/>
+    </set>
+    <set name="Shrubs" table="EcoShrubs" lazy="true" inverse="true" batch-size="20" cascade="merge,save-update,evict">
+      <key unique="true">
+        <column name="PlotKey" not-null="true"/>
+      </key>
+      <one-to-many class="Shrub"/>
+    </set>
+    <property name="Address" column="Address" length="100"/>
+    <property name="Comments" column="Comments" length="1073741823"/>
+    <property name="ContactInfo" column="ContactInfo" length="255"/>
+    <property name="Crew" column="Crew" length="100"/>
+    <property name="Date" column="`Date`"/>
+    <property name="Latitude" column="YCoordinate"/>
+    <property name="Longitude" column="XCoordinate"/>
+    <property name="PercentMeasured" column="PercentMeasured"/>
+    <property name="PercentPlantable" column="PercentPlantable"/>
+    <property name="PercentShrubCover" column="PercentShrubCover"/>
+    <property name="PercentTreeCover" column="PercentTreeCover"/>
+    <property name="Photo" column="Photo" length="100"/>
+    <property name="Size" column="PlotSize"/>
+    <property name="Stake" column="Stake"/>
+    <property name="IsComplete" column="IsComplete"/>
+    <many-to-one name="Street" column="StreetKey"/>
+    <many-to-one name="Strata" column="StrataKey"/>
+    <many-to-one name="ProjectLocation" column="ProjectLocationKey"/>
+    <property name="PriorYear" column="PriorYearKey"/>
+  </class>
+</hibernate-mapping>

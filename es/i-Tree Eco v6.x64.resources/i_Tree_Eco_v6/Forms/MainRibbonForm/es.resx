@@ -1,0 +1,1594 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="rbUserGuidesInventoryImporter.Text" xml:space="preserve">
+    <value>Importar inventario de árboles</value>
+  </data>
+  <data name="PollutionRemovalByTreesandShrubs.Text" xml:space="preserve">
+    <value>Eliminación de la contaminación por árboles y matorrales</value>
+  </data>
+  <data name="TreeCoverAreaByStrata.Text" xml:space="preserve">
+    <value>Área de cobertura árborea por estrato</value>
+  </data>
+  <data name="CarbonStorage.Text" xml:space="preserve">
+    <value>Almacenamiento de carbono de los árboles</value>
+  </data>
+  <data name="rgProjectActions.Text" xml:space="preserve">
+    <value>Acciones</value>
+  </data>
+  <data name="undoSplitButton.Text" xml:space="preserve">
+    <value>Deshacer</value>
+  </data>
+  <data name="rbProjectExportCSV.ToolTip" xml:space="preserve">
+    <value>Sólo para datos de la tabla</value>
+  </data>
+  <data name="conditionOfTreesByStrataMenuItem.Text" xml:space="preserve">
+    <value>Por estrato y especie</value>
+  </data>
+  <data name="orangeButton.Text" xml:space="preserve">
+    <value>Naranja</value>
+  </data>
+  <data name="rbWeatherAirQualImprovementTree.Text" xml:space="preserve">
+    <value>Por árboles</value>
+  </data>
+  <data name="EnergyEffectsLabel.Text" xml:space="preserve">
+    <value>Efectos de la energía</value>
+  </data>
+  <data name="rbPotentialEvapotranspiration.Text" xml:space="preserve">
+    <value>Posible evapotranspiración</value>
+  </data>
+  <data name="rtProject.Text" xml:space="preserve">
+    <value>Configuración del proyecto</value>
+  </data>
+  <data name="ManagementCostsLabel.Text" xml:space="preserve">
+    <value>Gastos de manejo</value>
+  </data>
+  <data name="rbtnMaintenanceRecommended.Text" xml:space="preserve">
+    <value>Mantenimiento recomendado</value>
+  </data>
+  <data name="FunctionalSplitButton.ToolTip" xml:space="preserve">
+    <value>Beneficios pronosticados de los árboles</value>
+  </data>
+  <data name="SusceptibilityOfTreesToPestsLabel.Text" xml:space="preserve">
+    <value>Susceptibilidad a plagas</value>
+  </data>
+  <data name="visitITreeToolsDotOrgButton.ToolTip" xml:space="preserve">
+    <value>Sitio electrónico principal de i-Tree</value>
+  </data>
+  <data name="rgProjectExport.Text" xml:space="preserve">
+    <value>Exportar</value>
+  </data>
+  <data name="mostImportantTreeSpeciesMenuItem.Text" xml:space="preserve">
+    <value>Por especie</value>
+  </data>
+  <data name="rbtnBenefitPrices.Text" xml:space="preserve">
+    <value>Precios de los beneficios</value>
+  </data>
+  <data name="rbDataRedo.Text" xml:space="preserve">
+    <value>Rehacer</value>
+  </data>
+  <data name="DefaultsButton.ToolTip" xml:space="preserve">
+    <value>Restaurar todas las opciones básicas a sus valores predeterminados y eliminar todas las opciones personalizadas.</value>
+  </data>
+  <data name="BenefitsSummaryLabel.Text" xml:space="preserve">
+    <value>Resumen de beneficios de árboles</value>
+  </data>
+  <data name="carbonStorageOfTreesBySpeciesChartMenuItem.Text" xml:space="preserve">
+    <value>Por especie</value>
+  </data>
+  <data name="leafAreaAndBiomassOfTreesByDBHClassAndStrataMenuItem.Text" xml:space="preserve">
+    <value>De los árboles por clase de DAP y especie (muestra vertical)</value>
+  </data>
+  <data name="rbReportsSpeciesSN.Text" xml:space="preserve">
+    <value>Científico</value>
+  </data>
+  <data name="rmUserGuides.Text" xml:space="preserve">
+    <value>Manuales del usuario</value>
+  </data>
+  <data name="lblStructureSummary.Text" xml:space="preserve">
+    <value>Resumen de la estructura</value>
+  </data>
+  <data name="ribbonLabel1.Text" xml:space="preserve">
+    <value>Configuración activa:</value>
+  </data>
+  <data name="rbProjectUndo.Text" xml:space="preserve">
+    <value>Deshacer</value>
+  </data>
+  <data name="rlEvaporation.Text" xml:space="preserve">
+    <value>Evaporación</value>
+  </data>
+  <data name="feedbackButton.Text" xml:space="preserve">
+    <value>Retroalimentación</value>
+  </data>
+  <data name="rbBenefitsSummaryStrataSpecies.Text" xml:space="preserve">
+    <value>Por estrato y especie</value>
+  </data>
+  <data name="tealButton.Text" xml:space="preserve">
+    <value>Verde azulado</value>
+  </data>
+  <data name="speciesCompositionByDBHClassVerticalMenuItem.Text" xml:space="preserve">
+    <value>Por clase de DAP (tabla vertical)</value>
+  </data>
+  <data name="mnuFileSaveProject.Text" xml:space="preserve">
+    <value>Guardar proyecto (automático)</value>
+  </data>
+  <data name="MortalityButton.Text" xml:space="preserve">
+    <value>Índices anuales de mortalidad</value>
+  </data>
+  <data name="numberOfTreesPerUnitAreaByStrataChartMenuItem.Text" xml:space="preserve">
+    <value>Por estrato por unidad de área</value>
+  </data>
+  <data name="undoSplitButton.ToolTip" xml:space="preserve">
+    <value>Deshacer (Ctrl+Z)</value>
+  </data>
+  <data name="ForecastCarbonSequestration.Text" xml:space="preserve">
+    <value>Secuestro de carbono</value>
+  </data>
+  <data name="$this.Icon" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5JY29uAgAAAAhJY29uRGF0YQhJY29uU2l6ZQcEAhNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAIAAAAJAwAAAAX8////E1N5c3RlbS5EcmF3aW5nLlNpemUCAAAABXdpZHRoBmhlaWdodAAACAgCAAAAAAAAAAAAAAAPAwAAAO4cAAACAAABAAMAEBAAAAAACABoBQAANgAAACAgAAAAAAgAqAgAAJ4FAAAwMAAAAAAIAKgOAABGDgAAKAAAABAAAAAgAAAAAQAIAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAEAAP///wDivpgA2ah1ANmndADYpXEA1Z9nAOHo1wCLpmMAb5A9AH6ZTQC7sn4A3LCCAGWJMABBbQAAQ24CAFl/IAC+s4AA+/z5AJaucgBMdQ8AVn0cAKCtcQDXo20Au8qjAEJvBABYfx4A1LWHAFmAIABMgyIATIIhAEJuAgCbvooApruHAEFuAQBltHEAbcOJAFyjVgBir2gAq9GpAHqZTABcolMAV5lGAM61hwCLpmQASXMLAE93EgBZnEsAZ7d2AIygWgDbr4AA265+ANimcwDF0rAAhLFyAGiYTwBCc00Av9KwAHupgwBghTsAhJxTANaxggDftowAramiANe8oADd5fAAMmGcAJGFfQB0eocA1aJtANqpeADXpG8AzLqoAJyXjwC9tq4A3LGDAN+6kwDj6vIAJ1ygAFZukQDUn2cAyLyvANbEsADEtqcAs6+pANS8ogDa4+8AJlygAJycngDVuJkA1bmcALKuqADCuKwAu7OpAKiknQC/tqsAwdDkAISLkwCXsdEAfYiUAMPS5QBbhLcAVH60AGSGsgClqKsAysjDAN/d2wDh4N0AxcK+AK6powCkn5gApJ+YAP7+/gD///8A////AP///wD///8A////AP///wD///8A/v7+AP7+/gD///8A////AP7+/gD///8A////AP///wD+/v4A/v7+AP///wD///8A/v7+AP///wD///8A////AP///wD///8A/v3/AP///wD///8A////AP///wD///8A/v3/AP///wD+/v4A/f39AP7+/gD9/f8A////AP///wD///8A/v7+AP7+/gD///8A////AP///wD///8A////AP///wD///8A//39AP/9/gD///8A//3/AP///wD///8A////AP///wD///8A////AP///wD//v0A////AP7+/gD///8A////AP///wD///8A////AP///wD///8A/v7+AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD+//0A////AP///wD///8A////AP///wD///8A//39AP///wD//f4A////AP///wD///8A////AP///wD///8A//3+AP///wD///8A//79AP/+/QD///8A////AP///wD///8A///9AP///wD//v0A////AP/9/wD///8A/v/9AP///wD///8A////AP3//QD///8A////AP///wD///8A////AP///wD9/f0A////AP39/QD///8A////AP///wD9/f0A/f39AP39/QD///8A/f39AP3+/wD///8A////AP39/wD///8A////AP/9/QD///8A////AC0y9wAAAABjZGVmZ2hpamtsbW1dAAAAAGFWYkhISEhISEhISAAAAABfVmBISEhISEhISEgAAAAAVVZXWFlaW1xIXV5IAAAAAExNTk8zUFFSSFNUSAAAAABAQUJDREVGR0hJSksAADQ1Njc4OTo7PD0+PwUFKywtDQ0NLi8NDTAxMjMFBScNDQ0NDSgpDQ0NKgUFBQUgDQ0NDSEiIyQlJgQFBQUFGw0NDQ0cHR4NDR8FBQUFBRcNDQ0NGA0NDRkaBQUFBQUREhMNDQ0NDRQVFgUFBQUFAAAMDQ0NDg8QBQUFBQUFBQAABgcICQoLBQUFBQUFBQUAAAAAAAECAwQEBQUFBQUFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgAAAAgAAAAQAAAAAEACAAAAAAAAAQAAAAAAAAAAAAAAAEAAAABAAD///8A/PTrAN2wgQDXoGMA1qRuAPn8+gDN17YAprqEAJOudACftXcAt8OaAOTUtADeto0AydOyAFV8IQBAbQAARHEAAJGscgDl07wA5cOeANqocgDj6tkAQm8AAFN7BgBniioAtsOSAOa+lADU3MMA2eLIAGKFJACvwpUA1dKxAN6xggCds3UA7/TqAFR7HwDl2r4AiKRiAER3FwBFcgAAgZ5SAOPRugDL1bQARnMCAEmEHwBLhiIAmsGOAOCzhAC9z6kAaLZ0AFmbSgBBdBEAQW4AAFKVOQCg3r0A4ruRAG6RPwBMgREAcs6YAGW6ewBtyJMAbMKCAGKrXQBcpFcAYrFnANzu4wDYpnAA1d7EAGrAgABpz5kAbcODAGa0cgBXmj4AUYwqAGCvZABpt3UAgr2DAN/VuQDYoWQAY4YlAGnFiABUlkUAfZlOAE6JJgBrjjwA5MKdAOfu3ABKfwwAaL5+AEd0BADKz6oAtMaZAGuNOwBhhCIASH0HAGqMOgDh3MQA2q1+AIekWABGeRoAXqxqALTmxwCi4L8AYbBmAI6qaADguI8A6cahANrY0gCqp6IAsK6oAOrMrADr9u8Aze/aAL7nzgCx3LoARH+KACpgmwC8v70A48GcAIShsgA9angAp7qMANLPrgDbrn8AzszGAJ+XjwCgnpkA69S4AD5vqwAjWqIAo4t4AMWZaQBRbJAAPmWYALyWbADh2dAAopqSAMLAuwDhv5oASXetAISAggA/ZpkAN2SYAMSYaADt2coA26lzAMnGwQCbmZQA5cioAOHTxwBOfLIAKl6fALSTbwDYq3wA39fOALGvqgDnz7QATXuxAHV6iAD37uUA////AOLf2gBHc68Aup9/AO/XuwCjm5MAmpiTAPDn3wDv5t4AMGSnACxgoQDGxL8AyMXAAKGZkQCvrKcAtbOuAKaknwDp8PkAM2OeANPg6wA5ZJ4ArsXcAPn8+gBWf7UAhYuTAN/m7wBeibkAfIiSAKiloADAvrgA0c/KANvZ1ADW084Avru2AODn8ACovNoAxs3VAPLv6gD3+vgA4+DbAM/NxwC8ubQAu7izAMG/uQDFw74A////AP///wD///8A////AP///wD///8A//79AP///wD///8A////AP///wD///8A////AP///wD///8A////AP/9/QD///8A///9AP///wD///8A////AP///wD///8A/f//AP///wD///8A////AP///wD///8A////AP///wD///8A////AP39/QD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A7+/v7+/vwsPDw8PDw8PDxMXv7+/v7+8Fx3zMwcHBiczv7+/v7+/vubqBgYGBsrt9fWyJvr/AwaV9fX19fX19fe/v7+/v7+/v77eBgYG4fX19fX19fX19fX19fX19fX197+/v7+/v7+/vtYGBsn19fX19fX19fX19fX19fX19fX3v7+/v7+/v7++zgYG0fX19fX19fX19fX19fX19fX19fe/v7+/v7+/v77GBgbJ9fX19fX19fX19fX19fX19fX197+/v7+/v7+/v76mBqcySkpKSzKV9rq+wfX19fX19fX3v7+/v7+/v7+/vooGBo5GRkZF/pX2HVZJ9fX2TqKh9fe/v7+/v7+/v7++WgYGeTk5OFJ9+faGUkn19fZN/f3197+/v7+/v7+/v75aBl5eYTk5OYZqbnJGSfX19k39/fX3v7+/v7+/v7+/vi4GMtLKDTk5OYZBOkZJ9fX2Tf5SVle/v7+/v7+/v7++AgYKDhLSGTk5OTk4Eh6V9fcyKTk5O7+/v7+/vInBxcnN0dRpVd3h5W3pVTk5hfH1+f05OTk7v7+/v72IWSWMWFhZkZWZAFhYWFmg3Tk6/bJtuTk5OTu9bXB1SHRYWFhYWFl5YRUVXFhYWXGBhTlVqaiBOTk5OVhYWFhYWFhYWFhYWFldFWBYWFhYWK1oUTk5OTk5OTk5WFhYWFhYWFhYWFhYWLEVTFhYWFhYWXFVOTk5OTk5OTu8dFhYWFhYWFhYWFitQRVEWFhYWFhZSGk5OTk5OTk5O7xsrFhYWFhYWFhYWFkZFRkdISUpLTE1OTk5OTk5OTk7vOBYWFhYWFhYWFhY5Ojs8Rj4/QDpBFE5OTk5OTk5OTjAWFhYWFhYWFhYWFksyKyYWFhYWNTYaTk5OTk5OTk5OKhYWFhYWFhYWFissLRYWFhYWFhYWLi9OTk5OTk5OTk7vJRYWFhYWFhYWJisWFhYWFhYWFigSTk5OTk5OTk5OTu8iIxYWFhYWFhYWFhYWFhYWFhYWJE5OTk5OTk5OTk5O7+8hFhYWFhYWFhYWFhYWFhYWFhYSTk5OTk5OTk5OTk7v7+8cCBYWFhYWFhYWFhYWFh0eHyBOTk5OTk5OTk5OTu/v7+8bFhYWFhYWFhYWFhYWW5FOTk5OTk5OTk5OTk5O7+/v71YWFhYWFhYWFhYXGBkaTk5OTk5OTk5OTk5OTk7v7+/v7yoOFhYWFhYrCBJVkU5OTk5OTk5OTk5OTk5OTu/v7+/v7+8qBwghWwsMTk5OTk5OTk5OTk5OTk5OTk5O7+/v7+/v7+/v7+8ETk5OTk5OTk5OTk5OTk5OTk5OTk7v7+/v7+/v7+/vASBOTk5OTk5OTk5OTk5OTk5OTk5OTgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKAAAADAAAABgAAAAAQAIAAAAAAAACQAAAAAAAAAAAAAAAQAAAAEAAP///wDiu5EA16BjAO3QsAD2+fcA5u3bAODn1QDp7uQA+fbxAPDi1gDnyqoA3Kp1ANniyACOqmcAYYQiAEFuAABAbQAARHEAAGqOLwCjt4IA5+ziAOvUuADTomwA8vftAIOgVABGcwIAprqEAPLq4QDhv5oA2KZwAPL37QBrjjwAgp9TAJiyeQCyxJcA7+7hANihZADL1bQASHUHALnKpQDs2sIAvs+qAEJvAADP2L8A8PXrAE93AABtkD4A+fDoAOnStgDY4ccAh6NhAIunZQD6/fsAjKhmALfKnADmvpQAlrB3AKC2eABsjz0At8qcAPH27ACEoVUARoEaAFqdQgBKfwwAw9O1AOXDngDx9uwATokmAFCRNQBkmUsAZbp7AEN2FQBVmDwAc8+ZAPX78QByzpgAa8GBAEuGIQBJhB8AftKiAPbz7gB+m08AZLl6AGm/fwBotnQAWqJVAGGqXQBqxY8AwenXAPf6+ACKpmQAZrRyAM3t4AD17eQA265/AGe1cwBerWIAWptLAEl+CQBIfQcAX6daAF2lWACAqGQA9e/eAHCTQQDqzKwAQXQSAFKOLABrjzEA9ODQAGzHkgB8mkMA7tvLAM/auADf5tQAUYwqAFV9CwDA0asAzde2AEd0BACBnlIA5MenAOPBnABMgREAi9esAEuADwBzlkUARnkaADxsJgBirXwAn928AOv27wCY168AZYgoAOK0hQDq5+IAz83HANHPygCfl48A8u/qAO/69AC459AAq+LGAKHfvgCe1rMASY6OAC9rmwAjWqIAtsfcAN+ygwDeto0AqrzJADBlgAA7anEAmrOCAKi8hgC2yZsA3OTLAPTs4wDXpW8AJFujAJWIfADFmWkAWW+SAD5lmAC9pZIA2Kt8AOzp5ACgnpkAyMXAADBkpwCLgoEAtJJ2AD1klwBFaZUA9PHsAKSinQDOzMYAPG2pAH5/hACtkHgAMWGbAMybZACsqaQA8Ni9AEBxrgBSbZEAN2SYAOjm4ACrqKMA9/XvALi2sQBIdqwAKl6fAJ+dmACyr6oA8/DrAG54iQDguI8AoqCbAPv9/wC9l20A4+DbAPXh0QD18u0AOWqlAExqlQArX6AAiaPCAPrx6QDNysUAnJqVAK2qpQDj6vMAcoKUAKCYkACamJMAwdLnAHWElwCsw9oAe4eRAJmz0gB8iJIAd5nCAGl8lwCYstEAOmWfAJiWkQCkuNYAS2+cAJeUkACopaAAvM3hAFeAtgAzZJ8Ar6ynAPf6+ADCwLsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAX6eqUlJSUlJSUlJTr1+TY7NO97QAAAAAAve6pi4uLi4uLi4uLi4sAAAAAAAAAAAAAAADl0JSUlJSUlObni4uLi4uL2OjEwMTIi4uLi4uLi4uLi4uLi4sAAAAAAAAAAAAAAAAA4pSUlJSU4+SLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4sAAAAAAAAAAAAAAAAAF7OUlJSU4YuLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4sAAAAAAAAAAAAAAAAAAOCUlJSU34uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4sAAAAAAAAAAAAAAAAAAN6UlJSU34uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4sAAAAAAAAAAAAAAAAAANyUlJSU3YuLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4sAAAAAAAAAAAAAAAAAANqUlJSU24uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4sAAAAAAAAAAAAAAAAAANaUlJSU19jY2NnY2NnY2YuLi4uLi4uLi4uLi4uLi4uLi4sAAAAAAAAAAAAAAAAAAFrQlJSU0dLS0tLS0tIvsIuLi9PLy4qLi4uLi4vU1dW+i4sAAAAAAAAAAAAAAAAAAADOlJSUzwICAgICAgICsIuLi8s3x4iLi4uLi4u+Wm7Ni4sAAAAAAAAAAAAAAAAAAMm6lJSUwsoCAgICAha5UYuLi8vMe4iLi4uLi4u4biTFi4sAAAAAAAAAAAAAAAAAAADBlJSUlMYCAgICAgLHv8iLi4oJC4iLi4uLi4u4biTFi4sAAAAAAAAAAAAAAAAAAADBlJSUlMK1AgICAgICHKjDxF6gC4iLi4uLi4u4biTFi4sAAAAAAAAAAAAAAAAAAAC6lJS7tpS8owICAgICAkK9jF8CC4iLi4uLi4u+biS/wMAAAAAAAAAAAAAAAAAAAACzlJS0tbaUr7cCAgICAgJqNwICC4iLi4uLi4u4bgIVubkAAAAAAAAAAAAAAAAAAACrlJSsAq2ulK+jAgICAgICAgICHbCxi4uLi4uyuQICAgIAAAAAAAAAAAAAAAAAADShlJSiAgKjpJSlpkJCAacCAgICAgGoqYuLi6oJAgICAgIAAAAAAAAAAACNXY6PkJGSk5SVbpaXCZiZmpucnZ6fAQICAgJqiYuLi4ygAgICAgIAAAAAAAAABn+AP0d0axAQKoGCg4SEhWwQEBAQEBCGc4cCAgIciouLi4wCAgICAgIAAAAXBDQAUhAQEBAQEBAQEBB8Sn19Skx+EBAQEBAQNRUCAgIciImJiQgCAgICAgIAdzoRD3hpeRAQEBAQEBAQEBAqP0xKSkpiEBAQEBAQOVF6AgILe3t7e3sCAgICAgJzKhAQEBAQEBAQEBAQEBAQEBAQEElKSkp0EBAQEBAQEHV2KAICAgICAgICAgICAgIiEBAQEBAQEBAQEBAQEBAQEBAQEGtKSmUPEBAQEBAQEBAqcgECAgICAgICAgICAgI2EBAQEBAQEBAQEBAQEBAQEBAQED5Kb2sQEBAQEBAQEBAQcHECAgICAgICAgICAgI2EBAQEBAQEBAQEBAQEBAQEBAQa1NKSmwQEBAQEBAQEBAQbW4CAgICAgICAgICAgIAaRAQEBAQEBAQEBAQEBAQEBAQZkpKSk8QEBAQEBAQEBAQE2oCAgICAgICAgICAgIAWlsQEBAQEBAQEBAQEBAQEBAQT0pKTGBhYmMQZD9lV2ZnaB0CAgICAgICAgICAgIAOSoQEBAQEBAQEBAQEBAQEBAQREpKSkpKSkpcTEpKUF1eXwICAgICAgICAgICAgIAUhAQEBAQEBAQEBAQEBAQEBARU0pUU0pMVVY/P1dYSlkDAgICAgICAgICAgICAgITDxAQEBAQEBAQEBAQEBAQEBBHTE1OEE9AEBAQEBARR1BRAgICAgICAgICAgICAgIfEBAQEBAQEBAQEBAQEBAQEBBHSBAQEBAQEBAQEBAQSUpLJAICAgICAgICAgICAgJDEBAQEBAQEBAQEBAQEBAQD0RFEBAQEBAQEBAQEBAQEEYvAgICAgICAgICAgICAgI8PRAQEBAQEBAQEBAQEBA+P0AQEBAQEBAQEBAQEBAQEUFCAgICAgICAgICAgICAgIAIRAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBA6OxUCAgICAgICAgICAgICAgIANBMQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBA5AwICAgICAgICAgICAgICAgIAACkQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBA4CgICAgICAgICAgICAgICAgIAADQ1DxAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBA2NwICAgICAgICAgICAgICAgIAAAAAMTItEBAQEBAQEBAQEBAQEBAQEBAQECoYMykbFgICAgICAgICAgICAgICAgIAAAAAAAAsLRAQEBAQEBAQEBAQEBAQEBAQEC4vMAEkAgICAgICAgICAgICAgICAgIAAAAAAAApEBAQEBAQEBAQEBAQEBAQEBAQKisBAgICAgICAgICAgICAgICAgICAgIAAAAAAAAlEBAQEBAQEBAQEBAQEBAQEBAmJygCAgICAgICAgICAgICAgICAgICAgIAAAAAAAAeHxAQEBAQEBAQEBAQEBAgISIjAyQCAgICAgICAgICAgICAgICAgICAgIAAAAAAAAAFxgPEBAQEBAQEBAQGRobChwdAgICAgICAgICAgICAgICAgICAgICAgIAAAAAAAAAAAAMDQ4PEBAQERITFBUWAgICAgICAgICAgICAgICAgICAgICAgICAgIAAAAAAAAAAAAAAAAEBQYHCAkKCwICAgICAgICAgICAgICAgICAgICAgICAgICAgIAAAAAAAAAAAAAAAAAAAAAAwICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAAAAAAAAAAAAAAAAAAAAAAQICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL</value>
+  </data>
+  <data name="rbSubmitMobileData.Text" xml:space="preserve">
+    <value>Enviar a móvil</value>
+  </data>
+  <data name="rbUtilityConflictsReport.Text" xml:space="preserve">
+    <value>Conflictos con servicios</value>
+  </data>
+  <data name="rbReportsMetric.Text" xml:space="preserve">
+    <value>Métrico</value>
+  </data>
+  <data name="rbPotentialEvapotranspirationByTrees.Text" xml:space="preserve">
+    <value>Por árboles</value>
+  </data>
+  <data name="monthlyPollutantRemovalByTreesAndShrubsChartMenuItem.Text" xml:space="preserve">
+    <value>Eliminación mensual (mostrar gráfico)</value>
+  </data>
+  <data name="rlMDDTreeBenefitsAndCosts.Text" xml:space="preserve">
+    <value>Costos y beneficios de los árboles</value>
+  </data>
+  <data name="CopyForecastButton.ToolTip" xml:space="preserve">
+    <value>Copia todas las opciones de la configuración activa del pronóstico a una nueva configuración.</value>
+  </data>
+  <data name="sbPrintLayoutToggleButton.Text" xml:space="preserve">
+    <value>Diseño de impresión</value>
+  </data>
+  <data name="rmWeatherReports.Text" xml:space="preserve">
+    <value>Contaminación y estado del tiempo</value>
+  </data>
+  <data name="rcbAutoCheckUpdates.Text" xml:space="preserve">
+    <value>Revisar actualizaciones de manera automática</value>
+  </data>
+  <data name="rmCompositionAndStructure.ToolTip" xml:space="preserve">
+    <value>Cálculos de la estructura de los árboles</value>
+  </data>
+  <data name="TotalLfBiomassByStrata.Text" xml:space="preserve">
+    <value>Biomasa foliar por estrato</value>
+  </data>
+  <data name="rbMetric.Text" xml:space="preserve">
+    <value>Métrico</value>
+  </data>
+  <data name="OriginOfTreesByStrata.Text" xml:space="preserve">
+    <value>Distribución de las especies</value>
+  </data>
+  <data name="rbDataUndo.Text" xml:space="preserve">
+    <value>Deshacer</value>
+  </data>
+  <data name="rbSpeciesCN.Text" xml:space="preserve">
+    <value>Común</value>
+  </data>
+  <data name="WildLifeSuitabilityByStrata.Text" xml:space="preserve">
+    <value>Por estrato</value>
+  </data>
+  <data name="PctCoverByStrata.Text" xml:space="preserve">
+    <value>Porcentaje de cobertura árborea por estrato</value>
+  </data>
+  <data name="PollutionRemovalByGrass.Text" xml:space="preserve">
+    <value>Eliminación de la contaminación por pastos/hierbas</value>
+  </data>
+  <data name="AnnualCarbonSequestrationOfTreesLabel.Text" xml:space="preserve">
+    <value>Secuestro anual de carbono de los árboles</value>
+  </data>
+  <data name="rbProjectEnableEdit.Text" xml:space="preserve">
+    <value>Modo de edición: Apagado</value>
+  </data>
+  <data name="monthlyPollutantRemovalByTreesAndShrubsMenuItem.Text" xml:space="preserve">
+    <value>Eliminación mensual</value>
+  </data>
+  <data name="mnuFileSaveProjectAs.Text" xml:space="preserve">
+    <value>&amp;Guardar una copia…</value>
+  </data>
+  <data name="rbProjectUndo.ToolTip" xml:space="preserve">
+    <value>Sólo datos de la tabla: deshacer la última acción</value>
+  </data>
+  <data name="PrimaryPestLabel.Text" xml:space="preserve">
+    <value>Plaga primaria</value>
+  </data>
+  <data name="primaryPestDetailsOfTreesByStrataButton.Text" xml:space="preserve">
+    <value>Detalles de árboles impactados</value>
+  </data>
+  <data name="blue2010Button.Text" xml:space="preserve">
+    <value>Azul 2010</value>
+  </data>
+  <data name="rbDataPlantingSites.Text" xml:space="preserve">
+    <value>Sitios de siembra</value>
+  </data>
+  <data name="rbStructureSummaryByStrataSpecies.Text" xml:space="preserve">
+    <value>Por estrato y especie</value>
+  </data>
+  <data name="rgReports.Text" xml:space="preserve">
+    <value>Reportes formateados</value>
+  </data>
+  <data name="rbtnOverview.ToolTip" xml:space="preserve">
+    <value>Configuraciones fundamentales del proyecto</value>
+  </data>
+  <data name="mnuFileExport.Text" xml:space="preserve">
+    <value>&amp;Exportar reporte</value>
+  </data>
+  <data name="rbPlantingSiteTypes.Text" xml:space="preserve">
+    <value>Tipo de sitio de siembra</value>
+  </data>
+  <data name="ReplantingButton.Text" xml:space="preserve">
+    <value>Árboles a plantar</value>
+  </data>
+  <data name="mnuFileNewProject.Text" xml:space="preserve">
+    <value>&amp;Proyecto nuevo</value>
+  </data>
+  <data name="rbCondition.Text" xml:space="preserve">
+    <value>Condición</value>
+  </data>
+  <data name="AreaLfBiomassByStrata.Text" xml:space="preserve">
+    <value>Biomasa foliar por estrato por unidad de área</value>
+  </data>
+  <data name="rbDataUndo.ToolTip" xml:space="preserve">
+    <value>Sólo datos de la tabla: deshacer la última acción</value>
+  </data>
+  <data name="azureButton.Text" xml:space="preserve">
+    <value>Azur</value>
+  </data>
+  <data name="rbtnPlotRefObjects.Text" xml:space="preserve">
+    <value>Objetos de referencia</value>
+  </data>
+  <data name="PctCoverTotal.Text" xml:space="preserve">
+    <value>Porcentaje de cobertura árborea</value>
+  </data>
+  <data name="$this.ClientSize" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAPAEAADwAgAACw==</value>
+  </data>
+  <data name="rbProjectDelete.ToolTip" xml:space="preserve">
+    <value>Sólo datos de la tabla: eliminar registro</value>
+  </data>
+  <data name="rbDataShrubs.Text" xml:space="preserve">
+    <value>Matorrales</value>
+  </data>
+  <data name="NumTreesByStrata.Text" xml:space="preserve">
+    <value>Número de árboles por estrato</value>
+  </data>
+  <data name="LeafAreaByStrata.Text" xml:space="preserve">
+    <value>Área foliar por estrato</value>
+  </data>
+  <data name="rbFieldThreeReport.Text" xml:space="preserve">
+    <value>Campo tres</value>
+  </data>
+  <data name="definePlotsViaGoogleMaps.Text" xml:space="preserve">
+    <value>con Google Maps</value>
+  </data>
+  <data name="rtbForecastMetric.Text" xml:space="preserve">
+    <value>Métrico</value>
+  </data>
+  <data name="rbReportsEnglish.ToolTip" xml:space="preserve">
+    <value>Mostrar resultados en unidades británicas</value>
+  </data>
+  <data name="rbReportsSpeciesCN.ToolTip" xml:space="preserve">
+    <value>Mostrar resultados con nombres comunes</value>
+  </data>
+  <data name="conditionOfTreesBySpeciesDBH.Text" xml:space="preserve">
+    <value>Por clase de DAP y especie</value>
+  </data>
+  <data name="AnnualNetCarbonSequestrationOfTreesByStrataChartMenuItem.Text" xml:space="preserve">
+    <value>Por estrato</value>
+  </data>
+  <data name="TreeBiomassTotal.Text" xml:space="preserve">
+    <value>Biomasa árborea</value>
+  </data>
+  <data name="rlMDDCompositionAndStructure.Text" xml:space="preserve">
+    <value>Composición y estructura</value>
+  </data>
+  <data name="rbSpeciesList.Text" xml:space="preserve">
+    <value>Lista de especies</value>
+  </data>
+  <data name="rbtnLocSites.Text" xml:space="preserve">
+    <value>Lugar del sitio</value>
+  </data>
+  <data name="DefaultsButton.Text" xml:space="preserve">
+    <value>Restaurar predeterminados</value>
+  </data>
+  <data name="videoLearningButton.ToolTip" xml:space="preserve">
+    <value>Recursos en video en el sitio de i-Tree</value>
+  </data>
+  <data name="rlAvoidedRunoff.Text" xml:space="preserve">
+    <value>Escurrimiento evitado</value>
+  </data>
+  <data name="whiteButton.Text" xml:space="preserve">
+    <value>Blanco</value>
+  </data>
+  <data name="oxygenProductionOfTreesByStrataChartMenuItem.Text" xml:space="preserve">
+    <value>Por estrato</value>
+  </data>
+  <data name="ribbonLabel1.ToolTip" xml:space="preserve">
+    <value>Establece la configuración activa del pronóstico.</value>
+  </data>
+  <data name="mnuFileStartReinventory.Text" xml:space="preserve">
+    <value>Empezar proyecto de reinventario</value>
+  </data>
+  <data name="rbFieldTwoReport.Text" xml:space="preserve">
+    <value>Campo dos</value>
+  </data>
+  <data name="rbProjectDelete.Text" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="RetrieveResultsButton.Text" xml:space="preserve">
+    <value>Rastrear &amp;y recuperar resultados</value>
+  </data>
+  <data name="ReplacementSplitButton.ToolTip" xml:space="preserve">
+    <value>Estructura pronosticada de los árboles</value>
+  </data>
+  <data name="SendDataButton.ToolTip" xml:space="preserve">
+    <value>Enviar datos al USFS para procesar</value>
+  </data>
+  <data name="rbRetrieveMobileData.ToolTip" xml:space="preserve">
+    <value>Obtener datos recopilados en dispositivos móviles</value>
+  </data>
+  <data name="signSymptomOverviewByStrataButton.Text" xml:space="preserve">
+    <value>Totales por estrato</value>
+  </data>
+  <data name="rbUserGuidesUsingForecast.Text" xml:space="preserve">
+    <value>Usar el pronóstico</value>
+  </data>
+  <data name="rmbModelProcessingNotes.Text" xml:space="preserve">
+    <value>Notas del modelo</value>
+  </data>
+  <data name="FunctionalSplitButton.Text" xml:space="preserve">
+    <value>Beneficios</value>
+  </data>
+  <data name="rbUserGuidesInternational.Text" xml:space="preserve">
+    <value>Proyectos internacionales</value>
+  </data>
+  <data name="speciesCompositionByDBHClassHorizontalMenuItem.Text" xml:space="preserve">
+    <value>Por clase de DAP (tabla horizontal)</value>
+  </data>
+  <data name="rbDBHClasses.Text" xml:space="preserve">
+    <value>Clase de DAP</value>
+  </data>
+  <data name="ExtremeEventsSplitButton.Text" xml:space="preserve">
+    <value>Eventos extremos</value>
+  </data>
+  <data name="mnuFileCloseProject.Text" xml:space="preserve">
+    <value>&amp;Cerrar proyecto</value>
+  </data>
+  <data name="ReplacementValueByDBHClassAndSpecies.Text" xml:space="preserve">
+    <value>Por clase de DAP y especie</value>
+  </data>
+  <data name="rbtnShowWhatsNew.Text" xml:space="preserve">
+    <value>Lo nuevo</value>
+  </data>
+  <data name="ReplantingButton.ToolTip" xml:space="preserve">
+    <value>Definir cuántos árboles nuevos se van a sembrar y en qué años.</value>
+  </data>
+  <data name="rbCondition.ToolTip" xml:space="preserve">
+    <value>Parámetros de la condición del proyecto</value>
+  </data>
+  <data name="forumButton.ToolTip" xml:space="preserve">
+    <value>Intercambiar ideas en el sitio de i-Tree</value>
+  </data>
+  <data name="bioemissionsOfTreesBySpeciesMenuItem.Text" xml:space="preserve">
+    <value>Por especie</value>
+  </data>
+  <data name="rbtnPlotLandUses.Text" xml:space="preserve">
+    <value>Usos de la tierra</value>
+  </data>
+  <data name="AirPollutantFluxDryDepositionLabel.Text" xml:space="preserve">
+    <value>Flujo del contaminante atmosférico (deposición seca)</value>
+  </data>
+  <data name="manualButton.Text" xml:space="preserve">
+    <value>Manual del usuario</value>
+  </data>
+  <data name="rgForecastUnits.Text" xml:space="preserve">
+    <value>Unidades</value>
+  </data>
+  <data name="rbUserGuidesInstall.Text" xml:space="preserve">
+    <value>Instalación de software</value>
+  </data>
+  <data name="rbWaterInterceptionByShrubs.Text" xml:space="preserve">
+    <value>Por matorrales</value>
+  </data>
+  <data name="rbUVIndexReductionByTreesForOverall.Text" xml:space="preserve">
+    <value>Efectos generales</value>
+  </data>
+  <data name="avoidedRunoffOfTreesByStrata.Text" xml:space="preserve">
+    <value>Por estrato</value>
+  </data>
+  <data name="RunForecastButton.ToolTip" xml:space="preserve">
+    <value>Correr el modelo del pronóstico usando la configuración activa.</value>
+  </data>
+  <data name="speciesCompositionByDBHClassAndStrataVerticalMenuItem.Text" xml:space="preserve">
+    <value>Por clase de DAP y estrato (tabla vertical)</value>
+  </data>
+  <data name="rbDataTrees.ToolTip" xml:space="preserve">
+    <value>Trabajar con datos de árboles</value>
+  </data>
+  <data name="rlWaterInterception.Text" xml:space="preserve">
+    <value>Agua interceptada</value>
+  </data>
+  <data name="mnuFilePrint.Text" xml:space="preserve">
+    <value>&amp;Imprimir reporte</value>
+  </data>
+  <data name="carbonStorageOfTreesByStrataChartMenuItem.Text" xml:space="preserve">
+    <value>Por estrato</value>
+  </data>
+  <data name="manualButton.ToolTip" xml:space="preserve">
+    <value>Manual del usuario Eco en línea</value>
+  </data>
+  <data name="AnnualNetCarbonSequestrationOfTreesPerUnitAreaByStrataChartMenuItem.Text" xml:space="preserve">
+    <value>Por estrato por unidad de área</value>
+  </data>
+  <data name="rbProjectCopy.ToolTip" xml:space="preserve">
+    <value>Sólo datos de la tabla: copar registro</value>
+  </data>
+  <data name="lightGrayButton.Text" xml:space="preserve">
+    <value>Gris claro</value>
+  </data>
+  <data name="rmPestAnalysis.Text" xml:space="preserve">
+    <value>Análisis de plagas</value>
+  </data>
+  <data name="rbDataExportKML.ToolTip" xml:space="preserve">
+    <value>Para datos de la tabla que sólo tienen coordenadas geográficas</value>
+  </data>
+  <data name="rbAvoidedRunoffByShrubs.Text" xml:space="preserve">
+    <value>Por matorrales</value>
+  </data>
+  <data name="ReplacementValueLabel.Text" xml:space="preserve">
+    <value>Valor de sustitución</value>
+  </data>
+  <data name="silver2010Button.Text" xml:space="preserve">
+    <value>Plata 2010</value>
+  </data>
+  <data name="mnuFileSaveProjectAs.ToolTip" xml:space="preserve">
+    <value>Guardar una copia de tu proyecto abierto en un archivo por separado.</value>
+  </data>
+  <data name="helpConfigButton.ToolTip" xml:space="preserve">
+    <value>Ayuda</value>
+  </data>
+  <data name="rbUserGuidesPrestratified.Text" xml:space="preserve">
+    <value>Muestras preestratificadas</value>
+  </data>
+  <data name="appMenu.ToolTip" xml:space="preserve">
+    <value>Botón de la aplicación</value>
+  </data>
+  <data name="annualCarbonSequestrationOfTreesByStrataChartMenuItem.Text" xml:space="preserve">
+    <value>Por estrato</value>
+  </data>
+  <data name="rbMDDTreeBenefitsCarbonStorage.Text" xml:space="preserve">
+    <value>Almacenamiento de carbono</value>
+  </data>
+  <data name="rbWaterInterceptionByTrees.Text" xml:space="preserve">
+    <value>Por árboles</value>
+  </data>
+  <data name="rbImport.ToolTip" xml:space="preserve">
+    <value>Importar sólo datos de inventario de árboles</value>
+  </data>
+  <data name="rmBenefitsAndCosts.Text" xml:space="preserve">
+    <value>Costos y beneficios</value>
+  </data>
+  <data name="rbDataPlots.Text" xml:space="preserve">
+    <value>Parcelas</value>
+  </data>
+  <data name="rmUserGuides.ToolTip" xml:space="preserve">
+    <value>Ayuda adicional en línea</value>
+  </data>
+  <data name="leafAreaOfTreesPerUnitAreaByStrataChartMenuItem.Text" xml:space="preserve">
+    <value>Por estrato por unidad de área</value>
+  </data>
+  <data name="rbWeatherDryDepTree.Text" xml:space="preserve">
+    <value>Por unidad de cobertura árborea</value>
+  </data>
+  <data name="rbAvoidedRunoffByTrees.Text" xml:space="preserve">
+    <value>Por árboles</value>
+  </data>
+  <data name="rbtnPaperForm1.Text" xml:space="preserve">
+    <value>Formulario impreso</value>
+  </data>
+  <data name="rbAnnualCosts.ToolTip" xml:space="preserve">
+    <value>Ver y modificar los gastos anuales del cuidado de los árboles</value>
+  </data>
+  <data name="definePlotsViaGoogleMaps.ToolTip" xml:space="preserve">
+    <value>Configurar parcelas usando la herramienta de Google Maps</value>
+  </data>
+  <data name="CopyForecastButton.Text" xml:space="preserve">
+    <value>Duplicado</value>
+  </data>
+  <data name="rcboProject.ToolTip" xml:space="preserve">
+    <value>Para proyectos complejos: cambiar proyecto</value>
+  </data>
+  <data name="MortalityButton.ToolTip" xml:space="preserve">
+    <value>Definir índices anuales de mortalidad personalizados para los árboles con base en su género, condición de la copa o estrato.</value>
+  </data>
+  <data name="reportABugButton.ToolTip" xml:space="preserve">
+    <value>Reportar problemas con Eco n el sitio de i-Tree</value>
+  </data>
+  <data name="annualCarbonSequestrationOfTreesBySpeciesChartMenuItem.Text" xml:space="preserve">
+    <value>Por especie</value>
+  </data>
+  <data name="orchidButton.Text" xml:space="preserve">
+    <value>Orquídea</value>
+  </data>
+  <data name="rbViewExportCSV.ToolTip" xml:space="preserve">
+    <value>Sólo para datos de la tabla</value>
+  </data>
+  <data name="rbDataCopy.ToolTip" xml:space="preserve">
+    <value>Sólo datos de la tabla: copiar registro</value>
+  </data>
+  <data name="DeleteForecastButton.ToolTip" xml:space="preserve">
+    <value>Eliminar la configuración activa del pronóstico.</value>
+  </data>
+  <data name="rbtnPlotPlantingSites.Text" xml:space="preserve">
+    <value>Sitios de siembra</value>
+  </data>
+  <data name="numberOfTreesByStrataChartMenuItem.Text" xml:space="preserve">
+    <value>Por estrato</value>
+  </data>
+  <data name="TreeBiomassByStrata.Text" xml:space="preserve">
+    <value>Biomasa árborea por estrato</value>
+  </data>
+  <data name="writtenReportButton.Text" xml:space="preserve">
+    <value>Reporte escrito</value>
+  </data>
+  <data name="oxygenProductionPerUnitAreaByStrataChartMenuItem.Text" xml:space="preserve">
+    <value>Por estrato por unidad de área</value>
+  </data>
+  <data name="rbEvaporationByShrubs.Text" xml:space="preserve">
+    <value>Por matorrales</value>
+  </data>
+  <data name="TreeCoverAreaTotal.Text" xml:space="preserve">
+    <value>Área de cobertura árborea</value>
+  </data>
+  <data name="rcbAutoCheckUpdates.ToolTip" xml:space="preserve">
+    <value>Revisión automática al abrir Eco</value>
+  </data>
+  <data name="rbUserGuidesFieldManual.Text" xml:space="preserve">
+    <value>Manual de campo</value>
+  </data>
+  <data name="rbStreetTreesByStrata.Text" xml:space="preserve">
+    <value>Árboles de alineación por estrato</value>
+  </data>
+  <data name="rbMDDTreeBenefitsSummary.Text" xml:space="preserve">
+    <value>Resumen</value>
+  </data>
+  <data name="rbImport.Text" xml:space="preserve">
+    <value>Importar</value>
+  </data>
+  <data name="rbMDDTreeBenefitsOxygenProduction.Text" xml:space="preserve">
+    <value>Producción de oxígeno</value>
+  </data>
+  <data name="visitITreeToolsDotOrgButton.Text" xml:space="preserve">
+    <value>Sitio electrónico de i-Tree</value>
+  </data>
+  <data name="rbMaintRecReport.Text" xml:space="preserve">
+    <value>Recomendado</value>
+  </data>
+  <data name="rbDieback.Text" xml:space="preserve">
+    <value>Muerte regresiva</value>
+  </data>
+  <data name="checkForUpdatesButton.ToolTip" xml:space="preserve">
+    <value>Obtén la última versión de Eco</value>
+  </data>
+  <data name="monthlyPollutantRemovalByGrassChartMenuItem.Text" xml:space="preserve">
+    <value>Eliminación mensual (mostrar gráfico)</value>
+  </data>
+  <data name="rbUVIndexReductionByTreesForUnderTrees.Text" xml:space="preserve">
+    <value>Efectos a la sombra del árbol</value>
+  </data>
+  <data name="speciesDistributionByDBHClassChart.Text" xml:space="preserve">
+    <value>Por clase de DAP (gráfico)</value>
+  </data>
+  <data name="LeafAreaAndBiomassLabel.Text" xml:space="preserve">
+    <value>Área foliar y biomasa</value>
+  </data>
+  <data name="rgSpeciesName1.Text" xml:space="preserve">
+    <value>Nombres de especies</value>
+  </data>
+  <data name="ReportTreeViewToggle.Text" xml:space="preserve">
+    <value>Reportar árbol</value>
+  </data>
+  <data name="DeleteForecastButton.Text" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="dockPanel1.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAPAEAADDAgAACw==</value>
+  </data>
+  <data name="rmOther.ToolTip" xml:space="preserve">
+    <value>Configurar campos personalizados del proyecto</value>
+  </data>
+  <data name="airQualityHealthImpactsandValuesbyTrees.Text" xml:space="preserve">
+    <value>Por árboles</value>
+  </data>
+  <data name="rbDataRedo.ToolTip" xml:space="preserve">
+    <value>Sólo datos de la tabla: rehacer la última acción</value>
+  </data>
+  <data name="rgSpeciesName.Text" xml:space="preserve">
+    <value>Nombres de especies</value>
+  </data>
+  <data name="checkForUpdatesButton.Text" xml:space="preserve">
+    <value>Actualización del software</value>
+  </data>
+  <data name="BasicInputsButton.ToolTip" xml:space="preserve">
+    <value>Edita opciones básicas sobre la configuración activa del pronóstico.</value>
+  </data>
+  <data name="rtReports.Text" xml:space="preserve">
+    <value>Reportes</value>
+  </data>
+  <data name="rbFieldOneReport.Text" xml:space="preserve">
+    <value>Campo uno</value>
+  </data>
+  <data name="NetAnnualBenefitsForAllTrees.Text" xml:space="preserve">
+    <value>Beneficios anuales netos</value>
+  </data>
+  <data name="rbRelativePerformanceIndexBySpecies.Text" xml:space="preserve">
+    <value>Por especie</value>
+  </data>
+  <data name="rbtnShowWhatsNew.ToolTip" xml:space="preserve">
+    <value>Cambios a esta versión de i-Tree Eco</value>
+  </data>
+  <data name="rbSubmitMobileData.ToolTip" xml:space="preserve">
+    <value>Enviar el esquema de recopilación a los dispositivos móviles</value>
+  </data>
+  <data name="SpeciesCompositionLabel.Text" xml:space="preserve">
+    <value>Distribución de las especies</value>
+  </data>
+  <data name="OtherLabel.Text" xml:space="preserve">
+    <value>Otro</value>
+  </data>
+  <data name="runModelsButton.Text" xml:space="preserve">
+    <value>Correr modelos</value>
+  </data>
+  <data name="rbUVIndex.Text" xml:space="preserve">
+    <value>Índice UV</value>
+  </data>
+  <data name="rtView.Text" xml:space="preserve">
+    <value>Vista</value>
+  </data>
+  <data name="rbDBHClasses.ToolTip" xml:space="preserve">
+    <value>Parámetros del DAP del proyecto</value>
+  </data>
+  <data name="ParametersReportButton.Text" xml:space="preserve">
+    <value>Resumen de la configuración</value>
+  </data>
+  <data name="rgDataExport.Text" xml:space="preserve">
+    <value>Exportar</value>
+  </data>
+  <data name="MaintenanceLabel.Text" xml:space="preserve">
+    <value>Mantenimiento</value>
+  </data>
+  <data name="ForecastLeafAreaAndBiomassLabel.Text" xml:space="preserve">
+    <value>Área foliar y biomasa</value>
+  </data>
+  <data name="ConditionOfTreesLabel.Text" xml:space="preserve">
+    <value>Condición</value>
+  </data>
+  <data name="rbMDDTreeBenefitsVOCEmissions.Text" xml:space="preserve">
+    <value>Emisiones COV</value>
+  </data>
+  <data name="rbtnLocSites.ToolTip" xml:space="preserve">
+    <value>Parámetros del lugar del sitio del proyecto</value>
+  </data>
+  <data name="rRawDataLabel.Text" xml:space="preserve">
+    <value>Datos sin procesar y de fuentes</value>
+  </data>
+  <data name="MostImportantTreeSpeciesLabel.Text" xml:space="preserve">
+    <value>Valores de importancia</value>
+  </data>
+  <data name="groundCoverCompositionByStrataMenuItem.Text" xml:space="preserve">
+    <value>Por estrato</value>
+  </data>
+  <data name="rbPotentialEvapotranspirationByShrubs.Text" xml:space="preserve">
+    <value>Por matorrales</value>
+  </data>
+  <data name="rgDataCollection.Text" xml:space="preserve">
+    <value>Recopilación de datos</value>
+  </data>
+  <data name="rbtnSpeciesCode.ToolTip" xml:space="preserve">
+    <value>Herramienta de ayuda para nombres y códigos de especies</value>
+  </data>
+  <data name="airQualityHealthImpactsandValuesbyGrass.Text" xml:space="preserve">
+    <value>Por pastos/hierbas</value>
+  </data>
+  <data name="mnuFileOpenSampleProject.ToolTip" xml:space="preserve">
+    <value>Abrir un ejemplo de proyecto proporcionado por i-Tree Eco.</value>
+  </data>
+  <data name="leafAreaAndBiomassOfShrubsByStrataMenuItem.Text" xml:space="preserve">
+    <value>De matorrales por estrato</value>
+  </data>
+  <data name="ribbonGroup8.Text" xml:space="preserve">
+    <value>Grupo</value>
+  </data>
+  <data name="annualCarbonSequestrationOfTreesPerUnitAreaByStrataChartMenuItem.Text" xml:space="preserve">
+    <value>Por estrato por unidad de área</value>
+  </data>
+  <data name="rbUVIndexReductionLabel.Text" xml:space="preserve">
+    <value>Reducción del índice UV por los árboles</value>
+  </data>
+  <data name="rbWeatherAirQualImprovementGrass.Text" xml:space="preserve">
+    <value>Por pastos/hierbas</value>
+  </data>
+  <data name="benmapAirQualityAndPublicHealthReport.Text" xml:space="preserve">
+    <value>Impactos y valores de la calidad del aire en la salud</value>
+  </data>
+  <data name="rbReportExport.Text" xml:space="preserve">
+    <value>Reportes de exportación</value>
+  </data>
+  <data name="DbhGrowthByStrata.Text" xml:space="preserve">
+    <value>Crecimiento DAP promedio por estrato</value>
+  </data>
+  <data name="GroundCoverCompositionLabel.Text" xml:space="preserve">
+    <value>Composición de la cobertura del suelo</value>
+  </data>
+  <data name="rbtnFieldTwo.Text" xml:space="preserve">
+    <value>Campo dos</value>
+  </data>
+  <data name="rgForecastReports.Text" xml:space="preserve">
+    <value>Reportes</value>
+  </data>
+  <data name="rmbModelProcessingNotes.ToolTip" xml:space="preserve">
+    <value>Notas del procesamiento</value>
+  </data>
+  <data name="landUseCompositionByStrataMenuItem.Text" xml:space="preserve">
+    <value>Por estrato</value>
+  </data>
+  <data name="rbUserGuidesDataLimitations.Text" xml:space="preserve">
+    <value>Limitaciones de los datos</value>
+  </data>
+  <data name="NumberOfTreesLabel.Text" xml:space="preserve">
+    <value>Resumen de la población</value>
+  </data>
+  <data name="NewForecastButton.ToolTip" xml:space="preserve">
+    <value>Crear una nueva configuración del pronóstico con las opciones predeterminadas.</value>
+  </data>
+  <data name="aboutButton.Text" xml:space="preserve">
+    <value>Acerca de</value>
+  </data>
+  <data name="rbtnPlotShrubs.Text" xml:space="preserve">
+    <value>Matorrales</value>
+  </data>
+  <data name="ReplacementSplitButton.Text" xml:space="preserve">
+    <value>Composición y estructura</value>
+  </data>
+  <data name="rbPlantingSiteTypes.ToolTip" xml:space="preserve">
+    <value>Parámetros del sitio de siembra del proyecto</value>
+  </data>
+  <data name="TotalLfBiomassTotal.Text" xml:space="preserve">
+    <value>Biomasa foliar</value>
+  </data>
+  <data name="rbDataShrubs.ToolTip" xml:space="preserve">
+    <value>Trabajar con datos de matorrales</value>
+  </data>
+  <data name="sbFullScreenToggleButton.Text" xml:space="preserve">
+    <value>Leer en toda la pantalla</value>
+  </data>
+  <data name="rbReportsEnglish.Text" xml:space="preserve">
+    <value>Inglés</value>
+  </data>
+  <data name="rbEula.Text" xml:space="preserve">
+    <value>Contrato de Licencia</value>
+  </data>
+  <data name="signSymptomOverviewBySpeciesButton.Text" xml:space="preserve">
+    <value>Totales por especie</value>
+  </data>
+  <data name="rgDataActions.Text" xml:space="preserve">
+    <value>Acciones</value>
+  </data>
+  <data name="reportABugButton.Text" xml:space="preserve">
+    <value>Reportar un error</value>
+  </data>
+  <data name="rbRetrieveMobileData.Text" xml:space="preserve">
+    <value>Recuperar del móvil</value>
+  </data>
+  <data name="rmAirQualityHealthImpactsAndValuesReports.Text" xml:space="preserve">
+    <value>Impactos y valores a la salud de la calidad del aire</value>
+  </data>
+  <data name="WildLifeSuitabilityByPlots.Text" xml:space="preserve">
+    <value>Por parcela</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="c1Ribbon1.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="BasicInputsButton.Text" xml:space="preserve">
+    <value>Opciones básicas</value>
+  </data>
+  <data name="rbReportsSpeciesSN.ToolTip" xml:space="preserve">
+    <value>Mostrar resultados con nombres científicos</value>
+  </data>
+  <data name="rbTranspirationByTree.Text" xml:space="preserve">
+    <value>Por árboles</value>
+  </data>
+  <data name="rbProjectDefaults.Text" xml:space="preserve">
+    <value>Restaurar predeterminados</value>
+  </data>
+  <data name="AreaLfBiomassTotal.Text" xml:space="preserve">
+    <value>Biomasa foliar por unidad de área</value>
+  </data>
+  <data name="rbAnnualCosts.Text" xml:space="preserve">
+    <value>Gastos anuales</value>
+  </data>
+  <data name="sbWebLayoutToggleButton.Text" xml:space="preserve">
+    <value>Vista diseño Web</value>
+  </data>
+  <data name="sbProectInfoLabel.Text" xml:space="preserve">
+    <value>Parcelas: 123 de 200 recopiladas, Árboles: 200 recopilados, Segmentos de calles muestreados: 50</value>
+  </data>
+  <data name="UVEffectsOfTreesByStrata.Text" xml:space="preserve">
+    <value>Por estrato</value>
+  </data>
+  <data name="minimizeRibbonButton.ToolTip" xml:space="preserve">
+    <value>Minimizar la barra</value>
+  </data>
+  <data name="AllTotal.Text" xml:space="preserve">
+    <value>Valor para todos los contaminantes</value>
+  </data>
+  <data name="ConfigurationsGroup.Text" xml:space="preserve">
+    <value>Configuraciones</value>
+  </data>
+  <data name="avoidedRunoffOfTreesBySpecies.Text" xml:space="preserve">
+    <value>Por especie</value>
+  </data>
+  <data name="ExtremeEventsSplitButton.ToolTip" xml:space="preserve">
+    <value>Definir cuándo sucederá una tormenta o una plaga y cómo afectará los índices de mortalidad de los árboles.</value>
+  </data>
+  <data name="LeafAreaOfTrees.Text" xml:space="preserve">
+    <value>Área foliar</value>
+  </data>
+  <data name="rbtnPaperForm1.ToolTip" xml:space="preserve">
+    <value>Plantillas descargables</value>
+  </data>
+  <data name="mnuFileCloseProject.ToolTip" xml:space="preserve">
+    <value>Cerrar el proyecto.</value>
+  </data>
+  <data name="FoodscapeBenefits.Text" xml:space="preserve">
+    <value>Beneficios alimenticios de los árboles</value>
+  </data>
+  <data name="rgConfiguration.Text" xml:space="preserve">
+    <value>Configuración</value>
+  </data>
+  <data name="silver2007Button.Text" xml:space="preserve">
+    <value>Plata 2007</value>
+  </data>
+  <data name="StormItem.Text" xml:space="preserve">
+    <value>Eventos meteorológicos</value>
+  </data>
+  <data name="rtData.Text" xml:space="preserve">
+    <value>Datos</value>
+  </data>
+  <data name="rbDataEnableEdit.Text" xml:space="preserve">
+    <value>Modo de edición: Apagado</value>
+  </data>
+  <data name="customButton.Text" xml:space="preserve">
+    <value>Personalizado (2013)</value>
+  </data>
+  <data name="rmMaintenance.ToolTip" xml:space="preserve">
+    <value>Parámetros del mantenimiento de los árboles del proyecto</value>
+  </data>
+  <data name="airQualityHealthImpactsandValuesCombined.Text" xml:space="preserve">
+    <value>Resumen</value>
+  </data>
+  <data name="LeafAreaIndexByStrata.Text" xml:space="preserve">
+    <value>Índice del área foliar por estrato</value>
+  </data>
+  <data name="LandUseCompositionLabel.Text" xml:space="preserve">
+    <value>Composición del uso de la tierra</value>
+  </data>
+  <data name="SendDataButton.Text" xml:space="preserve">
+    <value>Enviar datos a procesar</value>
+  </data>
+  <data name="signSymptomDetailsCompleteByStrataButton.Text" xml:space="preserve">
+    <value>Detalles por estrato</value>
+  </data>
+  <data name="signSymptomDetailsCompleteBySpeciesButton.Text" xml:space="preserve">
+    <value>Detalles por especie</value>
+  </data>
+  <data name="rbDataDelete.ToolTip" xml:space="preserve">
+    <value>Sólo datos de la tabla: eliminar registro</value>
+  </data>
+  <data name="rmIndividualLevelResults.Text" xml:space="preserve">
+    <value>Detalles de los datos medidos</value>
+  </data>
+  <data name="rgUnits1.Text" xml:space="preserve">
+    <value>Unidades</value>
+  </data>
+  <data name="PestReviewLabel.Text" xml:space="preserve">
+    <value>Revisión de plagas</value>
+  </data>
+  <data name="carbonStorageOfTreesPerUnitAreaByStrataChartMenuItem.Text" xml:space="preserve">
+    <value>Por estrato por unidad de área</value>
+  </data>
+  <data name="rbtnOverview.Text" xml:space="preserve">
+    <value>Definición del proyecto</value>
+  </data>
+  <data name="blueButton.Text" xml:space="preserve">
+    <value>Azul</value>
+  </data>
+  <data name="bioemissionsOfTreesByStrataMenuItem.Text" xml:space="preserve">
+    <value>Por estrato</value>
+  </data>
+  <data name="ForecastRenameButton.Text" xml:space="preserve">
+    <value>Renombrar</value>
+  </data>
+  <data name="mnuFileOpenProject.Text" xml:space="preserve">
+    <value>&amp;Abrir proyecto</value>
+  </data>
+  <data name="rgSpecies.Text" xml:space="preserve">
+    <value>Especie</value>
+  </data>
+  <data name="rbtnUtilityConflicts.Text" xml:space="preserve">
+    <value>Conflicto con servicios</value>
+  </data>
+  <data name="BasalAreaByStrata.Text" xml:space="preserve">
+    <value>Área basal por estrato</value>
+  </data>
+  <data name="rbtnPlotGroundCovers.Text" xml:space="preserve">
+    <value>Coberturas del suelo</value>
+  </data>
+  <data name="originOfTreesByStrataMenuItem.Text" xml:space="preserve">
+    <value>Estado nativo por estrato</value>
+  </data>
+  <data name="rbtnGroundCovers.ToolTip" xml:space="preserve">
+    <value>Parámetros de la cobertura del suelo del proyecto</value>
+  </data>
+  <data name="feedbackButton.ToolTip" xml:space="preserve">
+    <value>¡Avísanos cómo te va con i-Tree Eco!</value>
+  </data>
+  <data name="AnnualNetCarbonSequestrationOfTreesBySpeciesMenuItem.Text" xml:space="preserve">
+    <value>Por especie</value>
+  </data>
+  <data name="LeafAreaIndexTotal.Text" xml:space="preserve">
+    <value>Índice del área foliar</value>
+  </data>
+  <data name="SignAndSymptomLabel.Text" xml:space="preserve">
+    <value>Señales y síntomas</value>
+  </data>
+  <data name="projectMetadataButton.ToolTip" xml:space="preserve">
+    <value>Panorama general rápido del proyecto actual de Eco</value>
+  </data>
+  <data name="exitButton.Text" xml:space="preserve">
+    <value>S&amp;alir</value>
+  </data>
+  <data name="leafAreaAndBiomassOfTreesByDBHClassAndStrataHorizontalMenuItem.Text" xml:space="preserve">
+    <value>De los árboles por clase de DAP y especie (muestra horizontal)</value>
+  </data>
+  <data name="energyEffectsOfTreesMenuItem.Text" xml:space="preserve">
+    <value>De los árboles</value>
+  </data>
+  <data name="mnuFileImport.Text" xml:space="preserve">
+    <value>&amp;Importar datos</value>
+  </data>
+  <data name="WildLifeSuitabilityLabel.Text" xml:space="preserve">
+    <value>Idoneidad del hábitat aviar</value>
+  </data>
+  <data name="qat.ToolTip" xml:space="preserve">
+    <value>Personaliza la barra de herramientas de rápido acceso</value>
+  </data>
+  <data name="speciesRichnessShannonWienerDiversityIndexMenuItem.Text" xml:space="preserve">
+    <value>Por estrato</value>
+  </data>
+  <data name="rbPublicPrivateByStrata.Text" xml:space="preserve">
+    <value>Públicos y privados por estrato</value>
+  </data>
+  <data name="LeafAreaTotal.Text" xml:space="preserve">
+    <value>Área foliar</value>
+  </data>
+  <data name="benmapAirQualityAndPublicHealthReport.ToolTip" xml:space="preserve">
+    <value>Cálculos de los beneficios a la salud de los árboles</value>
+  </data>
+  <data name="ForecastEditDataButton.Text" xml:space="preserve">
+    <value>Modo de edición: Apagado</value>
+  </data>
+  <data name="rbProjectNew.ToolTip" xml:space="preserve">
+    <value>Sólo datos de la tabla: nuevo registro</value>
+  </data>
+  <data name="rcbMinimizeHelp.Text" xml:space="preserve">
+    <value>Siempre minimizar panel de ayuda</value>
+  </data>
+  <data name="ForecastPollutantLabel.Text" xml:space="preserve">
+    <value>Eliminación de la contaminación por los árboles</value>
+  </data>
+  <data name="mnuFileOpenSampleProject.Text" xml:space="preserve">
+    <value>Ab&amp;rir ejemplo de proyecto</value>
+  </data>
+  <data name="rbtnSpeciesCode.Text" xml:space="preserve">
+    <value>Códigos de especie</value>
+  </data>
+  <data name="rbWeatherRain.Text" xml:space="preserve">
+    <value>Lluvia</value>
+  </data>
+  <data name="rbtnBenefitPrices.ToolTip" xml:space="preserve">
+    <value>Ver y modificar precios de los beneficios de los árboles</value>
+  </data>
+  <data name="rbWeatherDryDepGrass.Text" xml:space="preserve">
+    <value>Por unidad de cobertura pastos/hierbas</value>
+  </data>
+  <data name="rtForecast.Text" xml:space="preserve">
+    <value>Pronóstico</value>
+  </data>
+  <data name="rcbMinimizeHelp.ToolTip" xml:space="preserve">
+    <value>Mantener el panel de ayuda pequeño para contar con más espacio de pantalla</value>
+  </data>
+  <data name="rbtnStreets.Text" xml:space="preserve">
+    <value>Nombres de calles</value>
+  </data>
+  <data name="rbWeatherAirQualImprovementShrub.Text" xml:space="preserve">
+    <value>Por matorrales</value>
+  </data>
+  <data name="rbUserGuidesPDA.Text" xml:space="preserve">
+    <value>Recopilar datos con un PDA</value>
+  </data>
+  <data name="rbDataCopy.Text" xml:space="preserve">
+    <value>Copia</value>
+  </data>
+  <data name="rbProjectCopy.Text" xml:space="preserve">
+    <value>Copia</value>
+  </data>
+  <data name="rbUserGuidesStratifyInventory.Text" xml:space="preserve">
+    <value>Estratificar un inventario completo</value>
+  </data>
+  <data name="OxygenProductionOfTreesLabel.Text" xml:space="preserve">
+    <value>Producción de oxígeno de los árboles</value>
+  </data>
+  <data name="darkGrayButton.Text" xml:space="preserve">
+    <value>Gris oscuro</value>
+  </data>
+  <data name="dockPanel1.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAAAAAAALQAAAAs=</value>
+  </data>
+  <data name="CustomOptionsGroup.Text" xml:space="preserve">
+    <value>Opciones personalizadas</value>
+  </data>
+  <data name="black2010Button.Text" xml:space="preserve">
+    <value>Negro 2010</value>
+  </data>
+  <data name="mnuFilePackProject.Text" xml:space="preserve">
+    <value>&amp;Empacar proyecto</value>
+  </data>
+  <data name="hourlyPollutantRemovalByTreesAndShrubsChartMenuItem.Text" xml:space="preserve">
+    <value>Eliminación por hora (Gráfico)</value>
+  </data>
+  <data name="mnuFileSaveProject.ToolTip" xml:space="preserve">
+    <value>Los cambios se guardaron de manera automática. El botón está desactivado.</value>
+  </data>
+  <data name="rbSidewalkConflictsReport.Text" xml:space="preserve">
+    <value>Conflictos con aceras</value>
+  </data>
+  <data name="rbEula.ToolTip" xml:space="preserve">
+    <value>Contrato de Licencia del Usuario Final</value>
+  </data>
+  <data name="RelativePerformanceIndexLabel.Text" xml:space="preserve">
+    <value>Índice de desempeño relativo</value>
+  </data>
+  <data name="rmMaintenance.Text" xml:space="preserve">
+    <value>Mantenimiento</value>
+  </data>
+  <data name="rbBenefitsSummarySpecies.Text" xml:space="preserve">
+    <value>Por especie</value>
+  </data>
+  <data name="rmBenefitsAndCosts.ToolTip" xml:space="preserve">
+    <value>Cálculos de los beneficios de los árboles</value>
+  </data>
+  <data name="rbtnSidewalkConflicts.Text" xml:space="preserve">
+    <value>Conflicto con aceras</value>
+  </data>
+  <data name="mnuFileNewProject.ToolTip" xml:space="preserve">
+    <value>Crear un proyecto nuevo.</value>
+  </data>
+  <data name="rbtnLandUses.Text" xml:space="preserve">
+    <value>Uso de la tierra</value>
+  </data>
+  <data name="SpeciesRichness.Text" xml:space="preserve">
+    <value>Índices de diversidad</value>
+  </data>
+  <data name="rbManagementCostsByExpenditure.Text" xml:space="preserve">
+    <value>Por gasto</value>
+  </data>
+  <data name="rbWeatherDryDepShrub.Text" xml:space="preserve">
+    <value>Por unidad de cobertura matorrales</value>
+  </data>
+  <data name="BioemissionsOfTreesLabel.Text" xml:space="preserve">
+    <value>Emisiones COV de los árboles</value>
+  </data>
+  <data name="rbSpeciesList.ToolTip" xml:space="preserve">
+    <value>Lista actual de especies</value>
+  </data>
+  <data name="rbTranspirationByShrub.Text" xml:space="preserve">
+    <value>Por matorrales</value>
+  </data>
+  <data name="loadPlotsFromFileButton.Text" xml:space="preserve">
+    <value>Cargar desde archivo</value>
+  </data>
+  <data name="NumTreesTotal.Text" xml:space="preserve">
+    <value>Número de árboles</value>
+  </data>
+  <data name="blue2007Button.Text" xml:space="preserve">
+    <value>Azul 2007</value>
+  </data>
+  <data name="rbProjectRedo.Text" xml:space="preserve">
+    <value>Rehacer</value>
+  </data>
+  <data name="mnuFilePackProject.ToolTip" xml:space="preserve">
+    <value>Empaca una copia del proyecto abierto en un archivo zip.</value>
+  </data>
+  <data name="rbDataPlantingSites.ToolTip" xml:space="preserve">
+    <value>Trabajar con datos del sitio de siembra</value>
+  </data>
+  <data name="rcboYear.ToolTip" xml:space="preserve">
+    <value>Para proyectos complejos: cambiar año de las series</value>
+  </data>
+  <data name="speciesCompositionByDBHClassAndStrataHorizontalMenuItem.Text" xml:space="preserve">
+    <value>Por clase de DAP y estrato (tabla horizontal)</value>
+  </data>
+  <data name="rbDataNew.Text" xml:space="preserve">
+    <value>Nuevo</value>
+  </data>
+  <data name="rbDataNew.ToolTip" xml:space="preserve">
+    <value>Sólo datos de la tabla: registro nuevo</value>
+  </data>
+  <data name="rbWeatherAirPollutantConcentrationUGM3.Text" xml:space="preserve">
+    <value>Concentración del contaminante atmosférico</value>
+  </data>
+  <data name="NetAnnualBenefitsLabel.Text" xml:space="preserve">
+    <value>Beneficios anuales netos</value>
+  </data>
+  <data name="rbProjectRedo.ToolTip" xml:space="preserve">
+    <value>Sólo datos de la tabla: rehacer la última acción</value>
+  </data>
+  <data name="rmOther.Text" xml:space="preserve">
+    <value>Campos personalizados</value>
+  </data>
+  <data name="conditionOfTreesBySpeciesMenuItem.Text" xml:space="preserve">
+    <value>Por especie</value>
+  </data>
+  <data name="rcboSeries.ToolTip" xml:space="preserve">
+    <value>Para proyectos complejos: cambiar series del proyecto</value>
+  </data>
+  <data name="rgDataFields.Text" xml:space="preserve">
+    <value>Definir campos de datos</value>
+  </data>
+  <data name="rbMDDTreeBenefitsEnergyEffects.Text" xml:space="preserve">
+    <value>Efectos de la energía</value>
+  </data>
+  <data name="rgUnits.Text" xml:space="preserve">
+    <value>Unidades</value>
+  </data>
+  <data name="rbProjectDefaults.ToolTip" xml:space="preserve">
+    <value>Sólo datos de la tabla: cargar valores predeterminados sugeridos</value>
+  </data>
+  <data name="PlotInventoryReportButton.Text" xml:space="preserve">
+    <value>Inventario de la parcela</value>
+  </data>
+  <data name="rbValidate.Text" xml:space="preserve">
+    <value>Revisar datos</value>
+  </data>
+  <data name="themeLightnessMenu.Text" xml:space="preserve">
+    <value>Matiz</value>
+  </data>
+  <data name="rbReportsMetric.ToolTip" xml:space="preserve">
+    <value>Mostrar resultados en unidades métricas</value>
+  </data>
+  <data name="dataEntryGroup.Text" xml:space="preserve">
+    <value>Especificar datos</value>
+  </data>
+  <data name="forumButton.Text" xml:space="preserve">
+    <value>Foro de usuarios</value>
+  </data>
+  <data name="rbMDDCompositionOfTreesByStratum.Text" xml:space="preserve">
+    <value>De los árboles por estrato</value>
+  </data>
+  <data name="rbUserGuidesPoststratified.Text" xml:space="preserve">
+    <value>Muestras postestratificadas</value>
+  </data>
+  <data name="ParametersReportButton.ToolTip" xml:space="preserve">
+    <value>Ver un resumen de las opciones de las configuraciones activas del pronóstico.</value>
+  </data>
+  <data name="rbProjectNew.Text" xml:space="preserve">
+    <value>Nuevo</value>
+  </data>
+  <data name="rgInventoryValue.Text" xml:space="preserve">
+    <value>Valor de inventario</value>
+  </data>
+  <data name="rbStructureSummaryBySpecies.Text" xml:space="preserve">
+    <value>Por especie</value>
+  </data>
+  <data name="NewForecastButton.Text" xml:space="preserve">
+    <value>Nuevo</value>
+  </data>
+  <data name="rbDataPlots.ToolTip" xml:space="preserve">
+    <value>Trabajar con datos de parcelas</value>
+  </data>
+  <data name="viewsMenu.ToolTip" xml:space="preserve">
+    <value>Cambiar el diseño</value>
+  </data>
+  <data name="rbEnglish.Text" xml:space="preserve">
+    <value>Inglés</value>
+  </data>
+  <data name="conditionOfTreesByDBHAndStrataMenuItem.Text" xml:space="preserve">
+    <value>Por clase de DAP y especie</value>
+  </data>
+  <data name="rbStrata.ToolTip" xml:space="preserve">
+    <value>Refinar parámetros del proyecto y de cualquier estrato</value>
+  </data>
+  <data name="appMenu.Text" xml:space="preserve">
+    <value>Archivo</value>
+  </data>
+  <data name="rbtnPlotTrees.Text" xml:space="preserve">
+    <value>Árboles</value>
+  </data>
+  <data name="violetButton.Text" xml:space="preserve">
+    <value>Violeta</value>
+  </data>
+  <data name="rbWeatherPhotosyntheticallyActiveRadiation.Text" xml:space="preserve">
+    <value>Radiación fotosintéticamente activa</value>
+  </data>
+  <data name="rbStrata.Text" xml:space="preserve">
+    <value>Área del proyecto &amp;y del estrato</value>
+  </data>
+  <data name="videoLearningButton.Text" xml:space="preserve">
+    <value>Aprendizaje por video</value>
+  </data>
+  <data name="mnuFileOpenProject.ToolTip" xml:space="preserve">
+    <value>Abrir un proyecto.</value>
+  </data>
+  <data name="DbhDistribTotal.Text" xml:space="preserve">
+    <value>Distribuciones DAP anuales</value>
+  </data>
+  <data name="primaryPestSummaryOfTreesByStrataButton.Text" xml:space="preserve">
+    <value>Impactos por estrato</value>
+  </data>
+  <data name="DbhGrowthTotal.Text" xml:space="preserve">
+    <value>Crecimiento DAP promedio</value>
+  </data>
+  <data name="leafAreaAndBiomassOfTreesAndShrubsByStrataMenuItem.Text" xml:space="preserve">
+    <value>De árboles y matorrales por estrato</value>
+  </data>
+  <data name="rbMDDTreeBenefitsCarbonSequestration.Text" xml:space="preserve">
+    <value>Secuestro de carbono</value>
+  </data>
+  <data name="ForecastCarbonSequestrationByStrata.Text" xml:space="preserve">
+    <value>Secuestro de carbono por estrato</value>
+  </data>
+  <data name="ForecastCarbonStorageByStrata.Text" xml:space="preserve">
+    <value>Almacenamiento de carbono por estrato</value>
+  </data>
+  <data name="rgPlot.Text" xml:space="preserve">
+    <value>Parcela</value>
+  </data>
+  <data name="rbtnStreets.ToolTip" xml:space="preserve">
+    <value>Nombres de las calles del proyecto</value>
+  </data>
+  <data name="RunForecastButton.Text" xml:space="preserve">
+    <value>Correr pronóstico</value>
+  </data>
+  <data name="rtSupport.Text" xml:space="preserve">
+    <value>Soporte</value>
+  </data>
+  <data name="rbValidate.ToolTip" xml:space="preserve">
+    <value>Correr pruebas básicas de validación de datos</value>
+  </data>
+  <data name="rbDieback.ToolTip" xml:space="preserve">
+    <value>Parámetros de muerte regresiva del proyecto</value>
+  </data>
+  <data name="PestsItem.Text" xml:space="preserve">
+    <value>Brotes de plagas</value>
+  </data>
+  <data name="rbReportsSpeciesCN.Text" xml:space="preserve">
+    <value>Común</value>
+  </data>
+  <data name="rbUserGuidesDifferences_v5_v6.Text" xml:space="preserve">
+    <value>Diferencias en v5 y v6</value>
+  </data>
+  <data name="pollutionEffectsMenuItem.Text" xml:space="preserve">
+    <value>Eliminación de la contaminación</value>
+  </data>
+  <data name="rgDefinePlots.Text" xml:space="preserve">
+    <value>Definir parcelas</value>
+  </data>
+  <data name="rbtnMaintenanceTasks.Text" xml:space="preserve">
+    <value>Tarea de mantenimiento</value>
+  </data>
+  <data name="ForecastRenameButton.ToolTip" xml:space="preserve">
+    <value>Darle un nuevo título a la configuración activa del pronóstico.</value>
+  </data>
+  <data name="rbtnGroundCovers.Text" xml:space="preserve">
+    <value>Cobertura del suelo</value>
+  </data>
+  <data name="rmCompositionAndStructure.Text" xml:space="preserve">
+    <value>Composición y estructura</value>
+  </data>
+  <data name="rbMDDCompositionOfTrees.Text" xml:space="preserve">
+    <value>De los árboles</value>
+  </data>
+  <data name="rbMDDTreeBenefitsHydrologyEffects.Text" xml:space="preserve">
+    <value>Escurrimiento evitado</value>
+  </data>
+  <data name="SusceptibilityOfTreesToPestsByStrata.Text" xml:space="preserve">
+    <value>Por estrato</value>
+  </data>
+  <data name="airQualityHealthImpactsandValuesbyShrubs.Text" xml:space="preserve">
+    <value>Por matorrales</value>
+  </data>
+  <data name="rbUserGuidesExampleProjects.Text" xml:space="preserve">
+    <value>Explorar ejemplos de proyectos</value>
+  </data>
+  <data name="rbWeatherAirPollutantConcentrationPPM.Text" xml:space="preserve">
+    <value>Concentración del contaminante atmosférico (PPM)</value>
+  </data>
+  <data name="rbtnFieldOne.Text" xml:space="preserve">
+    <value>Campo uno</value>
+  </data>
+  <data name="ForecastPopulationSummaryLabel.Text" xml:space="preserve">
+    <value>Resumen de la población</value>
+  </data>
+  <data name="ConfigurationComboBox.ToolTip" xml:space="preserve">
+    <value>Establece la configuración activa del pronóstico.</value>
+  </data>
+  <data name="ForecastCarbonStorage.Text" xml:space="preserve">
+    <value>Almacenamiento de carbono</value>
+  </data>
+  <data name="TranspirationLabel.Text" xml:space="preserve">
+    <value>Transpiración</value>
+  </data>
+  <data name="rbWeatherTempF.Text" xml:space="preserve">
+    <value>Temperatura</value>
+  </data>
+  <data name="AnnualNetCarbonSequestrationOfTreesLabel.Text" xml:space="preserve">
+    <value>Secuestro anual neto de carbono de los árboles</value>
+  </data>
+  <data name="FoodscapeBenefitsofTreesMenuItem.Text" xml:space="preserve">
+    <value>Por especie</value>
+  </data>
+  <data name="definePlotsManuallyButton.ToolTip" xml:space="preserve">
+    <value>Configurar parcelas manualmente</value>
+  </data>
+  <data name="RetrieveResultsButton.ToolTip" xml:space="preserve">
+    <value>Al recibir el aviso, hacer clic aquí para recuperar los resultados procesados</value>
+  </data>
+  <data name="greenButton.Text" xml:space="preserve">
+    <value>Verde</value>
+  </data>
+  <data name="rbDataTrees.Text" xml:space="preserve">
+    <value>Árboles</value>
+  </data>
+  <data name="rbMaintTaskReport.Text" xml:space="preserve">
+    <value>Tarea</value>
+  </data>
+  <data name="numberOfTreesBySpecies.Text" xml:space="preserve">
+    <value>Por especie</value>
+  </data>
+  <data name="rbtnLandUses.ToolTip" xml:space="preserve">
+    <value>Parámetros del uso de la tierra del proyecto</value>
+  </data>
+  <data name="aboutButton.ToolTip" xml:space="preserve">
+    <value>Acerca de i-Tree Eco</value>
+  </data>
+  <data name="colorSchemeMenu.Text" xml:space="preserve">
+    <value>Estilo</value>
+  </data>
+  <data name="signSymptomReviewOfTreesButton.Text" xml:space="preserve">
+    <value>Buscador de árboles impactados</value>
+  </data>
+  <data name="viewsMenu.Text" xml:space="preserve">
+    <value>Vistas</value>
+  </data>
+  <data name="rbEvaporationByTrees.Text" xml:space="preserve">
+    <value>Por árboles</value>
+  </data>
+  <data name="signSymptomDetailsSummaryByStrataButton.Text" xml:space="preserve">
+    <value>Resúmenes por estrato</value>
+  </data>
+  <data name="rbSpeciesSN.Text" xml:space="preserve">
+    <value>Científico</value>
+  </data>
+  <data name="rmIndividualLevelResults.ToolTip" xml:space="preserve">
+    <value>Resultados a nivel individual</value>
+  </data>
+  <data name="leafAreaOfTreesByStrataChartMenuItem.Text" xml:space="preserve">
+    <value>Por estrato</value>
+  </data>
+  <data name="rbDataDelete.Text" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="AirQualityImprovementLabel.Text" xml:space="preserve">
+    <value>Mejoramiento de la calidad del aire</value>
+  </data>
+  <data name="definePlotsManuallyButton.Text" xml:space="preserve">
+    <value>Definido por el usuario</value>
+  </data>
+  <data name="rbMDDCompositionOfTreeBySpecies.Text" xml:space="preserve">
+    <value>De los árboles por especie</value>
+  </data>
+  <data name="expandRibbonButton.ToolTip" xml:space="preserve">
+    <value>Expandir la barra</value>
+  </data>
+  <data name="rlProjectsLabel.Text" xml:space="preserve">
+    <value>Proyectos recientes</value>
+  </data>
+  <data name="rgInventoryData.Text" xml:space="preserve">
+    <value>Datos de inventario</value>
+  </data>
+  <data name="rbUserGuidesUnstratified.Text" xml:space="preserve">
+    <value>Muestras no estratificadas</value>
+  </data>
+  <data name="rbtnFieldThree.Text" xml:space="preserve">
+    <value>Campo tres</value>
+  </data>
+  <data name="rmPestAnalysis.ToolTip" xml:space="preserve">
+    <value>Cálculos de los análisis de plagas</value>
+  </data>
+  <data name="monthlyPollutantRemovalByGrassMenuItem.Text" xml:space="preserve">
+    <value>Eliminación mensual</value>
+  </data>
+  <data name="pestReviewOfTreesButton.Text" xml:space="preserve">
+    <value>De árboles evaluados</value>
+  </data>
+  <data name="UVEffectsOfTreesLabel.Text" xml:space="preserve">
+    <value>Efectos UV de los árboles</value>
+  </data>
+  <data name="rtbForecastEnglish.Text" xml:space="preserve">
+    <value>Inglés</value>
+  </data>
+  <data name="ForecastCarbonLabel.Text" xml:space="preserve">
+    <value>Almacenamiento y secuestro de carbono</value>
+  </data>
+  <data name="BasalAreaTotal.Text" xml:space="preserve">
+    <value>Área basal</value>
+  </data>
+  <data name="projectMetadataButton.Text" xml:space="preserve">
+    <value>Metadatos del proyecto</value>
+  </data>
+  <data name="redButton.Text" xml:space="preserve">
+    <value>Rojo</value>
+  </data>
+  <data name="rmWeatherReports.ToolTip" xml:space="preserve">
+    <value>Gráficos con más información sobre contaminación y estado del tiempo</value>
+  </data>
+  <data name="black2007Button.Text" xml:space="preserve">
+    <value>Negro 2007</value>
+  </data>
+  <data name="AvoidedRunoffOfTrees.Text" xml:space="preserve">
+    <value>Escurrimiento evitado de los árboles</value>
+  </data>
+  <data name="rgCharts.Text" xml:space="preserve">
+    <value>Gráficos</value>
+  </data>
+  <data name="colorSchemeMenu.ToolTip" xml:space="preserve">
+    <value>Esquema de colores</value>
+  </data>
+  <data name="rgViewExport.Text" xml:space="preserve">
+    <value>Exportar</value>
+  </data>
+  <data name="signSymptomDetailsSummaryBySpeciesButton.Text" xml:space="preserve">
+    <value>Resúmenes por especie</value>
+  </data>
+  <data name="writtenReportButton.ToolTip" xml:space="preserve">
+    <value>Reporte formateado con una lista de los cálculos más pertinentes</value>
+  </data>
+</root>

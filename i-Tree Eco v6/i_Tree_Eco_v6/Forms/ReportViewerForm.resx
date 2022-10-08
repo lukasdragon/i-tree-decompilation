@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ReportView.ToolBars.Search.SearchPrevious.Image" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAbwIAAAKJUE5HDQoaCgAAAA1JSERSAAAAEAAAABAIBgAAAB/z/2EAAAAgY0hSTQAAeiUAAICDAAD5/wAAgOkAAHUwAADqYAAAOpgAABdvkl/FRgAAAAlwSFlzAAALEQAACxEBf2RfkQAAAfVJREFUOE+lkiFsFEEUhqsu5Qxb15wgs4KkZ8gk51AjK1dWrjw5kmAYeaqZoJqqSRAU1Kqm8gXDhTQwpAlZAck41jFBnfuZN7vsbVMHL3krNvN/773/vQMA/5X9ZxJqI1VKo4yklFG9kFFqQXItjKyFGp7leABIQl1fVMHeGDStg+8IFBq4rUH6D7WWQVRCD8/vA1isXR2pbRB2ASF6fPhxjetv70CdQxMsTFMzBEL1kBGQWpVceRTvPL783KI6TVWfKzSdhQsGrjXQroI8FUHIQk0BhttmIef3X7dQSsF7D9oSlk+XGWBbDes1Kq1QnBR2CqDGO9z97iuzmIgQYwR2GCFXd+ewW539SAC/BySnKRB8pCx2LhnYesQuZggn3RDKJ2UGsBeFKBJ9AKQ1JUCTxdMMbfKjCyiKArPZDPP5HEePj3rA8RSwFmQprS65ffnJ4O3n1xnAHoQQsHq2wsXtS7z5uulH2KQRjicjpAOxPBevip2+/GgygH3gURaLRRbm9klDnUnuam+iPBOKj0Rf1RnATq9WKyyXS5RlicNHh6O4NgripIgJsF8jB1+YqmXe81jNaZy/fwWbhIbqXiwFVzf3Dulv8IXxkfC11bbKZnHyzNz2UDmLOR4AOPjC+EjSmjyvit1mw3hmbnt4lmME/Hvi4A+XtDkZGhDRkgAAAABJRU5ErkJgggs=</value>
+  </data>
+  <data name="ReportView.ToolBars.Navigation.GoPrev.ToolTipText" xml:space="preserve">
+    <value>Go To Previous Page</value>
+  </data>
+  <data name="ReportView.ToolBars.Search.MatchCase.Text" xml:space="preserve">
+    <value>Match Case</value>
+  </data>
+  <data name="ReportView.ToolBars.Search.MatchCase.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAEkAAAAWAAAACw==</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ReportView.ToolBars.Search.MatchWholeWord.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ReportView.ToolBars.File.Save.ToolTipText" xml:space="preserve">
+    <value>Save File</value>
+  </data>
+  <data name="ReportView.ToolBars.File.Save.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAABcAAAAWAAAACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.Search.CloseSearch.ToolTipText" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="ReportView.ToolBars.Navigation.HistoryNext.Image" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAKQIAAAKJUE5HDQoaCgAAAA1JSERSAAAAEAAAABAIBgAAAB/z/2EAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAA7CAAAOwgEVKEqAAAABy0lEQVQ4T61SK1BjMRSNZDrTj2Q6wEN2OkPf8ww0hhnUbt1iYJ+CVRCJaxzISGRkZSQysjKyMrIy8rm794RXtlAce2eOSXJO7jn3iv9e06dSMvT5fOJP5+N0+jhOk4cjX94VuvxdyPbZ1zV9LtXNy49oXjW5laWw9uTXjuxSU/0yo7Pbk1j8LFT7/GOBfG+vk185ik2kkALJS0luaVnEkouGtKtJ/qmomH4Smc7LCj9vyLEJLOCzgJSSrDdkoya70qTsjE4uDmJR9v/ZYQGNtkHM5IZbTy6T/dJTVVWEe7NSZIKimZLUG/VMSxcCgbnAntu2Nz8DqUlZZDAYsAUWWKqcR3fUDS1dCCTto39vO8aYidRQRkqJ3KvLIhBAFp1hJ7V0Icb3QxZwOXH8GgJbgQgTgbiOZBf2o8D+lsDk7sgbz6PjtCHAR++AkFs4EnuC9KJ+s/DMFva3LPCCGPjCqJA0gMD4aoesvSJ5VVGvtxVi+auQWBLFjzKZkwb4aodca0nDUSf1+1tjRGHDZF3lOeMxwMekLZOZqH2dycfVMTFZv7E+FTYMS4Jtq80shwXAM9puf/6avClsGJake9gNGBXSRmDwvNP290uIvy/if7eV6hogAAAAAElFTkSuQmCCCw==</value>
+  </data>
+  <data name="ReportView.ToolBars.File.Open.ImageTransparentColor" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Db2xvcgQAAAAEbmFtZQV2YWx1ZQprbm93bkNvbG9yBXN0YXRlAQAAAAkHBwIAAAAKAAAAAAAAAABrAAEACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.Zoom.ZoomInTool.ImageTransparentColor" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Db2xvcgQAAAAEbmFtZQV2YWx1ZQprbm93bkNvbG9yBXN0YXRlAQAAAAkHBwIAAAAKAAAAAAAAAABrAAEACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.Navigation.HistoryPrev.ImageTransparentColor" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Db2xvcgQAAAAEbmFtZQV2YWx1ZQprbm93bkNvbG9yBXN0YXRlAQAAAAkHBwIAAAAKAAAAAAAAAABrAAEACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.Search.MatchWholeWord.ToolTipText" xml:space="preserve">
+    <value>Match whole word only</value>
+  </data>
+  <data name="ReportView.ToolBars.File.PrintLayout.Image" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAgAMAAAKJUE5HDQoaCgAAAA1JSERSAAAAEAAAABAIBgAAAB/z/2EAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAA7CAAAOwgEVKEqAAAADIklEQVQ4T03T+U9UVxjG8fsnWKuGStyKrVI1FhGqkwatWoPAIBZEg0SkFHEsi4hOUUYWbcUIxjU2gBGhZTGIWzAWqyKJmihNhraA0EGoCKiIrDKs+vU9F7C9N+fHz33Ou1xNPYevWEgt3sOP580k58VhyY4hPvN74k5FEH00jO2HQvhufxAhlkA27V7H+mgjfhGe6DjtagKNY2/9m3rqhuqoGajh776/sHZbedhRwf22e5S3lnOz6SbXH1/nSt1ViquLWRXkgXZIkhveNmIT7LclefSEJOG7ORGfzfvwDk5gzaY9eAb9wOqNZlZt2EVRVRH51nyW+RvQDhTuxjZio3aoVscjb2B4BAblDAxB3wD09kOXHTr6YMX6neRZ8zj34BwGHze0pF9ieTRYS7W9mrWSPKSwwH45r8exwI7X0N4DywN2kP0gm8y7mSz+eiFawtkoquxVVPZU4huSyMAw2MexpCr8SvBLwS+6wOObaDLuZnCy7BSfL5uHZv7ZhLXHSoU0yyg12wcFS2qP4E6Fe//DrR3w5bpITtw+wZEb6Xy2dA5a7PFwHatOq4ap5O4x3C64rRueC27phKevwLB2O+ml6aReS+UTVye0yLRQ7gm+I2Pykm4rrOpVyQo/E9giyU3t8O9LWOK7jYMlB0m5lMKsBTPQtv4UTFlzGTee/C6jin/frHHc/D/8+AV8YYwg+VIyliIL05wd0UL3baC0sZQS2zV9zu/rVViu3CSwsQ0aBNuegZt3OAlFezEXmPnIyQEt2OwvuISLNRf1JRnHql6VrHD9GK5tAVevMMz5ZmJzY5kyYzJaYIxRX8vCPwtZEbhT7/RTgU8kuWEM/6NwKzxqhkVe3+o4KjuKDx0novlt86SgsoDcP3L1JfHwj9ZHpbq9xNeEu9S82CccV+8wPd1lTShRsjumMyYmOHyA5hW6kpyKHLLuZ3G6/DTHbh0j/be00U5fTsFywUJ8YTxxv+5iR04MkWcjMWWZ2JoRLh+YMPpHLg8wYDC6477aBZev5jPf4Mxct9k4LZzJzHnTcfx0Kg4fT2Hy9ElMlGsrOIo17R1YNduy5FY1GAAAAABJRU5ErkJgggs=</value>
+  </data>
+  <data name="ReportView.ToolBars.Navigation.GoNext.ImageTransparentColor" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Db2xvcgQAAAAEbmFtZQV2YWx1ZQprbm93bkNvbG9yBXN0YXRlAQAAAAkHBwIAAAAKAAAAAAAAAABrAAEACw==</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>pnlWarning</value>
+  </data>
+  <data name="pnlWarning.ColumnCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ReportView.ToolBars.File.PageSetup.ToolTipText" xml:space="preserve">
+    <value>Page Setup</value>
+  </data>
+  <data name="lblOutOfDateWarning.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAAsAAAAAwAAAAs=</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>ReportViewerForm</value>
+  </data>
+  <data name="ReportView.ToolBars.File.Print.ToolTipText" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="ReportView.ToolBars.Text.Hand.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAABcAAAAWAAAACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.File.Parameters.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="lblOutOfDateWarning.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="ReportView.ToolBars.Navigation.NavigationPane.ImageTransparentColor" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Db2xvcgQAAAAEbmFtZQV2YWx1ZQprbm93bkNvbG9yBXN0YXRlAQAAAAkHBwIAAAAKAAAAAAAAAABrAAEACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.Text.Find.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAABcAAAAWAAAACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.Zoom.ZoomOut.Image" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAzwEAAAKJUE5HDQoaCgAAAA1JSERSAAAAEAAAABAIBgAAAB/z/2EAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAA7CAAAOwgEVKEqAAAABcUlEQVQ4T82SsU4CQRCGeRQ1Nr6FVhZYgCEI17BrDGI0ub0YgRhxiUG8hAj3AiZnh41ZCbG+0nJLbMwVFpbbaEwoxhlcc0HQmi/5q5tvdnb2UovH2UVvTfrduvSDAcZIKY0rpcIItyaXbNl8Gq1OWrZ7Q6UU6FEMxphJ9EhD2Ffg1rGR667b8mlk+3qV5CiKYIZPAINRKgJsoPaOjpetltC47Fbp5BmsHBvMG0AQhMD3uWe1BOn3BjT2FL9kjZ9DnIKx3UerJUgZ4HWxEmniKRThY5oBMBFAptKEaGRAPcXAOf+wWgJt+6fBtxgCqydyhmEDjQ2iGLad0thqCfRUWuu5Y9PJExkT9CPY4cVXqyWI2rlHT/WfTKErlUX5xmoJ9JMIIR5CfIm/ZNpLgbGXq9Zh1mrTeJ63Uaq4ip6Ktk0LozvT2HSy4zjPd7enJ7Z8PvyAr+CWPcbYMFNw3rOF7DiXz8X54tZ9p7qZtmULQyr1BQHOgHpTLmoiAAAAAElFTkSuQmCCCw==</value>
+  </data>
+  <data name="ReportView.ToolBars.Zoom.ZoomIn.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAABcAAAAWAAAACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.Text.Find.ToolTipText" xml:space="preserve">
+    <value>Find Text</value>
+  </data>
+  <data name="$this.ClientSize" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAO8DAAAKAgAACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.Zoom.ZoomIn.Image" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAA4QEAAAKJUE5HDQoaCgAAAA1JSERSAAAAEAAAABAIBgAAAB/z/2EAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAA7CAAAOwgEVKEqAAAABg0lEQVQ4T82SMUvDQBTH+yH8AAoufgcRdxFKXUIpJiklLSLe1ULbwXpVtASkbcTBNWPB5SzinE0nuUk6BidBhJtEcHi+V69JiuKqf/gPIe/33rv/Xe7/6eB4uCL8QVv4wRithRCaCSHRnLXEoin7WZ2Tsw3RG95IKUFNYtBaT60mCsKRBNbGRoytm/J5iV5/meAoiuCb3gE0WsoIsIGs7DaWDJaqczpo0uSsukE4NcGxRj8DBPjtVt26wVIJfzimtbMimPthAiv8HeIWjlO+NVgqIQI8LlYacAbzbgAODyBf60I00SDvY3Bd981gqSjtWYMvMASnncJ5BxsobBDFUCjaHwZLRVellEoCo7UTECdPYXQwisAql54Mloq3Dut0VdnACE4mG9ORavWdS4OlokfCOb8O8SZmgWUnkymXba/yKMTeqsHm1WBsza4xSVdFaVNgdGZae//oHNN3Hi76TcuU/yzP8xZs27bQV5tW6bVQLLxYJeuuaG/17Sr7/Sn/gXK5TzOQdHWPu0NhAAAAAElFTkSuQmCCCw==</value>
+  </data>
+  <data name="ReportView.ToolBars.Text.Hand.ImageTransparentColor" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Db2xvcgQAAAAEbmFtZQV2YWx1ZQprbm93bkNvbG9yBXN0YXRlAQAAAAkHBwIAAAAKAAAAAAAAAABrAAEACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.Page.Continuous.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAABcAAAAWAAAACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.File.Reflow.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ReportView.ToolBars.Navigation.GoLast.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAABcAAAAWAAAACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.Zoom.ZoomIn.ImageTransparentColor" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Db2xvcgQAAAAEbmFtZQV2YWx1ZQprbm93bkNvbG9yBXN0YXRlAQAAAAkHBwIAAAAKAAAAAAAAAABrAAEACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.File.Stop.ImageTransparentColor" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Db2xvcgQAAAAEbmFtZQV2YWx1ZQprbm93bkNvbG9yBXN0YXRlAQAAAAkHBwIAAAAKAAAAAAAAAABrAAEACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.Page.Continuous.ToolTipText" xml:space="preserve">
+    <value>Continuous View</value>
+  </data>
+  <data name="ReportView.ToolBars.Zoom.ZoomTool.ToolTipText" xml:space="preserve">
+    <value>Zoom In Tool</value>
+  </data>
+  <data name="ReportView.ToolBars.Page.FacingContinuous.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAABcAAAAWAAAACw==</value>
+  </data>
+  <data name="pictureBox1.SizeMode" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACdTeXN0ZW0uV2luZG93cy5Gb3Jtcy5QaWN0dXJlQm94U2l6ZU1vZGUBAAAAB3ZhbHVlX18ACAIAAAACAAAACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.Navigation.NavigationPane.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAABcAAAAWAAAACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.Search.SearchNext.ToolTipText" xml:space="preserve">
+    <value>Search Next</value>
+  </data>
+  <data name="ReportView.ToolBars.Search.SearchLabel.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAACEAAAAWAAAACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.Search.SearchLabel.Text" xml:space="preserve">
+    <value>Find:</value>
+  </data>
+  <data name="ReportView.ToolBars.File.Open.ToolTipText" xml:space="preserve">
+    <value>Open File</value>
+  </data>
+  <data name="ReportView.ToolBars.File.Stop.ToolTipText" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="ReportView.ToolBars.Search.SearchText.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAMgAAAAZAAAACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.File.Reflow.Image" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAmAEAAAKJUE5HDQoaCgAAAA1JSERSAAAAEAAAABAIBgAAAB/z/2EAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAA7CAAAOwgEVKEqAAAABOklEQVQ4T62SzysEYRjHxx/gf9mTiyulxGGTktISpbgoRxKiZctOKT8Ok9EmLjKlpLSaUmhLXlEsq3m20Ib0Ht2+3nf2HdnMzjuH/dTTHN75fObpbYyG4biE/8PgHDPYDsPWwbWpXg1HCvWw91wkOlLREfk1SWW1H7TSi2I6icJcEmdLQzBFwL1k0RG5ahjnO1mYtuPLwSilFrtOIOBiPPEbUkot8qLCuNtdxs1sF64yKV3A9QWabgVl+0DWBJ42xlDMzeD+dB9U4ZqAuKjy2jDoJOeHAvi3iAqZSBOQN+2lu5VWRcqcC1kE2IMuIA5Lh+t4XuyEV8hXAxx4mWrB6/akCJA+IHk8suBlelCeb8PbQjveR5rxMdCEz83BeAGfP6t/WaMosVvxI8XcQD6jJjIgD+OMUhqBYfwAnbDRJvOBBM0AAAAASUVORK5CYIIL</value>
+  </data>
+  <data name="pnlWarning.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ReportView.ToolBars.Navigation.NavigationPane.ToolTipText" xml:space="preserve">
+    <value>Navigation Pane</value>
+  </data>
+  <data name="ReportView.ToolBars.Zoom.ZoomOut.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAABcAAAAWAAAACw==</value>
+  </data>
+  <data name="&gt;&gt;lblOutOfDateWarning.Parent" xml:space="preserve">
+    <value>pnlWarning</value>
+  </data>
+  <data name="ReportView.ToolBars.File.Parameters.ImageTransparentColor" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Db2xvcgQAAAAEbmFtZQV2YWx1ZQprbm93bkNvbG9yBXN0YXRlAQAAAAkHBwIAAAAKAAAAAAAAAABrAAEACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.Search.CloseSearch.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAABcAAAAWAAAACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.Navigation.LblOfPages.Text" xml:space="preserve">
+    <value>of 0</value>
+  </data>
+  <data name="ReportView.ToolBars.File.Parameters.ToolTipText" xml:space="preserve">
+    <value>Report Parameters</value>
+  </data>
+  <data name="ReportView.ToolBars.Navigation.LblOfPages.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAABsAAAAWAAAACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.File.PageSetup.Image" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAjAEAAAKJUE5HDQoaCgAAAA1JSERSAAAAEAAAABAIBgAAAB/z/2EAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAA7CAAAOwgEVKEqAAAABLklEQVQ4T62SXUrDQBSFsySX4RLEJ/fgBkQQRUUjViiKGAq1hWgdpURBkUHwh4IYqEJFkRQKzUOpY0Ho23HuZRrSVjJ96AeX8zA53x2GOFNDyAjjE0JchfBEiKOzF9d8+j9UINTlDmcarywxM7uQLaFtv9d7+M7N4f0ij6/gAPFtAd27Y7haIJ/CbAldlegGLmca1xNcHoypDOMZQae6zTmKLO4mIlMZhh6KiM83OdOoPvDo520CyR+3KuucCbqslMKzOLQI9EMRzZM1zgG0PYoVXoNCtoBemmj6q5wElWk7CT5uShaBPiQ+SyuchO5yOYoU2g9iMkGjuMyZbNflsKHQqVXtgvppDm8b82M/0s99Gb3KEnrBlv0G9f1F3jQ6/ZrPmSmgw0nGVKaB4/wBcjTfuSTJK7cAAAAASUVORK5CYIIL</value>
+  </data>
+  <data name="lblOutOfDateWarning.TextAlign" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAAB9TeXN0ZW0uRHJhd2luZy5Db250ZW50QWxpZ25tZW50AQAAAAd2YWx1ZV9fAAgCAAAAEAAAAAs=</value>
+  </data>
+  <data name="ReportView.ToolBars.Search.CloseSearch.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ReportView.ToolBars.File.PrintLayout.ImageTransparentColor" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Db2xvcgQAAAAEbmFtZQV2YWx1ZQprbm93bkNvbG9yBXN0YXRlAQAAAAkHBwIAAAAKAAAAAAAAAABrAAEACw==</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ReportView.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ReportView.ToolBars.Navigation.GoFirst.Image" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAoQIAAAKJUE5HDQoaCgAAAA1JSERSAAAAEAAAABAIBgAAAB/z/2EAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAA7CAAAOwgEVKEqAAAACQ0lEQVQ4T61SS2gTURSddTAfutASa6d0FQLNzMZV0TxTQgVBgyC6UeNC6yqOglSwkKdUDHUTKWIFlVlECYoyq1KRyKsi1KoxRaUxQZhFF4V0MWAD2R3ffU5tqt3phbu53HPePecd7b9X8qbBZPP9+YQYzse94StxL3GhXxhjOjdO68xf276SBcM6NXPYLc5xOHUbtVUB4TqwFzjO3j+GfeeGXP2IbvnrW4vAOfukJ+oOmu0mltbe4aU7i+fNEp5+vYfRo2lwJwt23oSe/IMkmTdMepnAbscFO8jQWmvh1coLPFl6iNRISs2mP07AsjMYSve5uhHelCMJOJ3dbNew/GMZjEmC9RbKnx7ANE2IBaFmN96MY2rRQsZiCMVCRR+uaWSYU7PxXp79QTa99qxaQiQSUWCv46nZ5OvLksRCdiaDYCxY8+GaRk4LV6CyMqvOTh06oMDOnAPP84AOFMG1+Yu4Pm8pLwLRgOfDNS2ei0oCRxr2SPZjjKRTiO6Owi7bcFddRUISuLA2CXq7CBJj/aIoOErf7sL+fEctf/leRWBnAE5ZGutKY30CJaEgJfR2SZABKZKuUv0Wbi9OQo7QXm+jIMYR6tuhSGhGBNTshIlQqMtE47jOKCRWOYvp6lW13Gg0pOZL4JUcegYjvwmynCEaC3jhcNc3UlHCWNZU/zz19tepvCI109mSZNdgjwIPmAOQYO7DthYljEJCacsWM8osatI8embvxsvbgzeKEkYhCe4J1uiryG0yjDT/dfa/l6b9BMNwfWsugkeCAAAAAElFTkSuQmCCCw==</value>
+  </data>
+  <data name="ReportView.ToolBars.Zoom.ZoomOutTool.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAJwAAAAWAAAACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.Zoom.ZoomOutTool.Text" xml:space="preserve">
+    <value>Zoom Out Tool</value>
+  </data>
+  <data name="ReportView.ToolBars.Search.SearchLabel.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ReportView.Dock" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB5TeXN0ZW0uV2luZG93cy5Gb3Jtcy5Eb2NrU3R5bGUBAAAAB3ZhbHVlX18ACAIAAAAFAAAACw==</value>
+  </data>
+  <data name="ReportView.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAO8DAADrAQAACw==</value>
+  </data>
+  <data name="ReportView.Text" xml:space="preserve">
+    <value>c1PrintPreviewControl1</value>
+  </data>
+  <data name="&gt;&gt;lblOutOfDateWarning.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ReportView.ToolBars.Navigation.LblPage.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAACEAAAAWAAAACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.Navigation.LblPage.Text" xml:space="preserve">
+    <value>Page</value>
+  </data>
+  <data name="&gt;&gt;ReportView.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ReportView.ToolBars.File.PageSetup.ImageTransparentColor" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Db2xvcgQAAAAEbmFtZQV2YWx1ZQprbm93bkNvbG9yBXN0YXRlAQAAAAkHBwIAAAAKAAAAAAAAAABrAAEACw==</value>
+  </data>
+  <data name="pnlWarning.LayoutSettings" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAChTeXN0ZW0uV2luZG93cy5Gb3Jtcy5UYWJsZUxheW91dFNldHRpbmdzAQAAABBTZXJpYWxpemVkU3RyaW5nAQIAAAAGAwAAAM4CPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTE2Ij8+PFRhYmxlTGF5b3V0U2V0dGluZ3M+PENvbnRyb2xzPjxDb250cm9sIE5hbWU9ImxibE91dE9mRGF0ZVdhcm5pbmciIFJvdz0iMCIgUm93U3Bhbj0iMSIgQ29sdW1uPSIxIiBDb2x1bW5TcGFuPSIxIiAvPjxDb250cm9sIE5hbWU9InBpY3R1cmVCb3gxIiBSb3c9IjAiIFJvd1NwYW49IjEiIENvbHVtbj0iMCIgQ29sdW1uU3Bhbj0iMSIgLz48L0NvbnRyb2xzPjxDb2x1bW5zIFN0eWxlcz0iQXV0b1NpemUsMCxQZXJjZW50LDEwMCIgLz48Um93cyBTdHlsZXM9IkF1dG9TaXplLDAiIC8+PC9UYWJsZUxheW91dFNldHRpbmdzPgs=</value>
+  </data>
+  <data name="ReportView.ToolBars.Search.MatchCase.ToolTipText" xml:space="preserve">
+    <value>Search with case sensitivity</value>
+  </data>
+  <data name="ReportView.ToolBars.Navigation.GoNext.ToolTipText" xml:space="preserve">
+    <value>Go To Next Page</value>
+  </data>
+  <data name="ReportView.ToolBars.File.Stop.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ReportView.ToolBars.Page.Facing.ImageTransparentColor" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Db2xvcgQAAAAEbmFtZQV2YWx1ZQprbm93bkNvbG9yBXN0YXRlAQAAAAkHBwIAAAAKAAAAAAAAAABrAAEACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.Text.Find.ImageTransparentColor" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Db2xvcgQAAAAEbmFtZQV2YWx1ZQprbm93bkNvbG9yBXN0YXRlAQAAAAkHBwIAAAAKAAAAAAAAAABrAAEACw==</value>
+  </data>
+  <data name="&gt;&gt;ReportView.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="ReportView.ToolBars.Zoom.ZoomInTool.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAJwAAAAWAAAACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.Zoom.ZoomInTool.Text" xml:space="preserve">
+    <value>Zoom In Tool</value>
+  </data>
+  <data name="ReportView.ToolBars.Navigation.GoLast.Image" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAnQIAAAKJUE5HDQoaCgAAAA1JSERSAAAAEAAAABAIBgAAAB/z/2EAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAA7CAAAOwgEVKEqAAAACP0lEQVQ4T61STWgTQRTeq4H8gFpiqN2ilxBodi+eimagikJBcxD0ou6p9RSXngSRjK3BYi+RIPake4glIuiCUKqSOOIlRpFQD4nJZcAeCtvDig3m9nVmssVUe9MHD4bH+7553/ee9t8jc88gIumpfJpN5lP+5M2Un74xxoxZnRrXdBK07R+ZRcO+unyel94swG07aG4yMO7CqVNYy1mcnJng+gXdDtr3hgTnnCs+a7uYvjiN+vca3vJVvOiW8ezbI5TbS6CuBXLdhJ75gySTN0z5swTzPgc5RzB1egqvWs/xsruCJ+sPVc3b8mA7WUycGeW6Ef0tRxDQ4hpFt9dE62cLhBCwOoNpmnAaJTxeL6mat+3hfsNG1iaIJCPFAK5p0jC36eDT1kd8Fil/8/u+IonFYliq3h5M0PdQ+GArP8LJcDOAa5p0mnGG6sYqahuvVTP6gO/7cNdcRaIIfnmYf28rL0KJkB/ANS2VSwgCVxj2VOSKGleC+SaHU3EwcuTwQMKPIYL4EEF6dowVGUVZuO18FYaJZs453IqL0MgBFKpzAwIvkLAoJMSHJIgDKUpdclUPGnchSgocHQ1j4d0cKLNVrbfdU29y2UQkMmSicUkn8kjsioXSl1uq+eCxGO7UxLgCsEvQ6XRgUYJEMuRHo0NrlCEvjFim2nP8+CEUWA60amNegAuKZEaBx81xCDANYHtDXpg8krP2CVjFrDJLptQsxw5+3h+8G/LC5JGEj4abclXSbWmY1PzX2P8emrYDESR/8UVFpPoAAAAASUVORK5CYIIL</value>
+  </data>
+  <data name="&gt;&gt;pnlWarning.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlWarning.Name" xml:space="preserve">
+    <value>pnlWarning</value>
+  </data>
+  <data name="ReportView.ToolBars.Navigation.GoLast.ImageTransparentColor" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Db2xvcgQAAAAEbmFtZQV2YWx1ZQprbm93bkNvbG9yBXN0YXRlAQAAAAkHBwIAAAAKAAAAAAAAAABrAAEACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.Zoom.ZoomOut.ImageTransparentColor" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Db2xvcgQAAAAEbmFtZQV2YWx1ZQprbm93bkNvbG9yBXN0YXRlAQAAAAkHBwIAAAAKAAAAAAAAAABrAAEACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.Text.Find.Image" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAvgEAAAKJUE5HDQoaCgAAAA1JSERSAAAAEAAAABAIBgAAAB/z/2EAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAA7CAAAOwgEVKEqAAAABYElEQVQ4T81SLU/EQBCtJkdSjeH0JZecIWlCApVVUEXOAFUEda2s25V1uxLXynPtP2AlsvLkSuRI3DCz/SDNlYQQBC9Zse/Nvvla70+hKmN3RQPrO2V7ykGVxszxR7jaqgY+EBfrdBL4HT8BZ5G6wfi5wk2scRUJYF7vDc7xR5AvBpGyNMZipg0uI4kT/s2irNqRn0Co2ufARH5lCrcaueckbzAriM+Ip8ds8Chqv3/aQVJGAEDu0xzAGXHgaSDajMpnOK0FjMlwUoUqXyVnYJjWoqYyOZsfSkxVLdmgPVg60GlsEHSaM9CVAVdiX/pQpk9BiwthR41a2kQal2TsB5m7OwM3JIJ9BzTDoCjIiT24JdathW7IhXGJnMgr4inzYy4xkbSBf2XAKxsMXMy+H+Rg8JBXbZJXGCbd7vmcXQo4vxbjru9FAzdPyvJ2WOdhn6x28z/yp7hNy+ln+h087xMEEIsQ4QDDNQAAAABJRU5ErkJgggs=</value>
+  </data>
+  <data name="ReportView.ToolBars.Search.SearchNext.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAABcAAAAWAAAACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.Navigation.GoFirst.ImageTransparentColor" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Db2xvcgQAAAAEbmFtZQV2YWx1ZQprbm93bkNvbG9yBXN0YXRlAQAAAAkHBwIAAAAKAAAAAAAAAABrAAEACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.Navigation.GoPrev.Image" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAoAIAAAKJUE5HDQoaCgAAAA1JSERSAAAAEAAAABAIBgAAAB/z/2EAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAA7CAAAOwgEVKEqAAAACQklEQVQ4T61STWgTURjccyQ/iJgSarf0FALN7r1oHv6fNPSiF3VBaD3FFawKEbLVVEOskFLF3Fw0hYBoF4RakMjWoKSxSkqlieayoIceelgohdzG9z1Xm2hvOvDd3sz7Zr6R/jsSdxXGxziUidsjmZg7ciPmxi8P2Mq4bCgXZOY92x2JnKKfL55yCosGrJaJxoYN27HwpH4bWjGJg2PDjnxa1r3nvSByyjzn2i0L7e02VjeX8dpZwPz6U5wYPY5S6x4MSwO7pEJO/CGSyCgq/Uxkp+OgtbWOlc0aXjaf4cjRw2AnGWbqU5j9eBO6mcTwsX5HVoI7driAQWu3txtobjXx2V3F/NocVFWFXbPBGEOB25iqXke+riOpMwSigYJHlyQKzGqY+MDXXuHzePkBQqGQILsdV2xwv2Yg+3aCi+giD3/U3/DokkRJ246NyvcFVL69EmRr0YLrukAHQiD/Po3JpSu4taSLLHwRn+vRJSmWinABCy/ac3j+tYRwJAyzbMLZcIQIWchWJ2DY+o5AX5dAfHzALtgGSl8ewVx7iGIthz37fbDKPFTHEQJEphEWctxCX5cFXpAC+aJTzdSzYqaraQT7/UKEP/ktQMPOqggEukJUzsiMSqKXNcx+SuNO9RoP7Com3+jYOxTqEdAMhkjU5waDXWckUMOYpoo759/9XNWocM+VFMJD+zh5TJAH1UFwsuHRekENo5JQ27RCUoRFc3F6VKzt/bw7+ReoYVQS/wF/g05FaVNg5Pmvtf8dkvQDWNeEN3WppLYAAAAASUVORK5CYIIL</value>
+  </data>
+  <data name="&gt;&gt;ReportView.Name" xml:space="preserve">
+    <value>ReportView</value>
+  </data>
+  <data name="&gt;&gt;ReportView.Type" xml:space="preserve">
+    <value>C1.Win.C1Preview.C1PrintPreviewControl, C1.Win.C1Report.4, Version=4.0.20151.49, Culture=neutral, PublicKeyToken=41780e2fc605e636</value>
+  </data>
+  <data name="ReportView.ToolBars.File.Open.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAACAAAAAWAAAACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.File.Reflow.ImageTransparentColor" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Db2xvcgQAAAAEbmFtZQV2YWx1ZQprbm93bkNvbG9yBXN0YXRlAQAAAAkHBwIAAAAKAAAAAAAAAABrAAEACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.File.Stop.Image" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAA3wIAAAKJUE5HDQoaCgAAAA1JSERSAAAAEAAAABAIBgAAAB/z/2EAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAA7CAAAOwgEVKEqAAAACgUlEQVQ4T41TXUiTYRQ+tdV2VxRpTaN2Y1sprPqIUBQL/EEIJS+91LshOFLQq12EN3kh3QRj9GOzkf3prDSnlMUqzJ80sIv8QdwcS/Jncz9tbjs97zeJdCU9cDjve75znvc573s+2gkL0T4b0bH7RLnwFzuIJPjT2GeIb1tp6TAT7RVJAyUlxqHy8s/9+fl+h14f7tbpgj16/dzDzEwLyMruEh1koj1bZSmI4k6iE8PV1a7nkpR8VVDAow0N/LW9nafb2njEaOQXBkOiKyNjAYeY7ESZ20hEYLiqyvVApeLxpiaO+f0cCwRShnUiGuWN+Xn+UFfHyAlBSZNQIhdjoR4qLb3WazAkvU4nxyMR5mSSdyIZj/NmMMjva2tjNpVqAkouPyJS0B2i44MVFTMDRUUc8njkYr/dzj6TaZuJmPgmlHRpNN+hohV2WCgw9ElSeKKlhTdDIfk0UTCj1W4zERMILi7y68pKLxT04HVOCYICh04Xn7Fa/4sgurrK442NPhC47hGdJyzyHTk50W8WS6p/YDeCnysr/Km+fl4QQME5Qh9ne/V630RzM0eWl+WkXRWsrXFfYeEkCJ7JLYhLfJKd/fT3JQL/usRkIsGB2dlQp1I5jYOvy5d4k0iFxdXHWVk+MQOiDZGYBrxAIhbjl5L0Dvkf0f8l+RkFbhMdQbC1Q6mMjplMmyG3m8Neb2qQ1tc5vLTEG3NzAUde3htI/wFrtBIdkosFxCjjNU4KErta/aVbq3W/ralZmDSbPRjpaWdx8YhNoZhC4RjMhNyjaf+DCIiRRsIVEN2CH4TMcfhR7Pvhb8CXQfaBtOI/gYT9INKgIBcEF1AkwZ/B/i+/M9Evi2/oaGSyI0kAAAAASUVORK5CYIIL</value>
+  </data>
+  <data name="ReportView.ToolBars.File.PrintLayout.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAABcAAAAWAAAACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.Text.Hand.ToolTipText" xml:space="preserve">
+    <value>Hand Tool</value>
+  </data>
+  <data name="&gt;&gt;lblOutOfDateWarning.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblOutOfDateWarning.Name" xml:space="preserve">
+    <value>lblOutOfDateWarning</value>
+  </data>
+  <data name="ReportView.ToolBars.Navigation.NavigationPane.Image" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAlgMAAAKJUE5HDQoaCgAAAA1JSERSAAAAEAAAABAIBgAAAB/z/2EAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAA7CAAAOwgEVKEqAAAADOElEQVQ4T1XT/1PTdRzA8c+fYJYexaUWfdHEM86ka3ZpmsVxcVIGJZkGijrlSwjbbTKQb8KCgaBTYCAMGIMxxxfHt4k0CBZfFgEFKU2zrqyzOuu8rq6uevb+jDuOve8+Pz5e97rn+/2R5FPcpaPIoaXApianOR1dfSoa0wnSjUdJOXuI4/qDHM6L46AulndVbxCTEkX00Qj8uORKJnqB82VsOSlwisDHF3FZAkqBE2WcGUOcKnoJR76/i1fiXkKS8df/3cb3700W/l5g/s95Zn+fJbU0gcl7k3juehi+M8zAtwP03uqla6EL+5wd67SV7XsVSPmtKnz/+EjQVi19U79NoSw6wOjdUYbuuLkqcM/NHjpudGL/oo3m6WbME2YUr29FOt2UxvW/bgQMGP9lgkM5+3B/78b1jYtun8DXO2gT2PKZhfqJekyjJp7bvRkpsy6ZuT/mmLk/g/dXL2M/jzHy4wgHtDG4brtw+py0f9mO7XMblqkm6sbrqB6t5rzbyLPbNyKpK5VM358O2GDwu0HeObkH51dOHPMOWmdbafy0iUvjl6gaqeLcR+covWrgmReeRkqrSMR7zxswoO9WH2+eiBT4Mi0zAnsbqR2rpfLjSioGKzC4DBT1FPHklhCkpJJ4PD95GPohsHTU4d3+0mZvAzWf1HJx+CLlg+WU9Bso7C4ktyOXxzatRTpyZr8/1vIN5FivvbcD86QZk8fEheELlF8rp7i/mDPOQnI6ctDZdTy6IRgpPuttf6zlA5pF6Z2x20QsE8YhI2cHyviwr5gCZ4HAp8m0n0LdoubhkCCk/eq94pq6l5W2+Eu/uCcco/s8ZTLu1ZN/pYDs9mxOtQlsVZPWmMbqtauQYlOj/KWXbyCXfj4iTJQuRd+jJ68rn2xHNlqbFpVV5cfJ9ck8GLwSKfpYhCjdEjBALh22cxOFonReZx5Zjiw0Ng0Z1oxFLN6OslbJiqAHkCLjd9HgL12zVNrQX0LotvXkduaiu6xD06oh3ZLBBw2pJNUloaxRcqQ6UQxYsfhH7nhLgSIqnPBXwwh7OZRQxQbWb32CkM3rWLdxDcFPPULQ46tZteYhVoq1ZbiIJel/BGuV/NTrbVwAAAAASUVORK5CYIIL</value>
+  </data>
+  <data name="&gt;&gt;lblBreadcrumb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblBreadcrumb.Name" xml:space="preserve">
+    <value>lblBreadcrumb</value>
+  </data>
+  <data name="ReportView.ToolBars.Navigation.NavigationPane.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ReportView.ToolBars.Search.CloseSearch.Image" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAOwEAAAKJUE5HDQoaCgAAAA1JSERSAAAAEAAAABAIBgAAAB/z/2EAAAAgY0hSTQAAeiUAAICDAAD5/wAAgOkAAHUwAADqYAAAOpgAABdvkl/FRgAAAAlwSFlzAAALEQAACxEBf2RfkQAAAMFJREFUOE+lkS0OwkAUhN9FUBhOgcFg0DgSEhSGEAwKgkCAIdwAxyWBZab7U6Z5goVJvrbfa6bbbS2E8BfusAZ3WINKTD+dvQx4kI6IWQ88wJrSyQw8wUg6IjFzQDk1FrMCnO0p0hFpswUc3MAxXV9BE+mIaC7glbhzkCMdEQ1Xzg/gm5RIR6RN3jNXPqfr8k2kIxKzAJSyZ2QDONtRpCNiNgT8VQdKJ0vAe1PpiMRM0tnLmAfpfMovuMMa3OH3BHsD7i3wHsVH0VoAAAAASUVORK5CYIIL</value>
+  </data>
+  <data name="pictureBox1.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAAGAAAABgAAAAs=</value>
+  </data>
+  <data name="ReportView.ToolBars.Search.SearchPrevious.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAABcAAAAWAAAACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.Search.MatchCase.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ReportView.ToolBars.File.Print.Image" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAA4wEAAAKJUE5HDQoaCgAAAA1JSERSAAAAEAAAABAIBgAAAB/z/2EAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAA7CAAAOwgEVKEqAAAABhUlEQVQ4T7VSq27DQBD0J/QT8gVNPiGsAZVqWFLZsCzHWuZjTVFORWE+WOZjCevBsBwMPBh4sGy7s7blPNSqqtSRNr6cd2b24exf0Gx2yvlAP0WXegmQQ4iJzvFJFA+J3CZQXmq6K6pRRxnQrHcjJAApJfLbIIE75zyFfaRSabp9qFJHOUW9DhYuJ2Bn1iIUdeSuOsqAuvmYWHYBIHLizj1zW1Q+ahEwK0fGumEO1bIuQfbbKAJw7Z0j/0R2t+9eyNpYQi7OQp6/1nm1ctG6IEl4Gus50ZHSlns2kpyXSvqHs1rYQQDJCY7fAO9QCYaK1jSTy+dWVAQ09yO75V5RGhxwh0SljVTQ957fq/aO/0/53ApwqReT7wB3vLuiTCKzWdeSosmsbAUq4xL2ew4ZIA/P71sBnrkI5HDPjwWWtTZvLsVD5wginwMTXeDp+yTEPlA6yNezwonA/KmaVgubPO8Z/f8mIDC+KYZPef5ST1Fau652ZXCS4HL7kvsYz4rLL/FvyLIvJrQkv9OMT2kAAAAASUVORK5CYIIL</value>
+  </data>
+  <data name="ReportView.ToolBars.File.Open.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ReportView.ToolBars.Navigation.GoLast.ToolTipText" xml:space="preserve">
+    <value>Go To Last Page</value>
+  </data>
+  <data name="ReportView.ToolBars.File.PrintLayout.ToolTipText" xml:space="preserve">
+    <value>Print Layout</value>
+  </data>
+  <data name="ReportView.ToolBars.Zoom.ZoomIn.ToolTipText" xml:space="preserve">
+    <value>Zoom In</value>
+  </data>
+  <data name="ReportView.ToolBars.Navigation.HistoryPrev.ToolTipText" xml:space="preserve">
+    <value>Previous View</value>
+  </data>
+  <data name="ReportView.ToolBars.File.Reflow.ToolTipText" xml:space="preserve">
+    <value>Reflow</value>
+  </data>
+  <data name="lblOutOfDateWarning.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="pnlWarning.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAO8DAAAsAAAACw==</value>
+  </data>
+  <data name="pnlWarning.Dock" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB5TeXN0ZW0uV2luZG93cy5Gb3Jtcy5Eb2NrU3R5bGUBAAAAB3ZhbHVlX18ACAIAAAABAAAACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.Navigation.GoPrev.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAABcAAAAWAAAACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.Text.Hand.Image" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAA1QEAAAKJUE5HDQoaCgAAAA1JSERSAAAAEAAAABAIBgAAAB/z/2EAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAA7CAAAOwgEVKEqAAAABd0lEQVQ4T7VQsU7DMBDtJ2RGQuqIGKqMSEhtJro1GSuGJlvZ4g3EYm+w2WJpmOyNbvHIlmyUqRkZMzLmD8yd41JaUljgSU+ns997d3bv37B+LXy5oInKhKG3qV8Uueeufge/SwOtmEFzU2OlNfb5k2RO8jNUxpxRGPMuoG779UsRONlhqAfabIz7VQlm5COPnLQbKNoxfulxE85p6aTdEIzsGu/bXmCt4VOvZ7WTtoDfZnY9YJ5LwW4SF9AarBED4Bw3SGeTylnBLLm3WQ2Jv82uImsol8Q0b8yUGireCQiAPp0OtwEIueCMTAN7iRQsagNd37INqytiZpO9AITMOLEhILDcMQPdef0cmfhi0P2JklOFIfUKhMDPoAomrxJT6cCUKjgckOfcS+ORfU4FkyoN3NQlnAEFCQxohLN8B2zh0XloQ7SAiVk7VUNliW+iwIeAsO/k3aDzUZ+mIYnDoT4/PWr8E88Mz46reDxQ6eXId7K/QK/3AdtmcLN7WUPtAAAAAElFTkSuQmCCCw==</value>
+  </data>
+  <data name="lblBreadcrumb.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAO8DAAAfAAAACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.Page.FacingContinuous.ToolTipText" xml:space="preserve">
+    <value>Pages Facing Continuous View</value>
+  </data>
+  <data name="pictureBox1.Dock" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB5TeXN0ZW0uV2luZG93cy5Gb3Jtcy5Eb2NrU3R5bGUBAAAAB3ZhbHVlX18ACAIAAAAFAAAACw==</value>
+  </data>
+  <data name="pictureBox1.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAACAAAAAgAAAACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.Page.Facing.Image" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAjwEAAAKJUE5HDQoaCgAAAA1JSERSAAAAEAAAABAIBgAAAB/z/2EAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAA7CAAAOwgEVKEqAAAABMUlEQVQ4T6WToXIDIRCGeYNEtu4egUdA1gVZySMg44qsCzISeRIZV2QksvJkZGTddn/g5q4zF0S6M5/h3/u5Yf8Vp68P5ZMjf1lwEVhyoyULAjBkwLmivabD6aAEPs5ToumeKd9mEiU+i9+xEShk4MlfK44vMtaQwI0xTY1M8ZIpRGZM5Jmepo2eDTJtlXwzXU29q78G6brchFobbGlSSRJ4sNAO13X/qU09bZADDOzTfzAMMOAxPfsH+5c9CcwZL4uqL5zJB4y1GXS0asDhCDGVJhTc0ZBvs8FjrRggXZgrCu7uzPjE4WoGHa0acCwRirU7GuamnrYYhFgOtuhpxQBLgVzbcb0suixL4ZNxQJE6MrYijawGvFHaHHVZDGQb8UTCEBLMGU2P2L3utPhfCfEL4gStGwEi7FwAAAAASUVORK5CYIIL</value>
+  </data>
+  <data name="&gt;&gt;pnlWarning.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="ReportView.ToolBars.Text.SelectText.ImageTransparentColor" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Db2xvcgQAAAAEbmFtZQV2YWx1ZQprbm93bkNvbG9yBXN0YXRlAQAAAAkHBwIAAAAKAAAAAAAAAABrAAEACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.Text.SelectText.Image" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAApAEAAAKJUE5HDQoaCgAAAA1JSERSAAAAEAAAABAIBgAAAB/z/2EAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAA7CAAAOwgEVKEqAAAABRklEQVQ4T62RMW6DMBSGc4MyZyjMSAVvRYkUe6pQVQEbqFKKt2yFG7hjN3MD+wbhCNygHKFH4AauHzGoSSBtlf7S07Mf7/3+sBf/IhRSdU2+Xpec4mJPoqJuzPZIvyIo3xuVlLVi4iMxpXPNOenTLRiGWG9lZ8qjfiTAu73EuZCESoWSSvkxn6aYc4JTtYHlZbwFg7uIf5pPvS4S4J2gmxfZwtpPBUFZNVCQvuG7ppxgGD8LZLYLN6s6MPAe2PgiswQa2yGZVF7EWy9kLWT3SRuEb8oJSmXfF45pPejUaZOL2kt5Y+MC6SA+ZsR/ZKg3IKW6DYoa+iYJ4NIAVw9ZpjTKxqwCgmXwevykgxNOuePFvHZD1q2z4yZNQp2A9gQQy2Crf+mEQN+wBaj2SqOv8vECQdrAgprtxuhGh+1D5AfKwenvmaovzRur8C/k+DgAAAAASUVORK5CYIIL</value>
+  </data>
+  <data name="ReportView.ToolBars.Navigation.GoNext.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAABcAAAAWAAAACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.Page.Single.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAABcAAAAWAAAACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.Zoom.ZoomTool.ImageTransparentColor" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Db2xvcgQAAAAEbmFtZQV2YWx1ZQprbm93bkNvbG9yBXN0YXRlAQAAAAkHBwIAAAAKAAAAAAAAAABrAAEACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.Page.FacingContinuous.ImageTransparentColor" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Db2xvcgQAAAAEbmFtZQV2YWx1ZQprbm93bkNvbG9yBXN0YXRlAQAAAAkHBwIAAAAKAAAAAAAAAABrAAEACw==</value>
+  </data>
+  <data name="&gt;&gt;ReportView.PreviewPane.Parent" xml:space="preserve">
+    <value>ReportView.ContentPanel</value>
+  </data>
+  <data name="ReportView.ToolBars.File.Print.ImageTransparentColor" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Db2xvcgQAAAAEbmFtZQV2YWx1ZQprbm93bkNvbG9yBXN0YXRlAQAAAAkHBwIAAAAKAAAAAAAAAABrAAEACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.Zoom.ZoomOutTool.ImageTransparentColor" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Db2xvcgQAAAAEbmFtZQV2YWx1ZQprbm93bkNvbG9yBXN0YXRlAQAAAAkHBwIAAAAKAAAAAAAAAABrAAEACw==</value>
+  </data>
+  <data name="lblOutOfDateWarning.Text" xml:space="preserve">
+    <value>Warning! Reports may display inconsistent results due to recent edits.
+Please Submit Data for Processing and Retrieve Results to update them.</value>
+  </data>
+  <data name="lblOutOfDateWarning.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAL0DAAAmAAAACw==</value>
+  </data>
+  <data name="lblOutOfDateWarning.Dock" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB5TeXN0ZW0uV2luZG93cy5Gb3Jtcy5Eb2NrU3R5bGUBAAAAB3ZhbHVlX18ACAIAAAAFAAAACw==</value>
+  </data>
+  <data name="lblOutOfDateWarning.Font" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5Gb250BAAAAAROYW1lBFNpemUFU3R5bGUEVW5pdAEABAQLGFN5c3RlbS5EcmF3aW5nLkZvbnRTdHlsZQIAAAAbU3lzdGVtLkRyYXdpbmcuR3JhcGhpY3NVbml0AgAAAAIAAAAGAwAAABRNaWNyb3NvZnQgU2FucyBTZXJpZgAAHEEF/P///xhTeXN0ZW0uRHJhd2luZy5Gb250U3R5bGUBAAAAB3ZhbHVlX18ACAIAAAABAAAABfv///8bU3lzdGVtLkRyYXdpbmcuR3JhcGhpY3NVbml0AQAAAAd2YWx1ZV9fAAgCAAAAAwAAAAs=</value>
+  </data>
+  <data name="ReportView.ToolBars.Search.SearchNext.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ReportView.ToolBars.Zoom.DropZoomFactor.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAA0AAAAWAAAACw==</value>
+  </data>
+  <data name="&gt;&gt;ReportView.PreviewPane.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pnlWarning.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAAAAAAAHwAAAAs=</value>
+  </data>
+  <data name="ReportView.ToolBars.Search.SearchPrevious.ToolTipText" xml:space="preserve">
+    <value>Search Previous</value>
+  </data>
+  <data name="ReportView.ToolBars.Text.SelectText.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAABcAAAAWAAAACw==</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>ReportViewerForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>i_Tree_Eco_v6.Forms.ReportContentForm, i-Tree Eco v6, Version=6.0.6723.21480, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;pnlWarning.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ReportView.ToolBars.Page.Single.ToolTipText" xml:space="preserve">
+    <value>Single Page View</value>
+  </data>
+  <data name="ReportView.ToolBars.Search.SearchPrevious.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ReportView.ToolBars.Navigation.HistoryNext.ImageTransparentColor" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Db2xvcgQAAAAEbmFtZQV2YWx1ZQprbm93bkNvbG9yBXN0YXRlAQAAAAkHBwIAAAAKAAAAAAAAAABrAAEACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.File.PrintLayout.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ReportView.ToolBars.File.PageSetup.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAABcAAAAWAAAACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.Zoom.ZoomOut.ToolTipText" xml:space="preserve">
+    <value>Zoom Out</value>
+  </data>
+  <data name="ReportView.ToolBars.Page.Continuous.Image" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAA8QEAAAKJUE5HDQoaCgAAAA1JSERSAAAAEAAAABAIBgAAAB/z/2EAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAA7CAAAOwgEVKEqAAAABk0lEQVQ4T6WTIVMDMRCF8w+KBHc/4X5CJK6RyEhkBsFU0ZMVzDQoimoUc4qJo47IooisPFlZiVv2bZoWQaeCzLy5mZt739vN7qn5x1T71JFfHdVFyFHXO3JQgCxZaFFkvKHxfKwVzHlINOwy5W2msMr019l9E7XXlvzaizoOss6SQmI1CyAWAJ6iPpMPCCiAjgPFzNUYawqgmhNXEmISQD1Ihjlv9wD+3q2ctKFv9BEAswD6AkAq1C1YPnGbBQCz4/uxC0OtbknhwvK2mOMmkmdATa3JMB8AbMbF4hKbtgHAHcxxEzg1yoenVKZSptA0APCLag450PJrSS+fz/SUHmn2PqWHtzu6f70VU5Vc4MzQxeUFKRABgDlkTzENe+UiHmuZBt8Jq+6C6SqAX5T0Ml+YTh20IIvkAdAFACLS64JUQFoPoloFjgDYbLl8PakAJtZ0LMm5TYQZ/Wv3C1DNWJJzFcCM/g8AjEO2q2c62jlTAYxQa9sC4D/K2ImRHwO7jfXEhmFJMGd8dEqjq5FR/ztK/QAZu5gMAn3b8AAAAABJRU5ErkJgggs=</value>
+  </data>
+  <data name="ReportView.ToolBars.Navigation.GoNext.Image" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAowIAAAKJUE5HDQoaCgAAAA1JSERSAAAAEAAAABAIBgAAAB/z/2EAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAA7CAAAOwgEVKEqAAAACRUlEQVQ4T61STWgTURjcowbzgxgMoXZLTyHQ7t6L5kEVpAcNIuhFDQitF+N60AoKea1NLfGSEoo51UWiREFZBCW2VraWSht/SFVs2lwW7KGIh4VSyG1833NLU+1NB77L8mb2m/lG+e9I3NGYGH4k0233ZOJuz424232l3dYGVK5dUJn3bHckxjTjfPGEk69wPF95gNq6DduxYC5wpIpJHO7vctSTquE93wkip81zrl230NhsoO90HyqrFp41Sni8cg+l+l1wKwV2SYea+EMkkdF0+jORnaaD+sY3sOMMvUd78WRpEvc/T2C8mkXh4y0YZhJdx9ocVQtu2xECnNZubNawvLGMr+4SGGOwF2zouo7iuxzy1dvIzg0iVzWQNBgCsUDeoysKBWbVTLz/uYgPYhZ/zMsN3KYrRUKhEEanBjHy9poQMWQe/pi/5tEVhZK2HRszay/xZu0Vpr+/kAJoAq7rwqpYUmRo9iqGZw2ZhS/qcz26osTTUSFAgT0U8whPV0vSApGddQdm2UQ4EsaQbWwLRFoEugfa7bzNURJpm18mMLlUkAKO48AqW9gb3gM+fRlcCEgLY8JCpMWCKEiefNGpxqsjcsRnSQ607QN//Zu8NeysjkCgJUTtjMqoJEY5hcKnmxiduy4F9neGwGfSO8gpzhCN+dxgsOWMBGoYS+nyzrl5Awc7D4BPpTEsSFlJ7pfkDr0Dgsw92k5Qw6gk1LaLhVMyLBryTGt7f96dvAVqGJXEf8hfo1NR2hQYef5r7X+HovwCKc2EI+iTx7QAAAAASUVORK5CYIIL</value>
+  </data>
+  <data name="ReportView.ToolBars.File.Save.Image" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAyQEAAAKJUE5HDQoaCgAAAA1JSERSAAAAEAAAABAIBgAAAB/z/2EAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAA7CAAAOwgEVKEqAAAABa0lEQVQ4T62SoXLDMBBE8wn9hHyCYaBgoKChYIoqGCgYaBgoGCgYKFhWw0LBQsGw6+7ZSRQ3U9Dpzex4xvI+3e159S+VzlVUadapSozQscgwzDoUCQHaj+IpP8psBwCmnAUfyq9VLyK2z+L6pJrtDeBQ509/Fs21VjE2S9c5gBpARMsEsMVndTWXryqdTRijiLWxAWBeAjwOltWax08AtknnfwQgLAXgoK2lOY9F1iaK2y0ATJkAHlzrmTm/F3nZAOCy2O3QALCifBasEhAHOj9A2hoYZmbbvPlm5lkLYHgpAQDFyHVWCdjItPeio3l0dzVbQB8B+DHS6W62vX+U8xgvNGbIhDuAf1Z7M014LZ0xOv9Yqrh9mIxqjgsAWoxH/Adz2wTQ7PeDFJgZpA8D3tEYp+emBWA+vR3mNQPrDALNqpxHpM+1WTWqEKbZaJdTvb1+WLdjQEn3exOCYlgqtMxbJ6HDFvD3Wq2+AdBROwy2G7LMAAAAAElFTkSuQmCCCw==</value>
+  </data>
+  <data name="ReportView.ToolBars.Navigation.HistoryPrev.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAACAAAAAWAAAACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.Navigation.GoFirst.ToolTipText" xml:space="preserve">
+    <value>Go To First Page</value>
+  </data>
+  <data name="ReportView.ToolBars.File.Reflow.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAABcAAAAWAAAACw==</value>
+  </data>
+  <data name="ReportView.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAAAAAAAHwAAAAs=</value>
+  </data>
+  <data name="ReportView.ToolBars.Search.MatchWholeWord.Text" xml:space="preserve">
+    <value>Whole Word</value>
+  </data>
+  <data name="ReportView.ToolBars.Search.MatchWholeWord.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAE0AAAAWAAAACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.Page.FacingContinuous.Image" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAkQEAAAKJUE5HDQoaCgAAAA1JSERSAAAAEAAAABAIBgAAAB/z/2EAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAA7CAAAOwgEVKEqAAAABM0lEQVQ4T6WTIW/DMBSE/Q9auLH8hPyEwLEaDhoORgNT0RpYMKkeWodqVAVNZiur4YZmOBg4WDh288XJWk2pwfKkU8BdPj/5PYvVflFoV0HvjqosVaKqS5SUoRQUtY6SWmK2mhWCP5udx986fAP5lUp6qlQQPNHYGOLX1B7aODSHDpDwpJI9wLUhFukM+K8ecN4rrosOUMcQ6dU6SDv4pgMkvLzIIXhhOoRO6Qz0oZSX5RkBZaDbSBxQyssyAsKY7KcNMjDeYPOxwfP7Ex7dA5avC9y/3OJue9OOsRfHKZcS04spBOdsXdPJw4axxRt3bfspLwICjeZQsc2U1wLYTh9yb8eTWKeAIS8Cwlr+dxN/AaM64KMY1UF4UVLNZfswuNtcT24Yl4RzZuicJpcTKcaVED/IA7k03vbcLAAAAABJRU5ErkJgggs=</value>
+  </data>
+  <data name="ReportView.ToolBars.Text.SelectText.ToolTipText" xml:space="preserve">
+    <value>Text Select Tool</value>
+  </data>
+  <data name="ReportView.ToolBars.Zoom.ZoomTool.Image" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAA4wEAAAKJUE5HDQoaCgAAAA1JSERSAAAAEAAAABAIBgAAAB/z/2EAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAA7CAAAOwgEVKEqAAAABhUlEQVQ4T41Tq3LDMBDMp/gP6i9oDQsylllDMjJLmM0aJrO6KIJlFQwULBQsFDQ0LBQs29658qOTZNKdWeDx7d7dnr0aoV6OiWqPNdGqVgelVKiUssS6elZJLLsMEmcsJMB3PUIIA33nYU4W1YGMqiqL5X8RO1vnHM7wDQSitQ5kYOWuOp+Ex+bOSzTaDGRxH4hfgKZnuZd1lM3g7jz2EiyuWzOJPb02NIWU0kbZDKU0rUuVUTiK60ajrDWKfQPXBdjPHtvtNkTZDE57NPgVGpSHWVyUZODJwPVYby4Y8Km891NgPPYkpM6DmKhPDmIjzlegE9V8qmVgLJ46R/JKUoomymbwR8InMnSJMbBlZybnkj/lTrcl3l9lEaUz+COR+8ryqThtDox35rG5sxDCetcgdAb27YqJ3MmEzlTzqTis9WYdeOc8v3emSdF/ZAi9HnjV5BKkuCvKIoVtZ5PeaxhdIpbcxmhi2gxWpyiyFEclLv8b1zCYPCbI0hTi4e5/49/GavUDwPuvzzX3mUQAAAAASUVORK5CYIIL</value>
+  </data>
+  <data name="ReportView.ToolBars.Zoom.ZoomTool.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAACAAAAAWAAAACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.Search.SearchText.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ReportView.ToolBars.Navigation.HistoryNext.ToolTipText" xml:space="preserve">
+    <value>Next View</value>
+  </data>
+  <data name="ReportView.ToolBars.Navigation.GoPrev.ImageTransparentColor" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Db2xvcgQAAAAEbmFtZQV2YWx1ZQprbm93bkNvbG9yBXN0YXRlAQAAAAkHBwIAAAAKAAAAAAAAAABrAAEACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.File.Save.ImageTransparentColor" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Db2xvcgQAAAAEbmFtZQV2YWx1ZQprbm93bkNvbG9yBXN0YXRlAQAAAAkHBwIAAAAKAAAAAAAAAABrAAEACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.File.Stop.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAABcAAAAWAAAACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.File.Parameters.Image" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAA7gIAAAKJUE5HDQoaCgAAAA1JSERSAAAAEAAAABAIBgAAAB/z/2EAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAA7CAAAOwgEVKEqAAAACkElEQVQ4T3WR/y/UcRzH+3f6wUoyJd+2/OBUyhWntoso33NXMV9+uEyb27SMlbWlfsDGRL6EXAmrSXFjw3yPC/mafDnHOZxH78/H6Vpdr+312+fxeL6en/cRaTILtLjatIdJ3M6JJTbzOmqNCvnjv8cVmJGv4a4+gURdNNGp14hIVBKiDiJQ6f+vRAJaet5jMBpo/NJIfedrqj9WU95eTklLCcXNzylqKKKwthDPAHfXAoPxLS/aHlNgyHa5efVZ5JSnkvksiZRHMUTrVGUO/EDQ3N3sEsxv0qGvTkdXoiX1SRzxejXqdCWX4oOcl9wRXRvE6RIwuW9ifG+cIdsQfVv9GM1GOlY7aF1qpWnuDTXTNVRMVOAXesopiM2KFL3rZcG4fYLhnREGrAP0WHroXPtM+492DAsG6mbqqDRVUjpWipvPUacgIkFJzadaWTC6O0pAhPZgVVrsdtjZg60d2LDC2iYsm+F0aDxeF+PwDLnFEYUqkKoPVeRWZzBoG5ZhafYFvCvgew+KOB4UJa8iMo2OXhOzKzC1DJ4XhECaY95uZBQn0y96SwL7voCFYFskb9nALNKnFi34XE4iLCGbGQGbluDk+ZvOKvG5ano2e2XBnoBtu2AVsHT6qji9s88kXxGVmsc3AX9dAI9zMU5BuCaErvUu0V0j95bSLduwvgWv3nXL6VdEetfgEhOLMDYHJ4L/EJy96lvmFeyBvyoFm4A3BWwW8IoF9E9fyultRhOTAh6fh5FZcA++4RQcjl+4Bqvjr68KWPrr82vIvQ9PHxHpQ9+FQOFC4BuewoZ0uuj9U8ALAk6+f/ASfZMWRh3wwPR/BD5hyZwRfb2ViSyuw5x4smmR/vt0R7K7QnraKH4Brmx56D16D9AAAAAASUVORK5CYIIL</value>
+  </data>
+  <data name="ReportView.ToolBars.File.Print.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAABcAAAAWAAAACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.Page.Facing.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAABcAAAAWAAAACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.Navigation.HistoryNext.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAACAAAAAWAAAACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.File.Open.Image" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAA3gEAAAKJUE5HDQoaCgAAAA1JSERSAAAAEAAAABAIBgAAAB/z/2EAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAA7CAAAOwgEVKEqAAAABgElEQVQ4T72RIVPDMBTH+wmgEgVxoFgld5jKuUViuNUxxSqHWuRQi2OuccwROVk5GYmsROYb/HkvyaCDcYfgeHe/u1ya3/+9Jtm/1PypKZU2UAtiZTFfNip9+l1VM43R3bLi9XTe5Bw2fWwk72cv66W0a42v0L4O9oGaPjRSTjSYjA93zsB7G4A3wJuBNRTyPD846k6OAXTQk9SXA681DH0zKxXRCppZ1Eg5sUIAC3uyIqqDfAvgLiEg0Vod+LgPowL9ScI0izQNb/pOB7nb0mGS0NEEP0G/xri1xHQ8Mp8BBMvthtbhUG90x0hgK+E3JTpT4P722lNAkfE4nv55r7tLAUEkWGzLIHtbQE0ExsOj+MwhwEXZtal7T0Qbu7Lo1wXcIkc1FBicH4sQwJfh2n73JO66JrEzAk7nofvlxakNMhffJD+ls3QxOvugZaibVREzE9C1iN0HZzLpMUCrCmpG1BJ1JVHdlJDDEuVVgaIQKISAOMmR5zkEkdS/qCx7B6z45dr4su0+AAAAAElFTkSuQmCCCw==</value>
+  </data>
+  <data name="ReportView.PreviewPane.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ReportView.ToolBars.Navigation.GoFirst.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAABcAAAAWAAAACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.Page.Single.ImageTransparentColor" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Db2xvcgQAAAAEbmFtZQV2YWx1ZQprbm93bkNvbG9yBXN0YXRlAQAAAAkHBwIAAAAKAAAAAAAAAABrAAEACw==</value>
+  </data>
+  <data name="&gt;&gt;lblBreadcrumb.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="pnlWarning.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5TaXplRgIAAAAFd2lkdGgGaGVpZ2h0AAALCwIAAAAAAMBAAABQQQs=</value>
+  </data>
+  <data name="&gt;&gt;lblBreadcrumb.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ReportView.ToolBars.Page.Facing.ToolTipText" xml:space="preserve">
+    <value>Pages Facing View</value>
+  </data>
+  <data name="pnlWarning.Padding" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAABxTeXN0ZW0uV2luZG93cy5Gb3Jtcy5QYWRkaW5nBQAAAARfYWxsBF90b3AFX2xlZnQGX3JpZ2h0B19ib3R0b20AAAAAAAEICAgIAgAAAAEDAAAAAwAAAAMAAAADAAAACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.Page.Single.Image" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAA2QEAAAKJUE5HDQoaCgAAAA1JSERSAAAAEAAAABAIBgAAAB/z/2EAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAA7CAAAOwgEVKEqAAAABe0lEQVQ4T6VTIW4DMRD0DxLYsnvCPcGwLIaFfoJhWAzLYnjQMNDwWA0DDQsPBgaWbXfWdnKtFAV0pZFOlmdmvTunjp8HHbKnMN/hE+DInxw5IAKWLDBVmGBod9xpBXJZMi3XQuXSkSnzWfpKDZFiAQKFc4VnI+ssKTiuySkvDfhmzIViYpwyBYZnQyFzN8aaKtDJ4sqkRzW+WSG72ckz9Lu+C4C8FsjnRdC7QEEAZMfzsZOhUY+kMLD1m2O7/Leu302AyRgshjiMAwTcamDxeQeylbqFYYAAH/ya9LMO2jrNh6Hty5YUFKX1tiZMHCWTl+kXChFrrgI9C8Z3AT6o7nW/MWUR6AVnkMulCSBIAQK6CkAR7j0g2DcKroCfGCFz2JoAky23r/ddgBW7O0KCsHTX7gzyTYDJeL92K4FORkhCTHLxEUDG+28CWIek68TqbUAICc4FjYA3o20QgdGOVYD/KGP3Rn4MZBvxRMIQEuwZlx5h87ox6n+l1A9o1pDpJlirQAAAAABJRU5ErkJgggs=</value>
+  </data>
+  <data name="ReportView.ToolBars.Page.Continuous.ImageTransparentColor" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Db2xvcgQAAAAEbmFtZQV2YWx1ZQprbm93bkNvbG9yBXN0YXRlAQAAAAkHBwIAAAAKAAAAAAAAAABrAAEACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.Zoom.ZoomOutTool.Image" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAA0QEAAAKJUE5HDQoaCgAAAA1JSERSAAAAEAAAABAIBgAAAB/z/2EAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAA7CAAAOwgEVKEqAAAABc0lEQVQ4T42TL3eDMBTF+1H4BuUTbMgpgltVgysO3OqCG1ONnFtkZeRk5GQkEjkZOXf3HksPpwPW/c65qrn3/aObC+r5lKju1JCs6nRQSoVaKUtq6ieVxGfLkDljIwHfDwghjPK9hzlb1EcKqussPr8mVrbOOcz4AgLJWgcKsPJQzzvhtrnyjGgeAukT0NpAVrKJtgmuzm1f8cvs6WdDXUgpbbRNKKVpXHpJtFSF1XSkVqNsNIqqhesD7MeA/X4fom2Ct30J+DEalMfJXJQU4CnADch3CwF8Ku/9YttceTST9NlB7MR8BDpRw6f6y8zikaQUbbRN8EfCJzJ0iTUz7yV/zJ3uSry9yCJaJ/gjkVVt+VS8bV4Yz8xtc2UhhPWuRegN7OtKiDzIhM7U8Kl4WfkuDzxznt8506YY3jOEQY9aDVlCim1RFilsN4UMXsPoEvHJbS4hpstgdYoiS3FSYvm/scYY8pAgS1OI++3/2r/NZvMN7nS66T3joRkAAAAASUVORK5CYIIL</value>
+  </data>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="ReportView.ToolBars.File.Parameters.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAABcAAAAWAAAACw==</value>
+  </data>
+  <data name="ReportView.ToolBars.Zoom.ZoomInTool.Image" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAA4QEAAAKJUE5HDQoaCgAAAA1JSERSAAAAEAAAABAIBgAAAB/z/2EAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAA7CAAAOwgEVKEqAAAABg0lEQVQ4T41Tq3LDMBDMp/gP6i9oDYssswZFZgmzWcNkVhdFsKyCgYKFgoWChoaFgmXbO1d+dOJMujMLPL7du9uzNyPUyylR7akmWtXqoJQKlVKWWFfPKoll6yBxxkICfNcjhDDQdx7mbFEdyaiqslj+F7Gzdc7hAt9AIFrrQAZW7qvLSXhs7rxEo81AFveB+AVoepYHWUfZDO7OYy/B4ro1k9jTa0NTSCltlM1QStO6VBmFo7huNMpaozg0cF2A/eyx2+1ClM3gtEeDX6FBeZzFRUkGngxcj3y7YsCn8t5PgfHYk5A6D2KiPjuIrbhcgU5U86mWgbF46hzJK0kpmiibwR8Jn8jQJcbAlp2ZnEv+lDvdlnh/lUWUzuCPRB4qy6fitDkw3pnH5s5CCOtdg9AZ2LcrJnIvEzpTzafisPJtHnjnPL93pknRf2QIvR541WQNUtwVZZHCtrNJ7zWMLhFLbmM0MW0Gq1MUWYqTEuv/xjUMJo8JsjSFeLj73/i3sdn8ANghr9x/O+P4AAAAAElFTkSuQmCCCw==</value>
+  </data>
+  <data name="ReportView.ToolBars.Navigation.HistoryPrev.Image" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAJwIAAAKJUE5HDQoaCgAAAA1JSERSAAAAEAAAABAIBgAAAB/z/2EAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAA7CAAAOwgEVKEqAAAAByUlEQVQ4T62SL0wkMRTGqzfZP5JsDga52YSdkZcQ2BoS1N24O3MwCk5xlbitA1mJrERWIp9cWTmycmTlunfvdWaXWcDBSyqa9Pf1fd974str+ZBLOvp8tYDT1Tye3s/j4t8R5LeZzq8z2T37uJaPubp6+hHMi0ZXW/QNIASHdq2xeirx7OYkZD8z1T3fL4bv7J8ItcOwCRiiR/CA5WWJ0Fh0waB2Fcq/BWbLNyLLVV7wzzt4Q3DdwpPJBF1j0AaNttaobIknF99Clo9f7ZCA5rYZ5OM7GF5gT8DUCo1XWCqJo9nIdLgQHJjz5Jnb3sJrwBhjEuC7lBKL7wWatUp5DGdD3+FCcNIQgAReYdxgEggNWQqBuvJJjAU4i8F0EDtciPndlAQcheWSgPc+wbEhgZpgugO0dnYCBz2Bxe0RGKDRUdqcBT9kYPtr/yQLj2ThoGeBFsSwLx4VJ21cK2KtbSEKjsH0OyiUvwscjXoh5r8yyUuinqtWgAD9rPZ+3cKVljidDeJ43BsjF2+YrIo05x1gWxFDoIYqwcfFMRKsO2y/eMN4SXjbKlOmsPiwZ267+/ljeFu8Ybwkw8Oh51Fx2hwYe37X9udLiP/H7oE5tHyE4AAAAABJRU5ErkJgggs=</value>
+  </data>
+  <data name="ReportView.ToolBars.Search.SearchNext.Image" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAATgIAAAKJUE5HDQoaCgAAAA1JSERSAAAAEAAAABAIBgAAAB/z/2EAAAAgY0hSTQAAeiUAAICDAAD5/wAAgOkAAHUwAADqYAAAOpgAABdvkl/FRgAAAAlwSFlzAAALEQAACxEBf2RfkQAAAdRJREFUOE+lkq9v3DAcxfsPnBRS6XTg5GMtmSwFbciwMLAw8KDhpBHDkkkZqzpieNBgoNKINbKDHgs0PDAQGPb2fU56l65s+0ovUhK/j7+/rgD8l6bHIsyDNiJnnI6iwXzUg7Yq6r1yulVmPlbiDUCMtn1scvfsEHqPdIqIpwB/dJDvMHudVaPsfPw1gGbr2yH2AXnMSEMSwE+EoxeIR8gdXGgJgTIT5AyQVDVvfjHnMcEYM+nOoP5Qw2cH3ztY30Dfqax0ZZYAx7RppNIYUdc1UpL3nHH77hb83/UWXbJorEF1U3VLQAxJapa0+9+/igigeRgHbDYbPP34LCUI4GhLPwSQLgDpdMzTrUsNwwCMKIDdbofr9XURe1GpSn7OABmTAELpeP2+RjhIL3j7DGAW8RgLhBkUwHoJ2KvYRYdD/oJv+esFcpogNG+3W7hDO5XwICWsFyXIgnSsi6NipylC/EHG9xywWq3OZhctzL1GVS2aqO+V4ZJYOUQzO01xjH+bW2egbqpBAJcxMrhhptVlzjxMPX7/BOfFLEYX28msFW93rxbpJbhhXBJuW9s1pVkUa2ba883FzHgDYHDDuCQypsRRsdtsGGtm2vOxEmfAvwtXfwDqXDdN8uxDhQAAAABJRU5ErkJgggs=</value>
+  </data>
+  <data name="&gt;&gt;ReportView.PreviewPane.Type" xml:space="preserve">
+    <value>C1.Win.C1Preview.C1PreviewPane, C1.Win.C1Report.4, Version=4.0.20151.49, Culture=neutral, PublicKeyToken=41780e2fc605e636</value>
+  </data>
+  <data name="&gt;&gt;ReportView.PreviewPane.Name" xml:space="preserve">
+    <value>ReportView.PreviewPane</value>
+  </data>
+</root>

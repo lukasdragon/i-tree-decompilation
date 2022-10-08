@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Eco.Domain" namespace="Eco.Domain.v5">
+  <class name="MapLandUse" table="MapLandUseDescriptions">
+    <composite-id name="CompositeId" class="MapLandUseId" access="field.camelcase-m-underscore">
+      <key-property name="Location" column="LocationName" access="field.camelcase-m-underscore"/>
+      <key-property name="Series" column="Series" access="field.camelcase-m-underscore"/>
+      <key-property name="Year" column="`Year`" access="field.camelcase-m-underscore"/>
+      <key-property name="MapLandUse" column="MapLandUseTypeId" access="field.camelcase-m-underscore"/>
+    </composite-id>
+    <set name="Plots" table="Plots" lazy="true" access="nosetter.camelcase-m-underscore" inverse="true">
+      <key unique="true">
+        <column name="LocationName" not-null="true" length="50"/>
+        <column name="Series" not-null="true" length="255"/>
+        <column name="`Year`" not-null="true"/>
+        <column name="MapLandUseTypeID" not-null="true"/>
+      </key>
+      <one-to-many class="Plot"/>
+    </set>
+    <property name="Description" column="LandUseDescription"/>
+    <property name="Abbreviation" column="LandUseAbbreviation"/>
+    <property name="Size" column="LandUseSize"/>
+    <many-to-one name="Project" access="field.camelcase-m-underscore" update="false" insert="false">
+      <column name="LocationName" />
+      <column name="Series" />
+      <column name="Year" />
+    </many-to-one>
+  </class>
+</hibernate-mapping>

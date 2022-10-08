@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Streets.Domain" namespace="Streets.Domain" auto-import="false">
+  <class name="Lookup" table="LookupTables" abstract="true">
+    <composite-id name="Id" class="LookupId" access="field.camelcase-m-underscore">
+      <key-many-to-one name="Project" column="ProjectId"/>
+      <key-property name="Code" column="LookupCode"/>
+    </composite-id>
+   
+    <discriminator column="LookupType" length="10" not-null="false" force="true"/>
+    
+    <property name="Description" column="Description" length="50" not-null="false"/>
+    
+    <subclass name="FieldLandUse" discriminator-value="LANDUSE"/>
+    <subclass name="LocSite" discriminator-value="LOCSITE"/>
+    <subclass name="MaintRec" discriminator-value="MTNCREC"/>
+    <subclass name="MaintTask" discriminator-value="MTNCTASK"/>
+    <subclass name="OtherOne" discriminator-value="OTHER1"/>
+    <subclass name="OtherTwo" discriminator-value="OTHER2"/>
+    <subclass name="OtherThree" discriminator-value="OTHER3"/>
+    <subclass name="DBH" discriminator-value="DBH">
+      <property name="RangeStart" column="RangeStart" not-null="false"/>
+      <property name="RangeEnd" column="RangeEnd" not-null="false"/>
+    </subclass>
+    <subclass name="Condition" discriminator-value="CONDITION">
+      <property name="WoodyConditionFactor" column="RangeStart" not-null="false"/>
+      <property name="LeavesConditionFactor" column="RangeEnd" not-null="false"/>
+    </subclass>
+    <subclass name="Sidewalk" discriminator-value="SIDEWALK"/>
+    <subclass name="SiteType" discriminator-value="SITETYPE"/>
+    <subclass name="WireConflict" discriminator-value="WIRECNFLT"/>    
+  </class>
+</hibernate-mapping>

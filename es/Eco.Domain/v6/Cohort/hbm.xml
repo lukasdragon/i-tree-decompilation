@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Eco.Domain" namespace="Eco.Domain.v6" auto-import="false">
+  <class name="Cohort" table="EcoForecastCohorts" batch-size="50">
+    <cache usage="read-write"/>
+    <id name="Guid" column="CohortKey" generator="guid"/>
+    <natural-id mutable="true">
+      <many-to-one name="Forecast" column="ForecastKey" not-null="true"/>
+      <many-to-one name="Stratum" column="StratumKey" not-null="false"/>
+      <property name="ForecastedYear" column="ForecastedYear" not-null="true"/>      
+      <property name="Species" column="SppCode" length="8" not-null="false"/>
+      <many-to-one name="Condition" column="ConditionKey" not-null="false"/>
+      <property name="AvgDBH" column="DBH" not-null="false"/>
+      <property name="CrownLightExposure" column="CrownLightExposure" not-null="false"/>
+    </natural-id>
+    <version name="Revision" column="Revision" unsaved-value="0"/>
+    <property name="NumTrees" column="NumTrees" not-null="false"/>
+    <property name="AvgTreeHeight" column="TreeHeightTotal" not-null="false"/>
+    <property name="AvgCrownHeight" column="CrownHeight" not-null="false"/>
+    <property name="AvgCrownWidth" column="CrownWidth" not-null="false"/>
+    <property name="LeafAreaIndex" column="LeafAreaIndex" not-null="false" />    
+    <property name="AvgLeafArea" column="LeafArea" not-null="false"/>
+    <property name="AvgLeafBiomass" column="LeafBiomass" not-null="false"/>
+    <property name="CarbonStorage" column="CarbonStorage" not-null="false"/>
+    <property name="PercentCrownMissing" column="PercentCrownMissing" not-null="true"/>
+    <many-to-one name="Mortality" column="MortalityKey" not-null="false"/>
+    <many-to-one name="Parent" column="ParentKey"/>
+  </class>
+</hibernate-mapping>

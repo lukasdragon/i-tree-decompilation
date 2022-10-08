@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Eco.Domain" namespace="Eco.Domain.v6" auto-import="false">
+  <class name="Building" table="EcoBuildings" dynamic-update="true">
+    <cache usage="read-write"/>
+    <id name="Guid" column="BuildingKey">
+      <generator class="guid"/>
+    </id>
+    <natural-id mutable="true">
+      <many-to-one name="Tree" column="TreeKey" not-null="true"/>
+      <property name="Id" column="BuildingId" not-null="true"/>
+    </natural-id>
+    <version name="Revision" column="Revision" unsaved-value="0"/>
+    <property name="Direction" column="DirectionToBuilding"/>
+    <property name="Distance" column="DistanceToBuilding"/>
+  </class>
+</hibernate-mapping>

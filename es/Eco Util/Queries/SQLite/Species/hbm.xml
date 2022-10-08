@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="Eco.Domain.v6" assembly="Eco.Domain" auto-import="false">
+	<sql-query name="ListDistinctSpeciesClassifiers">
+		<![CDATA[
+            SELECT DISTINCT
+                cvt.SppCode
+            FROM
+                ClassValueTable AS cvt
+            WHERE
+                cvt.ClassifierId = 4
+                AND cvt.YearGuid = :y
+		]]>
+	</sql-query>
+	<sql-query name="UpdateSpeciesClassifierNames">
+		<!-- SQLite does not seem to support table alias in the SET portion -->
+		<![CDATA[
+			UPDATE
+				ClassValueTable
+			SET
+				ClassValueName = :cn,
+				ClassValueName1 = :sn
+			WHERE
+				ClassifierId = 4
+				AND YearGuid = :y
+				AND SppCode = :sp
+        ]]>
+	</sql-query>
+	<sql-query name="UpdateIndividualTreeEffectsFromSpeciesClassifiers">
+		<![CDATA[
+			UPDATE
+				IndividualTreeEffects AS ite
+			SET
+				SppScientificName = r.ClassValueName1,
+				SppCommonName = r.ClassValueName
+			FROM (
+				SELECT
+					cvt.YearGuid,
+					p.PlotId,
+					t.TreeId,
+					cvt.ClassValueName,
+					cvt.ClassValueName1
+				FROM
+					ClassValueTable AS cvt
+				INNER JOIN EcoTrees AS t ON
+					t.Species = cvt.SppCode
+				INNER JOIN EcoPlots AS p ON
+					t.PlotKey = p.PlotKey
+				WHERE
+					cvt.ClassifierId = 4
+			) AS r
+			WHERE
+				r.YearGuid = ite.YearGuid
+				AND r.PlotId = ite.PlotId
+				AND r.TreeId = ite.TreeId
+                AND ite.YearGuid = :y
+		]]>
+	</sql-query>
+	<sql-query name="UpdateIndividualTreePollutionEffectsFromSpeciesClassifiers">
+		<![CDATA[
+            UPDATE
+			    IndividualTreePollutionEffects AS itpe
+            SET
+                SppScientificName = r.ClassValueName1,
+                SppCommonName = r.ClassValueName
+			FROM (
+				SELECT
+					cvt.YearGuid,
+					p.PlotId,
+					t.TreeId,
+					cvt.ClassValueName,
+					cvt.ClassValueName1
+				FROM
+					ClassValueTable AS cvt
+				INNER JOIN EcoTrees AS t ON
+				    t.Species = cvt.SppCode
+				INNER JOIN EcoPlots AS p ON
+				    t.PlotKey = p.PlotKey
+				WHERE
+					cvt.ClassifierId = 4
+			) r
+            WHERE
+				r.YearGuid = itpe.YearGuid
+				AND r.PlotId = itpe.PlotId
+				AND r.TreeId = itpe.TreeId
+                AND itpe.YearGuid = :y
+		]]>
+	</sql-query>
+</hibernate-mapping>

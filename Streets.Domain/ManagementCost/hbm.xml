@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Streets.Domain" namespace="Streets.Domain" auto-import="false">
+  <class name="ManagementCost" table="STRATUM_ManagementCost">
+    <composite-id>
+      <key-many-to-one name="Project" class="Project"  column="ProjectId" />
+      <key-property name="IsPublic" column="IsPublic" />
+    </composite-id>
+    <property name="TotalBudgetCost" column="TotalBudgetCost" not-null="false" />
+    <property name="Planting" column="AnnualPlanting" not-null="false" />
+    <property name="Pruning" column="AnnualPruning" not-null="false" />
+    <property name="TreeRemoval" column="AnnualTreeRemoval" not-null="false" />
+    <property name="PestControl" column="AnnualPestControl" not-null="false" />
+    <property name="Irrigation" column="AnnualIrrigation" not-null="false" />
+    <property name="Repair" column="AnnualRepair" not-null="false" />
+    <property name="CleanUp" column="AnnualCleanUp" not-null="false" />
+    <property name="Lawsuit" column="AnnualLawsuit" not-null="false" />
+    <property name="Admin" column="AnnualAdmin" not-null="false" />
+    <property name="Inspection" column="AnnualInspection" not-null="false" />
+    <property name="Other" column="OtherCost" not-null="false" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ErrorPlotPercentTreeCover" xml:space="preserve">
+    <value>{0} carece de porcentaje de cobertura de árboles.</value>
+  </data>
+  <data name="ErrorProjectNotFound" xml:space="preserve">
+    <value>¡No se puede encontrar el proyecto '{0}' que enviaste! Lamentamos las molestias causadas. Por favor intenta volver a enviar tu proyecto otra vez. Si persiste el problema, por favor comunícate con soporte de i-Tree para solicitar ayuda.</value>
+  </data>
+  <data name="ErrorEmailMatch" xml:space="preserve">
+    <value>Las direcciones deben coincidir y no se pueden dejar en blanco.</value>
+  </data>
+  <data name="ErrorPlotTotalLandUse" xml:space="preserve">
+    <value>{0} tiene un total del uso de la tierra inválido.</value>
+  </data>
+  <data name="FmtErrorLandUses" xml:space="preserve">
+    <value>{0}: Los siguientes usos de la tierra tienen datos inválidos:
+{1}
+Por favor dirígete a Configuración del proyecto &gt; Uso de la tierra para corregir estos problemas.</value>
+  </data>
+  <data name="MsgProcessing" xml:space="preserve">
+    <value>Procesando…</value>
+  </data>
+  <data name="ErrorInvalidCrownTopHeight" xml:space="preserve">
+    <value>{0} tiene una altura superior de la copa inválida.</value>
+  </data>
+  <data name="FmtErrorProjectLocation" xml:space="preserve">
+    <value>{0}: El proyecto contiene datos del lugar inválidos: 
+{1}
+Ve a Configuración del proyecto &gt; Definición del proyecto &gt; Lugar para corregir estos problemas.</value>
+  </data>
+  <data name="ErrorNoStemFound" xml:space="preserve">
+    <value>{0} ¡no tiene troncos!</value>
+  </data>
+  <data name="DataValidationSuccess" xml:space="preserve">
+    <value>Todos tus datos parecen estar sin errores y listos para Enviarse para procesar.</value>
+  </data>
+  <data name="SendFinishMessage" xml:space="preserve">
+    <value>¡Felicidades! Nuestros servidores han recibido exitosamente los datos de tu proyecto Eco. El tiempo de procesamiento depende del tamaño de tu proyecto y del número de proyectos en la cola adelante del tuyo. Trataremos de mantenerte informado del avance en el procesamiento a través de la dirección de correo electrónico que proporcionaste.
+
+Recibirás un aviso final a la dirección de correo electrónico que proporcionaste cuando el procesamiento quede concluido.</value>
+  </data>
+  <data name="ErrorUserExit" xml:space="preserve">
+    <value>El usuario eligió salir.</value>
+  </data>
+  <data name="ErrorInvalidCrownHealth" xml:space="preserve">
+    <value>{0} tiene información de la salud de la copa inválida.</value>
+  </data>
+  <data name="ErrorInvalidSpecies" xml:space="preserve">
+    <value>{0} tiene una especie inválida {1}.</value>
+  </data>
+  <data name="ErrorPlotsNoData" xml:space="preserve">
+    <value>Ninguna parcela se ha marcado como 'completa' o no se han recopilado datos de árboles o matorrales.</value>
+  </data>
+  <data name="ErrorInvalidCrownPercentMissing" xml:space="preserve">
+    <value>{0} tiene un porcentaje de copa faltante inválido.</value>
+  </data>
+  <data name="ErrorProcessingFile" xml:space="preserve">
+    <value>Se produjo el siguiente error inesperado al procesar {0}:
+
+{1}</value>
+  </data>
+  <data name="ErrorSpaceDescription" xml:space="preserve">
+    <value>{0} tiene una descripción que contiene espacios múltiples entre palabras.</value>
+  </data>
+  <data name="MsgProjectProcessing" xml:space="preserve">
+    <value>Se está procesando tu proyecto. Por favor espera a recibir el aviso por correo electrónico.</value>
+  </data>
+  <data name="ResultLoadTitle" xml:space="preserve">
+    <value>Recuperar resultados</value>
+  </data>
+  <data name="WarningWeatherYear" xml:space="preserve">
+    <value>El año del estado del tiempo que seleccionaste no contiene datos de contaminación. No podrás ver beneficios de eliminación de la contaminación en los reportes.</value>
+  </data>
+  <data name="PreparingToLoad" xml:space="preserve">
+    <value>Preparando a cargar resultados…</value>
+  </data>
+  <data name="DownloadError" xml:space="preserve">
+    <value>Eco tuvo problemas conectándose al servidor. Por favor revisa tu conexión a internet e intenta de nuevo.
+Por favor también revisa tu correo electrónico, para la confirmación de que tus resultados ya se procesaron.
+
+No se puede recuperar el archivo: {0}</value>
+  </data>
+  <data name="ErrorPlotPercentPlantableSpace" xml:space="preserve">
+    <value>{0} carece del porcentaje de espacio que puede sembrarse.</value>
+  </data>
+  <data name="ExportTitle" xml:space="preserve">
+    <value>Exportando datos</value>
+  </data>
+  <data name="ErrorWeatherYearUnavailable" xml:space="preserve">
+    <value>El año del tiempo [{0}] no está disponible para la estación meteorológica seleccionada [ID: {1}]</value>
+  </data>
+  <data name="FmtErrorPlots" xml:space="preserve">
+    <value>{0}: Las siguientes parcelas contienen datos inválidos:
+{1}
+Ve a Datos &gt; Parcelas para corregir estos problemas.</value>
+  </data>
+  <data name="FmtErrorTrees" xml:space="preserve">
+    <value>{0}: Los siguientes árboles contienen datos inválidos:
+{1}
+Ve a Datos &gt; Árboles para corregir estos problemas.</value>
+  </data>
+  <data name="MsgProjectQueue" xml:space="preserve">
+    <value>Existen {0} proyectos antes que tu proyecto '{1}' en la cola de proceso. Por favor vuelve a revisar en otro momento. Al terminar, se te avisará por correo electrónico a la dirección que proporcionaste anteriormente.</value>
+  </data>
+  <data name="ErrorInvalidLandUse" xml:space="preserve">
+    <value>{0} tiene un uso de la tierra inválido.</value>
+  </data>
+  <data name="ErrorPlotNoGroundCover" xml:space="preserve">
+    <value>{0} ¡no tiene ninguna cobertura del suelo!</value>
+  </data>
+  <data name="ErrorInvalidTreeStatus" xml:space="preserve">
+    <value>{0} tiene una estado del árbol de la copa inválida.</value>
+  </data>
+  <data name="ErrorStrataFIA" xml:space="preserve">
+    <value>{0} no se duplicó correctamente.</value>
+  </data>
+  <data name="WarningPlotsIncomplete" xml:space="preserve">
+    <value>{0} parcelas no se han marcado como  'completas'. Estas parcelas no se incluirán al procesar tus resultados.</value>
+  </data>
+  <data name="ErrorPlotPercentMeasured" xml:space="preserve">
+    <value>{0} el área debe ser mayor que cero y el porcentaje medido debe estar entre 1 y 100.</value>
+  </data>
+  <data name="ErrorInvalidCrownBaseHeight" xml:space="preserve">
+    <value>{0} tiene una altura a la base de la copa inválida.</value>
+  </data>
+  <data name="ErrorInvalidHeight" xml:space="preserve">
+    <value>{0} tiene una altura total inválida.</value>
+  </data>
+  <data name="ErrorStrataNoCompletePlots" xml:space="preserve">
+    <value>{0} no tiene parcelas completas.</value>
+  </data>
+  <data name="ErrorDupDescription" xml:space="preserve">
+    <value>{0} tiene una descripción duplicada.</value>
+  </data>
+  <data name="PopulationNotSet" xml:space="preserve">
+    <value>La población no está configurada.</value>
+  </data>
+  <data name="ErrorWeatherValidationFailed" xml:space="preserve">
+    <value>Error al validar la estación meteorológica debido al siguiente error: {0}</value>
+  </data>
+  <data name="HdrWarnings" xml:space="preserve">
+    <value>ADVERTENCIAS:</value>
+  </data>
+  <data name="ErrorInvalidCode" xml:space="preserve">
+    <value>{0} tiene un código que contiene caracteres que no son alfanuméricos.</value>
+  </data>
+  <data name="ErrorInvalidStem" xml:space="preserve">
+    <value>{0} tiene un tronco con un DAP inválido.</value>
+  </data>
+  <data name="Retry" xml:space="preserve">
+    <value>Reintentar</value>
+  </data>
+  <data name="ErrorProjectMismatch" xml:space="preserve">
+    <value>El proyecto ({0}, {1}, {2}) que intentaste cargar no coincide con el proyecto actual en la base de datos.</value>
+  </data>
+  <data name="ErrorPlotNoTreeCover" xml:space="preserve">
+    <value>Ninguna parcela tiene un porcentaje de cobertura de árboles mayor a 0.</value>
+  </data>
+  <data name="ConfirmCancel" xml:space="preserve">
+    <value>¿Seguro que deseas cancelar?</value>
+  </data>
+  <data name="SevertityError" xml:space="preserve">
+    <value>ERROR</value>
+  </data>
+  <data name="ErrorDataNotSubmitted" xml:space="preserve">
+    <value>No se han enviado tus datos a procesar.</value>
+  </data>
+  <data name="WarningPlotPercentTreeCover" xml:space="preserve">
+    <value>{0} contiene árboles, pero el porcentaje de cobertura de árboles es 0.</value>
+  </data>
+  <data name="ErrorPlotTotalGroundCover" xml:space="preserve">
+    <value>{0} tiene un total de cobertura del suelo inválido.</value>
+  </data>
+  <data name="DataValidationWarnings" xml:space="preserve">
+    <value>ADVERTENCIAS (Estos problemas deben examinarse y corregirse según sea necesario)</value>
+  </data>
+  <data name="ErrorNameSpacePrefix" xml:space="preserve">
+    <value>{0} el nombre no puede empezar con espacios.</value>
+  </data>
+  <data name="ErrorNoLiveTrees" xml:space="preserve">
+    <value>No hay árboles vivos en este proyecto. Por favor revisa tus datos.</value>
+  </data>
+  <data name="ResultsRetrieved" xml:space="preserve">
+    <value>Se descargaron tus resultados a tu proyecto. Ahora puedes ver los diferentes reportes y trabajar con la herramienta de modelaje de Pronóstico. RECUERDA: Si editas cualquiera de tus datos, necesitarás volver a enviarlos a procesar para obtener reportes actualizados.</value>
+  </data>
+  <data name="ErrorNameSpaceSuffix" xml:space="preserve">
+    <value>{0} el nombre no puede terminar con espacios.</value>
+  </data>
+  <data name="ErrorInvalidCategory" xml:space="preserve">
+    <value>{0} tiene una categoría inválida.</value>
+  </data>
+  <data name="WarningTreeDiameter" xml:space="preserve">
+    <value>{0} tiene un diámetro mayor al rango válido de los modelos de i-Tree. Los cálculos de almacenamiento y secuestro de carbono se basan en un valor de DAP de {1}.</value>
+  </data>
+  <data name="ErrorStrataPlotArea" xml:space="preserve">
+    <value>{0} tiene un área más pequeña que el área total de sus parcelas.</value>
+  </data>
+  <data name="ErrorInvalidCrownSize" xml:space="preserve">
+    <value>{0} tiene un ancho o altura superior de la copa inválida.</value>
+  </data>
+  <data name="FmtErrorBenefitPrices" xml:space="preserve">
+    <value>{0}: Los precios de los beneficios contienen datos inválidos:
+{1}
+Por favor dirígete a Datos &gt; Beneficios para corregir este error.</value>
+  </data>
+  <data name="ErrorDupCode" xml:space="preserve">
+    <value>{0} tiene un código que se usa más de una ocasión.</value>
+  </data>
+  <data name="ErrorArea" xml:space="preserve">
+    <value>{0} el área es menor o igual a 0.</value>
+  </data>
+  <data name="ErrorPlotPercentShrubCover" xml:space="preserve">
+    <value>{0} carece del porcentaje de cobertura de matorrales.</value>
+  </data>
+  <data name="ErrorLoadingResults" xml:space="preserve">
+    <value>Error al cargar los resultados</value>
+  </data>
+  <data name="ErrorNoData" xml:space="preserve">
+    <value>{0} los datos no se han especificado.</value>
+  </data>
+  <data name="SelectSpecies" xml:space="preserve">
+    <value>Favor de seleccionar una especie.</value>
+  </data>
+  <data name="ErrorCurrencyExchangeRate" xml:space="preserve">
+    <value>No se ha especificado el tipo de cambio.</value>
+  </data>
+  <data name="Finished" xml:space="preserve">
+    <value>Finalizado</value>
+  </data>
+  <data name="FmtErrorGroundCovers" xml:space="preserve">
+    <value>{0}: Las siguientes coberturas del suelo presentan errores:
+{1}
+Por favor dirígete a &gt; Configuración del proyecto &gt; Cobertura del suelo para corregir estos errores.</value>
+  </data>
+  <data name="ErrorSpaceAbbreviation" xml:space="preserve">
+    <value>{0} tiene una abreviatura que contiene espacios.</value>
+  </data>
+  <data name="ErrorInvalidEmail" xml:space="preserve">
+    <value>Correo electrónico inválido.</value>
+  </data>
+  <data name="ErrorInvalidBuilding" xml:space="preserve">
+    <value>{0} tiene un edificio con una distancia o dirección inválida.</value>
+  </data>
+  <data name="ErrorPlotNoLandUses" xml:space="preserve">
+    <value>{0} ¡no tiene ningún uso de la tierra!</value>
+  </data>
+  <data name="ErrorNameRequired" xml:space="preserve">
+    <value>El nombre es obligatorio.</value>
+  </data>
+  <data name="ErrorTagNotFound" xml:space="preserve">
+    <value>No se encontró la etiqueta con el nombre '{0}'.</value>
+  </data>
+  <data name="ErrorLocationDataInvalid" xml:space="preserve">
+    <value>Tu proyecto contiene información del lugar inválida.</value>
+  </data>
+  <data name="ErrorProjectFailed" xml:space="preserve">
+    <value>Se produjo un error al procesar el proyecto '{0}' que enviaste. Se envió un aviso al correo electrónico que proporcionaste anteriormente. Por favor comunícate con soporte de i-Tree (info@itreetools.org) para darle seguimiento.</value>
+  </data>
+  <data name="ErrorLocationNotSupported" xml:space="preserve">
+    <value>Tu lugar es incompatible y tu proyecto no puede enviarse a procesar. En la pestaña de Configuración del proyecto &gt; Definición del proyecto &gt; Lugar, debes seleccionar un lugar compatible O proporcionar datos de apoyo adicionales para un lugar nuevo a través de i-Tree Database (http://www.itreetools.org/database). Los datos del lugar enviaros a i-Tree Database pueden tardar hasta seis meses en integrarse a i-Tree Eco. Se te avisará por correo electrónico una vez que se hayan integrado los datos de tu lugar. Entonces podrás actualizar i-Tree Eco y enviar tu proyecto a procesar. La integración rápida de datos NO es posible.</value>
+  </data>
+  <data name="ErrorDupAbbreviation" xml:space="preserve">
+    <value>{0} tiene una abreviatura duplicada.</value>
+  </data>
+  <data name="FmtErrorStrata" xml:space="preserve">
+    <value>{0}: Los siguientes estratos contienen datos inválidos:
+{1}
+Por favor dirígete a Configuración del proyecto &gt; Área del proyecto y estrato para corregir estos problemas:</value>
+  </data>
+  <data name="FmtErrorShrubs" xml:space="preserve">
+    <value>{0}: Los siguientes matorrales contienen datos inválidos:
+{1}
+Ve a Datos &gt; Matorrales para corregir estos problemas.</value>
+  </data>
+  <data name="Downloading" xml:space="preserve">
+    <value>Descargando...</value>
+  </data>
+  <data name="SeverityWarning" xml:space="preserve">
+    <value>ADVERTENCIA</value>
+  </data>
+  <data name="FmtErrorProjectSettings" xml:space="preserve">
+    <value>{0}: El proyecto contiene configuraciones inválidas:
+{1}
+Ve a Configuración del proyecto &gt; Definición del proyecto &gt; Configuraciones del proyecto para corregir este error.</value>
+  </data>
+  <data name="HdrFatalErrors" xml:space="preserve">
+    <value>ERRORES EN LA VALIDACIÓN DE DATOS:</value>
+  </data>
+  <data name="ErrorPlotGroundCover" xml:space="preserve">
+    <value>{0} tiene datos de cobertura del suelo inválidos.</value>
+  </data>
+  <data name="DataValidationErrors" xml:space="preserve">
+    <value>ERRORES EN LA VALIDACIÓN DE DATOS (Estos errores DEBEN corregirse para continuar):</value>
+  </data>
+  <data name="ErrorNodeNotFound" xml:space="preserve">
+    <value>No se encontró el nodo con el nombre '{0}'.</value>
+  </data>
+  <data name="ErrorCommaDescription" xml:space="preserve">
+    <value>{0} tiene una descripción que contiene una coma.</value>
+  </data>
+</root>

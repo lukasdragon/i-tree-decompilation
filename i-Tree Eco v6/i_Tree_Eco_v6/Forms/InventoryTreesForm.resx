@@ -1,0 +1,1177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="dcDBH5Measured.HeaderText" xml:space="preserve">
+    <value>DBH 5: Measured?</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="dcIPEDTSDieback.Width" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="dcMaintTask.HeaderText" xml:space="preserve">
+    <value>Maintenance Task</value>
+  </data>
+  <data name="dcDBH2c.HeaderText" xml:space="preserve">
+    <value>DBH 2</value>
+  </data>
+  <data name="dcBldg1Distance.Width" type="System.Int32, mscorlib">
+    <value>88</value>
+  </data>
+  <data name="dcDBH4.HeaderText" xml:space="preserve">
+    <value>DBH 4</value>
+  </data>
+  <data name="dcIPEDTSNotes.HeaderText" xml:space="preserve">
+    <value>Tree Stress: Notes</value>
+  </data>
+  <data name="dcIPEDBBNotes.HeaderText" xml:space="preserve">
+    <value>Branches/Bole: Notes</value>
+  </data>
+  <data name="dcNoteTree.Width" type="System.Int32, mscorlib">
+    <value>54</value>
+  </data>
+  <data name="&gt;&gt;dcIPEDBBNotes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dcIPEDBBNotes.Name" xml:space="preserve">
+    <value>dcIPEDBBNotes</value>
+  </data>
+  <data name="dcDBH3Height.Width" type="System.Int32, mscorlib">
+    <value>85</value>
+  </data>
+  <data name="dcStTree.HeaderText" xml:space="preserve">
+    <value>Street Tree?</value>
+  </data>
+  <data name="dcIPEDBBDiseaseSigns.Width" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="dcMaintRec.Width" type="System.Int32, mscorlib">
+    <value>153</value>
+  </data>
+  <data name="&gt;&gt;dcNoteTree.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dcNoteTree.Name" xml:space="preserve">
+    <value>dcNoteTree</value>
+  </data>
+  <data name="dcBldg1Distance.HeaderText" xml:space="preserve">
+    <value>Building 1: Distance</value>
+  </data>
+  <data name="&gt;&gt;dcIPEDTSEnvStress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewComboBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dcIPEDTSEnvStress.Name" xml:space="preserve">
+    <value>dcIPEDTSEnvStress</value>
+  </data>
+  <data name="&gt;&gt;dcIPEDBBDiseaseSigns.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewComboBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dcIPEDBBDiseaseSigns.Name" xml:space="preserve">
+    <value>dcIPEDBBDiseaseSigns</value>
+  </data>
+  <data name="dcId.Width" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="dgPlots.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="dcDBH5c.HeaderText" xml:space="preserve">
+    <value>DBH 5</value>
+  </data>
+  <data name="&gt;&gt;dcDBH4Measured.Name" xml:space="preserve">
+    <value>dcDBH4Measured</value>
+  </data>
+  <data name="&gt;&gt;dcDBH4Measured.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dcDBH2Measured.Name" xml:space="preserve">
+    <value>dcDBH2Measured</value>
+  </data>
+  <data name="&gt;&gt;dcDBH2Measured.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dcIPEDBBAbnGrowth.HeaderText" xml:space="preserve">
+    <value>Branches/Bole: Abnormal Growth</value>
+  </data>
+  <data name="&gt;&gt;dcMaintRec.Name" xml:space="preserve">
+    <value>dcMaintRec</value>
+  </data>
+  <data name="&gt;&gt;dcMaintRec.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewComboBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dcLocSite.Name" xml:space="preserve">
+    <value>dcLocSite</value>
+  </data>
+  <data name="&gt;&gt;dcLocSite.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewComboBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dcTreeHeight.HeaderText" xml:space="preserve">
+    <value>Total Height</value>
+  </data>
+  <data name="&gt;&gt;dcDBH6c.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewComboBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dcDBH6c.Name" xml:space="preserve">
+    <value>dcDBH6c</value>
+  </data>
+  <data name="$this.Font" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5Gb250BAAAAAROYW1lBFNpemUFU3R5bGUEVW5pdAEABAQLGFN5c3RlbS5EcmF3aW5nLkZvbnRTdHlsZQIAAAAbU3lzdGVtLkRyYXdpbmcuR3JhcGhpY3NVbml0AgAAAAIAAAAGAwAAAAdDYWxpYnJpAAAcQQX8////GFN5c3RlbS5EcmF3aW5nLkZvbnRTdHlsZQEAAAAHdmFsdWVfXwAIAgAAAAAAAAAF+////xtTeXN0ZW0uRHJhd2luZy5HcmFwaGljc1VuaXQBAAAAB3ZhbHVlX18ACAIAAAADAAAACw==</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Trees</value>
+  </data>
+  <data name="dcIPEDFTChewFoli.HeaderText" xml:space="preserve">
+    <value>Foliage/Twigs: Chewed Foliage</value>
+  </data>
+  <data name="dcDBH4.Width" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <data name="&gt;&gt;dcCrownCondition.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewComboBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dcCrownCondition.Name" xml:space="preserve">
+    <value>dcCrownCondition</value>
+  </data>
+  <data name="dcIPEDBBAbnGrowth.Width" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="&gt;&gt;dcFieldTwo.Name" xml:space="preserve">
+    <value>dcFieldTwo</value>
+  </data>
+  <data name="&gt;&gt;dcFieldTwo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewComboBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dcDBH1.Width" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <data name="dcLocSite.Width" type="System.Int32, mscorlib">
+    <value>86</value>
+  </data>
+  <data name="dcDBH2Measured.HeaderText" xml:space="preserve">
+    <value>DBH 2: Measured?</value>
+  </data>
+  <data name="dcStatus.HeaderText" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="dcIPEDBBInsectSigns.HeaderText" xml:space="preserve">
+    <value>Branches/Bole: Insect Signs</value>
+  </data>
+  <data name="dcDBH4Measured.Width" type="System.Int32, mscorlib">
+    <value>85</value>
+  </data>
+  <data name="&gt;&gt;dcFieldOne.Name" xml:space="preserve">
+    <value>dcFieldOne</value>
+  </data>
+  <data name="&gt;&gt;dcFieldOne.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewComboBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dcMaintTask.Width" type="System.Int32, mscorlib">
+    <value>91</value>
+  </data>
+  <data name="dcIPEDTSEnvStress.HeaderText" xml:space="preserve">
+    <value>Tree Stress: Envionmental Stress</value>
+  </data>
+  <data name="&gt;&gt;dcCrew.Name" xml:space="preserve">
+    <value>dcCrew</value>
+  </data>
+  <data name="&gt;&gt;dcCrew.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dcDBH6Measured.Width" type="System.Int32, mscorlib">
+    <value>85</value>
+  </data>
+  <data name="dcIPEDBBProbLoc.Width" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="dcCrownWidthEW.HeaderText" xml:space="preserve">
+    <value>Crown: Width E/W</value>
+  </data>
+  <data name="$this.ClientSize" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAMoDAABoAgAACw==</value>
+  </data>
+  <data name="dcDBH3c.HeaderText" xml:space="preserve">
+    <value>DBH 3</value>
+  </data>
+  <data name="dcBldg2Direction.HeaderText" xml:space="preserve">
+    <value>Building 2: Direction</value>
+  </data>
+  <data name="dcCrownTopHeight.Width" type="System.Int32, mscorlib">
+    <value>105</value>
+  </data>
+  <data name="&gt;&gt;dcCrownLightExposure.Name" xml:space="preserve">
+    <value>dcCrownLightExposure</value>
+  </data>
+  <data name="&gt;&gt;dcCrownLightExposure.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewComboBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dcCrownWidthEW.Width" type="System.Int32, mscorlib">
+    <value>105</value>
+  </data>
+  <data name="&gt;&gt;dcBldg1Distance.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree.Controls, Version=1.1.224.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dcBldg1Distance.Name" xml:space="preserve">
+    <value>dcBldg1Distance</value>
+  </data>
+  <data name="dcLatitude.Width" type="System.Int32, mscorlib">
+    <value>69</value>
+  </data>
+  <data name="$this.Margin" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAABxTeXN0ZW0uV2luZG93cy5Gb3Jtcy5QYWRkaW5nBQAAAARfYWxsBF90b3AFX2xlZnQGX3JpZ2h0B19ib3R0b20AAAAAAAEICAgIAgAAAAAFAAAABAAAAAQAAAAFAAAACw==</value>
+  </data>
+  <data name="&gt;&gt;dcStatus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewComboBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dcStatus.Name" xml:space="preserve">
+    <value>dcStatus</value>
+  </data>
+  <data name="dcDBH6Height.Width" type="System.Int32, mscorlib">
+    <value>85</value>
+  </data>
+  <data name="dcIPEDTSEpiSprout.Width" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="&gt;&gt;dcIPEDTSNotes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dcIPEDTSNotes.Name" xml:space="preserve">
+    <value>dcIPEDTSNotes</value>
+  </data>
+  <data name="dcBldg2Distance.Width" type="System.Int32, mscorlib">
+    <value>88</value>
+  </data>
+  <data name="&gt;&gt;dcCrownWidthEW.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree.Controls, Version=1.1.224.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dcCrownWidthEW.Name" xml:space="preserve">
+    <value>dcCrownWidthEW</value>
+  </data>
+  <data name="dcDBH5Measured.Width" type="System.Int32, mscorlib">
+    <value>85</value>
+  </data>
+  <data name="dcIPEDFTNotes.HeaderText" xml:space="preserve">
+    <value>Foliage/Twigs: Notes</value>
+  </data>
+  <data name="dcFieldTwo.HeaderText" xml:space="preserve">
+    <value>Field Two</value>
+  </data>
+  <data name="&gt;&gt;dcSidewalk.Name" xml:space="preserve">
+    <value>dcSidewalk</value>
+  </data>
+  <data name="&gt;&gt;dcSidewalk.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewComboBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dcIPEDFTDiscFoli.HeaderText" xml:space="preserve">
+    <value>Foliage/Twigs: Discolored Foliage</value>
+  </data>
+  <data name="dcCrownBaseHeight.HeaderText" xml:space="preserve">
+    <value>Crown: Base Height</value>
+  </data>
+  <data name="dcDBH3.HeaderText" xml:space="preserve">
+    <value>DBH 3</value>
+  </data>
+  <data name="dcDBH2Measured.Width" type="System.Int32, mscorlib">
+    <value>85</value>
+  </data>
+  <data name="&gt;&gt;dcDBH3Measured.Name" xml:space="preserve">
+    <value>dcDBH3Measured</value>
+  </data>
+  <data name="&gt;&gt;dcDBH3Measured.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dcCrownWidthNS.HeaderText" xml:space="preserve">
+    <value>Crown: Width N/S</value>
+  </data>
+  <data name="&gt;&gt;dcDBH1Height.Name" xml:space="preserve">
+    <value>dcDBH1Height</value>
+  </data>
+  <data name="dcDBH3Measured.Width" type="System.Int32, mscorlib">
+    <value>85</value>
+  </data>
+  <data name="&gt;&gt;dcDBH1Height.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree.Controls, Version=1.1.224.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="dcBldg3Direction.HeaderText" xml:space="preserve">
+    <value>Building 3: Direction</value>
+  </data>
+  <data name="dcIPEDFTAbnFoli.HeaderText" xml:space="preserve">
+    <value>Foliage/Twigs: Abnormal Foliage</value>
+  </data>
+  <data name="&gt;&gt;dcDBH2c.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewComboBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dcDBH2c.Name" xml:space="preserve">
+    <value>dcDBH2c</value>
+  </data>
+  <data name="dcDBH6Height.HeaderText" xml:space="preserve">
+    <value>DBH 6: Height</value>
+  </data>
+  <data name="dcFieldTwo.Width" type="System.Int32, mscorlib">
+    <value>52</value>
+  </data>
+  <data name="lblBreadcrumb.Margin" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAABxTeXN0ZW0uV2luZG93cy5Gb3Jtcy5QYWRkaW5nBQAAAARfYWxsBF90b3AFX2xlZnQGX3JpZ2h0B19ib3R0b20AAAAAAAEICAgIAgAAAAEGAAAABgAAAAYAAAAGAAAACw==</value>
+  </data>
+  <data name="dcDBH6Measured.HeaderText" xml:space="preserve">
+    <value>DBH 6: Measured?</value>
+  </data>
+  <data name="&gt;&gt;dcIPEDBBProbLoc.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewComboBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dcIPEDBBProbLoc.Name" xml:space="preserve">
+    <value>dcIPEDBBProbLoc</value>
+  </data>
+  <data name="dcLandUse.Width" type="System.Int32, mscorlib">
+    <value>58</value>
+  </data>
+  <data name="&gt;&gt;dcLocNo.Name" xml:space="preserve">
+    <value>dcLocNo</value>
+  </data>
+  <data name="&gt;&gt;dcLocNo.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree.Controls, Version=1.1.224.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dcDBH3c.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewComboBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dcDBH3c.Name" xml:space="preserve">
+    <value>dcDBH3c</value>
+  </data>
+  <data name="&gt;&gt;dcDBH5Height.Name" xml:space="preserve">
+    <value>dcDBH5Height</value>
+  </data>
+  <data name="&gt;&gt;dcDBH5Height.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree.Controls, Version=1.1.224.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="dcBldg3Distance.Width" type="System.Int32, mscorlib">
+    <value>88</value>
+  </data>
+  <data name="&gt;&gt;dcWireConflict.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewComboBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dcWireConflict.Name" xml:space="preserve">
+    <value>dcWireConflict</value>
+  </data>
+  <data name="dcBldg4Distance.Width" type="System.Int32, mscorlib">
+    <value>88</value>
+  </data>
+  <data name="dcDBH1Measured.Width" type="System.Int32, mscorlib">
+    <value>85</value>
+  </data>
+  <data name="&gt;&gt;dcCrownTopHeight.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree.Controls, Version=1.1.224.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dcCrownTopHeight.Name" xml:space="preserve">
+    <value>dcCrownTopHeight</value>
+  </data>
+  <data name="dcDBH4Measured.HeaderText" xml:space="preserve">
+    <value>DBH 4: Measured?</value>
+  </data>
+  <data name="dcSurveyDate.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="dcIPEDFTNotes.Width" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="dcDBH5Height.HeaderText" xml:space="preserve">
+    <value>DBH 5: Height</value>
+  </data>
+  <data name="dcCrownDieback.HeaderText" xml:space="preserve">
+    <value>Crown: % Dieback</value>
+  </data>
+  <data name="dcIPEDTSWiltFoli.Width" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="&gt;&gt;dcDBH3Height.Name" xml:space="preserve">
+    <value>dcDBH3Height</value>
+  </data>
+  <data name="&gt;&gt;dcDBH3Height.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree.Controls, Version=1.1.224.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="dcBldg3Distance.HeaderText" xml:space="preserve">
+    <value>Building 3: Distance</value>
+  </data>
+  <data name="&gt;&gt;dcDBH5c.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewComboBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dcDBH5c.Name" xml:space="preserve">
+    <value>dcDBH5c</value>
+  </data>
+  <data name="&gt;&gt;dcDBH6Measured.Name" xml:space="preserve">
+    <value>dcDBH6Measured</value>
+  </data>
+  <data name="&gt;&gt;dcDBH6Measured.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dcUserId.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dcUserId.Name" xml:space="preserve">
+    <value>dcUserId</value>
+  </data>
+  <data name="dcLandUse.HeaderText" xml:space="preserve">
+    <value>Land Use</value>
+  </data>
+  <data name="dcDBH2.HeaderText" xml:space="preserve">
+    <value>DBH 2</value>
+  </data>
+  <data name="&gt;&gt;dcBldg3Direction.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree.Controls, Version=1.1.224.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dcBldg3Direction.Name" xml:space="preserve">
+    <value>dcBldg3Direction</value>
+  </data>
+  <data name="&gt;&gt;dcDBH1Measured.Name" xml:space="preserve">
+    <value>dcDBH1Measured</value>
+  </data>
+  <data name="&gt;&gt;dcDBH1Measured.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dcSiteType.HeaderText" xml:space="preserve">
+    <value>Site Type</value>
+  </data>
+  <data name="dcLocNo.Width" type="System.Int32, mscorlib">
+    <value>82</value>
+  </data>
+  <data name="dcIPEDTSEnvStress.Width" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="dcIPEDFTInsectSigns.Width" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="dcDBH1c.HeaderText" xml:space="preserve">
+    <value>DBH 1</value>
+  </data>
+  <data name="&gt;&gt;dcBldg3Distance.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree.Controls, Version=1.1.224.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dcBldg3Distance.Name" xml:space="preserve">
+    <value>dcBldg3Distance</value>
+  </data>
+  <data name="dcDBH5Height.Width" type="System.Int32, mscorlib">
+    <value>85</value>
+  </data>
+  <data name="dcLatitude.HeaderText" xml:space="preserve">
+    <value>Latitude</value>
+  </data>
+  <data name="dcFieldOne.HeaderText" xml:space="preserve">
+    <value>Field One</value>
+  </data>
+  <data name="&gt;&gt;dcStrata.Name" xml:space="preserve">
+    <value>dcStrata</value>
+  </data>
+  <data name="dcBldg1Direction.HeaderText" xml:space="preserve">
+    <value>Building 1: Direction</value>
+  </data>
+  <data name="&gt;&gt;dcStrata.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewComboBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dcNoteTree.HeaderText" xml:space="preserve">
+    <value>Note Tree</value>
+  </data>
+  <data name="dcDBH4c.HeaderText" xml:space="preserve">
+    <value>DBH 4</value>
+  </data>
+  <data name="dcSpecies.Width" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="&gt;&gt;dcIPEDFTAbnFoli.Name" xml:space="preserve">
+    <value>dcIPEDFTAbnFoli</value>
+  </data>
+  <data name="&gt;&gt;dcIPEDFTAbnFoli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewComboBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dcIPEDPest.Width" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="dcCityManaged.HeaderText" xml:space="preserve">
+    <value>Public?</value>
+  </data>
+  <data name="dcDBH6.HeaderText" xml:space="preserve">
+    <value>DBH 6</value>
+  </data>
+  <data name="dcIPEDBBDiseaseSigns.HeaderText" xml:space="preserve">
+    <value>Branches/Bole: Disease Signs</value>
+  </data>
+  <data name="dcStatus.Width" type="System.Int32, mscorlib">
+    <value>61</value>
+  </data>
+  <data name="dcLocSite.HeaderText" xml:space="preserve">
+    <value>Location Site</value>
+  </data>
+  <data name="dcIPEDTSHumStress.Width" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="dcIPEDFTInsectSigns.HeaderText" xml:space="preserve">
+    <value>Foliage/Twigs: Insect Signs</value>
+  </data>
+  <data name="dcBldg2Distance.HeaderText" xml:space="preserve">
+    <value>Building 2: Distance</value>
+  </data>
+  <data name="&gt;&gt;dcComments.Name" xml:space="preserve">
+    <value>dcComments</value>
+  </data>
+  <data name="&gt;&gt;dcComments.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblBreadcrumb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblBreadcrumb.Name" xml:space="preserve">
+    <value>lblBreadcrumb</value>
+  </data>
+  <data name="&gt;&gt;dcCrownWidthNS.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree.Controls, Version=1.1.224.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dcCrownWidthNS.Name" xml:space="preserve">
+    <value>dcCrownWidthNS</value>
+  </data>
+  <data name="&gt;&gt;dcId.Name" xml:space="preserve">
+    <value>dcId</value>
+  </data>
+  <data name="&gt;&gt;dcId.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree.Controls, Version=1.1.224.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="dcIPEDFTFoliAffect.HeaderText" xml:space="preserve">
+    <value>Foliage/Twigs: Foliage Affected</value>
+  </data>
+  <data name="dcIPEDBBInsectPres.HeaderText" xml:space="preserve">
+    <value>Branches/Bole: Insect Prescense</value>
+  </data>
+  <data name="&gt;&gt;dcPhoto.Name" xml:space="preserve">
+    <value>dcPhoto</value>
+  </data>
+  <data name="&gt;&gt;dcPhoto.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dcIPEDTSEpiSprout.HeaderText" xml:space="preserve">
+    <value>Tree Stress: Epicormic Sprouts</value>
+  </data>
+  <data name="&gt;&gt;dcDBH1c.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewComboBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dcDBH1c.Name" xml:space="preserve">
+    <value>dcDBH1c</value>
+  </data>
+  <data name="&gt;&gt;dcStTree.Name" xml:space="preserve">
+    <value>dcStTree</value>
+  </data>
+  <data name="&gt;&gt;dcStTree.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dcDBH2Height.Width" type="System.Int32, mscorlib">
+    <value>85</value>
+  </data>
+  <data name="&gt;&gt;dcIPEDBBInsectPres.Name" xml:space="preserve">
+    <value>dcIPEDBBInsectPres</value>
+  </data>
+  <data name="&gt;&gt;dcIPEDBBInsectPres.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewComboBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dcLongitude.Width" type="System.Int32, mscorlib">
+    <value>78</value>
+  </data>
+  <data name="&gt;&gt;dcIPEDFTFoliAffect.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewComboBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dcIPEDFTFoliAffect.Name" xml:space="preserve">
+    <value>dcIPEDFTFoliAffect</value>
+  </data>
+  <data name="dcDBH6c.HeaderText" xml:space="preserve">
+    <value>DBH 6</value>
+  </data>
+  <data name="dcSpecies.HeaderText" xml:space="preserve">
+    <value>Species</value>
+  </data>
+  <data name="&gt;&gt;dcDBH4.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree.Controls, Version=1.1.224.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dcDBH4.Name" xml:space="preserve">
+    <value>dcDBH4</value>
+  </data>
+  <data name="dcIPEDFTAbnFoli.Width" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="lblBreadcrumb.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAMoDAAAYAAAACw==</value>
+  </data>
+  <data name="&gt;&gt;dcDBH4Height.Name" xml:space="preserve">
+    <value>dcDBH4Height</value>
+  </data>
+  <data name="&gt;&gt;dcDBH4Height.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree.Controls, Version=1.1.224.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="dcStrata.HeaderText" xml:space="preserve">
+    <value>Stratum</value>
+  </data>
+  <data name="&gt;&gt;dcDBH6.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree.Controls, Version=1.1.224.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dcDBH6.Name" xml:space="preserve">
+    <value>dcDBH6</value>
+  </data>
+  <data name="dcBldg3Direction.Width" type="System.Int32, mscorlib">
+    <value>80</value>
+  </data>
+  <data name="&gt;&gt;dcDBH5.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree.Controls, Version=1.1.224.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dcDBH5.Name" xml:space="preserve">
+    <value>dcDBH5</value>
+  </data>
+  <data name="dcWireConflict.Width" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="&gt;&gt;dcBldg4Distance.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree.Controls, Version=1.1.224.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dcBldg4Distance.Name" xml:space="preserve">
+    <value>dcBldg4Distance</value>
+  </data>
+  <data name="&gt;&gt;dcLatitude.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dcLatitude.Name" xml:space="preserve">
+    <value>dcLatitude</value>
+  </data>
+  <data name="dcCrownTopHeight.HeaderText" xml:space="preserve">
+    <value>Crown: Live Top Height</value>
+  </data>
+  <data name="dcDBH6.Width" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <data name="dcFieldThree.Width" type="System.Int32, mscorlib">
+    <value>58</value>
+  </data>
+  <data name="&gt;&gt;dcFieldThree.Name" xml:space="preserve">
+    <value>dcFieldThree</value>
+  </data>
+  <data name="&gt;&gt;dcFieldThree.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewComboBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dcDBH2.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree.Controls, Version=1.1.224.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dcDBH2.Name" xml:space="preserve">
+    <value>dcDBH2</value>
+  </data>
+  <data name="dcDBH3.Width" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <data name="dcCrownWidthNS.Width" type="System.Int32, mscorlib">
+    <value>105</value>
+  </data>
+  <data name="&gt;&gt;dcDBH1.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree.Controls, Version=1.1.224.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dcDBH1.Name" xml:space="preserve">
+    <value>dcDBH1</value>
+  </data>
+  <data name="&gt;&gt;dcDBH4c.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewComboBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dcDBH4c.Name" xml:space="preserve">
+    <value>dcDBH4c</value>
+  </data>
+  <data name="&gt;&gt;dcIPEDFTDiscFoli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewComboBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dcIPEDFTDiscFoli.Name" xml:space="preserve">
+    <value>dcIPEDFTDiscFoli</value>
+  </data>
+  <data name="&gt;&gt;dcDBH3.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree.Controls, Version=1.1.224.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dcDBH3.Name" xml:space="preserve">
+    <value>dcDBH3</value>
+  </data>
+  <data name="&gt;&gt;dcLongitude.Name" xml:space="preserve">
+    <value>dcLongitude</value>
+  </data>
+  <data name="&gt;&gt;dcLongitude.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dcSurveyDate.Name" xml:space="preserve">
+    <value>dcSurveyDate</value>
+  </data>
+  <data name="&gt;&gt;dcSurveyDate.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNullableDateTimeColumn, DaveyTree.Controls, Version=1.1.224.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="dcBldg2Direction.Width" type="System.Int32, mscorlib">
+    <value>80</value>
+  </data>
+  <data name="&gt;&gt;dcSpecies.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewFilteredComboBoxColumn, DaveyTree.Controls, Version=1.1.224.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dcSpecies.Name" xml:space="preserve">
+    <value>dcSpecies</value>
+  </data>
+  <data name="dcFieldThree.HeaderText" xml:space="preserve">
+    <value>Field Three</value>
+  </data>
+  <data name="dcLongitude.HeaderText" xml:space="preserve">
+    <value>Longitude</value>
+  </data>
+  <data name="dcSurveyDate.HeaderText" xml:space="preserve">
+    <value>Survey Date</value>
+  </data>
+  <data name="&gt;&gt;dcSiteType.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewComboBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dcSiteType.Name" xml:space="preserve">
+    <value>dcSiteType</value>
+  </data>
+  <data name="&gt;&gt;dcCityManaged.Name" xml:space="preserve">
+    <value>dcCityManaged</value>
+  </data>
+  <data name="&gt;&gt;dcCityManaged.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dcIPEDTSEpiSprout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewComboBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dcIPEDTSEpiSprout.Name" xml:space="preserve">
+    <value>dcIPEDTSEpiSprout</value>
+  </data>
+  <data name="dcBldg4Distance.HeaderText" xml:space="preserve">
+    <value>Building 4: Distance</value>
+  </data>
+  <data name="dcTreeHeight.Width" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="&gt;&gt;dcMaintTask.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewComboBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dcMaintTask.Name" xml:space="preserve">
+    <value>dcMaintTask</value>
+  </data>
+  <data name="dcDBH4Height.HeaderText" xml:space="preserve">
+    <value>DBH 4: Height</value>
+  </data>
+  <data name="&gt;&gt;dcBldg1Direction.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree.Controls, Version=1.1.224.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dcBldg1Direction.Name" xml:space="preserve">
+    <value>dcBldg1Direction</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>InventoryTreesForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>i_Tree_Eco_v6.Forms.DataContentForm, i-Tree Eco v6, Version=6.0.24.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dcCrownBaseHeight.Name" xml:space="preserve">
+    <value>dcCrownBaseHeight</value>
+  </data>
+  <data name="&gt;&gt;dcCrownBaseHeight.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree.Controls, Version=1.1.224.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dcDBH5Measured.Name" xml:space="preserve">
+    <value>dcDBH5Measured</value>
+  </data>
+  <data name="&gt;&gt;dcDBH5Measured.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dcCityManaged.Width" type="System.Int32, mscorlib">
+    <value>69</value>
+  </data>
+  <data name="dcDBH1.HeaderText" xml:space="preserve">
+    <value>DBH 1</value>
+  </data>
+  <data name="dcDBH4Height.Width" type="System.Int32, mscorlib">
+    <value>85</value>
+  </data>
+  <data name="dcSidewalk.Width" type="System.Int32, mscorlib">
+    <value>88</value>
+  </data>
+  <data name="&gt;&gt;dcLandUse.Name" xml:space="preserve">
+    <value>dcLandUse</value>
+  </data>
+  <data name="&gt;&gt;dcLandUse.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewComboBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dcIPEDTSHumStress.HeaderText" xml:space="preserve">
+    <value>Tree Stress: Human Stress</value>
+  </data>
+  <data name="&gt;&gt;dcBldg4Direction.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree.Controls, Version=1.1.224.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dcBldg4Direction.Name" xml:space="preserve">
+    <value>dcBldg4Direction</value>
+  </data>
+  <data name="dcIPEDTSDieback.HeaderText" xml:space="preserve">
+    <value>Tree Stress: Dieback</value>
+  </data>
+  <data name="dcIPEDFTChewFoli.Width" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="&gt;&gt;dcIPEDFTChewFoli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewComboBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dcIPEDFTChewFoli.Name" xml:space="preserve">
+    <value>dcIPEDFTChewFoli</value>
+  </data>
+  <data name="dcIPEDBBNotes.Width" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="dgPlots.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAAAAAAAQAAAAAs=</value>
+  </data>
+  <data name="dcBldg1Direction.Width" type="System.Int32, mscorlib">
+    <value>80</value>
+  </data>
+  <data name="&gt;&gt;dcIPEDFTInsectSigns.Name" xml:space="preserve">
+    <value>dcIPEDFTInsectSigns</value>
+  </data>
+  <data name="&gt;&gt;dcIPEDFTInsectSigns.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewComboBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dcLocNo.HeaderText" xml:space="preserve">
+    <value>Location #</value>
+  </data>
+  <data name="dcCrownLightExposure.HeaderText" xml:space="preserve">
+    <value>Crown: Light Exposure</value>
+  </data>
+  <data name="dcDBH2.Width" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <data name="dcIPEDTSNotes.Width" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="dcDBH1Measured.HeaderText" xml:space="preserve">
+    <value>DBH 1: Measured?</value>
+  </data>
+  <data name="dcComments.Width" type="System.Int32, mscorlib">
+    <value>200</value>
+  </data>
+  <data name="dcDBH2Height.HeaderText" xml:space="preserve">
+    <value>DBH 2: Height</value>
+  </data>
+  <data name="&gt;&gt;dcIPEDBBInsectSigns.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewComboBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dcIPEDBBInsectSigns.Name" xml:space="preserve">
+    <value>dcIPEDBBInsectSigns</value>
+  </data>
+  <data name="dcWireConflict.HeaderText" xml:space="preserve">
+    <value>Utility Conflict</value>
+  </data>
+  <data name="dcIPEDBBInsectPres.Width" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="dcIPEDBBInsectSigns.Width" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="dcDBH1Height.Width" type="System.Int32, mscorlib">
+    <value>85</value>
+  </data>
+  <data name="dgPlots.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;dcBldg2Direction.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree.Controls, Version=1.1.224.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dcBldg2Direction.Name" xml:space="preserve">
+    <value>dcBldg2Direction</value>
+  </data>
+  <data name="dcDBH5.HeaderText" xml:space="preserve">
+    <value>DBH 5</value>
+  </data>
+  <data name="dcBldg4Direction.Width" type="System.Int32, mscorlib">
+    <value>80</value>
+  </data>
+  <data name="dcUserId.HeaderText" xml:space="preserve">
+    <value>User Tree ID</value>
+  </data>
+  <data name="dcDBH3Measured.HeaderText" xml:space="preserve">
+    <value>DBH 3: Measured?</value>
+  </data>
+  <data name="dcCrew.HeaderText" xml:space="preserve">
+    <value>Crew</value>
+  </data>
+  <data name="&gt;&gt;dcDBH2Height.Name" xml:space="preserve">
+    <value>dcDBH2Height</value>
+  </data>
+  <data name="&gt;&gt;dcDBH2Height.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree.Controls, Version=1.1.224.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dcIPEDBBAbnGrowth.Name" xml:space="preserve">
+    <value>dcIPEDBBAbnGrowth</value>
+  </data>
+  <data name="&gt;&gt;dcIPEDBBAbnGrowth.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewComboBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dcFieldOne.Width" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="dcDBH1Height.HeaderText" xml:space="preserve">
+    <value>DBH 1: Height</value>
+  </data>
+  <data name="&gt;&gt;dcIPEDFTNotes.Name" xml:space="preserve">
+    <value>dcIPEDFTNotes</value>
+  </data>
+  <data name="&gt;&gt;dcIPEDFTNotes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dcCrownCondition.HeaderText" xml:space="preserve">
+    <value>Crown: Condition</value>
+  </data>
+  <data name="dcCrownLightExposure.Width" type="System.Int32, mscorlib">
+    <value>102</value>
+  </data>
+  <data name="dcIPEDFTFoliAffect.Width" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="&gt;&gt;dgPlots.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgPlots.Name" xml:space="preserve">
+    <value>dgPlots</value>
+  </data>
+  <data name="dcBldg4Direction.HeaderText" xml:space="preserve">
+    <value>Building 4: Direction</value>
+  </data>
+  <data name="dcIPEDBBProbLoc.HeaderText" xml:space="preserve">
+    <value>Branches/Bole: Problem Location</value>
+  </data>
+  <data name="&gt;&gt;dcAddress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dcAddress.Name" xml:space="preserve">
+    <value>dcAddress</value>
+  </data>
+  <data name="&gt;&gt;dcTreeHeight.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree.Controls, Version=1.1.224.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dcTreeHeight.Name" xml:space="preserve">
+    <value>dcTreeHeight</value>
+  </data>
+  <data name="dcMaintRec.HeaderText" xml:space="preserve">
+    <value>Maintenance Recommended</value>
+  </data>
+  <data name="&gt;&gt;dcCrownPercentMissing.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewComboBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dcCrownPercentMissing.Name" xml:space="preserve">
+    <value>dcCrownPercentMissing</value>
+  </data>
+  <data name="&gt;&gt;dcDBH6Height.Name" xml:space="preserve">
+    <value>dcDBH6Height</value>
+  </data>
+  <data name="&gt;&gt;dcDBH6Height.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree.Controls, Version=1.1.224.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblBreadcrumb.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dcBldg2Distance.Type" xml:space="preserve">
+    <value>DaveyTree.Controls.DataGridViewNumericTextBoxColumn, DaveyTree.Controls, Version=1.1.224.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dcBldg2Distance.Name" xml:space="preserve">
+    <value>dcBldg2Distance</value>
+  </data>
+  <data name="&gt;&gt;dgPlots.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5TaXplRgIAAAAFd2lkdGgGaGVpZ2h0AAALCwIAAAAAAOBAAABwQQs=</value>
+  </data>
+  <data name="dcIPEDTSWiltFoli.HeaderText" xml:space="preserve">
+    <value>Tree Stress: Wilted Foliage</value>
+  </data>
+  <data name="&gt;&gt;lblBreadcrumb.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="dgPlots.Margin" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAABxTeXN0ZW0uV2luZG93cy5Gb3Jtcy5QYWRkaW5nBQAAAARfYWxsBF90b3AFX2xlZnQGX3JpZ2h0B19ib3R0b20AAAAAAAEICAgIAgAAAAACAAAAAwAAAAMAAAACAAAACw==</value>
+  </data>
+  <data name="dcDBH3Height.HeaderText" xml:space="preserve">
+    <value>DBH3 Height</value>
+  </data>
+  <data name="dcIPEDPest.HeaderText" xml:space="preserve">
+    <value>Primary Pest</value>
+  </data>
+  <data name="&gt;&gt;dgPlots.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="dcCrownPercentMissing.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="dcComments.HeaderText" xml:space="preserve">
+    <value>Comments</value>
+  </data>
+  <data name="dcPhoto.HeaderText" xml:space="preserve">
+    <value>Photo ID</value>
+  </data>
+  <data name="dcAddress.HeaderText" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="&gt;&gt;dcIPEDTSDieback.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewComboBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dcIPEDTSDieback.Name" xml:space="preserve">
+    <value>dcIPEDTSDieback</value>
+  </data>
+  <data name="dcCrownPercentMissing.HeaderText" xml:space="preserve">
+    <value>Crown: % Missing</value>
+  </data>
+  <data name="dcSiteType.Width" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="dcCrownBaseHeight.Width" type="System.Int32, mscorlib">
+    <value>105</value>
+  </data>
+  <data name="dcId.HeaderText" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="dgPlots.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAMoDAAAoAgAACw==</value>
+  </data>
+  <data name="dgPlots.Dock" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB5TeXN0ZW0uV2luZG93cy5Gb3Jtcy5Eb2NrU3R5bGUBAAAAB3ZhbHVlX18ACAIAAAAFAAAACw==</value>
+  </data>
+  <data name="&gt;&gt;dcCrownDieback.Name" xml:space="preserve">
+    <value>dcCrownDieback</value>
+  </data>
+  <data name="&gt;&gt;dcCrownDieback.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewComboBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dcIPEDTSHumStress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewComboBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dcIPEDTSHumStress.Name" xml:space="preserve">
+    <value>dcIPEDTSHumStress</value>
+  </data>
+  <data name="dcDBH5.Width" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <data name="&gt;&gt;dcIPEDPest.Name" xml:space="preserve">
+    <value>dcIPEDPest</value>
+  </data>
+  <data name="&gt;&gt;dcIPEDPest.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewComboBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dcSidewalk.HeaderText" xml:space="preserve">
+    <value>Sidewalk Conflict</value>
+  </data>
+  <data name="&gt;&gt;dcIPEDTSWiltFoli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewComboBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dcIPEDTSWiltFoli.Name" xml:space="preserve">
+    <value>dcIPEDTSWiltFoli</value>
+  </data>
+</root>

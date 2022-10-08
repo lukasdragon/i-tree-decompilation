@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Eco.Domain" namespace="Eco.Domain.v5" auto-import="false">
+  <class name="Project" table="`Year`">
+    <composite-id name="CompositeId" class="ProjectId" access="field.camelcase-m-underscore">
+      <key-property name="Location" column="LocationName" access="field.camelcase-m-underscore"/>
+      <key-property name="Series" column="Series" access="field.camelcase-m-underscore"/>
+      <key-property name="Year" column="`Year`" access="field.camelcase-m-underscore"/>
+    </composite-id>
+    <set name="Plots" table="Plots" lazy="true" access="nosetter.camelcase-m-underscore" batch-size="20">
+      <key unique="true">
+        <column name="LocationName" not-null="true" length="50"/>
+        <column name="Series" not-null="true" length="255"/>
+        <column name="`Year`" not-null="true"/>
+      </key>
+      <one-to-many class="Plot"/>
+    </set>
+    <set name="MapLandUses" table="MapLandUseDescriptions" lazy="true" access="nosetter.camelcase-m-underscore">
+      <key unique="true">
+        <column name="LocationName" not-null="true"/>
+        <column name="Series" not-null="true"/>
+        <column name="`Year`" not-null="true"/>
+      </key>
+      <one-to-many class="MapLandUse"/>
+    </set>
+    <set name="CoverTypes" table="CoverTypes" lazy="true" access="nosetter.camelcase-m-underscore">
+      <key unique="true">
+        <column name="LocationName" not-null="true"/>
+        <column name="Series" not-null="true"/>
+        <column name="`Year`" not-null="true"/>
+      </key>
+      <one-to-many class="CoverType"/>
+    </set>
+    <many-to-one name="Series" access="field.camelcase-m-underscore" update="false" insert="false">
+      <column name="LocationName"/>
+      <column name="Series"/>
+    </many-to-one>
+    <property name="Unit" column="Units"/>
+    <property name="IsInitialMeasurement" column="IsInitialMeasure"/>
+    <property name="RecordHydro" column="HydroIncluded"/>
+    <property name="RecordShrub" column="ShrubIncluded"/>
+    <property name="RecordEnergy" column="EnergyIncluded"/>
+    <property name="RecordPlantableSpace" column="PlantableSpaceIncluded"/>
+    <property name="RecordCLE" column="IsCLEPresent"/>
+    <property name="ProgGenVersion" column="ProgGenVersion" />
+    <property name="DataEntrySoftware" column="DataEntrySoftware" />
+    <property name="DataEntryVersion" column="DataEntryVersion" />
+    <property name="RecordIPED" column="IPEDincluded"/>
+    <property name="MobileKey" column="MobileKey"/>
+    <property name="MobileEmail" column="MobileEmail"/>
+    <property name="Comments" column="Comments" />
+    <one-to-one name="Carbon" class="Carbon" property-ref="Project" cascade="merge,save-update,evict"/>
+    <one-to-one name="CO" class="CO" property-ref="Project" cascade="merge,save-update,evict"/>
+    <one-to-one name="Electricity" class="Electricity" property-ref="Project" cascade="merge,save-update,evict"/>
+    <one-to-one name="NO2" class="NO2" property-ref="Project" cascade="merge,save-update,evict"/>
+    <one-to-one name="O3" class="O3" property-ref="Project" cascade="merge,save-update,evict"/>
+    <one-to-one name="PM10" class="PM10" property-ref="Project" cascade="merge,save-update,evict"/>
+    <one-to-one name="PM25" class="PM25" property-ref="Project" cascade="merge,save-update,evict"/>
+    <one-to-one name="SO2" class="SO2" property-ref="Project" cascade="merge,save-update,evict"/>
+    <one-to-one name="Gas" class="Gas" property-ref="Project" cascade="merge,save-update,evict"/>
+    <one-to-one name="H2O" class="H2O" property-ref="Project" cascade="merge,save-update,evict"/>
+    <one-to-one name="ExchangeRate" class="ExchangeRate" property-ref="Project" cascade="merge,save-update,evict"/>
+  </class>
+</hibernate-mapping>

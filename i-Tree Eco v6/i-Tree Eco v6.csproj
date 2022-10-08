@@ -1,0 +1,731 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Program Files (x86)\i-Tree\EcoV6\i-Tree Eco v6.x64.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D7D4B78D-B632-4992-85CC-4EC466605504}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>i-Tree Eco v6.x64</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <ApplicationVersion>6.0.29.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BigRationalLibrary">
+      <HintPath>lib\BigRationalLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.C1Report.4">
+      <HintPath>lib\C1.C1Report.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.C1Zip.4">
+      <HintPath>lib\C1.C1Zip.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Chart.4">
+      <HintPath>lib\C1.Win.C1Chart.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexDataTree">
+      <HintPath>lib\C1.Win.C1FlexDataTree.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid.4">
+      <HintPath>lib\C1.Win.C1FlexGrid.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Report.4">
+      <HintPath>lib\C1.Win.C1Report.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Ribbon.4">
+      <HintPath>lib\C1.Win.C1Ribbon.4.dll</HintPath>
+    </Reference>
+    <Reference Include="CefSharp">
+      <HintPath>lib\CefSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="CefSharp.Core">
+      <HintPath>lib\CefSharp.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="CefSharp.WinForms">
+      <HintPath>lib\CefSharp.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="CsvHelper">
+      <HintPath>lib\CsvHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="DaveyTree.Controls">
+      <HintPath>lib\DaveyTree.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="DaveyTree.Core">
+      <HintPath>lib\DaveyTree.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DaveyTree.Drawing">
+      <HintPath>lib\DaveyTree.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="DaveyTree.IO">
+      <HintPath>lib\DaveyTree.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="DaveyTree.NHibernate">
+      <HintPath>lib\DaveyTree.NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="DaveyTree.Net">
+      <HintPath>lib\DaveyTree.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="DaveyTree.Threading">
+      <HintPath>lib\DaveyTree.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="Eco Util">
+      <HintPath>lib\Eco Util.dll</HintPath>
+    </Reference>
+    <Reference Include="Eco.Domain">
+      <HintPath>lib\Eco.Domain.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>lib\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="IPED.Domain">
+      <HintPath>lib\IPED.Domain.dll</HintPath>
+    </Reference>
+    <Reference Include="LocationSpecies.Domain">
+      <HintPath>lib\LocationSpecies.Domain.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>lib\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpKml">
+      <HintPath>lib\SharpKml.dll</HintPath>
+    </Reference>
+    <Reference Include="SqlWeb.Data">
+      <HintPath>lib\SqlWeb.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>lib\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Device" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.ValueTuple">
+      <HintPath>lib\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TreeEnergy">
+      <HintPath>lib\TreeEnergy.dll</HintPath>
+    </Reference>
+    <Reference Include="UFORE">
+      <HintPath>lib\UFORE.dll</HintPath>
+    </Reference>
+    <Reference Include="UFOREWrapper">
+      <HintPath>lib\UFOREWrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking">
+      <HintPath>lib\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="adblib">
+      <HintPath>lib\adblib.dll</HintPath>
+    </Reference>
+    <Reference Include="mdblib">
+      <HintPath>lib\mdblib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IBindable.cs" />
+    <Compile Include="BindingFor.cs" />
+    <Compile Include="DataBinding.cs" />
+    <Compile Include="Misc.cs" />
+    <Compile Include="ReportException.cs" />
+    <Compile Include="ReportGenerator.cs" />
+    <Compile Include="EcoIpedReportGenerator\COutput.cs" />
+    <Compile Include="EcoIpedReportGenerator\GridInfo.cs" />
+    <Compile Include="EcoIpedReportGenerator\FlexGridReport.cs" />
+    <Compile Include="EcoIpedReportGenerator\PestStats.cs" />
+    <Compile Include="EcoIpedReportGenerator\IPEDInfo.cs" />
+    <Compile Include="EcoIpedReportGenerator\HitMiss.cs" />
+    <Compile Include="EcoIpedReportGenerator\PestData.cs" />
+    <Compile Include="EcoIpedReportGenerator\PestReviewRG.cs" />
+    <Compile Include="EcoIpedReportGenerator\PestSignAndSymptomOverviewBySpeciesRG.cs" />
+    <Compile Include="EcoIpedReportGenerator\PestSignSymptomDetailsByStratumRG.cs" />
+    <Compile Include="EcoIpedReportGenerator\PestSignSymptomDetailsCompletebySpeciesRG.cs" />
+    <Compile Include="EcoIpedReportGenerator\PestSignSymptomDetailsSummarybyLandusesRG.cs" />
+    <Compile Include="EcoIpedReportGenerator\PestSignSymptomDetailsSummarybySpeciesRG.cs" />
+    <Compile Include="EcoIpedReportGenerator\PestSignSymptomOverviewbyLandusesRG.cs" />
+    <Compile Include="EcoIpedReportGenerator\PestSSReviewRG.cs" />
+    <Compile Include="EcoIpedReportGenerator\PrimaryPestDetailsForLandusesRG.cs" />
+    <Compile Include="EcoIpedReportGenerator\PrimaryPestSummaryByLanduseRG.cs" />
+    <Compile Include="EcoIpedReportGenerator\IPEDReports.cs" />
+    <Compile Include="EcoIpedReportGenerator\RgControl.cs" />
+    <Compile Include="EcoIpedReportGenerator\staticData.cs" />
+    <Compile Include="i_Tree_Eco_v6\LocalizedDescriptionAttribute.cs" />
+    <Compile Include="i_Tree_Eco_v6\SystemComponents.cs" />
+    <Compile Include="i_Tree_Eco_v6\PollutantEnum.cs" />
+    <Compile Include="i_Tree_Eco_v6\SpeciesDisplayEnum.cs" />
+    <Compile Include="i_Tree_Eco_v6\UnitStandardEnum.cs" />
+    <Compile Include="i_Tree_Eco_v6\EventPublisher.cs" />
+    <Compile Include="i_Tree_Eco_v6\PlotEventArgs.cs" />
+    <Compile Include="i_Tree_Eco_v6\YearEventArgs.cs" />
+    <Compile Include="i_Tree_Eco_v6\FetchException.cs" />
+    <Compile Include="i_Tree_Eco_v6\UploadException.cs" />
+    <Compile Include="i_Tree_Eco_v6\ProcessingException.cs" />
+    <Compile Include="i_Tree_Eco_v6\VersionException.cs" />
+    <Compile Include="i_Tree_Eco_v6\IPEDData.cs" />
+    <Compile Include="i_Tree_Eco_v6\Program.cs" />
+    <Compile Include="i_Tree_Eco_v6\ProgramSession.cs" />
+    <Compile Include="i_Tree_Eco_v6\WeatherStationValidator.cs" />
+    <Compile Include="i_Tree_Eco_v6\WizardSettingsRow.cs" />
+    <Compile Include="i_Tree_Eco_v6\Tasks\DataBindingListResult`1.cs" />
+    <Compile Include="i_Tree_Eco_v6\Tasks\ListEntitiesTask`1.cs" />
+    <Compile Include="i_Tree_Eco_v6\Tasks\ListResult`1.cs" />
+    <Compile Include="i_Tree_Eco_v6\Tasks\UpdateDatabaseException.cs" />
+    <Compile Include="i_Tree_Eco_v6\Tasks\UpdateDatabaseTask.cs" />
+    <Compile Include="i_Tree_Eco_v6\Tasks\UpdateV5DatabaseTask.cs" />
+    <Compile Include="i_Tree_Eco_v6\Tasks\UpdateV6DatabaseTask.cs" />
+    <Compile Include="i_Tree_Eco_v6\Resources\Strings.cs" />
+    <Compile Include="i_Tree_Eco_v6\Properties\Resources.cs" />
+    <Compile Include="i_Tree_Eco_v6\Properties\Settings.cs" />
+    <Compile Include="i_Tree_Eco_v6\Interfaces\IActionable.cs" />
+    <Compile Include="i_Tree_Eco_v6\Interfaces\IExportable.cs" />
+    <Compile Include="i_Tree_Eco_v6\Interfaces\IImport.cs" />
+    <Compile Include="i_Tree_Eco_v6\Interfaces\IPlotContent.cs" />
+    <Compile Include="i_Tree_Eco_v6\Events\EntityEventArgs.cs" />
+    <Compile Include="i_Tree_Eco_v6\Events\EntityUpdated`1.cs" />
+    <Compile Include="i_Tree_Eco_v6\Events\EntityDeleted`1.cs" />
+    <Compile Include="i_Tree_Eco_v6\Events\EntityCreated`1.cs" />
+    <Compile Include="i_Tree_Eco_v6\Events\ShowHelpEventArgs.cs" />
+    <Compile Include="i_Tree_Eco_v6\Enums\AbbreviationsEnum.cs" />
+    <Compile Include="i_Tree_Eco_v6\Enums\ExportFormat.cs" />
+    <Compile Include="i_Tree_Eco_v6\Enums\PlotImportActionEnum.cs" />
+    <Compile Include="i_Tree_Eco_v6\Enums\ReportDataRangeEnum.cs" />
+    <Compile Include="i_Tree_Eco_v6\Enums\UserActions.cs" />
+    <Compile Include="i_Tree_Eco_v6\Engine\Species.cs" />
+    <Compile Include="i_Tree_Eco_v6\Engine\Pest.cs" />
+    <Compile Include="i_Tree_Eco_v6\Engine\Stratum.cs" />
+    <Compile Include="i_Tree_Eco_v6\Engine\StratumGenus.cs" />
+    <Compile Include="i_Tree_Eco_v6\Engine\EngineModel.cs" />
+    <Compile Include="i_Tree_Eco_v6\Engine\EngineModelRes.cs" />
+    <Compile Include="i_Tree_Eco_v6\Engine\frmEngineProgress.cs" />
+    <Compile Include="i_Tree_Eco_v6\Energy\EnergyBuildingView.cs" />
+    <Compile Include="i_Tree_Eco_v6\Energy\EnergyTreeView.cs" />
+    <Compile Include="i_Tree_Eco_v6\SAS\SelectSpecies.cs" />
+    <Compile Include="i_Tree_Eco_v6\SAS\SynonymOrCultivarForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\SAS\frmDataValidationSignal.cs" />
+    <Compile Include="i_Tree_Eco_v6\SAS\frmRetrieveFromSAS.cs" />
+    <Compile Include="i_Tree_Eco_v6\SAS\frmSendToSAS.cs" />
+    <Compile Include="i_Tree_Eco_v6\SAS\SASException.cs" />
+    <Compile Include="i_Tree_Eco_v6\SAS\FIA_FutureIndividualTreeCharacters.cs" />
+    <Compile Include="i_Tree_Eco_v6\SAS\FileNameTimeStamp.cs" />
+    <Compile Include="i_Tree_Eco_v6\SAS\SASDictionary`2.cs" />
+    <Compile Include="i_Tree_Eco_v6\SAS\LineValues.cs" />
+    <Compile Include="i_Tree_Eco_v6\SAS\StratumSAS.cs" />
+    <Compile Include="i_Tree_Eco_v6\SAS\StratumGenusSAS.cs" />
+    <Compile Include="i_Tree_Eco_v6\SAS\treeTxtRow.cs" />
+    <Compile Include="i_Tree_Eco_v6\SAS\SASTransaction.cs" />
+    <Compile Include="i_Tree_Eco_v6\SAS\SASProcessor.cs" />
+    <Compile Include="i_Tree_Eco_v6\SAS\SASResources.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\AirQualityHealthImpactsAndValuesbyTreesAndShrubs.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\LeafNutrientsOfTreesBySpecies.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\LeafAreaAndBiomassBase.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\LeafAreaByStrataBase.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\PestSignSymptomDetailsBySpeciesBindings.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\PollutionStations.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\IndividualTreeWoodProducts.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\StructureSummaryBase.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\SpeciesAllergyIndexByStratum.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\AirQualityHealthImpactsAndValuesBase.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\AirQualityHealthImpactsAndValuesbyGrass.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\AirQualityHealthImpactsAndValuesbyShrubs.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\AirQualityHealthImpactsAndValuesbyTrees.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\AirQualityHealthImpactsAndValuesCombined.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\BaseForecastReport.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\BenefitsSummaryBase.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\BenefitsSummaryBySpecies.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\BenefitsSummaryByStrataSpecies.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\BioemissionsOfTreesBySpecies.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\BioemissionsOfTreesByStrata.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\CarbonSequestrationBySpecies.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\CarbonSequestrationByStrata.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\CarbonSequestrationByStrataPerUnitArea.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\CarbonStorageOfTreesBySpecies.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\CarbonStorageOfTreesByStrata.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\CarbonStorageOfTreesByStrataPerUnitArea.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\IndividualTreeCarbonBase.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\IndividualTreeCarbonSequestration.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\IndividualTreeCarbonStorage.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\FoodscapeBenefitsOfTreesBySpecies.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\PollutantRemovalMonthlybyGrassChart.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\PollutantRemovalMonthlybyTreesAndShrubsChart.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\PollutantRemovalMonthlyChartBase.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\ColumnFormat.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\DataScaler.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\TreeConditionBySpecies.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\TreeConditionByStrataSpecies.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\TreeConditionBySpeciesCustom.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\TreeConditionByStratumAndSpeciesCustom.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\TreeConditionBase.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\TreeConditionByStratumBase.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\EnergyEffectsOfTrees.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\ErrorReport.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\ForecastAreaLeafBiomass.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\ForecastAreaLeafBiomassByStrata.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\ForecastBasalArea.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\ForecastBasalAreaByStrata.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\ForecastCarbonSequestration.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\ForecastCarbonSequestrationByStrata.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\ForecastCarbonStorage.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\ForecastCarbonStorageByStrata.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\ForecastDbhDistrib.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\ForecastDbhGrowth.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\ForecastDbhGrowthByStrata.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\ForecastLeafArea.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\ForecastLeafAreaByStrata.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\ForecastLeafAreaIndex.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\ForecastLeafAreaIndexByStrata.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\ForecastLeafBiomass.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\ForecastLeafBiomassByStrata.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\ForecastNumTrees.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\ForecastNumTreesByStrata.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\ForecastPctCover.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\ForecastPctCoverByStrata.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\ForecastPollutantRemovalPM.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\ForecastPollutantRemovalPM10.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\ForecastPollutantRemovalSO2.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\ForecastPollutantRemovalO3.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\ForecastPollutantRemovalNO2.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\ForecastPollutantRemovalCO.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\ForecastPollutantRemovalAll.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\ForecastPollutantRemoval.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\Conversions.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\ForecastReport.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\ForecastSimpleReport.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\ForecastStrataReport.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\ForecastSummary.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\ForecastTreeBiomass.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\ForecastTreeBiomassByStrata.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\ForecastTreeCoverArea.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\ForecastTreeCoverAreaByStrata.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\HydrologyEffectsOfTreesByStratum.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\HydrologyEffects.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\HydrologyEffectsOfTreesBySpecies.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\IndividualTreeAvoidedRunoff.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\IndividualTreeBenefitsSummary.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\IndividualTreeBioemissions.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\IndividualTreeCharacteristics.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\IndividualTreeEnergyAvoidedPollutant.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\IndividualTreeEnergyAvoidedPollutants.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\IndividualTreeEnergyBase.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\IndividualTreeEnergyEffect.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\IndividualTreeEnergyEffectsAgregateValues.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\IndividualTreeEnergyEffects.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\IndividualTreeEnergyFieldsBase.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\IndividualTreeOxygenProduction.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\IndividualTreePollutionEffects.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\IPEDReportForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\IReport.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\LandUseCompositionByStrata.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\LeafAreaAndBiomassForShrubsByStrata.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\LeafAreaAndBiomassForTreesAndShrubsByStrata.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\LeafAreaByStrata.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\LeafAreaByStrataPerUnitArea.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\LookupReport`1.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\InvMaintRecLookupReport.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\MaintRecTotalsLookupReport.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\MaintRecLookupReport.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\InvMaintTaskLookupReport.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\MaintTaskTotalsLookupReport.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\MaintTaskLookupReport.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\InvSidewalkLookupReport.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\SidewalkTotalsLookupReport.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\SidewalkLookupReport.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\InvWireConflictLookupReport.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\WireConflictTotalsLookupReport.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\WireConflictLookupReport.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\InvOtherOneLookupReport.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\OtherOneTotalsLookupReport.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\OtherOneLookupReport.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\InvOtherTwoLookupReport.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\OtherTwoTotalsLookupReport.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\OtherTwoLookupReport.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\InvOtherThreeLookupReport.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\OtherThreeTotalsLookupReport.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\OtherThreeLookupReport.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\ManagementCosts.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\MeasuredTreeDetailsBySpecies.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\MeasuredTreeDetailsByStrata.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\CommentsBase.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\AllPlots.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\PlotComments.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\PlotCommon.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\ShrubComments.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\TreeComments.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\ModelProcessingNotes.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\MostImportantTreeSpecies.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\NativeStatusByStrata.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\NetAnnualBenefits.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\NetCarbonSequestrationBySpecies.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\NetCarbonSequestrationByStrata.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\NetCarbonSequestrationByStrataPerUnitArea.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\OxygenProductionOfTreesBase.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\OxygenProductionOfTreesByStrata.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\OxygenProductionOfTreesByStrataPerUnitArea.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\PercentGroundCoverByStrata.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\PestSignAndSymptomOverviewBySpeciesInventory.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\PestSignAndSymptomOverviewBySpeciesSample.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\PestSignSymptomDetailsByStratum.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\PestSignSymptomDetailsCompletebySpeciesInventory.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\PestSignSymptomDetailsCompletebySpeciesSample.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\PestSignSymptomDetailsSummarybyLanduses.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\PestSignSymptomDetailsSummarybySpeciesInventory.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\PestSignSymptomDetailsSummarybySpeciesSample.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\PestSignSymptomOverviewbyLanduses.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\PrimaryPestImpactsByStrata.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\SusceptibilityOfTreesToPestsByStrata.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\PollutantRemovalMonthlyBase.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\PollutantRemovalMonthlybyGrass.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\PollutantRemovalMonthlybyTreesAndShrubs.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\PopulationSummaryBySpecies.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\PopulationSummaryByStrata.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\PopulationSummaryByStrataPerUnitArea.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\ProjectMetadata.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\PublicPrivate.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\PublicPrivateStats.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\RelativePerformanceIndex.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\RelativePerformanceIndexData.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\Report.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\Report`1.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\BasicReport.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\DatabaseReport.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\ReportBase.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\ReportExportHelper.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\ReportExportItem.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\ReportUtil.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\SpeciesCompositionByDBH.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\SpeciesCompositionByDBHByStrata.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\SpeciesCompositionByDBHByStrataHorizontal.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\SpeciesCompositionByDBHHorizontal.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\SpieciesDistributionBase.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\SpeciesDistributionByDBHClassChart.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\SpeciesRichnessShannonWienerDiversityIndexByStrata.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\SpeciesTotal.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\StreetTrees.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\StructureSummaryBySpecies.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\StructureSummaryByStrataSpecies.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\TreeStats.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\UnitsHelper.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\UVEffectsOfTreesByStrata.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\WeatherReport.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\WeatherChart.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\WildLifeSuitabilityBase.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\PlotWildLifeSuitability.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\StrataWildLifeSuitability.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\PlotInfo.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\WildLifeBase.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\WildLifeSuitability.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\WildLifeSuitabilityByPlots.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\WildLifeSuitabilityByStrata.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\EnergyUsage.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\GroundCoverPercent.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\InvasiveSpecies.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\LanduseLeafArea.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\PestAffected.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\SpeciesOxygenProduction.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\WrittenReport.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\ImportanceValueSpecies.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\ImportanceValueSpeciesSorter.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\LeafAreaSpeciesSorterDescending.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\ReverseComparer`1.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\WR_Pest.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\Chart\DateValueChart.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\Chart\HourlyHydroResults.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\Chart\TranspirationByTree.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\Chart\TranspirationByShrub.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\Chart\EvaporationByTrees.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\Chart\EvaporationByShrubs.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\Chart\WaterInterceptionByTrees.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\Chart\WaterInterceptionByShrubs.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\Chart\AvoidedRunoffByTrees.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\Chart\AvoidedRunoffByShrubs.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\Chart\PotentialEvaporationByTrees.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\Chart\PotentialEvaporationByShrubs.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\Chart\SimpleDateValueChart.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\Chart\UVIndex.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\Chart\HourlyVOCResults.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\Chart\IsopreneResults.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\Chart\IsopreneByTrees.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\Chart\IsopreneByShrubs.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\Chart\MonoterpeneResults.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\Chart\MonoterpeneByTrees.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\Chart\MonoterpeneByShrubs.cs" />
+    <Compile Include="i_Tree_Eco_v6\Reports\Chart\VOCDateValueChart.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\DataContentForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\GroundCoversDataForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\HighDpiHelper.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\ITreeMethodsForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\LandUsesDataForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\ReferenceObjectsForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\ComboBoxItem.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\AboutForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\AnnualCostsForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\BenefitPricesForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\CurrencyRates.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\ChangelogForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\ChartViewerForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\ChartViewerFormForVOC.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\ConditionBase.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\OrCondition.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\AndCondition.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\NotCondition.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\ConditionsForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\ContentForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\ProjectContentForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\ReportContentForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\ForecastContentForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\ViewContentForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\ConvertProjectForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\CustomWebBrowserForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\DBHRptClassesForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\DBHsForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\DefinePlotsFileForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\DefinePlotsManuallyForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\DefinePlotsViaGoogleMapsForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\DeleteStrataForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\DiebacksForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\DisabledReport.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\DownloadHandler.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\EulaForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\ExistingPlotsForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\FeedbackForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\ForecastBasicForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\ForecastMortalityForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\ForecastPestForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\ForecastRenameForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\ForecastReplantingForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\ForecastReportForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\ForecastSummaryForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\ForecastWeatherForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\GroundCoversForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\HealthRptClassesForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\HelpForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\ImportDataForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\InventoryTreesForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\LandUsesForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\LifeSpanHandler.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\LoggedErrorForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\LookupBaseForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\LookupForm`1.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\MainRibbonForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\MapForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\MobileForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\MobileResetPasswordForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\MobileRetrieveDataForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\MobileSubmitInventoryForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\MobileSubmitSampleForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\NewProjectType.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\OpenSampleProject.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\PaperForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\PlantingSitesForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\PlantingSiteTypesForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\PlotContentForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\PlotGroundCoversForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\PlotLandUsesForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\PlotPlantingSitesForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\PlotReferenceObjectsForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\PlotsContentForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\PlotsForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\PlotShrubsForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\PlotTreesForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\ProcessingForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\ProjectOverviewForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\ProjectUpdateForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\PropertyEqCondition`1.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\PropertyNotNullCondition`1.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\ReferencesForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\ReinventoryDestinationForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\ReinventoryWizard.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\ReportCondition.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\ReportExportForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\ReportExportMenuCategory.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\ReportOptions.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\ReportProgress.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\ReportViewerForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\ResolveConflictForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\SampleTreesForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\ShowAvailableReports.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\ShrubsForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\SimpleChartViewerForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\SpeciesCodesForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\SpeciesListForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\SplashForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\StrataForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\StreetsForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\TabSplash.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\UserForumForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\InstallingEcoGuideForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\DataLimitationsGuideForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\ExampleProjectsGuideForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\FieldManualGuideForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\InternationalProjectsGuideForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\CollectingCoordinateDataGuideForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\PoststratifiedSamplesGuideFrom.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\PrestratifiedSamplesGuideForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\StratifyingInventoryGuideForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\UnstratifiedSamplesGuideForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\UsingForecastGuideForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\Differences_v5v6GuideForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\InventoryImporterGuideForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\UserManualForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\ValidationHelper.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\UVChartViewerForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\VideoLearningForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\VisitWebsiteForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\WeatherStationSelectorForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\WhatsNewEmbeddedForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\WhatsNewForm.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\Resources\ApplicationHelp.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\Resources\EcoCacheRes.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\Resources\ForecastRes.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\Resources\TabPageSplashImageRes.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\Resources\TabPageSplashTextRes.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\Resources\UserGuideRes.cs" />
+    <Compile Include="i_Tree_Eco_v6\Forms\Resources\WizardHelp.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="EcoIpedReportGenerator\RgControl.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Engine\EngineModelRes.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Engine\frmEngineProgress.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\AboutForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\AnnualCostsForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\BenefitPricesForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\ChartViewerForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\ChartViewerFormForVOC.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\ConditionsForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\ContentForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\ConvertProjectForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\CustomWebBrowserForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\DataContentForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\DBHRptClassesForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\DBHsForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\DefinePlotsFileForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\DefinePlotsManuallyForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\DefinePlotsViaGoogleMapsForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\DeleteStrataForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\DiebacksForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\EulaForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\ExistingPlotsForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\FeedbackForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\ForecastBasicForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\ForecastMortalityForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\ForecastPestForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\ForecastRenameForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\ForecastReplantingForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\ForecastSummaryForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\ForecastWeatherForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\GroundCoversDataForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\GroundCoversForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\HealthRptClassesForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\HelpForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\ImportDataForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\InventoryTreesForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\LandUsesDataForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\LandUsesForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\LoggedErrorForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\LookupBaseForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\LookupForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\MainRibbonForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\MapForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\MobileForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\MobileResetPasswordForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\MobileRetrieveDataForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\MobileSubmitInventoryForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\MobileSubmitSampleForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\NewProjectType.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\OpenSampleProject.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\PaperForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\PlantingSitesForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\PlantingSiteTypesForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\PlotContentForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\PlotGroundCoversForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\PlotLandUsesForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\PlotPlantingSitesForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\PlotReferenceObjectsForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\PlotsContentForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\PlotsForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\PlotShrubsForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\PlotTreesForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\ProcessingForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\ProjectOverviewForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\ProjectUpdateForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\ReferenceObjectsForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\ReferencesForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\ReinventoryDestinationForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\ReinventoryWizard.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\ReportExportForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\ReportExportMenuCategory.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\ReportProgress.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\ReportViewerForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\ResolveConflictForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\Resources\ApplicationHelp.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\Resources\EcoCacheRes.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\Resources\ForecastRes.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\Resources\TabPageSplashImageRes.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\Resources\TabPageSplashTextRes.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\Resources\UserGuideRes.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\Resources\WizardHelp.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\SampleTreesForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\ShowAvailableReports.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\ShrubsForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\SimpleChartViewerForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\SpeciesCodesForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\SpeciesListForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\SplashForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\StrataForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\StreetsForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\TabSplash.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\UserForumForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\UserManualForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\UVChartViewerForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\VideoLearningForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\VisitWebsiteForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\WeatherStationSelectorForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\WhatsNewEmbeddedForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Forms\WhatsNewForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\LocationSpecies\cfg.xml" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Pest\cfg.xml" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Properties\Resources.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Reports\IPEDReportForm.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Reports\PestReferences.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Reports\StateInvasivesReferences.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Reports\WeatherChart.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\Resources\Strings.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\SAS\frmDataValidationSignal.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\SAS\frmRetrieveFromSAS.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\SAS\frmSendToSAS.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\SAS\SASResources.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\SAS\SelectSpecies.resx" />
+    <EmbeddedResource Include="i_Tree_Eco_v6\SAS\SynonymOrCultivarForm.resx" />
+    <EmbeddedResource Include="i-Tree Eco v6\x64\exe.licenses" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Eco.Domain" namespace="Eco.Domain.v6">
+  <class name="Stem" table="EcoStems" dynamic-update="true">
+    <cache usage="read-write"/>
+    <id name="Guid" column="StemKey">
+      <generator class="guid"/>
+    </id>
+    <natural-id mutable="true">
+      <many-to-one name="Tree" column="TreeKey" not-null="true"/>
+      <property name="Id" column="StemId" not-null="true"/>
+    </natural-id>
+    <version name="Revision" column="Revision" unsaved-value="0"/>
+    <property name="Diameter" column="Diameter"/>
+    <property name="DiameterHeight" column="DiameterHeight"/>
+    <property name="Measured" column="WasMeasured"/>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,30 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: Eco.Domain.v5.LocationId
+// Assembly: Eco.Domain, Version=10.0.17.6714, Culture=neutral, PublicKeyToken=null
+// MVID: 01C26179-0456-4F8E-BC0F-741F177F6574
+// Assembly location: C:\Program Files (x86)\i-Tree\EcoV6\Eco.Domain.dll
+
+namespace Eco.Domain.v5
+{
+  public class LocationId
+  {
+    private string m_location;
+
+    public LocationId()
+    {
+    }
+
+    public LocationId(string location) => this.m_location = location;
+
+    public virtual string Location => this.m_location;
+
+    public override bool Equals(object obj)
+    {
+      if (this == obj)
+        return true;
+      return obj is LocationId locationId && this.Location == locationId.Location;
+    }
+
+    public override int GetHashCode() => 5 * this.Location.GetHashCode();
+  }
+}

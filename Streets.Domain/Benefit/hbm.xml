@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Streets.Domain" namespace="Streets.Domain" auto-import="false">
+  <class name="Benefit" table="STRATUM_Benefits">
+    <id name="Id" column="ProjectId">
+      <generator class="foreign">
+        <param name="property">Project</param>
+      </generator>
+    </id>
+    <one-to-one name="Project" class="Project" constrained="true"/>
+    <component name="ElementPrice">
+      <property name="CO2" column="CO2Price" not-null="false"/>
+      <property name="Electricity" column="ElectricityPrice" not-null="false"/>
+      <property name="H2O" column="H2OPrice" not-null="false"/>
+      <property name="Home" column="HomePrice" not-null="false"/>
+      <property name="Gas" column="NaturalGasPrice" not-null="false"/>
+      <property name="NO2" column="NO2Price" not-null="false"/>
+      <property name="O3" column="O3Price" not-null="false"/>
+      <property name="PM10" column="PM10Price" not-null="false"/>
+      <property name="SO2" column="SO2Price" not-null="false"/>
+      <property name="VOC" column="VOCPrice" not-null="false"/>
+    </component>
+    <property name="PropertyReductionFactor" column="PropertyReductionFactor" not-null="false" />
+    <property name="AvgLargeLeafArea" column="AvgLargeLeafArea" not-null="false" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,546 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="Eco.Domain.v6" assembly="Eco.Domain" auto-import="false">
+    
+  <!-- Access database: export section -->
+  <sql-query name="dropTableReOrderIDTable">
+    <![CDATA[
+        DROP TABLE ReOrderIDTable
+		]]>
+  </sql-query>
+  <sql-query name="createTableReOrderIDTable">
+    <![CDATA[
+        CREATE TABLE [ReOrderIDTable] ( 
+            [GuidKey] GUID NOT NULL,
+            [PlotID] LONG,
+            [OldID] LONG,
+            [NewID] AUTOINCREMENT PRIMARY KEY,
+            [TorS] LONG 
+            )
+		]]>
+  </sql-query>
+  <sql-query name="populateTreeIDsInReOrderIDTable">
+    <![CDATA[
+        INSERT INTO ReOrderIDTable(GuidKey, PlotId, OldID, TorS) 
+            SELECT EcoTrees.TreeKey, EcoPlots.PlotId, EcoTrees.TreeId, 1 AS Expr1
+            FROM EcoPlots INNER JOIN EcoTrees ON EcoPlots.PlotKey = EcoTrees.PlotKey
+            WHERE EcoPlots.YearKey= :yearGuid AND EcoPlots.IsComplete=true
+            ORDER BY EcoPlots.PlotId, EcoTrees.TreeId
+		]]>
+  </sql-query>
+  <sql-query name="updateTreeIDsInEcoTrees">
+    <![CDATA[
+        UPDATE EcoTrees INNER JOIN ReOrderIDTable ON EcoTrees.TreeKey = ReOrderIDTable.GuidKey
+            SET EcoTrees.TreeId = ReOrderIDTable.NewID + :maxId
+            WHERE ReOrderIDTable.TorS=1
+		]]>
+  </sql-query>
+  <sql-query name="reduceMaxIdOfTreeIDsInEcoTrees">
+    <![CDATA[
+        UPDATE EcoPlots INNER JOIN EcoTrees ON EcoPlots.PlotKey = EcoTrees.PlotKey SET
+          EcoTrees.TreeId = EcoTrees.TreeId- :maxId 
+          WHERE EcoPlots.Yearkey= :yearGuid AND EcoPlots.IsComplete=true
+		]]>
+  </sql-query>
+  <sql-query name="populateShrubIDsInReOrderIDTable">
+    <![CDATA[
+        INSERT INTO ReOrderIDTable (GuidKey, PlotId, OldID, TorS )
+          SELECT EcoShrubs.ShrubKey, EcoPlots.PlotId, EcoShrubs.ShrubId, 0 AS Expr1
+          FROM EcoPlots INNER JOIN EcoShrubs ON EcoPlots.PlotKey = EcoShrubs.PlotKey
+          WHERE EcoPlots.YearKey= :yearGuid AND EcoPlots.IsComplete=true
+          ORDER BY EcoPlots.PlotId, EcoShrubs.ShrubId
+		]]>
+  </sql-query>
+  <sql-query name="updateShrubIDsInEcoTrees">
+    <![CDATA[
+        UPDATE EcoShrubs INNER JOIN ReOrderIDTable ON EcoShrubs.ShrubKey = ReOrderIDTable.GuidKey
+          SET EcoShrubs.ShrubId = ReOrderIDTable.NewID + :maxId
+            WHERE ReOrderIDTable.TorS=0
+		]]>
+  </sql-query>
+  <sql-query name="reduceMaxIdOfShrubIDsInEcoTrees">
+    <![CDATA[
+        UPDATE EcoPlots INNER JOIN EcoShrubs ON EcoPlots.PlotKey = EcoShrubs.PlotKey SET 
+          EcoShrubs.ShrubId = EcoShrubs.ShrubId- :maxId 
+          WHERE EcoPlots.Yearkey= :yearGuid AND EcoPlots.IsComplete=true
+		]]>
+  </sql-query>
+  <sql-query name="selectAllFromReOrderIDTable">
+    <return-scalar column="GuidKey" type="Guid"/>
+    <return-scalar column="PlotId" type="Int32"/>
+    <return-scalar column="OldId" type="Int32"/>
+    <return-scalar column="NewId" type="Int32"/>
+    <return-scalar column="TorS" type="Int32"/>
+    <![CDATA[
+        Select GuidKey, PlotId, OldId, NewId,TorS from ReOrderIDTable Order by NewID     
+		]]>
+  </sql-query>
+
+  <sql-query name="getPlotsWithoutTrees">
+    <return-scalar column="PlotKey" type="Guid"/>
+    <![CDATA[
+        SELECT EcoPlots.PlotKey 
+          FROM EcoPlots LEFT JOIN EcoTrees ON EcoPlots.PlotKey = EcoTrees.PlotKey 
+          WHERE EcoPlots.YearKey=:YearKey AND EcoTrees.TreeId IS Null
+		]]>
+  </sql-query>
+  <sql-query name="removePlots">
+    <![CDATA[
+        DELETE FROM EcoPlots 
+          WHERE PlotKey = :PlotKey 
+		]]>
+  </sql-query>
+
+  <sql-query name="setIsCompleteToTrueInEcoPlots">
+    <![CDATA[
+        UPDATE EcoPlots SET IsComplete = true
+          WHERE YearKey= :yearGuid AND IsComplete <> true
+		]]>
+  </sql-query>
+
+  <sql-query name="updatePlotSize">
+    <![CDATA[
+        Update EcoPlots Set PlotSize= :plotSize,PercentMeasured=100, PercentTreeCover=100, PercentShrubCover=0
+          WHERE YearKey= :yearGuid
+		]]>
+  </sql-query>
+
+  <sql-query name="updateSingleStrataSize">
+    <![CDATA[
+        Update EcoStrata Set [Size] = :sumPlotSize Where StrataKey = :strataGuid
+		]]>
+  </sql-query>
+
+  <sql-query name="removeStrataWithoutPlots">
+    <![CDATA[
+        DELETE FROM EcoStrata WHERE YearKey = :yearGuid AND StrataKey NOT IN (SELECT DISTINCT  StrataKey FROM EcoPlots WHERE YearKey = :yearGuid)
+		]]>
+  </sql-query>
+
+  <sql-query name="removeIncompletePlots">
+    <![CDATA[
+        DELETE FROM EcoPlots WHERE YearKey= :yearGuid and IsComplete = false
+		]]>
+  </sql-query>
+
+  <sql-query name="updateInvalidPercentsInEcoPlots">
+    <![CDATA[
+        UPDATE EcoPlots SET PercentTreeCover=iif(PercentTreeCover<0,0,PercentTreeCover), PercentShrubCover=iif(PercentShrubCover<0,0,PercentShrubCover), PercentPlantable=iif(PercentPlantable<0,0,PercentPlantable)
+          WHERE YearKey= :yearGuid and IsComplete = true
+		]]>
+  </sql-query>
+
+  <sql-query name="updateInvalidBuildingAngle">
+    <![CDATA[
+        UPDATE EcoPlots INNER JOIN (EcoTrees INNER JOIN EcoBuildings ON EcoTrees.TreeKey = EcoBuildings.TreeKey) ON EcoPlots.PlotKey = EcoTrees.PlotKey 
+          SET EcoBuildings.DirectiontoBuilding = EcoBuildings.DirectiontoBuilding + 360
+          WHERE EcoPlots.YearKey = :yearGuid AND EcoBuildings.DirectiontoBuilding<=0;
+		]]>
+  </sql-query>
+
+  <sql-query name="updateMissingParameters">
+    <![CDATA[
+        UPDATE EcoTrees INNER JOIN EcoPLots ON EcoTrees.PlotKey=EcoPlots.PlotKey SET 
+            HeighttoCrownBase = iif(HeighttoCrownBase<0,0,HeighttoCrownBase),
+            TreeHeightLiveTop = iif(TreeHeightLiveTop<0,0,TreeHeightLiveTop),
+            TreeHeightTotal = iif(TreeHeightTotal<0,0,TreeHeightTotal),
+            CrownWidth1 = iif(CrownWidth1<0,0,CrownWidth1),
+            CrownWidth2 = iif(CrownWidth2<0,0,CrownWidth2),
+            PercentCrownMissing = iif(PercentCrownMissing<0,0,PercentCrownMissing),
+            PercentImperviousBelow = iif(PercentImperviousBelow<0,0,PercentImperviousBelow),
+            PercentShrubBelow = iif(PercentShrubBelow<0,0,PercentShrubBelow)
+          WHERE EcoPlots.YearKey = :yearGuid
+		]]>
+  </sql-query>
+
+  <sql-query name="selectRecordsFromTableOfStatisticalEstimates">
+    <return-scalar column="StatisticalTableId" type="Int32"/>
+    <return-scalar column="TableTitle" type="string"/>
+    <![CDATA[
+        SELECT StatisticalTableId, TableTitle FROM TableOfStatisticalEstimates
+		]]>
+  </sql-query>
+
+  <sql-query name="deleteOtherProjectsData">
+    <![CDATA[
+        DELETE FROM EcoYears WHERE YearKey <> :yearGuid
+		]]>
+  </sql-query>
+  <sql-query name="selectDatabaseFormat">
+    <![CDATA[
+        SELECT TOP 1 'ACCESS' FROM EcoYears
+		]]>
+  </sql-query>
+  <!-- end of Access database: export section -->
+
+  <!-- Access database: retrieve section -->
+  <sql-query name="selectClassValuesOfSingleClassifier">
+    <return-scalar column="ClassValueOrder" type="Int32"/>
+    <return-scalar column="ClassValueName" type="string"/>
+    <return-scalar column="ClassValueName1" type="string"/>
+    <return-scalar column="ClassValueFlag" type="Int32"/>
+    <return-scalar column="SppCode" type="string"/>
+    <![CDATA[
+        SELECT ClassValueOrder,ClassValueName,ClassValueName1,ClassValueFlag, SppCode
+        FROM ClassValueTable 
+        WHERE YearGuid=:YearGuid AND ClassifierId=:ClassifierId
+        ORDER BY ClassValueOrder
+		]]>
+  </sql-query>
+  <sql-query name="insertClassValue">
+    <![CDATA[
+        INSERT INTO ClassValueTable (YearGuid,ClassifierId,ClassValueOrder,ClassValueName,ClassValueName1,ClassValueFlag, SppCode) 
+          VALUES(:yearGuid,:classifier,:classValueOrder,:classValueName,:classValueName1, :classValueFlag, :sppCode)
+		]]>
+  </sql-query>
+  <sql-query name="updateToNewClassValueNameByClassValueName">
+    <![CDATA[
+        UPDATE ClassValueTable SET ClassValueName=:NewClassValueName 
+          WHERE YearGuid=:YearGuid AND ClassifierId=:ClassifierId AND ClassValueName=:OldClassValueName
+		]]>
+  </sql-query>
+  <sql-query name="updateClassValueNameByClassValueOrder">
+    <![CDATA[
+        UPDATE ClassValueTable SET ClassValueName=:ClassValueName 
+          WHERE YearGuid=:YearGuid AND ClassifierId=:ClassifierId AND ClassValueOrder=:ClassValueOrder
+		]]>
+  </sql-query>
+  <sql-query name="selectEstimateTableWithRestriction">
+    <return-scalar column="StatisticalTableId" type="Int32"/>
+    <return-scalar column="TableTitle" type="string"/>
+    <![CDATA[
+        SELECT TableOfStatisticalEstimates.StatisticalTableId, TableOfStatisticalEstimates.TableTitle
+            FROM PartitionDefinitionsTable INNER JOIN TableOfStatisticalEstimates ON
+            PartitionDefinitionsTable.StatisticalTableId = TableOfStatisticalEstimates.StatisticalTableId
+            WHERE TableOfStatisticalEstimates.TableData= :dataType
+            GROUP BY TableOfStatisticalEstimates.StatisticalTableId, TableOfStatisticalEstimates.TableTitle
+            HAVING Count(PartitionDefinitionsTable.PartitionOrder)= :classifierNo AND 
+            Max(PartitionDefinitionsTable.ClassifierId)= :maxClassifier AND 
+            Min(PartitionDefinitionsTable.ClassifierId)= :minClassifier AND
+            Sum(PartitionDefinitionsTable.ClassifierId)= :sumClassifier
+            ORDER BY TableOfStatisticalEstimates.StatisticalTableId    
+		]]>
+  </sql-query>
+  <sql-query name="selectTablePartitions">
+    <return-scalar column="ClassifierID" type="Int32"/>
+    <![CDATA[
+        SELECT ClassifierID FROM PartitionDefinitionsTable where StatisticalTableID= :tableId ORDER BY PartitionOrder  
+		]]>
+  </sql-query>
+  <sql-query name="selectBiggestStatisticalTableId">
+    <return-scalar column="StatisticalTableId" type="Int32"/>
+    <![CDATA[
+        SELECT TOP 1 StatisticalTableId FROM TableOfStatisticalEstimates ORDER BY StatisticalTableId DESC 
+		]]>
+  </sql-query>
+  <sql-query name="insertTableOfStatisticalEstimates">
+    <![CDATA[
+        INSERT INTO [TableOfStatisticalEstimates] ([TableEntryId],[StatisticalTableId],[TableTitle],[TableData],[TableDescription],[TableFlag]) 
+          VALUES(:entryId, :statisticalTableID, :statisticalTableName, :dataType, :statisticalTableDescription, :tableFlag)
+		]]>
+  </sql-query>
+  <sql-query name="deleteTableOfStatisticalEstimates">
+    <![CDATA[
+        DELETE FROM TableOfStatisticalEstimates WHERE StatisticalTableId = :statisticalTableId
+		]]>
+  </sql-query>
+  <sql-query name="insertPartitionDefinitionsTable">
+    <![CDATA[
+        INSERT INTO [PartitionDefinitionsTable] ([StatisticalTableId],[ClassifierId],[PartitionOrder],[PartitionName],[PartitionFlag]) 
+          VALUES(:statisticalTableID, :classifierId, :partitionOrder, :partitionName, :partitionFlag)
+		]]>
+  </sql-query>
+  <sql-query name="deletePartitionDefinitionsTable">
+    <![CDATA[
+        DELETE FROM PartitionDefinitionsTable WHERE StatisticalTableId = :statisticalTableId
+		]]>
+  </sql-query>
+  <sql-query name="selectEstimateUnit">
+    <return-scalar column="EstimationUnitsId" type="Int32"/>
+    <![CDATA[
+        SELECT EstimationUnitsId FROM EstimationUnitsTable WHERE PrimaryUnitsId= :primaryUnitId AND SecondaryUnitsId= :secondaryUnitId AND TertiaryUnitsId= :tertiaryUnitId
+		]]>
+  </sql-query>
+  <sql-query name="selectBiggestEstimateUnitId">
+    <return-scalar column="EstimationUnitsId" type="Int32"/>
+    <![CDATA[
+        SELECT TOP 1 EstimationUnitsId from EstimationUnitsTable Order by EstimationUnitsId DESC 
+		]]>
+  </sql-query>
+  <sql-query name="insertEstimationUnitsTable">
+    <![CDATA[
+        INSERT INTO [EstimationUnitsTable] (EstimationUnitsId,PrimaryUnitsId,SecondaryUnitsId,TertiaryUnitsId,EstimationUnitsFlag) 
+          VALUES (:estimateUnit,:primaryUnit,:secondaryUnit,:tertiaryUnit,:estimationUnitsFlag)
+		]]>
+  </sql-query>
+  <sql-query name="selectNoPartitionStatisticaEstimatelTables">
+    <return-scalar column="StatisticalTableId" type="Int32"/>
+    <return-scalar column="TableTitle" type="string"/>
+    <![CDATA[
+        SELECT StatisticalTableId, TableTitle FROM TableOfStatisticalEstimates
+          WHERE StatisticalTableId NOT IN (SELECT DISTINCT StatisticalTableId FROM PartitionDefinitionsTable)
+		]]>
+  </sql-query>
+  <sql-query name="selectStatisticaEstimatelTablesByClassifierId">
+    <return-scalar column="StatisticalTableId" type="Int32"/>
+    <return-scalar column="TableTitle" type="string"/>
+    <![CDATA[
+        SELECT TableOfStatisticalEstimates.StatisticalTableId, TableOfStatisticalEstimates.TableTitle
+          FROM PartitionDefinitionsTable INNER JOIN TableOfStatisticalEstimates 
+            ON PartitionDefinitionsTable.StatisticalTableId = TableOfStatisticalEstimates.StatisticalTableId 
+          WHERE PartitionDefinitionsTable.ClassifierId= :classifierId
+		]]>
+  </sql-query>
+  <sql-query name="updateClassifierAbbreviation">
+    <![CDATA[
+        UPDATE Classifiers SET ClassAbbreviation= :abbr WHERE ClassifierId= :classifierId
+		]]>
+  </sql-query>
+  <sql-query name="insertClassifiers">
+    <![CDATA[
+        INSERT INTO [Classifiers] ([ClassifierId], [ClassAbbreviation], [ClassDescription], [ClassFlag]) 
+          VALUES (:classifierId, :classAbbr, :classDesc, :classFlag)
+		]]>
+  </sql-query>
+  <sql-query name="selectEstimationTypeTable">
+    <return-scalar column="EstimateTypeId" type="Int32"/>
+    <return-scalar column="QuantityEstimated" type="string"/>
+    <![CDATA[
+        SELECT EstimateTypeId, QuantityEstimated
+          FROM EstimationTypeTable
+		]]>
+  </sql-query>
+  <sql-query name="updateEstimationTypeTable">
+    <![CDATA[
+        UPDATE EstimationTypeTable SET QuantityEstimated= :quantityEstimated WHERE EstimateTypeId = :estimateTypeId
+		]]>
+  </sql-query>
+  <sql-query name="insertEstimationTypeTable">
+    <![CDATA[
+        INSERT INTO [EstimationTypeTable] ([EstimateTypeId], [QuantityEstimated], [EstimatedTypeFlag]) 
+          VALUES (:estimateTypeId, :quantityEstimated, :estimatedTypeFlag)
+		]]>
+  </sql-query>
+  <sql-query name="selectEquationTypeTable">
+    <return-scalar column="EquationTypeId" type="Int32"/>
+    <return-scalar column="EquationTypeName" type="string"/>
+    <return-scalar column="EquationTypeDescription" type="string"/>
+    <![CDATA[
+        SELECT EquationTypeId, EquationTypeName, EquationTypeDescription
+          FROM EquationTypeTable
+		]]>
+  </sql-query>
+  <sql-query name="updateEquationTypeTable">
+    <![CDATA[
+        UPDATE EquationTypeTable SET EquationTypeName= :equationTypeName, EquationTypeDescription= :equationTypeDescription WHERE EquationTypeId = :equationTypeId
+		]]>
+  </sql-query>
+  <sql-query name="insertEquationTypeTable">
+    <![CDATA[
+        INSERT INTO [EquationTypeTable] ([EquationTypeId], [EquationTypeName], [EquationTypeDescription], [EquationTypeFlag]) 
+          VALUES (:equationTypeId, :equationTypeName, :equationTypeDescription, :equationTypeFlag)
+		]]>
+  </sql-query>
+  <sql-query name="selectUnitsTable">
+    <return-scalar column="UnitsId" type="Int32"/>
+    <return-scalar column="UnitsDescription" type="string"/>
+    <return-scalar column="UnitsAbbreviation" type="string"/>
+    <![CDATA[
+        SELECT UnitsId, UnitsDescription, UnitsAbbreviation
+          FROM UnitsTable
+		]]>
+  </sql-query>
+  <sql-query name="updateUnitsTable">
+    <![CDATA[
+        UPDATE UnitsTable SET UnitsDescription= :unitsDescription, UnitsAbbreviation= :unitsAbbreviation WHERE UnitsId = :unitsId
+		]]>
+  </sql-query>
+  <sql-query name="insertUnitsTable">
+    <![CDATA[
+        INSERT INTO [UnitsTable] ([UnitsId], [UnitsDescription], [UnitsAbbreviation], [UnitsFlag]) 
+          VALUES (:unitsId, :unitsDescription, :unitsAbbreviation, :unitsFlag)
+		]]>
+  </sql-query>
+  <sql-query name="insertIndividualTreeEnergyEffects">
+    <![CDATA[
+        INSERT INTO IndividualTreeEnergyEffects(YearGuid,PlotID,TreeID,BldgInteractionID,EnergyUse,EnergyType,CarbonAvoided,
+                                                FuelsAvoided, ElectricityAvoided, CarbonAvoidedUnits) 
+            VALUES (:YearGuid,:PlotID,:TreeID,:BldgInteractionID,:EnergyUse,:EnergyType,:CarbonAvoided,
+                    :FuelsAvoided, :ElectricityAvoided, :CarbonAvoidedUnits)
+		]]>
+  </sql-query>
+  <sql-query name="insertModelNotes">
+    <![CDATA[
+        INSERT INTO ModelNotes (YearGuid,ParameterCalculatorNote)
+            VALUES (:YearGuid,:ParameterCalculatorNote)
+		]]>
+  </sql-query>
+  <sql-query name="insertIndividualTreeEffects">
+    <![CDATA[
+        INSERT INTO IndividualTreeEffects (YearGuid,PlotId,TreeId,SppScientificName,SppCommonName,
+              DBH,Height,BasalArea,GroundArea,TreeCondition,LeafArea,LeafBioMass,LeafAreaIndex,LeafBiomassIndex,
+              CarbonStorage,GrossCarbonSeq,NetCarbonSeq,TreeValue,StreetTree,NativeToState,TreeBiomass,
+              WaterInterception,AvoidedRunoff,Evaporation,PotentialEvaporation,Transpiration,PotentialEvapotranspiration,
+              FutureDBH,FutureHeight,FutureTreeBiomass,BiomassAdj,LeafType)
+          VALUES(:YearGuid,:PlotId,:TreeId,:SppScientificName,:SppCommonName,
+              :DBH,:Height,:BasalArea,:GroundArea,:TreeCondition,:LeafArea,:LeafBioMass,:LeafAreaIndex,:LeafBiomassIndex,
+              :CarbonStorage,:GrossCarbonSeq,:NetCarbonSeq,:TreeValue,:StreetTree,:NativeToState,:TreeBiomass,
+              :WaterInterception,:AvoidedRunoff,:Evaporation,:PotentialEvaporation,:Transpiration,:PotentialEvapotranspiration,
+              :FutureDBH,:FutureHeight,:FutureTreeBiomass,:BiomassAdj,:LeafType)
+		]]>
+  </sql-query>
+  <sql-query name="selectIndividualTreeLeafAreaBiomass">
+    <return-scalar column="PlotId" type="int"/>
+    <return-scalar column="TreeId" type="int"/>
+    <return-scalar column="Species" type="string"/>
+    <return-scalar column="LeafArea" type="double"/>
+    <return-scalar column="LeafBioMass" type="double"/>
+    <![CDATA[
+        SELECT EcoPlots.PlotId, EcoTrees.TreeId, EcoTrees.Species, IndividualTreeEffects.LeafArea, IndividualTreeEffects.LeafBioMass
+        FROM (EcoPlots INNER JOIN EcoTrees ON EcoPlots.PlotKey = EcoTrees.PlotKey) INNER JOIN IndividualTreeEffects ON (EcoTrees.TreeId = IndividualTreeEffects.TreeId) AND (EcoPlots.PlotId = IndividualTreeEffects.PlotId)
+        WHERE EcoPlots.YearKey=:YearGuid AND IndividualTreeEffects.YearGuid=:YearGuid;
+		]]>
+  </sql-query>
+  <sql-query name="selectSumIndividualTreeEffectsByStrata">
+    <return-scalar column="Description" type="string"/>
+    <return-scalar column="SumOfBasalArea" type="double"/>
+    <return-scalar column="SumOfGroundArea" type="double"/>
+    <return-scalar column="SumOfLeafArea" type="double"/>
+    <return-scalar column="SumOfLeafBioMass" type="double"/>
+    <return-scalar column="SumOfCarbonStorage" type="double"/>
+    <return-scalar column="SumOfGrossCarbonSeq" type="double"/>
+    <![CDATA[
+        SELECT EcoStrata.Description, Sum(IndividualTreeEffects.BasalArea) AS SumOfBasalArea, 
+            Sum(IndividualTreeEffects.GroundArea) AS SumOfGroundArea, Sum(IndividualTreeEffects.LeafArea) AS SumOfLeafArea, 
+            Sum(IndividualTreeEffects.LeafBioMass) AS SumOfLeafBioMass, Sum(IndividualTreeEffects.CarbonStorage) AS SumOfCarbonStorage,
+            Sum(IndividualTreeEffects.GrossCarbonSeq) AS SumOfGrossCarbonSeq
+        FROM EcoStrata INNER JOIN 
+			      (
+				      EcoTrees INNER JOIN 
+					      (
+						      EcoPlots INNER JOIN IndividualTreeEffects 
+							      ON (EcoPlots.PlotId = IndividualTreeEffects.PlotId) AND (EcoPlots.YearKey = IndividualTreeEffects.YearGuid)
+					      ) 
+				      ON (EcoPlots.PlotKey = EcoTrees.PlotKey) AND (EcoTrees.TreeId = IndividualTreeEffects.TreeId)
+			      ) 
+			      ON EcoStrata.StrataKey = EcoPlots.StrataKey
+        WHERE IndividualTreeEffects.YearGuid = :YearGuid
+        GROUP BY EcoStrata.Description
+		]]>
+  </sql-query>
+  <sql-query name="selectSumIndividualTreeHydroByStrata">
+    <return-scalar column="Description" type="string"/>
+    <return-scalar column="SumOfWaterInterception" type="double"/>
+    <return-scalar column="SumOfAvoidedRunoff" type="double"/>
+    <return-scalar column="SumOfEvaporation" type="double"/>
+    <return-scalar column="SumOfPotentialEvaporation" type="double"/>
+    <return-scalar column="SumOfTranspiration" type="double"/>
+    <return-scalar column="SumOfPotentialEvapotranspiration" type="double"/>
+    <![CDATA[
+        SELECT EcoStrata.Description, 
+              Sum(IndividualTreeEffects.WaterInterception) AS SumOfWaterInterception,
+              Sum(IndividualTreeEffects.AvoidedRunoff) AS SumOfAvoidedRunoff,
+              Sum(IndividualTreeEffects.Evaporation) AS SumOfEvaporation,
+              Sum(IndividualTreeEffects.PotentialEvaporation) AS SumOfPotentialEvaporation,
+              Sum(IndividualTreeEffects.Transpiration) AS SumOfTranspiration,
+              Sum(IndividualTreeEffects.PotentialEvapotranspiration) AS SumOfPotentialEvapotranspiration
+        FROM EcoStrata INNER JOIN 
+			      (
+				      EcoTrees INNER JOIN 
+					      (
+						      EcoPlots INNER JOIN IndividualTreeEffects 
+							      ON (EcoPlots.PlotId = IndividualTreeEffects.PlotId) AND (EcoPlots.YearKey = IndividualTreeEffects.YearGuid)
+					      ) 
+				      ON (EcoPlots.PlotKey = EcoTrees.PlotKey) AND (EcoTrees.TreeId = IndividualTreeEffects.TreeId)
+			      ) 
+			      ON EcoStrata.StrataKey = EcoPlots.StrataKey
+        WHERE IndividualTreeEffects.YearGuid = :YearGuid
+        GROUP BY EcoStrata.Description
+		]]>
+  </sql-query>
+  <sql-query name="insertUVIndexReductionByStrataYearly">
+    <![CDATA[
+        INSERT INTO UVIndexReductionByStrataYearly (YearGuid, StrataKey, MeanShadedUVProtectionFactor, MeanShadedUVReduction, MeanShadedUVRedutionPercent, 
+            MeanOverallUVProtectionFactor, MeanOverallUVReduction, MeanOverallUVReductionPercent)
+        VALUES (:YearGuid, :StrataKey, :MeanShadedUVProtectionFactor, :MeanShadedUVReduction, :MeanShadedUVRedutionPercent, 
+            :MeanOverallUVProtectionFactor, :MeanOverallUVReduction, :MeanOverallUVReductionPercent)
+		]]>
+  </sql-query>
+  <sql-query name="insertUVIndexReductionByStrataYearlyForEntireStudyArea">
+    <![CDATA[
+        INSERT INTO UVIndexReductionByStrataYearly (YearGuid, MeanShadedUVProtectionFactor, MeanShadedUVReduction, MeanShadedUVRedutionPercent, 
+            MeanOverallUVProtectionFactor, MeanOverallUVReduction, MeanOverallUVReductionPercent)
+        VALUES (:YearGuid, :MeanShadedUVProtectionFactor, :MeanShadedUVReduction, :MeanShadedUVRedutionPercent, 
+            :MeanOverallUVProtectionFactor, :MeanOverallUVReduction, :MeanOverallUVReductionPercent)
+		]]>
+  </sql-query>
+  <sql-query name="selectBenMAPCompensatoryValues">
+    <return-scalar column="TreeShrub" type="string"/>
+    <return-scalar column="NO2Value" type="double"/>
+    <return-scalar column="SO2Value" type="double"/>
+    <return-scalar column="O3Value" type="double"/>
+    <return-scalar column="PM25Value" type="double"/>
+    <![CDATA[
+        SELECT TreeShrub, NO2Value, SO2Value, O3Value, PM25Value 
+        FROM BenMapTable
+        WHERE YearGuid = :YearGuid
+		]]>
+  </sql-query>
+  <sql-query name="selectYearlyPollutantRemovalAndValue">
+    <return-scalar column="Pollutant" type="string"/>
+    <return-scalar column="TreeShrub" type="string"/>
+    <return-scalar column="Month" type="int"/>
+    <return-scalar column="sumFlux" type="double"/>
+    <return-scalar column="sumValue" type="double"/>
+    <![CDATA[
+        SELECT [Pollutant], [TreeShrub], [Month], SUM(AvgOfFlux) AS sumFlux, SUM(AvgOfValue) AS sumValue FROM 
+          (
+              SELECT [Year], [JDay], [Month], [Day], [Hour], [Pollutant], [TreeShrub], Avg(TrCovArea * Flux) AS AvgOfFlux, Avg(TrCovArea * Value) AS AvgOfValue
+              FROM Pollutants
+              WHERE YearGuid = :YearGuid
+              GROUP BY [Year], [JDay], [Month], [Day], [Hour], [Pollutant], [TreeShrub]
+          )
+        GROUP BY [Pollutant], [TreeShrub], [Month]
+		]]>
+  </sql-query>
+  <sql-query name="updatePollutants">
+    <![CDATA[
+        UPDATE Pollutants SET 
+            [Value]=[Flux] * :ratio, 
+            [ValueMax]=[FluxMax] * :ratio,
+            [ValueMin]=[FluxMin] * :ratio 
+        WHERE [YearGuid]=:YearGuid AND [Year]=:Year AND [Pollutant]=:Pollutant AND [TreeShrub]=:TreeShrub
+		]]>
+  </sql-query>
+  <sql-query name="populateIndividualTreePollutionEffects">
+    <![CDATA[
+        INSERT INTO IndividualTreePollutionEffects ( YearGuid, PlotId, TreeId, SppScientificName, SppCommonName, 
+          CORemoved, CORemovalValue, NO2Removed, NO2RemovalValue, 
+          O3Removed, O3RemovalValue, PM10Removed, PM10RemovalValue, 
+          PM25Removed, PM25RemovalValue, SO2Removed, SO2RemovalValue )
+        SELECT YearGuid, PlotId, TreeId, SppScientificName, SppCommonName,
+          LeafArea*:COgramPerM2,  LeafArea*:COvaluePerM2,  LeafArea*:NO2gramPerM2,  LeafArea*:NO2valuePerM2,  
+          LeafArea*:O3gramPerM2,  LeafArea*:O3valuePerM2,  LeafArea*:PM10gramPerM2, LeafArea*:PM10valuePerM2, 
+          LeafArea*:PM25gramPerM2,LeafArea*:PM25valuePerM2,LeafArea*:SO2gramPerM2,  LeafArea*:SO2valuePerM2 
+        FROM IndividualTreeEffects
+        WHERE YearGuid=:YearGuid
+		]]>
+  </sql-query>
+  <sql-query name="updateBioEmissionInIndividualTreePollutionEffects">
+    <![CDATA[
+        UPDATE IndividualTreePollutionEffects SET [ISOPRENE] = :ISOPRENE, [MONOTERP] = :MONOTERP, [OVOC] = :OVOC
+        WHERE YearGuid=:YearGuid AND PlotId=:PlotId AND TreeId=:TreeId
+		]]>
+  </sql-query>
+  <sql-query name="updateHydroInIndividualTreeEffects">
+    <![CDATA[
+        UPDATE IndividualTreeEffects SET [WaterInterception]           = [LeafArea] * :InterceptedPerM2, 
+                                         [AvoidedRunoff]               = [LeafArea] * :AvoidedRunoffPerM2,
+                                         [Evaporation]                 = [LeafArea] * :EvaporationPerM2,
+                                         [PotentialEvaporation]        = [LeafArea] * :PotentialEvaporationPerM2,
+                                         [Transpiration]               = [LeafArea] * :TranspirationPerM2,
+                                         [PotentialEvapotranspiration] = [LeafArea] * :PotentialEvapotranspirationM2
+        WHERE YearGuid=:YearGuid
+		]]>
+  </sql-query>
+  <!-- end of Access database: retrieve section -->
+</hibernate-mapping>

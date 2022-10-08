@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="rtProject_full" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Calibri;}{\f1\fnil\fcharset0 Calibri;}{\f2\fnil\fcharset2 Symbol;}}
+{\colortbl ;\red51\green115\blue183;\red255\green0\blue0;}
+{\*\generator Riched20 10.0.17763}\viewkind4\uc1 
+\pard\brdrb\brdrs\brdrw10\brsp20 \qj\b\f0\fs20\par
+
+\pard\b0\fs22 On this tab, you can set up your new i-Tree Eco project or make changes to the settings that you provided for an existing project. On the ribbon above, there are five groups of available functions (see Notes below), including:\par
+\par
+\cf1\b Project Definition \cf0\b0\endash  to define important project settings such as the location of your study area and your data collection variables.\b\par
+\par
+\cf1 Define Data Fields\b0  \cf0\endash  to view or edit classes for different data fields.\par
+\b\par
+\cf1 Project &amp; Strata\b0  \b Area\b0  \cf0\endash  to identify the area of your project or strata and define strata or zones by which you are stratifying your project (i.e., subdividing the study area into smaller units such as land use classes).\par
+\b\par
+\cf1 Export\cf0  \b0\endash  to export an open data table to a \ldblquote comma separated values\rdblquote  (csv) file.\b\par
+\par
+\cf1 Editing Mode\b0  \cf0\endash  to turn Editing mode on.\par
+\cf2\b\par
+\cf0 *IMPORTANT*\par
+\b0 After you send data and retrieve results on the \b Reports\b0  tab, the \b Editing Mode \b0 function will become unavailable on the \b Project Configuration\b0  tab (i.e., it will no longer be greyed out and the function will read \ldblquote Editing Mode: Off\rdblquote ). This indicates that the tab is in view-only mode so each function may be viewed, but not edited.\par
+\par
+
+\pard\widctlpar When a project is in view-only mode, the project settings that you enter in this tab may be edited with caution. In order to do this, you will need to switch to Editing mode by clicking on the \b Editing Mode \b0 function once it has become available. After clicking on it, the function will be greyed out and read \ldblquote Editing Mode: On.\rdblquote  Edits may be made at that time. Please note that if you edit your project configuration, the results in the \b Reports\b0  tab may not reflect the changes that you made. To ensure that they do, send your data to the server and load your results again.\par
+
+\pard\par
+\b Notes:\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li360\b0 Functions that are greyed out on the ribbon cannot be accessed at that point. It is best to go through the functions from left to right. As you provide more information about your project, additional functions will become available.\par
+
+\pard\brdrb\brdrs\brdrw10\brsp20 \qj\fs20\par
+
+\pard\sa200\sl276\slmult1\f1\fs22\lang9\par
+}
+&#x0;</value>
+  </data>
+  <data name="LaunchSplash" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Calibri;}{\f1\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red31\green73\blue125;}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\b\f0\fs24\line Welcome to i-Tree Eco!\par
+\b0\par
+i-Tree Eco is a software application designed to use field data from complete inventories or randomly located plots throughout a study area along with local hourly air pollution and meteorological data to quantify forest structure, environmental effects, and value to communities.\par
+\par
+If you are new to Eco, please review the resources in the \b Support \b0 tab for more information.\par
+\par
+If you have used previous versions of Eco, load and explore the example projects by going to the \b File \b0 menu in the ribbon above.\par
+\par
+If you wish to resume work on an existing project, load it with the \b File \b0 menu in the ribbon above.\par
+\par
+\pard\sa200\sl276\slmult1 Guidance is provided in the \b Help \b0 panel at left. Please refer to the \b User Manual \b0 in the \b Support \b0 tab for more information.\cf0\lang9\f1\fs22\par
+}
+&#x0;</value>
+  </data>
+  <data name="rtSupport" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Calibri;}{\f1\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red51\green115\blue183;}
+{\*\generator Riched20 10.0.17763}\viewkind4\uc1 
+\pard\brdrb\brdrs\brdrw10\brsp20 \qj\b\f0\fs20\par
+
+\pard\brdrb\brdrs\brdrw10\brsp20 \b0\fs22 The \b Support \b0 tab provides access to i-Tree Eco\rquote s numerous support resources. Clicking on one of the resources listed in the ribbon above will link you directly to the desired resource.\par
+\par
+i-Tree Eco provides several options for seeking help with general or technical i-Tree questions, including:\par
+\par
+\cf1\b User Manual\b0  \cf0\endash  for detailed specifications on setting up a project and carrying out data collection in the field.\par
+\par
+\cf1\b User Guides\cf0\b0  \endash  for topic-specific information to help work through specific tasks of an Eco project.\fs20\par
+\fs22\par
+\cf1\b i-Tree Methods \cf0\b0\endash  to access the Understanding i-Tree: Summary of Programs and Methods, a report by Dr. David Nowak, which describes the various i-Tree programs and their underlying methods.\fs20\par
+\fs22\par
+\cf1\b Video Learning\b0  \cf0\endash  for instructional videos and archived webinars to learn more about the i-Tree Eco application.\par
+\par
+\cf1\b User Forum\b0  \cf0\endash  to participate in a moderated discussion forum to solicit advice, get technical questions answered, communicate experiences, and view frequently asked questions (FAQs).\par
+\par
+\cf1\b i-Tree Website\b0  \cf0\endash  to learn about all of the i-Tree applications and utilities, access i-Tree support resources, and read about what\rquote s new with i-Tree.\par
+\par
+\cf1\b Software Update\b0  \cf0\endash  to check for new versions of the i-Tree Eco software and download software updates.\par
+\par
+\cf1\b About \cf0\b0\endash  for an overview of the i-Tree Eco model as well as version information, acknowledgements, and credits.\par
+\par
+\cf1\b License Agreement \cf0\b0\endash  to access the i-Tree End User's License Agreement that you agree to when you download the i-Tree software and run an Eco project.\cf1\b\par
+\par
+Feedback &amp; Bugs \cf0\b0\endash  to provide feedback about your experience using the i-Tree Eco application.\par
+\par
+\cf1\b What\rquote s New\b0  \cf0\endash  for an overview of features that are new in i-Tree Eco v6.0. \par
+
+\pard\brdrb\brdrs\brdrw10\brsp20 \qj\fs20\par
+
+\pard\brdrb\brdrs\brdrw10\brsp20 \widctlpar\cf1\b\fs22 Change Log\b0  \cf0\endash  to view a log of changes made to the software.\par
+\par
+
+\pard\brdrb\brdrs\brdrw10\brsp20 \qj\fs20\par
+
+\pard\sa200\sl276\slmult1\f1\fs22\lang9\par
+}
+&#x0;</value>
+  </data>
+  <data name="rtReports" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Calibri;}{\f1\fswiss\fprq2 Calibri;}{\f2\fnil\fcharset2 Symbol;}}
+{\colortbl ;\red51\green115\blue183;}
+{\*\generator Riched20 10.0.17763}\viewkind4\uc1 
+\pard\brdrb\brdrs\brdrw10\brsp20 \qj\b\f0\fs20\par
+
+\pard\b0\fs22 On this tab, you can send data, retrieve results, and view your reports. i-Tree Eco presents reports in the \b Reports\b0  tab in various formats, including charts, tables, and a written report (see Notes below). On the ribbon above, there are ten groups of available functions, including:\par
+\par
+\cf1\b Project Metadata \cf0\b0\endash\b  \b0 to view your project metadata.\par
+\b\par
+\cf1 Submit Data for Processing\b0  \cf0\endash  to submit your project data to the server where the i-Tree Eco model will run.\par
+\par
+\cf1\b Track &amp; Retrieve Results\b0  \cf0\endash  to track the status of a recent data submission or load your model results from the server.\par
+\b\par
+\cf1 Formatted Reports\b0  \cf0\endash  to view your summary reports.\par
+\b\par
+\cf1 Charts\b0  \cf0\endash  to view your pollution and weather charts and tables.\par
+\par
+\cf1\b Settings\cf0\b0\endash  \f1 to change units (i.e., English or metric) and species names (i.e., common or scientific) that are displayed in your reports.\f0\par
+\b\par
+\cf1 Model Notes \cf0\b0\endash  to view notes about your model run.\par
+\b\par
+
+\pard\widctlpar\cf1 Map Active Report \cf0\b0\endash  to view weather and pollution station locations and, if collected, plot and tree locations.\par
+
+\pard\b\par
+\cf1 CSV \cf0\b0\endash  to export specific reports.\par
+\par
+\cf1\b KML \cf0\b0\endash  to export coordinate data.\par
+\par
+Choose the report that you would like to view by clicking on one of the buttons or by selecting a report from one of the drop-down lists. The report will become available in the action panel to the right. There is a toolbar at the top of the action panel that allows you to zoom in and out and save or print your reports.\par
+\par
+
+\pard\fi-360\li360 The \b Formatted Reports\b0  group offers a variety of report options:\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li360\b Written Report\b0  provides a summary, narrative report of the results of your project, including the composition, structure, and ecosystem services provided by your urban forest.\par
+
+\pard\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li360\b Composition and Structure\b0  charts and tables present information on the structural aspects of the urban forest of your study area, including population size, species make-up, leaf area, tree condition, and biomass information. Results are provided in a variety of ways, such as classified by DBH class or by strata or presented on a per-unit-area (per-acre or per-hectare) basis.\par
+
+\pard\li360\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li360\b Benefits and Costs\b0  charts and tables present information on the environmental benefits that are provided by the urban forest in your study area. Results are provided in functional units (e.g., tons of carbon sequestered) and in associated dollar values. \par
+
+\pard\fi-360\li360\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li360\b Individual Level Results\b0  charts and tables present information on the characteristics of the sampled trees in your study area, including structural aspects and ecosystem services. Results are provided for each individual tree assessed. \par
+
+\pard\fi-360\li360\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li360\b Air Quality Health Impacts and Values\b0  provides estimates of the number of adverse health incidents that were avoided due to changes in pollutant concentration levels, as well as the economic value of those reductions in health incidents.\par
+
+\pard\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li360\b Pest Analysis\b0  charts and tables include a standard report for all users on the susceptibility of their urban forest to known pests. For users who choose to collect pest (IPED) data in the field, additional reports summarize that data here.\par
+
+\pard\fi-360\li360\par
+The \b Charts \b0 group contains one drop-down list of reports:\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li360\b Pollution and Weather\b0  charts and tables present information about the air quality, weather, UV, and hydrology of your study area. Results are based on the pollution and weather data used for your project.\par
+
+\pard\par
+Choose your units and species names options simply by clicking on the appropriate button in the ribbon. You will not need to send your data to the server and load your results again \endash  the changes will take place immediately!\par
+\par
+The \b Model Notes\b0  function provides more information about the data processing that occurs within the Eco model.\par
+\par
+\b *IMPORTANT*\par
+\b0 After you send data and retrieve results on the \b Reports\b0  tab, the \b Editing Mode \b0 function will become available on the \b Project Configuration\b0  and \b Data\b0  tabs (i.e., it will no longer be greyed out and the function will read \ldblquote Editing Mode: Off\rdblquote ). This indicates that the tab is in View-only mode so each function may be viewed, but not edited.\par
+\par
+However, the settings and data on those tabs may be edited with caution. In order to do this, you will need to switch to Editing mode by clicking on the \b Editing Mode \b0 function, once it has become available, when you access each tab. After clicking on it, the function will be greyed out and read \ldblquote Editing Mode: On.\rdblquote  Edits may be made at that time. Please note that if you edit your project configuration or data, the results in the \b Reports\b0  tab may not reflect the changes that you made. To ensure that they do, send your data to the server and load your results again.\par
+\par
+\b Notes:\b0\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li360 Functions that are greyed out cannot be accessed at that point. If you have not yet submitted data and loaded results, most of the reports, charts, and tables will not be available until after you have done so. Some reports may not be available because of decisions not to collect certain variables in the field or inadequate data in the case of international studies. For example, users choosing not to collect the data variables for the energy analysis will not have energy reports.\par
+
+\pard\sa200\sl276\slmult1\fs20\par
+}
+&#x0;</value>
+  </data>
+  <data name="rtForecast" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Calibri;}{\f1\fnil\fcharset0 Calibri;}{\f2\fnil\fcharset2 Symbol;}}
+{\colortbl ;\red51\green115\blue183;}
+{\*\generator Riched20 10.0.17763}\viewkind4\uc1 
+\pard\brdrb\brdrs\brdrw10\brsp20 \qj\b\f0\fs20\par
+
+\pard\b0\fs22 Forecast is a separate component of i-Tree Eco that is run independently of the model. Utilizing Forecast is entirely optional and will have no impact on your i-Tree Eco results (as seen on the \b Reports\b0  tab).\par
+\par
+On this tab, you can run the Forecast component at a basic or advanced level. To estimate what your urban forest will look like in the future, Forecast uses the structural estimates (e.g., number of trees, species composition) generated by running the i-Tree Eco model along with anticipated growth and mortality rates. You can even include future tree planting scenarios or possible adverse events, such as a storm or pest infestation, to predict their impact on your urban forest.\par
+\par
+Forecast is designed to allow you to provide as little or as much information as you would like (see Notes below). At the most basic level, you could run Forecast using all of the defaults provided. To customize your Forecast results, you can change the default \b Basic Options\b0  to estimate your future urban forest based on local variables for the following:\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720 Number of years to forecast\par
+{\pntext\f2\'B7\tab}Annual mortality rates\par
+{\pntext\f2\'B7\tab}Frost-free period (days)\par
+
+\pard\par
+For a more advanced Forecast run, you can choose to include the following occurrences in your estimates of the future urban forest:\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720 Tree plantings\par
+{\pntext\f2\'B7\tab}Storm events\par
+{\pntext\f2\'B7\tab}Pest infestations\par
+
+\pard\par
+On the ribbon above, there are eight groups of available functions (see Notes below), including:\par
+\par
+\cf1\b Configuration Summary\cf0\b0\fs20  \fs22\endash  to get a summary of your Forecast settings.\par
+\par
+\cf1\b Run Forecast \cf0\-\b0\endash  to run the Forecast component of the i-Tree Eco model.\par
+\par
+\cf1\b Basic Options \cf0\b0\endash  to define your settings, including duration of forecast, days without frost, and base mortality rates, for a basic Forecast run.\b\par
+\par
+\cf1 Custom Options\b0  \cf0\endash  to define mortality rates, tree planting scenarios, or extreme events for an advanced, custom Forecast run.\par
+\par
+\cf1\b Configurations\cf0\fs20  \-\b0\fs22\endash  to view the configuration that will be used to run Forecast or access tools to rename, create, duplicate, or delete configurations.\b\par
+\b0\par
+\cf1\b Reports\cf0  \-\b0\endash  to view results in the form of charts and tables.\par
+\par
+\cf1\b Units \cf0\b0\endash  to change the units (i.e., English or metric) that are displayed in your reports.\par
+\par
+\cf1\b Editing Mode\cf0\b0\fs20  \fs22\endash  to turn Editing mode on.\par
+\b\par
+*IMPORTANT*\par
+\b0 After you run Forecast, the \b Editing Mode \b0 function will become available on the ribbon (i.e., it will no longer be greyed out and the function will read \ldblquote Editing Mode: Off\rdblquote ). This indicates that the \b Forecast\b0  tab is in View-only mode so each function may be viewed, but not edited. Your reports can still be viewed, saved, and printed. \par
+\par
+However, if you decide that you would like to make changes to your active configuration, you will need to switch to Editing mode by clicking on the \b Editing Mode \b0 function once it has become available. After clicking on it, the function will be greyed out and read \ldblquote Editing Mode: On.\rdblquote  Please note that this will clear all of the reports on the \b Forecast\b0  tab that are associated with this configuration and you will be required to \b Run Forecast \b0 to view those reports again.\par
+\par
+\b Notes:\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li360\b0 To run the most basic Forecast analysis, you may use the defaults provided. Simply make sure that \b Default\b0  is chosen in the \b Active Configuration\b0  drop-down list of the \b Configurations \b0 group, and click the \b Run Forecast\b0  button in the ribbon. You will be able to view all of the default parameters used by clicking on the \b Configuration Summary\b0  button.\par
+{\pntext\f2\'B7\tab}The \b Forecast\b0  tab is greyed out until after you have submitted your data and loaded your results on the \b Reports\b0  tab. The reason that Forecast is not available at all times is that this component uses the results of the i-Tree Eco model to estimate the structure and function that your urban forest will provide in the future.\par
+{\pntext\f2\'B7\tab}The reports are greyed out on the ribbon and cannot be accessed until after you run Forecast. We recommend going through the functions from left to right. Remember: Many of these functions are optional and do not \ul need\ulnone  to be completed.\par
+
+\pard\brdrb\brdrs\brdrw10\brsp20 \qj\fs20\par
+
+\pard\sa200\sl276\slmult1\f1\fs22\lang9\par
+}
+&#x0;</value>
+  </data>
+  <data name="rtProject" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Calibri;}{\f1\fnil\fcharset0 Calibri;}{\f2\fnil\fcharset2 Symbol;}}
+{\colortbl ;\red51\green115\blue183;}
+{\*\generator Riched20 10.0.17763}\viewkind4\uc1 
+\pard\brdrb\brdrs\brdrw10\brsp20 \qj\b\f0\fs20\par
+
+\pard\b0\fs22 On this tab, you can set up your new i-Tree Eco project or make changes to the settings that you provided for an existing project. On the ribbon above, there are six groups of available functions (see Notes below), including:\par
+\par
+\cf1\b Project Definition\cf0  \b0\endash  to define important project settings such as the location of your study area and your data collection variables.\b\par
+\par
+\cf1 Define Data Fields\b0  \cf0\endash  to view or edit categories for different data fields.\par
+\par
+\cf1\b Define Plots\b0  \cf0\endash  to identify the locations of the plots where data will be collected for your plot-based sample.\par
+\par
+\cf1\b Project &amp; Strata Area\b0  \cf0\endash  to identify the area of your project or strata and define the strata or zones by which you are stratifying your project (i.e., subdividing the study area into smaller units such as land use classes).\par
+\b\par
+\cf1 Export\cf0  \b0\endash  to export an open data table to a \ldblquote comma separated values\rdblquote  (csv) file.\b\par
+ \par
+\cf1 Editing Mode\b0  \cf0\endash  to turn Editing mode on.\par
+\b\par
+*IMPORTANT*\par
+\b0 After you send data and retrieve results on the \b Reports\b0  tab, the \b Editing Mode \b0 function will become unavailable on the \b Project Configuration\b0  tab (i.e., it will no longer be greyed out and the function will read \ldblquote Editing Mode: Off\rdblquote ). This indicates that the tab is in view-only mode so each function may be viewed, but not edited.\par
+\par
+
+\pard\widctlpar When a project is in view-only mode, the project settings that you enter in this tab may be edited with caution. In order to do this, you will need to switch to Editing mode by clicking on the \b Editing Mode \b0 function once it has become available. After clicking on it, the function will be greyed out and read \ldblquote Editing Mode: On.\rdblquote  Edits may be made at that time. Please note that if you edit your project configuration, the results in the \b Reports\b0  tab may not reflect the changes that you made. To ensure that they do, send your data to the server and load your results again.\par
+
+\pard\par
+\b Notes:\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li360\b0 Functions that are greyed out on the ribbon cannot be accessed at that point. It is best to go through the functions from left to right. As you provide more information about your project, additional functions will become available.\par
+
+\pard\brdrb\brdrs\brdrw10\brsp20 \qj\fs20\par
+
+\pard\sa200\sl276\slmult1\f1\fs22\lang9\par
+}
+&#x0;</value>
+  </data>
+  <data name="rtData" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Calibri;}{\f1\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red114\green144\blue201;\red51\green115\blue183;}
+{\*\generator Riched20 10.0.17763}\viewkind4\uc1 
+\pard\brdrb\brdrs\brdrw10\brsp20 \qj\b\f0\fs20\par
+
+\pard\b0\fs22 On this tab, you can enter the data that you collected in the field and recorded using either paper forms or a mobile device. You can also edit or view data that has already been entered. On the ribbon above, there are six groups of available functions, including:\par
+\cf1\b\par
+\cf2 Data Collection \cf0\-\b0\endash  to view and print forms if you are using paper forms for recording data collected in the field. To submit your project settings to the web or retrieve your data from the web if you are using a mobile device for recording field data. To activate the import function, click on the Trees button.\par
+\par
+\cf2\b Inventory Data \cf0\b0\endash  to manually add the data that you collected in the field or edit/view data that has already been added.\par
+
+\pard\tx720\b\par
+
+\pard\cf2 Inventory Value\cf0\b0  \endash  to adjust benefit prices and add annual cost data.\cf2\par
+\b\par
+Report Classes\cf0\b0  \endash  to view DBH and Crown Health classes that will be displayed in reports.\cf2\par
+\b\par
+Export\cf0\b0  \endash   to export an open data table to a \ldblquote comma separated values\rdblquote  (csv) or \ldblquote keyhole markup language\rdblquote  (kml) file.\cf2\par
+
+\pard\tx720\cf0\b\par
+
+\pard\cf2 Editing Mode \cf0\b0\endash  to turn Editing mode on.\par
+
+\pard\tx720\b\par
+
+\pard *IMPORTANT*\par
+\b0 After you send data and retrieve results on the \b Reports\b0  tab, the \b Editing Mode \b0 function will become available on the \b Data\b0  tab (i.e., it will no longer be greyed out and the function will read \ldblquote Editing Mode: Off\rdblquote ). This indicates that, with the exception of the \b Benefit Prices\b0  and \b Annual Costs\b0  functions, the tab is in View-only mode so each function may be viewed, but not edited. The \b Benefit Prices\b0  and \b Annual Costs\b0  functions may be edited at all times.\par
+\par
+
+\pard\widctlpar In order to edit data in the rest of the tab, you will need to switch to Editing mode by clicking on the \b Editing Mode \b0 function once it has become available. After clicking on it, the function will be greyed out and read \ldblquote Editing Mode: On.\rdblquote  Edits may be made at that time. Please note that if you edit your data, the results in the \b Reports\b0  tab may not reflect the changes that you made. To ensure that they do, send your data to the server and load your results again.\fs20\par
+
+\pard\sa200\sl276\slmult1\f1\fs22\lang9\par
+}
+&#x0;</value>
+  </data>
+  <data name="rtView" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Calibri;}{\f1\fnil\fcharset0 Calibri;}{\f2\fnil\fcharset2 Symbol;}}
+{\colortbl ;\red51\green115\blue183;}
+{\*\generator Riched20 10.0.17763}\viewkind4\uc1 
+\pard\brdrb\brdrs\brdrw10\brsp20 \qj\b\f0\fs20\par
+
+\pard\b0\fs22 On this tab, you can specify the style of your user interface and how you would like to view your project data. You can also lookup species codes. On the ribbon above, there are four groups of available functions, including:\par
+\par
+\cf1\b Specify Data\b0  \cf0\endash  to specify which dataset you would like to view. Data for i-Tree Eco projects are saved within a database. In some cases, you may have multiple datasets saved in the same database. Select the project, series, and year that you would like to access from the drop-down menus.\par
+\par
+\cf1\b Species \cf0\b0\endash  to access a species lookup tool or a complete list of Eco\rquote s tree species. Click one of the buttons in the ribbon above. The feature will become available in the action panel to the right.\par
+\b\par
+\cf1 Export\cf0  \b0\endash  to export an open data table to a \ldblquote comma separated values\rdblquote  (csv) file.\par
+\b\par
+\cf1 Configuration \cf0\b0\endash  to change the style of the user interface or minimize the help panel. \par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720 To customize the style of the user interface, choose one of the different color schemes from the \b Style\b0  drop-down menu. \par
+{\pntext\f2\'B7\tab}Help text is available in the panel on the left-hand side of the i-Tree Eco window. Check the appropriate box in the \b Configuration\b0  group to have the help panel minimized at all times. To maximize the help panel again, uncheck the box.\par
+
+\pard\par
+
+\pard\sa200\sl276\slmult1\f1\lang9\par
+}
+&#x0;</value>
+  </data>
+</root>

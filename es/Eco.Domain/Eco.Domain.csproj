@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Program Files (x86)\i-Tree\EcoV6\Eco.Domain.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{935887B3-14A9-4521-8AC7-D6F0D935B925}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Eco.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <ApplicationVersion>10.0.17.6714</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Eco.Domain</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NHibernate">
+      <HintPath>lib\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EcoDomain_ProcessedByFody.cs" />
+    <Compile Include="_003C_003EPropertyChangedEventArgs.cs" />
+    <Compile Include="v6\Building.cs" />
+    <Compile Include="v6\Cohort.cs" />
+    <Compile Include="v6\CohortResult.cs" />
+    <Compile Include="v6\Condition.cs" />
+    <Compile Include="v6\Crown.cs" />
+    <Compile Include="v6\CrownLightExposure.cs" />
+    <Compile Include="v6\DBH.cs" />
+    <Compile Include="v6\DBHRptClass.cs" />
+    <Compile Include="v6\ElementPrice.cs" />
+    <Compile Include="v6\ElementPrice`1.cs" />
+    <Compile Include="v6\Carbon.cs" />
+    <Compile Include="v6\CO.cs" />
+    <Compile Include="v6\Electricity.cs" />
+    <Compile Include="v6\NO2.cs" />
+    <Compile Include="v6\O3.cs" />
+    <Compile Include="v6\PM10.cs" />
+    <Compile Include="v6\PM25.cs" />
+    <Compile Include="v6\SO2.cs" />
+    <Compile Include="v6\Gas.cs" />
+    <Compile Include="v6\H2O.cs" />
+    <Compile Include="v6\ExchangeRate.cs" />
+    <Compile Include="v6\VOC.cs" />
+    <Compile Include="v6\Home.cs" />
+    <Compile Include="v6\Budget.cs" />
+    <Compile Include="v6\PopulationDensity.cs" />
+    <Compile Include="v6\Entity.cs" />
+    <Compile Include="v6\Entity`1.cs" />
+    <Compile Include="v6\EntityMap.cs" />
+    <Compile Include="v6\MgmtStyleEnum.cs" />
+    <Compile Include="v6\MgmtStyleMask.cs" />
+    <Compile Include="v6\PlotSize.cs" />
+    <Compile Include="v6\YearUnit.cs" />
+    <Compile Include="v6\SampleMethod.cs" />
+    <Compile Include="v6\SampleType.cs" />
+    <Compile Include="v6\ConditionCategory.cs" />
+    <Compile Include="v6\CohortResultDataType.cs" />
+    <Compile Include="v6\WeatherEvent.cs" />
+    <Compile Include="v6\Forecast.cs" />
+    <Compile Include="v6\ForecastEvent.cs" />
+    <Compile Include="v6\ForecastEvent`1.cs" />
+    <Compile Include="v6\ForecastPestEvent.cs" />
+    <Compile Include="v6\ForecastWeatherEvent.cs" />
+    <Compile Include="v6\GroundCover.cs" />
+    <Compile Include="v6\HealthRptClass.cs" />
+    <Compile Include="v6\IPED.cs" />
+    <Compile Include="v6\LandUse.cs" />
+    <Compile Include="v6\Lookup.cs" />
+    <Compile Include="v6\Lookup`1.cs" />
+    <Compile Include="v6\LocSite.cs" />
+    <Compile Include="v6\MaintRec.cs" />
+    <Compile Include="v6\MaintTask.cs" />
+    <Compile Include="v6\OtherOne.cs" />
+    <Compile Include="v6\OtherTwo.cs" />
+    <Compile Include="v6\OtherThree.cs" />
+    <Compile Include="v6\Sidewalk.cs" />
+    <Compile Include="v6\WireConflict.cs" />
+    <Compile Include="v6\SiteType.cs" />
+    <Compile Include="v6\MobileLogEntry.cs" />
+    <Compile Include="v6\Mortality.cs" />
+    <Compile Include="v6\PctMidRange.cs" />
+    <Compile Include="v6\PctTopRange.cs" />
+    <Compile Include="v6\PlantingSite.cs" />
+    <Compile Include="v6\PlantingSiteType.cs" />
+    <Compile Include="v6\Plot.cs" />
+    <Compile Include="v6\PlotGroundCover.cs" />
+    <Compile Include="v6\PlotLandUse.cs" />
+    <Compile Include="v6\PollutantResult.cs" />
+    <Compile Include="v6\Project.cs" />
+    <Compile Include="v6\ProjectLocation.cs" />
+    <Compile Include="v6\ReferenceObject.cs" />
+    <Compile Include="v6\ReferenceObjectType.cs" />
+    <Compile Include="v6\Replanting.cs" />
+    <Compile Include="v6\Series.cs" />
+    <Compile Include="v6\Shrub.cs" />
+    <Compile Include="v6\Stem.cs" />
+    <Compile Include="v6\Strata.cs" />
+    <Compile Include="v6\Street.cs" />
+    <Compile Include="v6\Tree.cs" />
+    <Compile Include="v6\TreeStatus.cs" />
+    <Compile Include="v6\Year.cs" />
+    <Compile Include="v6\YearLocationData.cs" />
+    <Compile Include="v6\YearlyCost.cs" />
+    <Compile Include="v6\YearOption.cs" />
+    <Compile Include="v6\YearResult.cs" />
+    <Compile Include="v5\BuildingInteraction.cs" />
+    <Compile Include="v5\BuildingInteractionId.cs" />
+    <Compile Include="v5\CoverType.cs" />
+    <Compile Include="v5\CoverTypeId.cs" />
+    <Compile Include="v5\ElementPrice.cs" />
+    <Compile Include="v5\Carbon.cs" />
+    <Compile Include="v5\CO.cs" />
+    <Compile Include="v5\Electricity.cs" />
+    <Compile Include="v5\NO2.cs" />
+    <Compile Include="v5\O3.cs" />
+    <Compile Include="v5\PM10.cs" />
+    <Compile Include="v5\PM25.cs" />
+    <Compile Include="v5\SO2.cs" />
+    <Compile Include="v5\Gas.cs" />
+    <Compile Include="v5\H2O.cs" />
+    <Compile Include="v5\ExchangeRate.cs" />
+    <Compile Include="v5\ElementPriceId.cs" />
+    <Compile Include="v5\RevisionMismatchException.cs" />
+    <Compile Include="v5\FieldLandUse.cs" />
+    <Compile Include="v5\FieldLandUseId.cs" />
+    <Compile Include="v5\HashFactor.cs" />
+    <Compile Include="v5\Location.cs" />
+    <Compile Include="v5\LocationId.cs" />
+    <Compile Include="v5\MapLandUse.cs" />
+    <Compile Include="v5\MapLandUseId.cs" />
+    <Compile Include="v5\Plot.cs" />
+    <Compile Include="v5\PlotId.cs" />
+    <Compile Include="v5\Project.cs" />
+    <Compile Include="v5\ProjectFile.cs" />
+    <Compile Include="v5\ProjectId.cs" />
+    <Compile Include="v5\ReferenceObject.cs" />
+    <Compile Include="v5\ReferenceObjectId.cs" />
+    <Compile Include="v5\Series.cs" />
+    <Compile Include="v5\SeriesId.cs" />
+    <Compile Include="v5\Shrub.cs" />
+    <Compile Include="v5\ShrubId.cs" />
+    <Compile Include="v5\Stem.cs" />
+    <Compile Include="v5\StemId.cs" />
+    <Compile Include="v5\SubPlot.cs" />
+    <Compile Include="v5\SubPlotCover.cs" />
+    <Compile Include="v5\SubPlotCoverId.cs" />
+    <Compile Include="v5\SubPlotId.cs" />
+    <Compile Include="v5\Tree.cs" />
+    <Compile Include="v5\TreeId.cs" />
+    <Compile Include="Types\v6\CultureType.cs" />
+    <Compile Include="Types\v6\PlotSize.cs" />
+    <Compile Include="Types\v6\SampleType.cs" />
+    <Compile Include="Types\v6\VersionType.cs" />
+    <Compile Include="Types\v6\YearUnit.cs" />
+    <Compile Include="Properties\v6Strings.cs" />
+    <Compile Include="DTO\Util.cs" />
+    <Compile Include="DTO\v6\BuildingDTO.cs" />
+    <Compile Include="DTO\v6\ConditionDTO.cs" />
+    <Compile Include="DTO\v6\CrownDTO.cs" />
+    <Compile Include="DTO\v6\DBHDTO.cs" />
+    <Compile Include="DTO\v6\EntityDTO.cs" />
+    <Compile Include="DTO\v6\GroundCoverDTO.cs" />
+    <Compile Include="DTO\v6\IPEDDTO.cs" />
+    <Compile Include="DTO\v6\LandUseDTO.cs" />
+    <Compile Include="DTO\v6\LookupDTO.cs" />
+    <Compile Include="DTO\v6\PlantingSiteDTO.cs" />
+    <Compile Include="DTO\v6\PlantingSiteTypeDTO.cs" />
+    <Compile Include="DTO\v6\PlotDTO.cs" />
+    <Compile Include="DTO\v6\PlotGroundCoverDTO.cs" />
+    <Compile Include="DTO\v6\PlotLandUseDTO.cs" />
+    <Compile Include="DTO\v6\ProjectDTO.cs" />
+    <Compile Include="DTO\v6\ProjectLocationDTO.cs" />
+    <Compile Include="DTO\v6\ReferenceObjectDTO.cs" />
+    <Compile Include="DTO\v6\SeriesDTO.cs" />
+    <Compile Include="DTO\v6\ShrubDTO.cs" />
+    <Compile Include="DTO\v6\State.cs" />
+    <Compile Include="DTO\v6\StemDTO.cs" />
+    <Compile Include="DTO\v6\StrataDTO.cs" />
+    <Compile Include="DTO\v6\StreetDTO.cs" />
+    <Compile Include="DTO\v6\TreeDTO.cs" />
+    <Compile Include="DTO\v6\YearDTO.cs" />
+    <Compile Include="DTO\v6\YearlyCostDTO.cs" />
+    <Compile Include="DTO\v5\BuildingInteractionDTO.cs" />
+    <Compile Include="DTO\v5\CoverTypeDTO.cs" />
+    <Compile Include="DTO\v5\State.cs" />
+    <Compile Include="DTO\v5\FieldLandUseDTO.cs" />
+    <Compile Include="DTO\v5\LocationDTO.cs" />
+    <Compile Include="DTO\v5\MapLandUseDTO.cs" />
+    <Compile Include="DTO\v5\PlotDTO.cs" />
+    <Compile Include="DTO\v5\ProjectDTO.cs" />
+    <Compile Include="DTO\v5\ReferenceObjectDTO.cs" />
+    <Compile Include="DTO\v5\SeriesDTO.cs" />
+    <Compile Include="DTO\v5\ShrubDTO.cs" />
+    <Compile Include="DTO\v5\StemDTO.cs" />
+    <Compile Include="DTO\v5\SubPlotCoverDTO.cs" />
+    <Compile Include="DTO\v5\SubPlotDTO.cs" />
+    <Compile Include="DTO\v5\TreeDTO.cs" />
+    <Compile Include="Attributes\LocalizedDescriptionAttribute.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\v6Strings.resx" />
+    <EmbeddedResource Include="v5\BuildingInteraction\hbm.xml" />
+    <EmbeddedResource Include="v5\CoverType\hbm.xml" />
+    <EmbeddedResource Include="v5\ElementPrice\hbm.xml" />
+    <EmbeddedResource Include="v5\FieldLandUse\hbm.xml" />
+    <EmbeddedResource Include="v5\Location\hbm.xml" />
+    <EmbeddedResource Include="v5\MapLandUse\hbm.xml" />
+    <EmbeddedResource Include="v5\Plot\hbm.xml" />
+    <EmbeddedResource Include="v5\Project\hbm.xml" />
+    <EmbeddedResource Include="v5\ReferenceObject\hbm.xml" />
+    <EmbeddedResource Include="v5\Series\hbm.xml" />
+    <EmbeddedResource Include="v5\Shrub\hbm.xml" />
+    <EmbeddedResource Include="v5\Stem\hbm.xml" />
+    <EmbeddedResource Include="v5\SubPlot\hbm.xml" />
+    <EmbeddedResource Include="v5\SubPlotCover\hbm.xml" />
+    <EmbeddedResource Include="v5\Tree\hbm.xml" />
+    <EmbeddedResource Include="v6\Building\hbm.xml" />
+    <EmbeddedResource Include="v6\Cohort\hbm.xml" />
+    <EmbeddedResource Include="v6\CohortResult\hbm.xml" />
+    <EmbeddedResource Include="v6\Condition\hbm.xml" />
+    <EmbeddedResource Include="v6\DBH\hbm.xml" />
+    <EmbeddedResource Include="v6\DBHRptClass\hbm.xml" />
+    <EmbeddedResource Include="v6\ElementPrice\hbm.xml" />
+    <EmbeddedResource Include="v6\Forecast\hbm.xml" />
+    <EmbeddedResource Include="v6\ForecastEvent\hbm.xml" />
+    <EmbeddedResource Include="v6\GroundCover\hbm.xml" />
+    <EmbeddedResource Include="v6\HealthRptClass\hbm.xml" />
+    <EmbeddedResource Include="v6\LandUse\hbm.xml" />
+    <EmbeddedResource Include="v6\Lookup\hbm.xml" />
+    <EmbeddedResource Include="v6\MobileLogEntry\hbm.xml" />
+    <EmbeddedResource Include="v6\Mortality\hbm.xml" />
+    <EmbeddedResource Include="v6\PlantingSite\hbm.xml" />
+    <EmbeddedResource Include="v6\PlantingSiteType\hbm.xml" />
+    <EmbeddedResource Include="v6\Plot\hbm.xml" />
+    <EmbeddedResource Include="v6\PlotGroundCover\hbm.xml" />
+    <EmbeddedResource Include="v6\PlotLandUse\hbm.xml" />
+    <EmbeddedResource Include="v6\PollutantResult\hbm.xml" />
+    <EmbeddedResource Include="v6\Project\hbm.xml" />
+    <EmbeddedResource Include="v6\ProjectLocation\hbm.xml" />
+    <EmbeddedResource Include="v6\ReferenceObject\hbm.xml" />
+    <EmbeddedResource Include="v6\Replanting\hbm.xml" />
+    <EmbeddedResource Include="v6\Series\hbm.xml" />
+    <EmbeddedResource Include="v6\Shrub\hbm.xml" />
+    <EmbeddedResource Include="v6\Stem\hbm.xml" />
+    <EmbeddedResource Include="v6\Strata\hbm.xml" />
+    <EmbeddedResource Include="v6\Street\hbm.xml" />
+    <EmbeddedResource Include="v6\Tree\hbm.xml" />
+    <EmbeddedResource Include="v6\Year\hbm.xml" />
+    <EmbeddedResource Include="v6\YearLocationData\hbm.xml" />
+    <EmbeddedResource Include="v6\YearlyCost\hbm.xml" />
+    <EmbeddedResource Include="v6\YearResult\hbm.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Eco.Domain" namespace="Eco.Domain.v5">
+  <class name="Location" table="Location">
+    <composite-id name="CompositeId" access="field.camelcase-m-underscore" class="LocationId">
+      <key-property name="Location" column="LocationName" access="field.camelcase-m-underscore"/>
+    </composite-id>
+    <set name="Series" table="Series" lazy="true" access="nosetter.camelcase-m-underscore" inverse="true">
+      <key unique="true">
+        <column name="LocationName" not-null="true" length="50"/>
+      </key>
+      <one-to-many class="Series"/>
+    </set>
+    <property name="NationCode" column="NationCode" />
+    <property name="StateCode" column="PrimaryPartitionCode" />
+    <property name="CountyCode" column="SecondaryPartitionCode" />
+    <property name="CityCode" column="TertiaryPartitionCode" />
+    <property name="WeatherYear" column="YearOfWeatherData" />
+    <property name="WeatherStationID" column="WeatherStationID" />
+    <property name="UFOREVersion" column="UFOREShellVersion" />
+    <property name="Comments" column="Comments" />
+  </class>
+</hibernate-mapping>

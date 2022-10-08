@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="EditModeBasicMessage" xml:space="preserve">
+    <value>You cannot change this configuration's basic options unless you have enabled editing.</value>
+  </data>
+  <data name="BaseStr" xml:space="preserve">
+    <value>Base</value>
+  </data>
+  <data name="ForecastYearsMessage" xml:space="preserve">
+    <value>Number of years forecasted</value>
+  </data>
+  <data name="BasicParametersStr" xml:space="preserve">
+    <value>Basic Options</value>
+  </data>
+  <data name="AndStr" xml:space="preserve">
+    <value>And</value>
+  </data>
+  <data name="AllStr" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="DuplicateMortalityError" xml:space="preserve">
+    <value>An annual mortality rate has already been defined for {0}: {1}.</value>
+  </data>
+  <data name="ContinueForecastMessage" xml:space="preserve">
+    <value>Continue running configuration "{0}"?</value>
+  </data>
+  <data name="RenameForecastError" xml:space="preserve">
+    <value>A configuration has already been given the title "{0}".</value>
+  </data>
+  <data name="TypeStr" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="DeleteForecastWarning" xml:space="preserve">
+    <value>Are you sure you want to delete configuration "{0}" and any data that it predicts?</value>
+  </data>
+  <data name="DuplicateReplantingError" xml:space="preserve">
+    <value>Trees are already being planted for Stratum: {0}, DBH: {1}.</value>
+  </data>
+  <data name="SuccessfulForecastMessage" xml:space="preserve">
+    <value>Forecast "{0}" completed successfully!</value>
+  </data>
+  <data name="ValueStr" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="DuplicatePestError" xml:space="preserve">
+    <value>{0} outbreak already defined for year {1}</value>
+  </data>
+  <data name="DefaultForecastWarning" xml:space="preserve">
+    <value>Are you sure that you want to reset configuration "{0}" to default?  All of its custom options (Mortalities, Trees to Plant, and Extreme Events) will be deleted.
+
+Note that this action cannot be undone.</value>
+  </data>
+  <data name="CustomMortalitiesStr" xml:space="preserve">
+    <value>Custom Annual Mortality Rates</value>
+  </data>
+  <data name="CancelledForecastMessage" xml:space="preserve">
+    <value>Forecast canceled!</value>
+  </data>
+  <data name="HealthyMessage" xml:space="preserve">
+    <value>Base annual mortality rate for healthy trees</value>
+  </data>
+  <data name="CopyStr" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="SickMessage" xml:space="preserve">
+    <value>Base annual mortality rate for sick trees</value>
+  </data>
+  <data name="PestStr" xml:space="preserve">
+    <value>Pest</value>
+  </data>
+  <data name="ForecastDurationWarning" xml:space="preserve">
+    <value>Note that this may take several minutes.</value>
+  </data>
+  <data name="CancelForecastWarning" xml:space="preserve">
+    <value>Are you sure you want to cancel Forecast?  All predicted data will be lost!</value>
+  </data>
+  <data name="OneForecastError" xml:space="preserve">
+    <value>You must keep at least one Forecast configuration</value>
+  </data>
+  <data name="PercentError" xml:space="preserve">
+    <value>Percent must be between 0.1% and 99.9%</value>
+  </data>
+  <data name="StratumStr" xml:space="preserve">
+    <value>Stratum</value>
+  </data>
+  <data name="SelectStr" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="DurationsShortenedMessage" xml:space="preserve">
+    <value>Record(s) for {0}{1}{2} were discovered whose durations would last longer than this Forecast.  Their durations have been shortened.</value>
+  </data>
+  <data name="TooLongEventError" xml:space="preserve">
+    <value>An Event cannot last longer than the duration of the Forecast</value>
+  </data>
+  <data name="WeatherStr" xml:space="preserve">
+    <value>Weather</value>
+  </data>
+  <data name="EditModeCustomMessage" xml:space="preserve">
+    <value>You cannot add records for {0} unless you have enabled editing.</value>
+  </data>
+  <data name="GenusStr" xml:space="preserve">
+    <value>Genus</value>
+  </data>
+  <data name="DbhDistribChartHeader" xml:space="preserve">
+    <value>{0} DBH Distribution{1}</value>
+  </data>
+  <data name="EditForecastWarning" xml:space="preserve">
+    <value>If you enable editing, your reports will no longer be available until you re-run the model.
+
+Do you want to continue anyway?</value>
+  </data>
+  <data name="ConditionStr" xml:space="preserve">
+    <value>Condition</value>
+  </data>
+  <data name="TooLongReplantingError" xml:space="preserve">
+    <value>Planting cannot last longer than the duration of the Forecast</value>
+  </data>
+  <data name="FailedForecastMessage" xml:space="preserve">
+    <value>Forecast failed!</value>
+  </data>
+  <data name="DyingMessage" xml:space="preserve">
+    <value>Base annual mortality rate for dying trees</value>
+  </data>
+  <data name="DuplicateWeatherError" xml:space="preserve">
+    <value>{0} event already defined for year {1}</value>
+  </data>
+  <data name="TreeNumberError" xml:space="preserve">
+    <value>Number of trees must be between 1 and {0}</value>
+  </data>
+  <data name="CurrentStr" xml:space="preserve">
+    <value>0 (Current)</value>
+  </data>
+  <data name="ReplantTreesStr" xml:space="preserve">
+    <value>Trees to Plant</value>
+  </data>
+  <data name="FrostFreeDaysMessage" xml:space="preserve">
+    <value>Days per year without frost</value>
+  </data>
+  <data name="ExtremeEventsStr" xml:space="preserve">
+    <value>Extreme Events</value>
+  </data>
+  <data name="RerunForecastWarning" xml:space="preserve">
+    <value>You've already run the model for the reports.
+
+Do you want to continue anyway?</value>
+  </data>
+  <data name="CopyForecastMessage" xml:space="preserve">
+    <value>Note that you will have to re-run this copied configuration before you can view any of its reports.</value>
+  </data>
+  <data name="Dieback75_99" xml:space="preserve">
+    <value>75-99% Dieback</value>
+  </data>
+  <data name="Dieback50_74" xml:space="preserve">
+    <value>50-74% Dieback</value>
+  </data>
+  <data name="Dieback00_49" xml:space="preserve">
+    <value>00-49% Dieback</value>
+  </data>
+  <data name="DefaultStr" xml:space="preserve">
+    <value>Default</value>
+  </data>
+</root>

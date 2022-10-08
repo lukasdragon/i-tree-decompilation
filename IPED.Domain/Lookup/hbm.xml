@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="IPED.Domain" namespace="IPED.Domain" auto-import="false">
+  <class name="Lookup" table="LookupTable" abstract="true" dynamic-update="true">
+    <id name="Id" column="LookupId">
+      <generator class="identity"/>
+    </id>
+    <discriminator column="LookupType" not-null="true" force="true"/>
+    <natural-id mutable="true">
+      <property name="Code" column="LookupCode" not-null="true"/>
+    </natural-id>
+    <property name="Description" column="`Description`"/>
+    <property name="IPEDDescription" column="IPEDDescription"/>
+    <property name="Sequence" column="LookupSeq"/>
+    
+    <subclass name="BBAbnGrowth" discriminator-value="BBAbnGrowth"/>
+    <subclass name="BBDiseaseSigns" discriminator-value="BBDiseaseSigns"/>
+    <subclass name="BBInsectPres" discriminator-value="BBInsectPres"/>
+    <subclass name="BBInsectSigns" discriminator-value="BBInsectSigns"/>
+    <subclass name="BBProbLoc" discriminator-value="BBProbLoc"/>
+    
+    <subclass name="FTAbnFoli" discriminator-value="FTAbnFoli"/>  
+    <subclass name="FTChewFoli" discriminator-value="FTChewFoli"/>
+    <subclass name="FTDiscFoli" discriminator-value="FTDiscFoli"/>
+    <subclass name="FTFoliAffect" discriminator-value="FTFoliAffect"/>
+    <subclass name="FTInsectSigns" discriminator-value="FTInsectSigns"/>
+
+    <subclass name="TSDieback" discriminator-value="TSDieback"/>
+    <subclass name="TSEnvStress" discriminator-value="TSEnvStress"/>
+    <subclass name="TSEpiSprout" discriminator-value="TSEpiSprout"/>
+    <subclass name="TSHumStress" discriminator-value="TSHumStress"/>
+    <subclass name="TSWiltFoli" discriminator-value="TSWiltFoli"/>
+  </class>
+</hibernate-mapping>

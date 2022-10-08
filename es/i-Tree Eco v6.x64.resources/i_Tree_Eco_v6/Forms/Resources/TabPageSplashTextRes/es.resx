@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="rtProject_full" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Calibri;}{\f1\fnil\fcharset2 Symbol;}}
+{\colortbl ;\red51\green115\blue183;\red255\green0\blue0;}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\brdrb\brdrs\brdrw10\brsp20 \qj\b\f0\fs20\par
+\pard\b0\fs22 En esta pesta\'f1a, puedes configurar tu nuevo proyecto i-Tree Eco o hacer cambios a las configuraciones que proporcionaste para un proyecto existente. En la barra superior, hay cinco grupos de funciones disponibles (ver Notas a continuaci\'f3n), incluyendo:\par
+\par
+\cf1\b Definici\'f3n del proyecto \cf0\b0\endash  para definir las configuraciones importantes del proyecto como el lugar de tu \'e1rea de estudio y tus variables de recopilaci\'f3n de datos.\b\par
+\par
+\cf1 Definir campos de datos \b0  \cf0\endash  para ver o editar las clases para los diferentes campos de datos.\par
+\b\par
+\cf1\'c1rea del proyecto y estrato\b0  \cf0\endash  para identificar el \'e1rea de tu proyecto o estrato y definir estratos o zonas por las que estratificar\'e1s tu proyecto (p. ej., subdividir el \'e1rea de estudio en unidades m\'e1s peque\'f1as como clases de uso de la tierra).\par
+\b\par
+\cf1 Exportar\cf0  \b0\endash  para exportar una tabla de datos abierta a un archivo de "valores separados por comas" (csv).\b\par
+\par
+\cf1 Modo de edici\'f3n\b0  \cf0\endash  para encender el modo de edici\'f3n.\par
+\cf2\b\par
+\cf0 *IMPORTANTE*\par
+\b0 Despu\'e9s de enviar datos y recuperar resultados en la pesta\'f1a de \b Reportes\b0 , la funci\'f3n de \b Modo de edici\'f3n\b0  estar\'e1 disponible en la pesta\'f1a de \b Configuraci\'f3n del proyecto\b0  (p. ej., ya no aparecer\'e1 de color gris y la funci\'f3n se\'f1alar\'e1 "Modo de edici\'f3n: Apagado"). Ello indica que la pesta\'f1a se encuentra en el modo de vista \'fanicamente de manera que cada funci\'f3n puede verse, pero no editarse.\par
+\par
+Sin embargo, las configuraciones del proyecto que ingreses en esta pesta\'f1a pueden editarse con precauci\'f3n. Para ello, necesitar\'e1s cambiar el modo de edici\'f3n haciendo clic en la funci\'f3n de \b Modo de edici\'f3n\b0  una vez que est\'e9 disponible. Despu\'e9s de hacer clic, la funci\'f3n estar\'e1 de color gris y se\'f1alar\'e1 "Modo de edici\'f3n: Encendido". Ahora pueden realizarse ediciones. Por favor toma nota que si editas la configuraci\'f3n de tu proyecto, quiz\'e1 los resultados en la pesta\'f1a de \b Reportes\b0  no reflejen los cambios que hiciste. Para garantizar que s\'ed, env\'eda tus datos al servidor y vuelve a cargar tus resultados.\par
+\par
+\b Notas:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li360\b0 Las funciones que aparecen de color gris en la barra no pueden usarse en este momento. Es mejor revisar las funciones de izquierda a derecha. Conforme proporciones m\'e1s informaci\'f3n sobre tu proyecto, las funciones adicionales se volver\'e1n disponibles.\par
+\pard\brdrb\brdrs\brdrw10\brsp20 \qj\fs20\par
+}
+&#x0;</value>
+  </data>
+  <data name="LaunchSplash" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Calibri;}}
+{\colortbl ;\red31\green73\blue125;}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\b\f0\fs24\line\lang2058\'a1Bienvenido a\lang1033  i-Tree Eco!\par
+\b0\par
+i-Tree Eco es una aplicaci\'f3n de software dise\'f1ada para usar datos de campo de inventarios completos o parcelas ubicadas al azar a lo largo de un \'e1rea de estudio junto con datos de contaminaci\'f3n del aire y meteorol\'f3gicos locales por hora para cuantificar la estructura del bosque, los efectos ambientales y el valor para las comunidades.\par
+\par
+Si eres nuevo en Eco, por favor revisa los recursos en la pesta\'f1a de \b Soporte\b0  para m\'e1s informaci\'f3n. \par
+\par
+Si ya has utilizado versiones anteriores de Eco, carga y explora ejemplos de proyectos en el men\'fa de \b Archivo\b0  en la barra superior.\par
+\par
+Si deseas continuar el trabajo en un proyecto existente, c\'e1rgalo con el men\'fa de \b Archivo\b0  en la barra superior.\par
+\par
+Se proporciona orientaci\'f3n en el panel de \b Ayuda\b0  del lado izquierdo. Por favor consulta el \b Manual del usuario\b0  en la pesta\'f1a de \b Soporte\b0  para m\'e1s informaci\'f3n.\par
+}
+&#x0;</value>
+  </data>
+  <data name="rtSupport" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Calibri;}}
+{\colortbl ;\red51\green115\blue183;}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\brdrb\brdrs\brdrw10\brsp20 \qj\b\f0\fs20\par
+\pard\brdrb\brdrs\brdrw10\brsp20 \b0\fs22 La pesta\lang2058\'f1a de\lang1033  \b Soporte \b0 proporciona acceso a los numerosos recursos de soporte de i-Tree Eco. Hace clic en uno de los recursos de la lista en la barra superior te enlazar\'e1 directamente al recurso indicado.\par
+\par
+i-Tree Eco ofrece varias opciones para buscar ayuda en preguntas generales o t\'e9cnicas de i-Tree, incluyendo:\par
+\par
+\cf1\b Manual del usuario\b0  \cf0\endash  para especificaciones a detalle sobre configurar un proyecto o llevar a cabo la recopilaci\'f3n de datos en el campo.\par
+\par
+\cf1\b Gu\'edas del usuario\cf0\b0  \endash  para informaci\'f3n espec\'edfica de un tema a fin de ayudar en tareas espec\'edficas de un proyecto Eco.\fs20\par
+\fs22\par
+\cf1\b Video aprendizaje\b0  \cf0\endash  para videos de instrucci\'f3n y webinarios para aprender m\'e1s sobre la aplicaci\'f3n i-Tree Eco.\par
+\par
+\cf1\b Foro de usuarios\b0  \cf0\endash  para participar en un foro moderado de discusi\'f3n para solicitar consejos, respuestas a preguntas t\'e9cnicas, compartir experiencias y ver las preguntas m\'e1s frecuentes (FAQ).\par
+\par
+\cf1\b Sitio i-Tree\b0  \cf0\endash  para aprender todo sobre las aplicaciones y utilidades de i-Tree, tener acceso a los recursos de soporte de i-Tree y leer sobre lo nuevo de i-Tree.\par
+\par
+\cf1\b Reportar errores inform\'e1ticos\b0  \cf0\endash  para reportar problemas t\'e9cnicos que afecten la funcionalidad de las herramientas i-Tree.\par
+\par
+\cf1\b Actualizar software\b0  \cf0\endash  para revisar las nuevas versiones del software i-Tree Eco y descargar actualizaciones.\par
+\par
+\cf1\b Acerca de \cf0\b0\endash  para una perspectiva general del modelo i-Tree Eco as\'ed como informaci\'f3n de la versi\'f3n, agradecimientos y cr\'e9ditos.\par
+\par
+\cf1\b Contrato de licencia \cf0\b0\endash  para abrir el contrato de licencia del usuario final de i-Tree Eco el cual aceptas al descargar el software i-Tree y correr un proyecto Eco.\cf1\b\par
+\par
+Retroalimentaci\'f3n \cf0\b0\endash  para dar retroalimentaci\'f3n sobre tu experiencia usando la aplicaci\'f3n i-Tree Eco.\par
+\par
+\cf1\b Lo nuevo\b0  \cf0\endash  para un resumen de las caracter\'edsticas nuevas en i-Tree Eco v6.0. \par
+\pard\brdrb\brdrs\brdrw10\brsp20 \qj\fs20\par
+}
+&#x0;</value>
+  </data>
+  <data name="rtReports" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Calibri;}{\f1\fnil\fcharset2 Symbol;}}
+{\colortbl ;\red51\green115\blue183;}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\brdrb\brdrs\brdrw10\brsp20 \qj\b\f0\fs20\par
+\pard\b0\fs22 En esta pesta\lang2058\'f1a, puedes enviar datos, recuperar resultados y ver tus reportes. i-Tree Eco presenta reportes en la pesta\'f1a de \b Reportes\b0  en varios formatos, incluyendo gr\'e1ficos, tablas y reportes escritos (ver Notas a continuaci\'f3n). En la barra superior, existen ocho grupos de funciones disponibles, incluyendo\lang1033 :\par
+\par
+\cf1\b Metadatos del proyecto \cf0\b0\endash\b  \b0 para ver tus metadatos del proyecto.\par
+\b\par
+\cf1 Enviar datos para procesar\b0  \cf0\endash  para enviar tus datos del proyecto al servidor donde se correr\'e1 el modelo i-Tree Eco.\par
+\par
+\cf1\b Localizar y recuperar resultados\b0  \cf0\endash  para localizar el estatus del env\'edo de datos reciente y cargar tus resultados del modelo del servidor.\par
+\b\par
+\cf1 Reportes formateados\b0  \cf0\endash  para ver tus reportes breves.\par
+\b\par
+\cf1 Gr\'e1ficos\b0  \cf0\endash  para ver tus gr\'e1ficos y tablas de contaminaci\'f3n y estado del tiempo.\par
+\b\par
+\cf1 Notas del modelo \cf0\b0\endash  para ver las notas sobre la corrida de tu modelo.\par
+\b\par
+\cf1 Unidades \cf0\b0\endash  para cambiar las unidades (p. ej., inglesas o m\'e9tricas) que se muestran en tus reportes.\par
+\par
+\cf1\b Nombres de las especies \cf0\b0\endash  para cambiar los nombres de las especies (p. ej., com\'fan o cient\'edfico) que se muestran en tus reportes.\par
+\par
+Elije un reporte que desees ver haciendo clic en uno de los botones o seleccionando un reporte de las listas desplegables. El reporte estar\'e1 disponible en el panel de acci\'f3n del lado derecho. Hay una barra de herramientas en la parte superior del panel de acci\'f3n que te permite acercar o alejar la imagen y guardar o imprimir tus reportes.\par
+\par
+\pard\fi-360\li360 El grupo de \b Reportes formateados\b0  ofrece una variedad de opciones de reportes:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li360\b Reporte escrito\b0  proporciona un resumen y discusi\'f3n de los resultados de tu proyecto, incluyendo la composici\'f3n, la estructura y los servicios del ecosistema que brinda tu bosque urbano.\par
+\pard\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li360\b Composici\'f3n y estructura\b0  presenta informaci\'f3n en gr\'e1ficos y tablas sobre los aspectos estructurales del bosque urbano en tu \'e1rea de estudio, incluyendo tama\'f1o de la poblaci\'f3n, composici\'f3n de las especies, \'e1rea de las hojas, condiciones de los \'e1rboles e informaci\'f3n de la biomasa. Los resultados se proporcionan en una variedad de formas, como clasificados por clase de DAP o por estrato o presentados por unidad de \'e1rea (por acre o por hect\'e1rea).\par
+\pard\li360\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li360\b Costos y beneficios\b0  presenta informaci\'f3n en gr\'e1ficos y tablas sobre los beneficios ambientales que brinda el bosque urbano en tu \'e1rea de estudio. Los resultados se proporcionan en unidades funcionales (p. ej., toneladas de carbono secuestrado) y en el valor asociado en d\'f3lares. \par
+\pard\fi-360\li360\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li360\b Detalles de \'e1rboles medidos\b0  presenta informaci\'f3n en gr\'e1ficos y tablas sobre las caracter\'edsticas de los \'e1rboles muestreados en tu \'e1rea de estudio, incluyendo los aspectos estructurales y los servicios del ecosistema. Los resultados se proporcionan para cada \'e1rbol evaluado. \par
+\pard\fi-360\li360\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li360\b Impactos y valores a las salud de la calidad del aire\b0  proporciona c\'e1lculos del n\'famero de incidentes desfavorables a la salud evitados debido a cambios en los niveles de concentraci\'f3n de los contaminantes, as\'ed como el valor econ\'f3mico de dichas reducciones en incidentes a la salud.\par
+\pard\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li360\b An\'e1lisis de plagas\b0  incluye gr\'e1ficos y tablas con un reporte est\'e1ndar para todos los usuarios sobre la vulnerabilidad del bosque urbano a las plagas conocidas. Para los usuarios que eligen recopilar datos de plagas (IPED) en el campo, los reportes adicionales resumen esos datos aqu\'ed.\par
+\pard\fi-360\li360\par
+El grupo de \b Gr\'e1ficos \b0 contiene una lista desplegable de reportes:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li360\b Contaminaci\'f3n y del tiempo\b0  presenta informaci\'f3n en gr\'e1ficos y tablas sobre la calidad del aire y estado del tiempo en tu \'e1rea de estudio. Los resultados se basan en los datos de contaminaci\'f3n y estado del tiempo usados para tu proyecto.\par
+\pard\par
+La funci\'f3n de \b Notas del modelo\b0  proporciona m\'e1s informaci\'f3n sobre el procesamiento de datos que sucede dentro del modelo Eco.\par
+\par
+Elige tus opciones de unidades y los nombres de las especies sencillamente haciendo clic en el bot\'f3n correspondiente de la barra. No necesitas volver a mandar tus datos al servidor y cargar tus resultados \endash  \'a1los cambios son inmediatos!\par
+\par
+\b *IMPORTANTE*\par
+\lang2058\b0 Despu\'e9s de enviar datos y recuperar resultados en la pesta\'f1a de \b Reportes\b0 , la funci\'f3n de \b Modo de edici\'f3n\b0  estar\'e1 disponible en la pesta\'f1a de \b Configuraci\'f3n del proyecto\b0  (p. ej., ya no aparecer\'e1 de color gris y la funci\'f3n se\'f1alar\'e1 "Modo de edici\'f3n: Apagado"). Ello indica que la pesta\'f1a se encuentra en el modo de vista \'fanicamente de manera que cada funci\'f3n puede verse, pero no editarse\lang1033 .\par
+\par
+\lang2058 Sin embargo, las configuraciones y los datos en esas pesta\'f1as pueden editarse con precauci\'f3n. Para ello, necesitar\'e1s cambiar el modo de edici\'f3n haciendo clic en la funci\'f3n de \b Modo de edici\'f3n\b0  una vez que est\'e9 disponible, al revisar cada pesta\'f1a. Despu\'e9s de hacer clic, la funci\'f3n estar\'e1 de color gris y se\'f1alar\'e1 "Modo de edici\'f3n: Encendido". Ahora pueden realizarse ediciones. Por favor toma nota que si editas la configuraci\'f3n o los datos de tu proyecto, quiz\'e1 los resultados en la pesta\'f1a de \b Reportes\b0  no reflejen los cambios que hiciste. Para garantizar que s\'ed, env\'eda tus datos al servidor y vuelve a cargar tus resultados\lang1033 .\par
+\par
+\b Notas:\b0\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li360 Las funciones que aparecen de color gris no pueden usarse en este momento. Si no has enviado datos o cargado resultados, la mayor\'eda de los reportes, gr\'e1ficos y tablas no estar\'e1n disponibles sino hasta despu\'e9s de hacerlo. Algunos reportes pueden no estar disponibles debido a las decisiones de no recopilar ciertas variables en el campo o por datos insuficientes en el caso de estudios internacionales. Por ejemplo, los usuarios que eligen no recopilar variables de datos para en an\'e1lisis de energ\'eda no tendr\'e1n reportes de energ\'eda.\par
+\pard\brdrb\brdrs\brdrw10\brsp20 \qj\fs20\par
+}
+&#x0;</value>
+  </data>
+  <data name="rtForecast" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Calibri;}{\f1\fnil\fcharset2 Symbol;}}
+{\colortbl ;\red51\green115\blue183;}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\brdrb\brdrs\brdrw10\brsp20 \qj\b\f0\fs20\par
+\pard\b0\fs22 El pron\'f3stico es un componente aparte de i-Tree Eco que se corre de manera independiente al modelo. Utilizar Pron\'f3stico es completamente opcional y no tendr\'e1 un impacto en tus resultados de i-Tree Eco (como puede verse en la pesta\'f1a de \b Reportes\b0 ).\par
+\par
+En esta pesta\'f1a, puedes correr el componente de Pron\'f3stico a un nivel b\'e1sico o avanzado. Para calcular c\'f3mo se ver\'e1 tu bosque urbano a futuro, el Pron\'f3stico usa los c\'e1lculos estructurales (p. ej., n\'famero de \'e1rboles, composici\'f3n de las especies) generados al correr el modelo i-Tree Eco junto con el crecimiento anticipado y los \'edndices de mortalidad. Tambi\'e9n puedes incluir futuros escenarios de siembra de \'e1rboles o posibles eventos adversos, como una tormenta o plaga, para predecir su impacto en el bosque urbano.\par
+\par
+El pron\'f3stico est\'e1 dise\'f1ado para permitirte proporcionar poca o mucha informaci\'f3n seg\'fan desees (ver Notas a continuaci\'f3n). En el nivel m\'e1s b\'e1sico, puedes correr el Pron\'f3stico utilizando todas las opciones por defecto proporcionadas. Para personalizar tus resultados del pron\'f3stico, puedes cambiar las \b Opciones b\'e1sicas\b0  por defecto para calcular tu futuro bosque urbano con base en las variables locales para lo siguiente:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720 N\'famero de a\'f1os a pronosticar\par
+{\pntext\f1\'B7\tab}\'cdndices anuales de mortalidad\par
+{\pntext\f1\'B7\tab}Per\'edodos (d\'edas) libres de heladas\par
+\pard\par
+Para correr un pron\'f3stico m\'e1s avanzado, puedes elegir incluir las siguientes incidencias en tus c\'e1lculos del futuro bosque urbano:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720 Siembra de \'e1rboles\par
+{\pntext\f1\'B7\tab}Tormentas\par
+{\pntext\f1\'B7\tab}Plagas\par
+\pard\par
+En la barra superior, existen ocho grupos de funciones disponibles (ver Notas a continuaci\'f3n), incluyendo:\par
+\par
+\cf1\b Resumen de la configuraci\'f3n\cf0\b0\fs20  \fs22\endash  para obtener un resumen de tus configuraciones del pron\'f3stico.\par
+\par
+\cf1\b Correr pron\'f3stico \cf0\-\b0\endash  para correr el componente de Pron\'f3stico del modelo de i-Tree Eco.\par
+\par
+\cf1\b Opciones b\'e1sicas \cf0\b0\endash  para definir tus configuraciones, incluyendo la duraci\'f3n del pron\'f3stico, los d\'edas sin heladas y la base de \'edndices de mortalidad, para una corrida b\'e1sica del Pron\'f3stico.\b\par
+\par
+\cf1 Opciones personalizadas\b0  \cf0\endash  para definir los \'edndices de mortalidad, los escenarios de siembra de \'e1rboles o eventos extremos para una corrida avanzada y personalizada del Pron\'f3stico.\par
+\par
+\cf1\b Configuraciones\cf0\fs20  \-\b0\fs22\endash  para ver la configuraci\'f3n que se usar\'e1 para correr Pron\'f3stico o tener acceso para cambiar el nombre, crear, duplicar o eliminar configuraciones.\b\par
+\b0\par
+\cf1\b Reportes\cf0  \-\b0\endash  para ver los resultados en forma de gr\'e1ficos o tablas.\par
+\par
+\cf1\b Unidades \cf0\b0\endash  para cambiar las unidades (p. ej., inglesas o m\'e9tricas) que se muestran en tus reportes.\par
+\par
+\cf1\b Modo de edici\'f3n\cf0\b0\fs20  \fs22\endash  para encender el modo de edici\'f3n.\par
+\b\par
+*IMPORTANTE*\par
+\b0 Despu\'e9s de correr el pron\'f3stico, la funci\'f3n de \b Modo de edici\'f3n\b0  estar\'e1 disponible en la barra (p. ej., ya no aparecer\'e1 de color gris y la funci\'f3n se\'f1alar\'e1 "Modo de edici\'f3n: Apagado"). Ello indica que la pesta\'f1a de \b Pron\'f3stico\b0  se encuentra en el modo de vista \'fanicamente de manera que cada funci\'f3n puede verse, pero no editarse. Tus reportes se pueden seguir viendo, guardando e imprimiendo.\par
+\par
+Sin embargo, si decides que quieres hacer cambios a tu configuraci\'f3n activa, necesitar\'e1s cambiar al Modo de edici\'f3n haciendo clic en la funci\'f3n de \b Modo de edici\'f3n\b0  una vez que est\'e9 disponible. Despu\'e9s de hacer clic, la funci\'f3n estar\'e1 de color gris y se\'f1alar\'e1 "Modo de edici\'f3n: Encendido". Por favor toma nota que esto borrar\'e1 todos los reportes en la pesta\'f1a de \b Pron\'f3stico\b0  asociados con dicha configuraci\'f3n y necesitar\'e1s correr nuevamente el \b Pron\'f3stico\b0  para ver estos reportes.\par
+\par
+\b Notas:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li360\b0 Para correr el an\'e1lisis m\'e1s b\'e1sico del pron\'f3stico, puedes usar las opciones por defecto proporcionadas. Sencillamente aseg\'farate de elegir las opciones \b Por defecto\b0  en la lista desplegable de \b Configuraci\'f3n activa\b0  del grupo \b Configuraciones\b0  y haz clic en el bot\'f3n de \b Correr pron\'f3stico\b0  en la barra. Podr\'e1s ver todas las opciones por defecto de los par\'e1metros utilizados al hacer clic en el bot\'f3n de \b Resumen de la configuraci\'f3n\b0 .\par
+{\pntext\f1\'B7\tab}La pesta\'f1a \b Pron\'f3stico\b0  estar\'e1 de color gris hasta despu\'e9s de enviar tus datos y cargar tus resultados en la pesta\'f1a de \b Reportes\b0 . La raz\'f3n por la que el Pron\'f3stico no est\'e1 disponible en todo momento es porque el componente utiliza los resultados del modelo i-Tree Eco para calcular la estructura y la funci\'f3n que tu bosque urbano tendr\'e1 en el futuro.\par
+{\pntext\f1\'B7\tab}Los reportes aparecen de color gris en la barra y no pueden utilizarse hasta despu\'e9s de correr el pron\'f3stico. Recomendamos revisar las funciones de izquierda a derecha. Recuerda: Muchas de estas funciones son opcionales y no \ul necesitan\ulnone  realizarse.\par
+\pard\brdrb\brdrs\brdrw10\brsp20 \qj\fs20\par
+}
+&#x0;</value>
+  </data>
+  <data name="rtProject" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Calibri;}{\f1\fnil\fcharset2 Symbol;}}
+{\colortbl ;\red51\green115\blue183;}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\brdrb\brdrs\brdrw10\brsp20 \qj\b\f0\fs20\par
+\pard\b0\fs22 En esta pesta\'f1a, puedes configurar tu nuevo proyecto i-Tree Eco o hacer cambios a las configuraciones que proporcionaste para un proyecto existente. En la barra superior, hay seis grupos de funciones disponibles (ver Notas a continuaci\'f3n), incluyendo:\par
+\par
+\cf1\b Definici\'f3n del proyecto\cf0  \b0\endash  para definir las configuraciones importantes del proyecto como el lugar de tu \'e1rea de estudio y tus variables de recopilaci\'f3n de datos.\b\par
+\par
+\cf1 Definir campos de datos\b0  \cf0\endash  para ver o editar las clases para los diferentes campos de datos.\par
+\par
+\cf1\b Definir parcelas\b0  \cf0\endash  para identificar los lugares de las parcelas donde se recopilar\'e1n datos para tu muestra basada en la parcela.\par
+\par
+\cf1\b\'c1rea del proyecto y estrato\b0  \cf0\endash  para identificar el \'e1rea de tu proyecto o estrato y definir estratos o zonas por las que estratificar\'e1s tu proyecto (p. ej., subdividir el \'e1rea de estudio en unidades m\'e1s peque\'f1as como clases de uso de la tierra).\par
+\b\par
+\cf1 Exportar\cf0  \b0\endash  para exportar una tabla de datos abierta a un archivo de "valores separados por comas" (csv).\b\par
+ \par
+\cf1 Modo de edici\'f3n\b0  \cf0\endash  para encender el modo de edici\'f3n.\par
+\b\par
+*IMPORTANTE*\par
+\lang2058\b0 Despu\'e9s de enviar datos y recuperar resultados en la pesta\'f1a de \b Reportes\b0 , la funci\'f3n de \b Modo de edici\'f3n\b0  estar\'e1 disponible en la pesta\'f1a de \b Configuraci\'f3n del proyecto\b0  (p. ej., ya no aparecer\'e1 de color gris y la funci\'f3n se\'f1alar\'e1 "Modo de edici\'f3n: Apagado"). Ello indica que la pesta\'f1a se encuentra en el modo de vista \'fanicamente de manera que cada funci\'f3n puede verse, pero no editarse\lang1033 .\par
+\par
+\lang2058 Sin embargo, las configuraciones del proyecto que ingreses en esta pesta\'f1a pueden editarse con precauci\'f3n. Para ello, necesitar\'e1s cambiar el modo de edici\'f3n haciendo clic en la funci\'f3n de \b Modo de edici\'f3n\b0  una vez que est\'e9 disponible. Despu\'e9s de hacer clic, la funci\'f3n estar\'e1 de color gris y se\'f1alar\'e1 "Modo de edici\'f3n: Encendido". Ahora pueden realizarse ediciones. Por favor toma nota que si editas la configuraci\'f3n de tu proyecto, quiz\'e1 los resultados en la pesta\'f1a de \b Reportes\b0  no reflejen los cambios que hiciste. Para garantizar que s\'ed, env\'eda tus datos al servidor y vuelve a cargar tus resultados\lang1033 .\par
+\par
+\b Notas:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li360\lang2058\b0 Las funciones que aparecen de color gris en la barra no pueden usarse en este momento. Es mejor revisar las funciones de izquierda a derecha. Conforme proporciones m\'e1s informaci\'f3n sobre tu proyecto, las funciones adicionales se volver\'e1n disponibles\lang1033 .\par
+\pard\brdrb\brdrs\brdrw10\brsp20 \qj\fs20\par
+}
+&#x0;</value>
+  </data>
+  <data name="rtData" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Calibri;}}
+{\colortbl ;\red114\green144\blue201;\red51\green115\blue183;}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\brdrb\brdrs\brdrw10\brsp20 \qj\b\f0\fs20\par
+\pard\b0\fs22 En esta pesta\'f1a, puedes ingresar los datos que hayas recopilado en el campo y registrado usando formularios impresos o un dispositivo m\'f3vil. Tambi\'e9n puedes editar o ver datos que ya se han ingresado. En la barra superior, hay cinco grupos de funciones disponibles, incluyendo:\par
+\cf1\b\par
+\cf2 Recopilaci\'f3n de datos \cf0\-\b0\endash  para ver e imprimir formularios si est\'e1s usando formularios impresos para registrar datos recopilados en el campo, o para enviar las configuraciones de tu proyecto a la red o recuperar tus datos de la red si est\'e1s usando un dispositivo m\'f3vil para registrar datos de campo.\par
+\par
+\cf2\b Datos de inventario \cf0\b0\endash  para a\'f1adir manualmente los datos que recopilaste en el campo o editar/ver los datos que ya se a\'f1adieron.\b\par
+\pard\tx720\par
+\pard\cf2 Exportar\cf0  \b0\endash  para exportar una tabla de datos abierta a un archivo de "valores separados por comas" (csv) o "lenguaje de marcado de keyhole" (kml).\b\par
+\pard\tx720\par
+\pard\cf2 Valor de inventario\cf0\b0  \endash  para ajustar los precios de los beneficios y a\'f1adir datos de gastos anuales.\cf2\par
+\pard\tx720\cf0\b\par
+\pard\cf2 Modo de edici\'f3n\b0  \cf0\endash  para encender el modo de edici\'f3n.\par
+\pard\tx720\b\par
+\pard *IMPORTANTE*\par
+\b0 Despu\'e9s de enviar datos y recuperar resultados en la pesta\'f1a de \b Reportes\b0 , la funci\'f3n de \b Modo de edici\'f3n\b0  estar\'e1 disponible en la pesta\'f1a de \b Datos\b0  (p. ej., ya no estar\'e1 de color gris y la funci\'f3n se\'f1alar\'e1 "Modo de edici\'f3n: Apagado"). Esto indica que, con la excepci\'f3n de las funciones de \b Precios del beneficio\b0  y \b Gastos anuales\b0 , la pesta\'f1a est\'e1 en el modo de vista de manera que cada funci\'f3n puede verse pero no editarse. Las funciones de \b Precios del beneficio\b0  y \b Gastos anuales\b0  pueden editarse en todo momento.\par
+\par
+A fin de editar datos en el resto de la pesta\'f1a, necesitar\'e1s cambiar el modo de edici\'f3n haciendo clic en la funci\'f3n \b Modo de edici\'f3n\b0  una vez que est\'e9 disponible. Despu\'e9s de hacer clic, la funci\'f3n se vuelve gris y se\'f1ala "Modo de edici\'f3n: Encendido". Ahora pueden realizarse ediciones. Por favor advierte que si editas tus datos, quiz\'e1 no se reflejen los cambios que realizaste en la pesta\'f1a de \b Reportes\b0 . Para garantizar que s\'ed, env\'eda tus datos al servidor y carga nuevamente tus resultados.\par
+\par
+}
+&#x0;</value>
+  </data>
+  <data name="rtView" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Calibri;}{\f1\fnil\fcharset2 Symbol;}}
+{\colortbl ;\red51\green115\blue183;}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\brdrb\brdrs\brdrw10\brsp20 \qj\b\f0\fs20\par
+\pard\b0\fs22 En esta pesta\'f1a puedes especificar el estilo de interfaz de usuario y c\'f3mo te gustar\'eda ver los datos de tu proyecto. Tambi\'e9n puedes buscar c\'f3digos de especies. En la barra superior, existen cuatro grupos de funciones disponibles, incluyendo:\par
+\par
+\cf1\b Especificar datos\b0  \cf0\endash  para especificar qu\'e9 series de datos te gustar\'eda ver. Los datos para los proyectos i-Tree Eco se guardan en una base de datos. En algunos casos, puedes contar con m\'faltiples series de datos almacenadas en la misma base de datos. Selecciona el proyecto, las series y el a\'f1o que deseas usar en los men\'fas desplegables.\par
+\par
+\cf1\b Especies \cf0\b0\endash  para usar la herramienta de b\'fasqueda de especies o una lista completa de las especies de \'e1rboles de Eco. Haz clic en los botones en la barra superior. La caracter\'edstica estar\'e1 disponible en el panel de acci\'f3n del lado derecho.\par
+\b\par
+\cf1 Exportar\cf0  \b0\endash  para exportar una tabla de datos abierta a un archivo de "valores separados por comas" (csv).\par
+\b\par
+\cf1 Configuraci\'f3n \cf0\b0\endash  para cambiar el estilo de interfaz de usuario o minimizar el panel de ayuda. \par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720 Para personalizar el estilo de interfaz de usuario, elige uno de los diferentes esquemas de colores del men\'fa desplegable de \b Estilo\b0 .\par
+{\pntext\f1\'B7\tab}El texto de ayuda est\'e1 disponible en el panel del lado izquierdo de la ventana i-Tree Eco. Marca el cuadro correspondiente en el grupo de \b Configuraciones\b0  para que el panel de ayuda se minimice en todo momento. Para maximizarlo nuevamente, desactiva el cuadro.\par
+\pard\par
+}
+&#x0;</value>
+  </data>
+</root>

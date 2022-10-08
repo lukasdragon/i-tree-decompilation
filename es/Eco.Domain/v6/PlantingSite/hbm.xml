@@ -1,0 +1,19 @@
+﻿<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Eco.Domain" namespace="Eco.Domain.v6" auto-import="false">
+  <class name="PlantingSite" table="EcoPlantingSites" dynamic-update="true">
+    <cache usage="read-write"/>
+    <id name="Guid" column="PlantingSiteKey">
+      <generator class="guid"/>
+    </id>
+    <natural-id mutable="true">
+      <many-to-one name="Plot" column="PlotKey" not-null="true"/>
+      <property name="Id" column="PlantingSiteId" not-null="true"/>
+    </natural-id>
+    <version name="Revision" column="`Revision`" unsaved-value="0"/>
+    <many-to-one name="PlantingSiteType" column="PlantingSiteTypeKey" not-null="true"/>
+    <many-to-one name="PlotLandUse" column="PlotLandUseKey"/>
+    <many-to-one name="Street" column="StreetKey"/>
+    <property name="StreetAddress" column="StreetAddress" length="255"/>
+    <property name="xCoordinate" column="xCoordinate"/>
+    <property name="yCoordinate" column="yCoordinate"/>
+  </class>
+</hibernate-mapping>

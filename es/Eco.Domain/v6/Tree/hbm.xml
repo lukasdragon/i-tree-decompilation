@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Eco.Domain" namespace="Eco.Domain.v6" auto-import="false">
+  <class name="Tree" table="EcoTrees" dynamic-update="true">
+    <cache usage="read-write"/>
+    <id name="Guid" column="TreeKey">
+      <generator class="guid"/>
+    </id>
+    <natural-id mutable="true">
+      <many-to-one name="Plot" column="PlotKey" not-null="true"/>
+      <property name="Id" column="TreeId" not-null="true"/>
+    </natural-id>
+    <version name="Revision" column="Revision" unsaved-value="0"/>
+    <set name="Stems" table="EcoStems" lazy="true" inverse="true" batch-size="100" cascade="merge,save-update,evict">
+      <key unique="true">
+        <column name="TreeKey" not-null="true"/>
+      </key>
+      <one-to-many class="Stem"/>
+    </set>
+    <set name="Buildings" table="EcoBuildings" lazy="true" inverse="true" batch-size="100" cascade="merge,save-update,evict">
+      <key unique="true">
+        <column name="TreeKey" not-null="true"/>
+      </key>
+      <one-to-many class="Building"/>
+    </set>
+    <component name="Crown">
+      <property name="BaseHeight" column="HeightToCrownBase"/>
+      <property name="TopHeight" column="TreeHeightLiveTop"/>
+      <property name="WidthNS" column="CrownWidth1"/>
+      <property name="WidthEW" column="CrownWidth2"/>
+      <property name="LightExposure" column="CrownLightExposure"/>
+      <property name="PercentMissing" column="PercentCrownMissing"/>
+      <many-to-one name="Condition" column="CrownCondition"/>
+    </component>
+    <component name="IPED">
+      <property name="TSDieback" column="PestTSDieback"/>
+      <property name="TSEpiSprout" column="PestTSEpiSprout"/>
+      <property name="TSWiltFoli" column="PestTSWiltFoli"/>
+      <property name="TSEnvStress" column="PestTSEnvStress"/>
+      <property name="TSHumStress" column="PestTSHumStress"/>
+      <property name="TSNotes" column="PestTSNotes" length="255"/>
+      <property name="FTChewFoli" column="PestFTChewFoli"/>
+      <property name="FTDiscFoli" column="PestFTDiscFoli"/>
+      <property name="FTAbnFoli" column="PestFTAbnFoli"/>
+      <property name="FTInsectSigns" column="PestFTInsectSigns"/>
+      <property name="FTFoliAffect" column="PestFTFoliAffect"/>
+      <property name="FTNotes" column="PestFTNotes" length="255"/>
+      <property name="BBInsectSigns" column="PestBBInsectSigns"/>
+      <property name="BBInsectPres" column="PestBBInsectPres"/>
+      <property name="BBDiseaseSigns" column="PestBBDiseaseSigns"/>
+      <property name="BBProbLoc" column="PestBBProbLoc"/>
+      <property name="BBAbnGrowth" column="PestBBAbnGrowth"/>
+      <property name="BBNotes" column="PestBBNotes" length="255"/>
+      <property name="Pest" column="PestPest"/>
+    </component>
+    <many-to-one name="PlotLandUse" column="PlotLandUseKey"/>
+    <property name="CityManaged" column="CityManaged"/>
+    <property name="DirectionFromCenter" column="DirectionFromCenter"/>
+    <property name="DistanceFromCenter" column="DistanceFromCenter"/>
+    <property name="Status" column="TreeStatus" length="1"/>
+    <property name="Species" column="Species" length="8"/>
+    <property name="TreeHeight" column="TreeHeightTotal"/>
+    <property name="PercentImpervious" column="PercentImperviousBelow"/>
+    <property name="PercentShrub" column="PercentShrubBelow"/>
+    <many-to-one name="SiteType" column="SiteType"/>
+    <property name="StreetTree" column="StreetTree"/>
+    <many-to-one name="Street" column="StreetKey"/>
+    <property name="Address" column="Address" length="255"/>
+    <many-to-one name="LocSite" column="LocSite"/>
+    <property name="LocNo" column="LocNo"/>
+    <many-to-one name="MaintRec" column="MtncRec"/>
+    <many-to-one name="MaintTask" column="MtncTask"/>
+    <many-to-one name="SidewalkDamage" column="SwDamg"/>
+    <many-to-one name="WireConflict" column="WireConflict"/>
+    <many-to-one name="OtherOne" column="OtherOne"/>
+    <many-to-one name="OtherTwo" column="OtherTwo"/>
+    <many-to-one name="OtherThree" column="OtherThree"/>
+    <property name="Latitude" column="YCoordinate"/>
+    <property name="Longitude" column="XCoordinate"/>
+    <property name="SurveyDate" column="SurveyDate"/>
+    <property name="NoteThisTree" column="NoteThisTree"/>
+    <property name="Comments" column="Comments" length="255"/>
+    <property name="UserId" column="UserId"/>
+    <property name="PriorYear" column="PriorYearKey"/>
+  </class>
+</hibernate-mapping>

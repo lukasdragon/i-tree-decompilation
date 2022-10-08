@@ -1,0 +1,752 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="Eco.Domain.v6" assembly="Eco.Domain" auto-import="false">
+  <!--- Access -->
+	<sql-query name="DeleteCohorts">
+		<![CDATA[
+          DELETE FROM EcoForecastCohorts AS c
+          WHERE c.ForecastKey = :guid and ParentKey is Null;
+        ]]>
+	</sql-query>
+	<sql-query name="DeleteCohortResults">
+		<![CDATA[
+          DELETE FROM EcoForecastCohortResults AS c
+          WHERE c.ForecastKey = :guid;
+        ]]>
+	</sql-query>
+	<sql-query name="DeletePollutantResults">
+		<![CDATA[
+          DELETE FROM EcoForecastPollutantResults AS pr
+          WHERE pr.ForecastKey = :guid;
+        ]]>
+	</sql-query>
+
+	<sql-query name="NumTrees">
+		<return-scalar column="ForecastedYear" type="Int16"/>
+		<return-scalar column="NumTrees" type="Int64"/>
+		<![CDATA[
+          SELECT c.ForecastedYear, Sum(c.NumTrees) AS NumTrees
+          FROM EcoForecasts AS f INNER JOIN
+            EcoForecastCohorts AS c
+          ON f.ForecastKey = c.ForecastKey
+          WHERE f.ForecastKey = :guid
+          GROUP BY c.ForecastedYear
+          ORDER BY c.ForecastedYear;
+        ]]>
+	</sql-query>
+	<sql-query name="NumTreesByStrata">
+		<return-scalar column="Description" type="string"/>
+		<return-scalar column="ForecastedYear" type="Int16"/>
+		<return-scalar column="NumTrees" type="Int64"/>
+		<![CDATA[
+          SELECT c.ForecastedYear,
+                 s.Description,
+                 Sum(c.NumTrees) AS NumTrees
+          FROM EcoForecasts AS f INNER JOIN (
+            EcoForecastCohorts AS c INNER JOIN
+              EcoStrata AS s
+            ON s.StrataKey = c.StratumKey
+          ) ON f.ForecastKey = c.ForecastKey
+          WHERE f.ForecastKey = :guid
+          GROUP BY c.ForecastedYear,
+                   c.StratumKey,
+                   s.Description
+          ORDER BY s.Description,
+                   c.ForecastedYear;
+        ]]>
+	</sql-query>
+	<sql-query name="PercentTreeCover">
+		<return-scalar column="ForecastedYear" type="Int16"/>
+		<return-scalar column="PctCover" type="Double"/>
+		<![CDATA[
+          SELECT c.ForecastedYear,
+                 iif((:landArea * :areaConversionFactor)=0, 0, :pi/4 * Sum(c.CrownWidth * c.CrownWidth * c.NumTrees) / (:landArea * :areaConversionFactor)) AS PctCover
+          FROM EcoForecasts AS f INNER JOIN
+            EcoForecastCohorts AS c
+          ON f.ForecastKey = c.ForecastKey
+          WHERE f.ForecastKey = :guid
+          GROUP BY c.ForecastedYear
+          ORDER BY c.ForecastedYear;
+        ]]>
+	</sql-query>
+	<sql-query name="PercentTreeCoverByStrata">
+		<return-scalar column="Description" type="string"/>
+		<return-scalar column="ForecastedYear" type="Int16"/>
+		<return-scalar column="PctCover" type="double"/>
+		<![CDATA[
+          SELECT s.Description,
+                 c.ForecastedYear,
+                 iif((:landArea * :areaConversionFactor)=0, 0, :pi/4 * Sum(c.CrownWidth * c.CrownWidth * c.NumTrees) / (:landArea * :areaConversionFactor)) AS PctCover
+          FROM EcoForecasts AS f INNER JOIN (
+            EcoForecastCohorts AS c INNER JOIN
+              EcoStrata AS s
+            ON s.StrataKey = c.StratumKey
+          ) ON f.ForecastKey = c.ForecastKey
+          WHERE f.ForecastKey = :guid
+          GROUP BY c.ForecastedYear,
+                   c.StratumKey,
+                   s.Description
+          ORDER BY s.Description,
+                   c.ForecastedYear;
+        ]]>
+	</sql-query>
+	<sql-query name="TreeCoverArea">
+		<return-scalar column="ForecastedYear" type="Int16"/>
+		<return-scalar column="TreeCoverArea" type="Double"/>
+		<![CDATA[
+          SELECT c.ForecastedYear,
+                 3.14159265/4 * Sum(c.CrownWidth * c.CrownWidth * c.NumTrees) AS TreeCoverArea
+          FROM EcoForecasts AS f INNER JOIN
+            EcoForecastCohorts AS c
+          ON f.ForecastKey = c.ForecastKey
+          WHERE f.ForecastKey = :guid
+          GROUP BY c.ForecastedYear
+          ORDER BY c.ForecastedYear;
+        ]]>
+	</sql-query>
+	<sql-query name="TreeCoverAreaByStrata">
+		<return-scalar column="Description" type="string"/>
+		<return-scalar column="ForecastedYear" type="Int16"/>
+		<return-scalar column="TreeCoverArea" type="double"/>
+		<![CDATA[
+          SELECT s.Description,
+                 c.ForecastedYear,
+                 3.14159265/4 * Sum(c.CrownWidth * c.CrownWidth * c.NumTrees) AS TreeCoverArea
+          FROM EcoForecasts AS f INNER JOIN (
+            EcoForecastCohorts AS c INNER JOIN
+              EcoStrata AS s
+            ON s.StrataKey = c.StratumKey
+          ) ON f.ForecastKey = c.ForecastKey
+          WHERE f.ForecastKey = :guid
+          GROUP BY c.ForecastedYear,
+                   c.StratumKey,
+                   s.Description
+          ORDER BY s.Description,
+                   c.ForecastedYear;
+        ]]>
+	</sql-query>
+	<sql-query name="AvgDBH">
+		<return-scalar column="ForecastedYear" type="Int16"/>
+		<return-scalar column="AvgDBH" type="Double"/>
+		<![CDATA[
+          SELECT c.ForecastedYear, Sum(c.NumTrees*c.DBH)/Sum(c.NumTrees) AS AvgDBH
+          FROM EcoForecasts AS f INNER JOIN
+            EcoForecastCohorts AS c
+          ON f.ForecastKey = c.ForecastKey
+          WHERE f.ForecastKey = :guid
+          GROUP BY c.ForecastedYear
+          ORDER BY c.ForecastedYear;
+        ]]>
+	</sql-query>
+	<sql-query name="AvgDbhByStrata">
+		<return-scalar column="Description" type="string"/>
+		<return-scalar column="ForecastedYear" type="Int16"/>
+		<return-scalar column="AvgDBH" type="double"/>
+		<![CDATA[
+          SELECT s.Description,
+                 c.ForecastedYear,
+                 iif(Sum(c.NumTrees)=0, 0, Sum(c.NumTrees*c.DBH)/Sum(c.NumTrees)) AS AvgDBH
+          FROM EcoForecasts AS f INNER JOIN (
+            EcoForecastCohorts AS c INNER JOIN
+              EcoStrata AS s
+            ON s.StrataKey = c.StratumKey
+          ) ON f.ForecastKey = c.ForecastKey
+          WHERE f.ForecastKey = :guid
+          GROUP BY c.ForecastedYear,
+                   c.StratumKey,
+                   s.Description
+          ORDER BY s.Description,
+                   c.ForecastedYear;
+        ]]>
+	</sql-query>
+	<sql-query name="DBHGrowth">
+		<return-scalar column="ForecastedYear" type="Int16"/>
+		<return-scalar column="DBHGrowth" type="Double"/>
+		<![CDATA[
+          SELECT
+	          r.ForecastedYear, 
+	          iif(sum(NumTrees) = 0, 0, sum(NumTrees * (r.CurDBH - r.PrevDBH)) / sum(NumTrees)) AS DBHGrowth
+          FROM (
+	          SELECT
+		          cur.ForecastedYear, 
+		          iif(cur.NumTrees > prev.NumTrees, prev.NumTrees, cur.NumTrees) as NumTrees,
+		          cur.DBH as CurDBH,
+		          prev.DBH as PrevDBH
+	          FROM EcoForecastCohorts AS cur
+	          INNER JOIN EcoForecastCohorts AS prev
+	          ON cur.ParentKey = prev.CohortKey
+	          WHERE cur.ForecastKey = :guid
+          ) r
+          GROUP BY r.ForecastedYear
+          ORDER BY r.ForecastedYear
+      ]]>
+	</sql-query>
+	<sql-query name="DBHGrowthByStrata">
+		<return-scalar column="Description" type="string"/>
+		<return-scalar column="ForecastedYear" type="Int16"/>
+		<return-scalar column="DBHGrowth" type="double"/>
+		<![CDATA[
+          SELECT
+	          s.Description,
+	          r.ForecastedYear,
+	          iif(sum(r.NumTrees)=0, 0, sum(r.NumTrees * (r.CurDBH - r.PrevDBH)) / sum(r.NumTrees)) AS DBHGrowth
+          FROM EcoStrata AS s
+          INNER JOIN (
+	          SELECT
+		          cur.StratumKey,
+		          cur.ForecastedYear,
+		          iif(cur.NumTrees > prev.NumTrees, prev.NumTrees, cur.NumTrees) as NumTrees,
+		          cur.DBH as CurDBH,
+		          prev.DBH as PrevDBH
+	          FROM EcoForecastCohorts AS cur
+	          INNER JOIN EcoForecastCohorts AS prev
+	          ON cur.ParentKey = prev.CohortKey
+            WHERE cur.ForecastKey = :guid
+          ) r
+          ON s.StrataKey = r.StratumKey
+          GROUP BY s.Description, r.ForecastedYear
+          ORDER BY s.Description, r.ForecastedYear
+      ]]>
+	</sql-query>
+	<sql-query name="AreaLeafBiomass">
+		<return-scalar column="ForecastedYear" type="Int16"/>
+		<return-scalar column="AreaLeafBiomass" type="Double"/>
+		<![CDATA[
+          SELECT c.ForecastedYear,
+                 iif(Sum(c.NumTrees*c.LeafArea)=0, 0, Sum(c.NumTrees*c.LeafBiomass) / Sum(c.NumTrees*c.LeafArea)) AS AreaLeafBiomass
+          FROM EcoForecasts AS f INNER JOIN
+            EcoForecastCohorts AS c
+          ON f.ForecastKey = c.ForecastKey
+          WHERE f.ForecastKey = :guid
+          GROUP BY c.ForecastedYear
+          ORDER BY c.ForecastedYear;
+        ]]>
+	</sql-query>
+	<sql-query name="AreaLeafBiomassByStrata">
+		<return-scalar column="Description" type="string"/>
+		<return-scalar column="ForecastedYear" type="Int16"/>
+		<return-scalar column="AreaLeafBiomass" type="double"/>
+		<![CDATA[
+          SELECT s.Description,
+                 c.ForecastedYear,
+                 iif(Sum(c.NumTrees*c.LeafArea)=0, 0, Sum(c.NumTrees*c.LeafBiomass) / Sum(c.NumTrees*c.LeafArea)) AS AreaLeafBiomass
+          FROM EcoForecasts AS f INNER JOIN (
+            EcoForecastCohorts AS c INNER JOIN
+              EcoStrata AS s
+            ON s.StrataKey = c.StratumKey
+          ) ON f.ForecastKey = c.ForecastKey
+          WHERE f.ForecastKey = :guid
+          GROUP BY c.ForecastedYear,
+                   c.StratumKey,
+                   s.Description
+          ORDER BY s.Description,
+                   c.ForecastedYear;
+        ]]>
+	</sql-query>
+	<sql-query name="LeafBiomass">
+		<return-scalar column="ForecastedYear" type="Int16"/>
+		<return-scalar column="TotalLeafBiomass" type="Double"/>
+		<![CDATA[
+          SELECT c.ForecastedYear,
+                 Sum(c.NumTrees*c.LeafBiomass) AS TotalLeafBiomass
+          FROM EcoForecasts AS f INNER JOIN
+            EcoForecastCohorts AS c
+          ON f.ForecastKey = c.ForecastKey
+          WHERE f.ForecastKey = :guid
+          GROUP BY c.ForecastedYear
+          ORDER BY c.ForecastedYear;
+        ]]>
+	</sql-query>
+	<sql-query name="LeafBiomassByStrata">
+		<return-scalar column="Description" type="string"/>
+		<return-scalar column="ForecastedYear" type="Int16"/>
+		<return-scalar column="TotalLeafBiomass" type="double"/>
+		<![CDATA[
+          SELECT s.Description,
+                 c.ForecastedYear,
+                 Sum(c.NumTrees*c.LeafBiomass) AS TotalLeafBiomass
+          FROM EcoForecasts AS f INNER JOIN (
+            EcoForecastCohorts AS c INNER JOIN
+              EcoStrata AS s
+            ON s.StrataKey = c.StratumKey
+          ) ON f.ForecastKey = c.ForecastKey
+          WHERE f.ForecastKey = :guid
+          GROUP BY c.ForecastedYear,
+                   c.StratumKey,
+                   s.Description
+          ORDER BY s.Description,
+                   c.ForecastedYear;
+        ]]>
+	</sql-query>
+	<sql-query name="TreeBiomass">
+		<return-scalar column="ForecastedYear" type="Int16"/>
+		<return-scalar column="TreeBiomass" type="Double"/>
+		<![CDATA[
+          SELECT c.ForecastedYear,
+                 Sum(c.NumTrees*2* c.CarbonStorage) AS TreeBiomass
+          FROM EcoForecasts AS f INNER JOIN
+            EcoForecastCohorts AS c
+          ON f.ForecastKey = c.ForecastKey
+          WHERE f.ForecastKey = :guid
+          GROUP BY c.ForecastedYear
+          ORDER BY c.ForecastedYear;
+        ]]>
+	</sql-query>
+	<sql-query name="TreeBiomassByStrata">
+		<return-scalar column="Description" type="string"/>
+		<return-scalar column="ForecastedYear" type="Int16"/>
+		<return-scalar column="TreeBiomass" type="double"/>
+		<![CDATA[
+          SELECT s.Description,
+                 c.ForecastedYear,
+                 Sum(c.NumTrees*2* c.CarbonStorage) AS TreeBiomass
+          FROM EcoForecasts AS f INNER JOIN (
+            EcoForecastCohorts AS c INNER JOIN
+              EcoStrata AS s
+            ON s.StrataKey = c.StratumKey
+          ) ON f.ForecastKey = c.ForecastKey
+          WHERE f.ForecastKey = :guid
+          GROUP BY c.ForecastedYear,
+                   c.StratumKey,
+                   s.Description
+          ORDER BY s.Description,
+                   c.ForecastedYear;
+        ]]>
+	</sql-query>
+	<sql-query name="CarbonStorage">
+		<return-scalar column="ForecastedYear" type="Int16"/>
+		<return-scalar column="CarbonStorage" type="Double"/>
+		<![CDATA[
+          SELECT c.ForecastedYear,
+                 Sum(c.NumTrees*c.CarbonStorage) AS CarbonStorage
+          FROM EcoForecasts AS f INNER JOIN
+            EcoForecastCohorts AS c
+          ON f.ForecastKey = c.ForecastKey
+          WHERE f.ForecastKey = :guid
+          GROUP BY c.ForecastedYear
+          ORDER BY c.ForecastedYear;
+        ]]>
+	</sql-query>
+	<sql-query name="CarbonStorageByStrata">
+		<return-scalar column="Description" type="string"/>
+		<return-scalar column="ForecastedYear" type="Int16"/>
+		<return-scalar column="CarbonStorage" type="double"/>
+		<![CDATA[
+          SELECT s.Description,
+                 c.ForecastedYear,
+                 Sum(c.NumTrees*c.CarbonStorage) AS CarbonStorage
+          FROM EcoForecasts AS f INNER JOIN (
+            EcoForecastCohorts AS c INNER JOIN
+              EcoStrata AS s
+            ON s.StrataKey = c.StratumKey
+          ) ON f.ForecastKey = c.ForecastKey
+          WHERE f.ForecastKey = :guid
+          GROUP BY c.ForecastedYear,
+                   c.StratumKey,
+                   s.Description
+          ORDER BY s.Description,
+                   c.ForecastedYear;
+        ]]>
+	</sql-query>
+	<sql-query name="CarbonSequestration">
+		<return-scalar column="ForecastedYear" type="Int16"/>
+		<return-scalar column="CarbonSequestration" type="Double"/>
+		<![CDATA[
+          SELECT
+	          cur.ForecastedYear, 
+	          sum(iif(cur.NumTrees > prev.NumTrees, prev.NumTrees, cur.NumTrees) * (cur.CarbonStorage - prev.CarbonStorage)) AS CarbonSequestration
+          FROM EcoForecastCohorts AS cur
+          INNER JOIN EcoForecastCohorts AS prev
+          ON cur.ParentKey = prev.CohortKey
+          WHERE cur.ForecastKey = :guid
+          GROUP BY cur.ForecastedYear
+          ORDER BY cur.ForecastedYear
+      ]]>
+	</sql-query>
+	<sql-query name="CarbonSequestrationByStrata">
+		<return-scalar column="Description" type="string"/>
+		<return-scalar column="ForecastedYear" type="Int16"/>
+		<return-scalar column="CarbonSequestration" type="double"/>
+		<![CDATA[
+          SELECT
+	          s.Description,
+	          cur.ForecastedYear,
+	          Sum(IIf(cur.NumTrees > prev.NumTrees, prev.NumTrees, cur.NumTrees) * (cur.CarbonStorage-prev.CarbonStorage)) AS CarbonSequestration
+          FROM EcoStrata AS s
+          INNER JOIN (
+	          EcoForecastCohorts AS cur
+	          INNER JOIN EcoForecastCohorts AS prev
+	          ON cur.ParentKey = prev.CohortKey
+          )
+          ON s.StrataKey = cur.StratumKey
+          WHERE cur.ForecastKey = :guid
+          GROUP BY s.Description, cur.ForecastedYear
+          ORDER BY s.Description, cur.ForecastedYear
+        ]]>
+	</sql-query>
+	<sql-query name="LeafArea">
+		<return-scalar column="ForecastedYear" type="Int16"/>
+		<return-scalar column="LeafArea" type="Double"/>
+		<![CDATA[
+          SELECT c.ForecastedYear,
+                 Sum(c.NumTrees*c.LeafArea) AS LeafArea
+          FROM EcoForecasts AS f INNER JOIN
+            EcoForecastCohorts AS c
+          ON f.ForecastKey = c.ForecastKey
+          WHERE f.ForecastKey = :guid
+          GROUP BY c.ForecastedYear
+          ORDER BY c.ForecastedYear;
+        ]]>
+	</sql-query>
+	<sql-query name="LeafAreaByStrata">
+		<return-scalar column="Description" type="string"/>
+		<return-scalar column="ForecastedYear" type="Int16"/>
+		<return-scalar column="LeafArea" type="double"/>
+		<![CDATA[
+          SELECT s.Description,
+                 c.ForecastedYear,
+                 Sum(c.NumTrees*c.LeafArea) AS LeafArea
+          FROM EcoForecasts AS f INNER JOIN (
+            EcoForecastCohorts AS c INNER JOIN
+              EcoStrata AS s
+            ON s.StrataKey = c.StratumKey
+          ) ON f.ForecastKey = c.ForecastKey
+          WHERE f.ForecastKey = :guid
+          GROUP BY c.ForecastedYear,
+                   c.StratumKey,
+                   s.Description
+          ORDER BY s.Description,
+                   c.ForecastedYear;
+        ]]>
+	</sql-query>
+	<sql-query name="LeafAreaIndex">
+		<return-scalar column="ForecastedYear" type="Int16"/>
+		<return-scalar column="LeafAreaIndex" type="Double"/>
+		<![CDATA[
+          SELECT c.ForecastedYear,
+              iif(Sum(c.CrownWidth * c.CrownWidth * c.NumTrees) = 0, 0, Sum(c.NumTrees*c.LeafArea)/(3.14159265/4 * Sum(c.CrownWidth * c.CrownWidth * c.NumTrees))) AS LeafAreaIndex
+          FROM EcoForecasts AS f INNER JOIN
+            EcoForecastCohorts AS c
+          ON f.ForecastKey = c.ForecastKey
+          WHERE f.ForecastKey = :guid
+          GROUP BY c.ForecastedYear
+          ORDER BY c.ForecastedYear;
+        ]]>
+	</sql-query>
+	<sql-query name="LeafAreaIndexByStrata">
+		<return-scalar column="Description" type="string"/>
+		<return-scalar column="ForecastedYear" type="Int16"/>
+		<return-scalar column="LeafAreaIndex" type="double"/>
+		<![CDATA[
+          SELECT s.Description,
+                 c.ForecastedYear,
+                 iif(Sum(c.CrownWidth * c.CrownWidth * c.NumTrees)=0, 0, Sum(c.NumTrees*c.LeafArea)/(3.14159265/4 * Sum(c.CrownWidth * c.CrownWidth * c.NumTrees))) AS LeafAreaIndex
+          FROM EcoForecasts AS f INNER JOIN (
+            EcoForecastCohorts AS c INNER JOIN
+              EcoStrata AS s
+            ON s.StrataKey = c.StratumKey
+          ) ON f.ForecastKey = c.ForecastKey
+          WHERE f.ForecastKey = :guid
+          GROUP BY c.ForecastedYear,
+                   c.StratumKey,
+                   s.Description
+          ORDER BY s.Description,
+                   c.ForecastedYear;
+        ]]>
+	</sql-query>
+	<sql-query name="BasalArea">
+		<return-scalar column="ForecastedYear" type="Int16"/>
+		<return-scalar column="BasalArea" type="Double"/>
+		<![CDATA[
+          SELECT c.ForecastedYear,
+                 Sum(c.NumTrees*c.DBH * c.DBH * 3.14159265 / 4.0) AS BasalArea
+          FROM EcoForecasts AS f INNER JOIN
+            EcoForecastCohorts AS c
+          ON f.ForecastKey = c.ForecastKey
+          WHERE f.ForecastKey = :guid
+          GROUP BY c.ForecastedYear
+          ORDER BY c.ForecastedYear;
+        ]]>
+	</sql-query>
+	<sql-query name="BasalAreaByStrata">
+		<return-scalar column="Description" type="string"/>
+		<return-scalar column="ForecastedYear" type="Int16"/>
+		<return-scalar column="BasalArea" type="double"/>
+		<![CDATA[
+          SELECT s.Description,
+                 c.ForecastedYear,
+                 Sum(c.NumTrees*c.DBH * c.DBH * 3.14159265 / 4.0) AS BasalArea
+          FROM EcoForecasts AS f INNER JOIN (
+            EcoForecastCohorts AS c INNER JOIN
+              EcoStrata AS s
+            ON s.StrataKey = c.StratumKey
+          ) ON f.ForecastKey = c.ForecastKey
+          WHERE f.ForecastKey = :guid
+          GROUP BY c.ForecastedYear,
+                   c.StratumKey,
+                   s.Description
+          ORDER BY s.Description,
+                   c.ForecastedYear;
+        ]]>
+	</sql-query>
+	<sql-query name="TreeDBHDistribution">
+		<return-scalar column="ForecastedYear" type="Int16"/>
+		<return-scalar column="DBHRangeStart" type="double"/>
+		<return-scalar column="DBHRangeEnd" type="double"/>
+		<return-scalar column="NumTrees" type="Int64"/>
+		<![CDATA[       
+          SELECT c.ForecastedYear,
+                 d.RangeStart AS DBHRangeStart,
+                 d.RangeEnd As DBHRangeEnd,
+                 Sum(c.NumTrees) AS NumTrees
+                 FROM EcoForecastCohorts AS c INNER JOIN EcoDBHClasses AS d ON (c.DBH > d.RangeStart AND c.DBH <= d.RangeEnd)
+                 WHERE c.ForecastKey = :fguid AND d.YearKey = :yguid
+                 GROUP BY c.ForecastedYear, d.RangeStart, d.RangeEnd;
+        ]]>
+	</sql-query>
+	<sql-query name="TreeCDBHDistribution">
+        <return-scalar column="ForecastedYear" type="Int16"/>
+        <return-scalar column="DBHRangeStart" type="double"/>
+        <return-scalar column="DBHRangeEnd" type="double"/>
+        <return-scalar column="NumTrees" type="Int64"/>
+        <![CDATA[       
+            SELECT 
+                c.ForecastedYear,
+                d.RangeStart AS DBHRangeStart,
+                d.RangeEnd As DBHRangeEnd,
+                Sum(c.NumTrees) AS NumTrees
+            FROM 
+                EcoForecastCohorts AS c 
+                    INNER JOIN EcoDBHRptClasses AS d 
+                        ON (c.DBH > d.RangeStart AND c.DBH <= d.RangeEnd)
+            WHERE 
+                c.ForecastKey = :fguid 
+                AND d.YearKey = :yguid
+            GROUP BY 
+                c.ForecastedYear, 
+                d.RangeStart, 
+                d.RangeEnd;
+        ]]>
+    </sql-query>
+    
+    <sql-query name="DropEcoForecastAdjustment">
+        <![CDATA[       
+            DROP TABLE [EcoForecastAdjustment]
+        ]]>
+    </sql-query>
+    <sql-query name="CreateEcoForecastAdjustment">
+        <![CDATA[       
+            CREATE TABLE [EcoForecastAdjustment] (
+                [ForecastYear] LONG DEFAULT 0,
+                [StratumKey] GUID DEFAULT NULL,
+                [DataType] LONG DEFAULT 0,
+                [Difference] DOUBLE DEFAULT 0e0
+            )
+        ]]>
+    </sql-query>
+    <sql-query name="InsertIntoEcoForecastAdjustment">
+        <![CDATA[       
+            INSERT INTO 
+                EcoForecastAdjustment (
+                    ForecastYear,
+                    StratumKey,
+                    DataType,
+                    Difference
+                ) 
+            VALUES (
+                :year,
+                :stratumkey,
+                :datatype,
+                :difference
+            )
+        ]]>
+    </sql-query>
+    <sql-query name="InsertTotalIntoEcoForecastAdjustment">
+        <![CDATA[       
+            INSERT INTO 
+                EcoForecastAdjustment (
+                    ForecastYear,
+                    DataType,
+                    Difference
+                ) 
+            VALUES (
+                :year,
+                :datatype,
+                :difference
+            )
+        ]]>
+    </sql-query>
+    <sql-query name="GetSASEstimateValuesFromIndividualTreeEffects">
+        <return-scalar column="StrataKey" type="guid"/>
+        <return-scalar column="SumOfGroundArea" type="double"/>
+        <![CDATA[       
+        SELECT 
+            EcoStrata.StrataKey, 
+            Sum(IndividualTreeEffects.GroundArea) AS SumOfGroundArea
+        FROM 
+            IndividualTreeEffects 
+                INNER JOIN (
+                    EcoStrata 
+                        INNER JOIN (
+                            EcoPlots 
+                                INNER JOIN 
+                                    EcoTrees 
+                                        ON EcoPlots.PlotKey = EcoTrees.PlotKey
+                        ) 
+                            ON EcoStrata.StrataKey = EcoPlots.StrataKey
+                ) 
+                    ON (IndividualTreeEffects.TreeId = EcoTrees.TreeId) 
+                    AND (IndividualTreeEffects.PlotId = EcoPlots.PlotId) 
+                    AND (IndividualTreeEffects.YearGuid = EcoPlots.YearKey) 
+        WHERE 
+            IndividualTreeEffects.YearGuid= :year 
+        GROUP BY 
+            EcoStrata.StrataKey
+        ]]>
+    </sql-query>
+  
+    <sql-query name="GetPollutantsFromTablePollutants">
+      <return-scalar column="Pollutant" type="string"/>
+      <![CDATA[       
+          SELECT DISTINCT [Pollutant] FROM Pollutants
+        ]]>
+    </sql-query>
+    <sql-query name="GetTreePollutantRemovalAmountAndValuesFromTablePollutants">
+      <return-scalar column="Pollutant" type="string"/>
+      <return-scalar column="SumOfFlux" type="double"/>
+      <return-scalar column="SumOfValue" type="double"/>
+      <![CDATA[       
+            SELECT Q.Pollutant, Sum(Q.AvgOfFlux*Q.AvgOfTrCovArea) AS SumOfFlux, Sum(Q.AvgOfValue*Q.AvgOfTrCovArea) AS SumOfValue 
+            FROM 
+              (
+                 SELECT Pollutant,Month,Day,Hour,TreeShrub, Avg(Flux) AS AvgOfFlux,Avg(Value) AS AvgOfValue, Avg(TrCovArea) AS AvgOfTrCovArea 
+                 FROM Pollutants 
+                 WHERE YearGUID=:YearGuid AND TreeShrub='T' 
+                 GROUP BY Pollutant,Month, Day, Hour, TreeShrub
+              ) AS Q 
+            GROUP BY Pollutant
+        ]]>
+    </sql-query>
+    <sql-query name="GetElementPrices">
+      <return-scalar column="Element" type="string"/>
+      <return-scalar column="Price" type="double"/>
+      <![CDATA[       
+          SELECT Element, Price FROM EcoElementPrices WHERE YearKey=:YearKey
+        ]]>
+    </sql-query>
+
+    <!-- adjust leaf area, tree cover, leaf biomass and carbon storage for overall of study area.
+         Table EcoForecastAdjustment used in the query is created in function SaveAdjustmentToTempTable of ForecatSimulation.cs
+    -->
+    <sql-query name="ForecastAdjustLeafAreaTreeCoverLeafBiomassCarbonStorage">
+      <![CDATA[       
+          UPDATE EcoForecastCohortResults INNER JOIN EcoForecastAdjustment 
+              ON EcoForecastCohortResults.DataType = EcoForecastAdjustment.DataType 
+              AND EcoForecastCohortResults.ForecastedYear = EcoForecastAdjustment.ForecastYear 
+          SET EcoForecastCohortResults.DataValue = [EcoForecastCohortResults].[DataValue] + [EcoForecastAdjustment].[Difference]
+          WHERE EcoForecastCohortResults.ForecastKey=:ForecastKey
+            AND EcoForecastCohortResults.StratumKey Is Null
+            AND EcoForecastAdjustment.StratumKey Is Null
+            AND (
+                  EcoForecastCohortResults.DataType=:TypeOfLeafArea
+              Or  EcoForecastCohortResults.DataType=:TypeOfTreeCover
+              Or  EcoForecastCohortResults.DataType=:TypeOfLeafBiomass
+              Or   EcoForecastCohortResults.DataType=:TypeOfCarbonStorage
+              )
+          ]]>
+    </sql-query>
+
+    <!-- adjust leaf area, tree cover, leaf biomass and carbon storage for every stratum 
+         Table EcoForecastAdjustment used in the query is created in function SaveAdjustmentToTempTable of ForecatSimulation.cs
+      -->
+    <sql-query name="ForecastAdjustLeafAreaTreeCoverLeafBiomassCarbonStorageByStrata">
+      <![CDATA[       
+            UPDATE EcoForecastCohortResults INNER JOIN EcoForecastAdjustment 
+                ON (EcoForecastCohortResults.StratumKey = EcoForecastAdjustment.StratumKey) 
+                AND (EcoForecastCohortResults.DataType = EcoForecastAdjustment.DataType) 
+                AND (EcoForecastCohortResults.ForecastedYear = EcoForecastAdjustment.ForecastYear) 
+            SET EcoForecastCohortResults.DataValue = [EcoForecastCohortResults].[DataValue] + [EcoForecastAdjustment].[Difference] 
+            WHERE EcoForecastCohortResults.ForecastKey=:ForecastKey
+              AND EcoForecastCohortResults.StratumKey Is Not Null
+              AND EcoForecastAdjustment.StratumKey Is Not Null
+              AND (
+                    EcoForecastCohortResults.DataType=:TypeOfLeafArea
+                Or  EcoForecastCohortResults.DataType=:TypeOfTreeCover
+                Or  EcoForecastCohortResults.DataType=:TypeOfLeafBiomass
+                Or   EcoForecastCohortResults.DataType=:TypeOfCarbonStorage
+                )
+            ]]>
+    </sql-query>
+
+    <!-- recalculate leaf area index for whole study area -->
+    <sql-query name="ForecastRecalculateLAI">
+      <![CDATA[       
+            UPDATE (EcoForecastCohortResults
+                INNER JOIN EcoForecastCohortResults AS EcoForecastCohortResults_1 
+                  ON (EcoForecastCohortResults.ForecastKey = EcoForecastCohortResults_1.ForecastKey) 
+                  AND (EcoForecastCohortResults.ForecastedYear = EcoForecastCohortResults_1.ForecastedYear))
+                INNER JOIN EcoForecastCohortResults AS EcoForecastCohortResults_2 
+                  ON (EcoForecastCohortResults.ForecastKey = EcoForecastCohortResults_2.ForecastKey) 
+                  AND (EcoForecastCohortResults.ForecastedYear = EcoForecastCohortResults_2.ForecastedYear)
+            SET EcoForecastCohortResults.DataValue = [EcoForecastCohortResults_1].[DataValue] / [EcoForecastCohortResults_2].[DataValue]
+            WHERE EcoForecastCohortResults.ForecastKey=:ForecastKey
+                AND EcoForecastCohortResults.StratumKey Is Null 
+                AND EcoForecastCohortResults_1.StratumKey Is Null
+                AND EcoForecastCohortResults_2.StratumKey Is Null
+                AND EcoForecastCohortResults.DataType=:TypeOfLAI 
+                AND EcoForecastCohortResults_1.DataType=:TypeOfLeafArea 
+                AND EcoForecastCohortResults_2.DataType=:TypeOfTreeCover
+            ]]>
+    </sql-query>
+  
+    <!-- recalculate leaf area index for whole study area by strata-->
+    <sql-query name="ForecastRecalculateLAIByStrata">
+      <![CDATA[       
+              UPDATE (EcoForecastCohortResults
+                  INNER JOIN EcoForecastCohortResults AS EcoForecastCohortResults_1 
+                    ON (EcoForecastCohortResults.ForecastKey = EcoForecastCohortResults_1.ForecastKey) 
+                    AND (EcoForecastCohortResults.StratumKey = EcoForecastCohortResults_1.StratumKey)
+                    AND (EcoForecastCohortResults.ForecastedYear = EcoForecastCohortResults_1.ForecastedYear))
+                  INNER JOIN EcoForecastCohortResults AS EcoForecastCohortResults_2 
+                    ON (EcoForecastCohortResults.ForecastKey = EcoForecastCohortResults_2.ForecastKey) 
+                    AND (EcoForecastCohortResults.StratumKey = EcoForecastCohortResults_2.StratumKey)
+                    AND (EcoForecastCohortResults.ForecastedYear = EcoForecastCohortResults_2.ForecastedYear)
+              SET EcoForecastCohortResults.DataValue = [EcoForecastCohortResults_1].[DataValue] / [EcoForecastCohortResults_2].[DataValue]
+              WHERE EcoForecastCohortResults.ForecastKey=:ForecastKey
+                  AND EcoForecastCohortResults.StratumKey Is Not Null 
+                  AND EcoForecastCohortResults_1.StratumKey Is Not Null
+                  AND EcoForecastCohortResults_2.StratumKey Is Not Null
+                  AND EcoForecastCohortResults.DataType=:TypeOfLAI 
+                  AND EcoForecastCohortResults_1.DataType=:TypeOfLeafArea 
+                  AND EcoForecastCohortResults_2.DataType=:TypeOfTreeCover
+            ]]>
+    </sql-query>
+
+    <sql-query name="ForecastCreateEcoDBHClasses">
+      <![CDATA[      
+          CREATE TABLE [EcoDBHClasses] (
+                [YearKey] GUID DEFAULT NULL,
+                [DBHClassId] LONG DEFAULT 0,
+                [RangeStart] DOUBLE DEFAULT 0e0,
+                [RangeEnd] DOUBLE DEFAULT 0e0
+            )
+        ]]>
+    </sql-query>
+    <sql-query name="ForecastInsertEcoDBHClasses">
+      <![CDATA[      
+            INSERT INTO EcoDBHClasses (YearKey, DBHClassId, RangeStart, RangeEnd)
+            VALUES (:YearKey, :DBHClassId, :RangeStart, :RangeEnd)
+          ]]>
+    </sql-query>
+    <sql-query name="GetForecastYearsWithNonZeroDataDesc">
+      <return-scalar column="ForecastedYear" type="Int32"/>
+      <![CDATA[       
+              SELECT ForecastedYear 
+                  FROM EcoForecastPollutantResults 
+                  WHERE ForecastKey = :ForecastKey 
+                  GROUP BY ForecastedYear 
+                  HAVING (Sum(Abs(AmountRemoval)) <> 0 OR Sum(Abs(DollarValue)) <> 0) 
+                  ORDER BY ForecastedYear DESC
+            ]]>
+    </sql-query>
+  <!--- Access -->
+</hibernate-mapping>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Eco.Domain" namespace="Eco.Domain.v6" auto-import="false">
+  <class name="CohortResult" table="EcoForecastCohortResults" batch-size="50">
+    <cache usage="read-write"/>
+    <id name="Guid" column="CohortResultKey" generator="guid"/>
+    <version name="Revision" column="Revision" unsaved-value="0"/>
+    <many-to-one name="Forecast" column="ForecastKey" not-null="true"/>
+    <many-to-one name="Stratum" column="StratumKey" not-null="false"/>
+    <property name="ForecastedYear" column="ForecastedYear"/>
+    <property name="DataType" column="DataType"/>
+    <property name="DBHRangeStart" column="DBHRangeStart"/>
+    <property name="DBHRangeEnd" column="DBHRangeEnd"/>
+    <property name="DataValue" column="DataValue"/>
+  </class>
+</hibernate-mapping>

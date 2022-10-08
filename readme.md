@@ -1,0 +1,1 @@
+i-Tree Eco is in the public domain. This decompilation project peers into the inner workings of the model to make better management decisions.

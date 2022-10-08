@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Eco.Domain" namespace="Eco.Domain.v6" auto-import="false">
+  <class name="GroundCover" table="EcoGroundCovers" dynamic-update="true">
+    <cache usage="read-write"/>
+    <id name="Guid" column="GroundCoverKey">
+      <generator class="guid"/>
+    </id>
+    <natural-id mutable="true">
+      <many-to-one name="Year" column="YearKey" not-null="true"/>
+      <property name="Id" column="GroundCoverId" not-null="true"/>
+    </natural-id>
+    <version name="Revision" column="Revision" unsaved-value="0"/>
+    <set name="PlotGroundCovers" table="EcoPlotGroundCovers" lazy="true" inverse="true" batch-size="20" cascade="merge,save-update,evict">
+      <key unique="true">
+        <column name="GroundCoverKey" not-null="true"/>
+      </key>
+      <one-to-many class="PlotGroundCover"/>
+    </set>
+    <property name="Description" column="GroundCoverDescription" length="30"/>
+    <property name="CoverTypeId" column="CoverTypeId"/>
+  </class>
+</hibernate-mapping>

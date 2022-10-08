@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="Eco.Domain.v6" assembly="Eco.Domain" auto-import="false">
+	<sql-query name="ListDistinctSpeciesClassifiers">
+		<![CDATA[
+            SELECT DISTINCT
+                cvt.SppCode
+            FROM
+                ClassValueTable cvt
+            WHERE
+                cvt.ClassifierId = 4
+                AND cvt.YearGuid = :y
+		]]>
+	</sql-query>
+	<sql-query name="UpdateSpeciesClassifierNames">
+		<![CDATA[
+			UPDATE
+				ClassValueTable cvt
+			SET
+				cvt.ClassValueName = :cn,
+				cvt.ClassValueName1 = :sn
+			WHERE
+				cvt.ClassifierId = 4
+				AND cvt.YearGuid = :y
+				AND cvt.SppCode = :sp
+        ]]>
+	</sql-query>
+	<sql-query name="UpdateIndividualTreeEffectsFromSpeciesClassifiers">
+		<![CDATA[
+		    UPDATE
+			    IndividualTreeEffects AS ite
+            INNER JOIN (
+                (
+                    EcoPlots AS p
+                    INNER JOIN EcoTrees AS t
+                    ON p.PlotKey = t.PlotKey
+                )
+                INNER JOIN ClassValueTable AS cvt ON
+				    t.Species = cvt.SppCode
+					AND p.PlotKey = cvt.YearGuid
+            )
+            ON (ite.TreeId = t.TreeId)
+                AND (ite.PlotId = p.PlotId)
+                AND (ite.YearGuid = cvt.YearGuid)
+            SET
+                ite.SppScientificName = cvt.ClassValueName1,
+                ite.SppCommonName = cvt.ClassValueName
+            WHERE
+                cvt.ClassifierId = 4
+                AND ite.YearGuid = :y
+		]]>
+	</sql-query>
+	<sql-query name="UpdateIndividualTreePollutionEffectsFromSpeciesClassifiers">
+		<![CDATA[
+            UPDATE
+			    IndividualTreePollutionEffects AS itpe
+            INNER JOIN (
+                (
+                    EcoPlots AS p
+                    INNER JOIN EcoTrees AS t
+                    ON p.PlotKey = t.PlotKey
+                )
+                INNER JOIN ClassValueTable AS cvt ON
+				    t.Species = cvt.SppCode
+					AND p.PlotKey = cvt.YearGuid
+            )
+            ON (itpe.TreeId = t.TreeId)
+                AND (itpe.PlotId = p.PlotId)
+                AND (itpe.YearGuid = cvt.YearGuid)
+            SET
+                itpe.SppScientificName = cvt.ClassValueName1,
+                itpe.SppCommonName = cvt.ClassValueName
+            WHERE
+                cvt.ClassifierId = 4
+                AND itpe.YearGuid = :y
+		]]>
+	</sql-query>
+</hibernate-mapping>

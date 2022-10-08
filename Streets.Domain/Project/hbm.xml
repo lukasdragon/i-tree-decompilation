@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Streets.Domain" namespace="Streets.Domain" auto-import="false">
+  <class name="Project" table="Config">
+    <id name="Id" column="ID" generator="identity" />
+    <natural-id mutable="true">
+      <property name="Name" column="Project_Name" length="50" not-null="false" />
+    </natural-id>
+    <property name="EnglishUnits" column="EnglishUnits" not-null="true"/>
+    <property name="PDADataPath" column="PDADataPath" length="50" not-null="false" />
+    <property name="StorageCardPath" column="StorageCardPath" length="50" not-null="false" />
+    <property name="EnablePublicPrivate" column="EnablePublicPrivate" not-null="false" />
+    <property name="DBHDirectEntry" column="DBH_DirectEntry" not-null="true"/>
+    <property name="EnableOther1" column="EnableOther1" not-null="true"/>
+    <property name="EnableOther2" column="EnableOther2" not-null="true"/>
+    <property name="EnableOther3" column="EnableOther3" not-null="true"/>
+    <property name="Other1Description" column="Other1_Description" length="25" not-null="false" />
+    <property name="Other2Description" column="Other2_Description" length="25" not-null="false" />
+    <property name="Other3Description" column="Other3_Description" length="25" not-null="false" />
+    <property name="EnableGPS" column="EnableGPS" not-null="true"/>
+    <property name="EnableBlock" column="EnableBlock" not-null="true"/>
+    <property name="ShowSpeciesCommonName" column="ShowSpeciesCommonName" not-null="true"/>
+    <property name="EnableLandUse" column="EnableLandUse" not-null="true"/>
+    <property name="EnableSiteType" column="EnableSiteType" not-null="true"/>
+    <property name="EnableLocSite" column="EnableLocSite" not-null="true"/>
+    <property name="EnableLocNo" column="EnableLocNo" not-null="true"/>
+    <property name="EnableMaintenance" column="EnableMaintenance" not-null="true"/>
+    <property name="EnableSideWalk" column="EnableSideWalk" not-null="true"/>
+    <property name="EnableWireConflict" column="EnableWireConflict" not-null="true"/>
+    <property name="EnableCondition" column="EnableCondition" not-null="true"/>
+    <property name="EnableStreetAddress" column="EnableStreetAddress" not-null="true"/>
+    <property name="EnableArea" column="EnableArea" not-null="true"/>
+    <property name="EnableSurveyor" column="EnableSurveyor" not-null="true"/>
+    <property name="EnableSurveyDate" column="EnableSurveyDate" not-null="true"/>
+    <property name="EnablePest" column="EnablePest" not-null="true"/>
+    <property name="Year" column="Year" not-null="false"/>
+    <property name="IsSample" column="IsSample" not-null="true"/>
+    <property name="ClimateZone" column="ClimateZone" not-null="false"/>
+    <property name="NationCode" column="NationCode" not-null="false"/>
+    <property name="PrimaryPartitionCode" column="PrimaryPartitionCode" not-null="false"/>
+    <property name="SecondaryPartitionCode" column="SecondaryPartitionCode" not-null="false"/>
+    <property name="TertiaryPartitionCode" column="TertiaryPartitionCode" not-null="false"/>
+    <property name="AvgStreetLength" column="AvgStLength" not-null="false"/>
+    <one-to-one name="CityData" class="CityData" constrained="true"/>
+    <one-to-one name="Benefit" class="Benefit" constrained="true"/>
+    <set name="Items" table="STRATUM_MCTI_Inventory" inverse="true" lazy="true" access="nosetter.camelcase-m-underscore" cascade="save-update">
+      <key column="ProjectId" not-null="false"/>
+      <one-to-many class="InventoryItem" />
+    </set>
+    <set name="ManagementCosts" table="STRATUM_ManagementCost" inverse="true" lazy="true" access="nosetter.camelcase-m-underscore" cascade="save-update">
+      <key column="ProjectId" not-null="true" />
+      <one-to-many class="ManagementCost" />
+    </set>
+    <set name="Streets" table="STRATUM_Streets" inverse="true" lazy="true" access="nosetter.camelcase-m-underscore" cascade="save-update">
+      <key column="ProjectId" not-null="true" />
+      <one-to-many class="Street" />
+    </set>
+    <set name="Zones" table="STRATUM_Zones" inverse="true" lazy="true" access="nosetter.camelcase-m-underscore" cascade="save-update">
+      <key column="ProjectId" not-null="true" />
+      <one-to-many class="Zone" />
+    </set>
+    <set name="SpList" table="STRATUM_SpList" inverse="true" lazy="true" access="nosetter.camelcase-m-underscore" cascade="save-update">
+      <key column="ProjectId" not-null="true" />
+      <one-to-many class="SpListItem" />
+    </set>
+    <!--Lookups-->
+    <set name="FieldLandUses" table="LookupTables" inverse="true" lazy="true" access="nosetter.camelcase-m-underscore" cascade="save-update">
+      <key column="ProjectId" not-null="false" />
+      <one-to-many class="FieldLandUse" />
+    </set>
+    <set name="LocSites" table="LookupTables" inverse="true" lazy="true" access="nosetter.camelcase-m-underscore" cascade="save-update">
+      <key column="ProjectId" not-null="false" />
+      <one-to-many class="LocSite" />
+    </set>
+    <set name="MaintRecs" table="LookupTables" inverse="true" lazy="true" access="nosetter.camelcase-m-underscore" cascade="save-update">
+      <key column="ProjectId" not-null="false" />
+      <one-to-many class="MaintRec" />
+    </set>
+    <set name="MaintTasks" table="LookupTables" inverse="true" lazy="true" access="nosetter.camelcase-m-underscore" cascade="save-update">
+      <key column="ProjectId" not-null="false" />
+      <one-to-many class="MaintTask" />
+    </set>
+    <set name="OtherOnes" table="LookupTables" inverse="true" lazy="true" access="nosetter.camelcase-m-underscore" cascade="save-update">
+      <key column="ProjectId" not-null="false" />
+      <one-to-many class="OtherOne" />
+    </set>
+    <set name="OtherTwos" table="LookupTables" inverse="true" lazy="true" access="nosetter.camelcase-m-underscore" cascade="save-update">
+      <key column="ProjectId" not-null="false" />
+      <one-to-many class="OtherTwo" />
+    </set>
+    <set name="OtherThrees" table="LookupTables" inverse="true" lazy="true" access="nosetter.camelcase-m-underscore" cascade="save-update">
+      <key column="ProjectId" not-null="false" />
+      <one-to-many class="OtherThree" />
+    </set>
+    <set name="Dbhs" table="LookupTables" inverse="true" lazy="true" access="nosetter.camelcase-m-underscore" cascade="save-update">
+      <key column="ProjectId" not-null="false" />
+      <one-to-many class="DBH" />
+    </set>
+    <set name="Conditions" table="LookupTables" inverse="true" lazy="true" access="nosetter.camelcase-m-underscore" cascade="save-update">
+      <key column="ProjectId" not-null="false" />
+      <one-to-many class="Condition" />
+    </set>
+    <set name="SidewalkDamages" table="LookupTables" inverse="true" lazy="true" access="nosetter.camelcase-m-underscore" cascade="save-update">
+      <key column="ProjectId" not-null="false" />
+      <one-to-many class="Sidewalk" />
+    </set>
+    <set name="SiteTypes" table="LookupTables" inverse="true" lazy="true" access="nosetter.camelcase-m-underscore" cascade="save-update">
+      <key column="ProjectId" not-null="false" />
+      <one-to-many class="SiteType" />
+    </set>
+    <set name="WireConflicts" table="LookupTables" inverse="true" lazy="true" access="nosetter.camelcase-m-underscore" cascade="save-update">
+      <key column="ProjectId" not-null="false" />
+      <one-to-many class="WireConflict" />
+    </set>
+    
+  </class>
+</hibernate-mapping>

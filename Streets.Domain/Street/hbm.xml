@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Streets.Domain" namespace="Streets.Domain" auto-import="false">
+  <class name="Street" table="STRATUM_Streets">
+    <id name="Id" column="Id" generator="identity" />
+    <natural-id mutable="true">
+      <many-to-one name="Project" class="Project"  column="ProjectId" not-null="true" />
+      <property name="Name" column="Name" length="50" not-null="true" />
+    </natural-id>
+  </class>
+</hibernate-mapping>

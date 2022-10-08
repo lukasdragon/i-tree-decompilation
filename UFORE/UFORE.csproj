@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Program Files (x86)\i-Tree\EcoV6\UFORE.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{29B6F79F-C420-4AD7-AE00-B36489051CE4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>UFORE</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>1.1.16.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>UFORE</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime">
+      <HintPath>lib\System.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADOX\Catalog.cs" />
+    <Compile Include="ADOX\Tables.cs" />
+    <Compile Include="ADOX\_Catalog.cs" />
+    <Compile Include="ADOX\_Collection.cs" />
+    <Compile Include="AccessFunc.cs" />
+    <Compile Include="BenMAP.cs" />
+    <Compile Include="RadiosondeStation.cs" />
+    <Compile Include="EngineProgressArg.cs" />
+    <Compile Include="WeatherStation.cs" />
+    <Compile Include="Ultraviolet\UV.cs" />
+    <Compile Include="Ultraviolet\UVI.cs" />
+    <Compile Include="Ultraviolet\UVReduction.cs" />
+    <Compile Include="Pollutant\PollutantMonitor.cs" />
+    <Compile Include="Pollutant\PollutantCost.cs" />
+    <Compile Include="Pollutant\AirPollutant.cs" />
+    <Compile Include="Pollutant\AirPollutantMetrics.cs" />
+    <Compile Include="MixingHeight\MixHt.cs" />
+    <Compile Include="MixingHeight\HourlyMixHt.cs" />
+    <Compile Include="MixingHeight\TwiceDailyMixHt.cs" />
+    <Compile Include="Location\LocationData.cs" />
+    <Compile Include="Location\LocationDataForB.cs" />
+    <Compile Include="Weather\Interception.cs" />
+    <Compile Include="Weather\SurfaceWeather.cs" />
+    <Compile Include="Weather\UpperAir.cs" />
+    <Compile Include="LAI\ForestData.cs" />
+    <Compile Include="LAI\LeafAreaIndex.cs" />
+    <Compile Include="Deposition\Resistance.cs" />
+    <Compile Include="Deposition\DryDeposition.cs" />
+    <Compile Include="Deposition\UFORE_D.cs" />
+    <Compile Include="BioEmission\ConversionFactor.cs" />
+    <Compile Include="BioEmission\CorrectionFactor.cs" />
+    <Compile Include="BioEmission\Emission.cs" />
+    <Compile Include="BioEmission\BaseEmission.cs" />
+    <Compile Include="BioEmission\Formation.cs" />
+    <Compile Include="BioEmission\Landuse.cs" />
+    <Compile Include="BioEmission\City.cs" />
+    <Compile Include="BioEmission\LeafBiomass.cs" />
+    <Compile Include="BioEmission\Summary.cs" />
+    <Compile Include="BioEmission\YearlySummary.cs" />
+    <Compile Include="BioEmission\LeafOnSummary.cs" />
+    <Compile Include="BioEmission\MonthlySummary.cs" />
+    <Compile Include="BioEmission\HourlySummary.cs" />
+    <Compile Include="BioEmission\YearlyCOLanduseSummary.cs" />
+    <Compile Include="BioEmission\YearlyCOGeneraSummary.cs" />
+    <Compile Include="BioEmission\LeafOnCOLanduseSummary.cs" />
+    <Compile Include="BioEmission\LeafOnCOGeneraSummary.cs" />
+    <Compile Include="BioEmission\MonthlyCOSummary.cs" />
+    <Compile Include="BioEmission\HourlyCOSummary.cs" />
+    <Compile Include="BioEmission\YearlyO3LanduseSummary.cs" />
+    <Compile Include="BioEmission\YearlyO3GeneraSummary.cs" />
+    <Compile Include="BioEmission\LeafOnO3LanduseSummary.cs" />
+    <Compile Include="BioEmission\LeafOnO3GeneraSummary.cs" />
+    <Compile Include="BioEmission\MonthlyO3Summary.cs" />
+    <Compile Include="BioEmission\HourlyO3Summary.cs" />
+    <Compile Include="BioEmission\UFORE_B.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

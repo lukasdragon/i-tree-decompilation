@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Streets.Domain" namespace="Streets.Domain" auto-import="false">
+  <class name="InventoryItem" table="STRATUM_MCTI_Inventory">
+    <id name="Id" column="ID" generator="identity" />
+    <many-to-one name="Project" class="Project" column="ProjectId" not-null="false" />
+    <property name="StreetSeg" column="StreetSeg" not-null="false" />
+    <many-to-one name="Zone">
+      <formula>ProjectId</formula>
+      <column name="`Zone`" not-null="false"/>
+    </many-to-one>
+    <property name="CityManaged" column="CityManaged" not-null="false"/>
+    <property name="DBH" column="DBH" not-null="false"/>
+    <many-to-one name="LandUse">
+      <formula>ProjectId</formula>
+      <column name="LandUse" not-null="true"/>
+    </many-to-one>
+    <many-to-one name="SiteType">
+      <formula>ProjectId</formula>
+      <column name="SiteType" not-null="true"/>
+    </many-to-one>
+    <many-to-one name="LocSite">
+      <formula>ProjectId</formula>
+      <column name="LocSite" not-null="true"/>
+    </many-to-one>
+    <property name="LocNo" column="LocNo" not-null="false" />
+    <many-to-one name="MaintRec">
+      <formula>ProjectId</formula>
+      <column name="MtncRec" not-null="true"/>
+    </many-to-one>
+    <many-to-one name="MaintTask">
+      <formula>ProjectId</formula>
+      <column name="MtncTask" not-null="true"/>
+    </many-to-one>
+    <many-to-one name="SidewalkDamage">
+      <formula>ProjectId</formula>
+      <column name="SwDamg" not-null="true"/>
+    </many-to-one>
+    <many-to-one name="WireConflict">
+      <formula>ProjectId</formula>
+      <column name="WireConflict" not-null="true"/>
+    </many-to-one>
+    <many-to-one name="WoodyCondition">
+      <formula>ProjectId</formula>
+      <column name="CondWood" not-null="true"/>
+    </many-to-one>
+    <many-to-one name="LeavesCondition">
+      <formula>ProjectId</formula>
+      <column name="CondLvs" not-null="true"/>
+    </many-to-one>
+    <many-to-one name="OtherOne">
+      <formula>ProjectId</formula>
+      <column name="OtherOne" not-null="true"/>
+    </many-to-one>
+    <many-to-one name="OtherTwo">
+      <formula>ProjectId</formula>
+      <column name="OtherTwo" not-null="true"/>
+    </many-to-one>
+    <many-to-one name="OtherThree">
+      <formula>ProjectId</formula>
+      <column name="OtherThree" not-null="true"/>
+    </many-to-one>
+    <many-to-one name="SpCode">
+      <formula>ProjectId</formula>
+      <column name="SpCode" not-null="false"/>
+    </many-to-one>
+    <property name="Latitude" column="GPS_Lat" length="15" not-null="false" />
+    <property name="Longitude" column="GPS_Lon" length="15" not-null="false" />
+    <many-to-one name="Street" column="StreetId" not-null="false" />
+    <property name="StreetNumber" column="StreetNumber" length="10" not-null="false" />
+    <property name="SurveyorId" column="SurveyorId" length="15" not-null="false" />
+    <property name="SurveyDate" column="SurveyDate" not-null="false" />
+    <property name="NoteThisTree" column="NoteThisTree" not-null="true" />
+    <property name="Comments" column="Comments" length="250" not-null="false" />
+    <component name="IPED">
+      <property name="TSDieback" column="PestTSDieback" not-null="false"/>
+      <property name="TSEpiSprout" column="PestTSEpiSprout" not-null="false"/>
+      <property name="TSWiltFoli" column="PestTSWiltFoli" not-null="false"/>
+      <property name="TSEnvStress" column="PestTSEnvStress" not-null="false"/>
+      <property name="TSHumStress" column="PestTSHumStress" not-null="false"/>
+      <property name="TSNotes" column="PestTSNotes" not-null="false"/>
+      <property name="FTChewFoli" column="PestFTChewFoli" not-null="false"/>
+      <property name="FTDiscFoli" column="PestFTDiscFoli" not-null="false"/>
+      <property name="FTAbnFoli" column="PestFTAbnFoli" not-null="false"/>
+      <property name="FTInsectSigns" column="PestFTInsectSigns" not-null="false"/>
+      <property name="FTFoliAffect" column="PestFTFoliAffect" not-null="false"/>
+      <property name="FTNotes" column="PestFTNotes" not-null="false"/>
+      <property name="BBInsectSigns" column="PestBBInsectSigns" not-null="false"/>
+      <property name="BBInsectPres" column="PestBBInsectPres" not-null="false"/>
+      <property name="BBDiseaseSigns" column="PestBBDiseaseSigns" not-null="false"/>
+      <property name="BBProbLoc" column="PestBBProbLoc" not-null="false"/>
+      <property name="BBAbnGrowth" column="PestBBAbnGrowth" not-null="false"/>
+      <property name="BBNotes" column="PestBBNotes" not-null="false"/>
+      <property name="Pest" column="PestPest" not-null="false"/>
+      <property name="PestTS" column="PestTS" not-null="true"/>
+      <property name="PestFT" column="PestFT" not-null="true"/>
+      <property name="PestBB" column="PestBB" not-null="true"/>
+    </component>
+  </class>
+</hibernate-mapping>
